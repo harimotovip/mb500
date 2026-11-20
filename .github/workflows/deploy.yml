@@ -1,44 +1,20 @@
-name: Deploy to Vercel & GitHub Pages
+name: Deploy to Vercel
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: "deployment"
+  group: "vercel-deploy"
   cancel-in-progress: false
 
 jobs:
-  trigger-vercel:
+  deploy-to-vercel:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Vercel Deploy Hook
+      - name: Trigger Vercel Auto-Deploy
         run: |
-          echo "Triggering Vercel Production Auto-Deploy..."
-          curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_Y2qJOggrsZANkBIxBlnjCHsrkeVa/TYm0PL6XQo"
-          echo "Deployment triggered successfully!"
-
-  deploy-pages:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        continue-on-error: true
-        uses: actions/deploy-pages@v4
+          echo "Triggering Vercel Production Deployment..."
+          curl -f -X POST "https://api.vercel.com/v1/integrations/deploy/prj_Y2qJOggrsZANkBIxBlnjCHsrkeVa/TYm0PL6XQo"
+          echo "Vercel deployment triggered successfully!"
