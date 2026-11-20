@@ -11,7 +11,13 @@ class MB500App {
     this.currentIndex = 0;
     this.currentMode = 'practice'; // 'practice' | 'exam' | 'mistakes' | 'starred' | 'stats'
     this.language = window.appStorage.settings.language || 'ja';
-    this.theme = window.appStorage.settings.theme || 'dark';
+    // Default to light theme
+    if (!localStorage.getItem('mb500_theme_explicit')) {
+      window.appStorage.saveSettings({ theme: 'light' });
+      this.theme = 'light';
+    } else {
+      this.theme = window.appStorage.settings.theme || 'light';
+    }
     this.filterTopic = 'all';
     this.filterType = 'all';
     this.searchQuery = '';
@@ -55,8 +61,11 @@ class MB500App {
     }
   }
 
-  applyTheme(theme) {
+  applyTheme(theme, isExplicit = false) {
     this.theme = theme;
+    if (isExplicit) {
+      localStorage.setItem('mb500_theme_explicit', 'true');
+    }
     document.documentElement.setAttribute('data-theme', theme);
     const themeBtn = document.getElementById('theme-toggle-btn');
     if (themeBtn) {
@@ -1047,7 +1056,7 @@ class MB500App {
     const themeBtn = document.getElementById('theme-toggle-btn');
     if (themeBtn) {
       themeBtn.addEventListener('click', () => {
-        this.applyTheme(this.theme === 'dark' ? 'light' : 'dark');
+        this.applyTheme(this.theme === 'dark' ? 'light' : 'dark', true);
       });
     }
 

@@ -16,7 +16,7 @@ class StorageManager {
   constructor() {
     this.settings = this.load(STORAGE_KEYS.SETTINGS, {
       language: 'ja', // 'ja' | 'en' | 'bilingual'
-      theme: 'dark',   // 'dark' | 'light'
+      theme: 'light',  // 'light' | 'dark'
       autoNext: false
     });
     this.answers = this.load(STORAGE_KEYS.ANSWERS, {});
