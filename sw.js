@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v4 (Network First for Code)
-const CACHE_NAME = 'mb500-cache-v4';
+// Service Worker for MB-500 Offline Quiz Tool - v5 (Native Dropdowns & OCR Text)
+const CACHE_NAME = 'mb500-cache-v5';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

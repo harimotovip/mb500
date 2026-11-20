@@ -224,16 +224,34 @@ class MB500App {
     // Images in question
     let questionImagesHtml = '';
     if (q.question_images && q.question_images.length > 0) {
-      questionImagesHtml = `
-        <div class="question-images">
-          ${q.question_images.map(img => `
-            <div class="image-wrapper" onclick="window.mbApp.openLightbox('./${img}')">
-              <img src="./${img}" alt="Exhibit" loading="lazy" />
-              <div class="zoom-hint">🔍 点击放大图片</div>
+      if (q.type === 'hotspot' && q.hotspot_boxes && q.hotspot_boxes.length > 0) {
+        questionImagesHtml = `
+          <div class="original-scan-toggle-wrap">
+            <button type="button" class="btn-toggle-scan" onclick="window.mbApp.toggleOriginalScan()">
+              🖼️ 切换查看原卷扫描件截图 (选填参考)
+            </button>
+            <div id="original-scan-box" class="original-scan-box" style="display:none; margin-top: 0.75rem;">
+              ${q.question_images.map(img => `
+                <div class="image-wrapper" onclick="window.mbApp.openLightbox('./${img}')">
+                  <img src="./${img}" alt="Exhibit" loading="lazy" />
+                  <div class="zoom-hint">🔍 点击放大图片</div>
+                </div>
+              `).join('')}
             </div>
-          `).join('')}
-        </div>
-      `;
+          </div>
+        `;
+      } else {
+        questionImagesHtml = `
+          <div class="question-images">
+            ${q.question_images.map(img => `
+              <div class="image-wrapper" onclick="window.mbApp.openLightbox('./${img}')">
+                <img src="./${img}" alt="Exhibit" loading="lazy" />
+                <div class="zoom-hint">🔍 点击放大图片</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
     }
 
     // Interactive Area (Options / Drag Drop / Hotspot)
@@ -367,54 +385,78 @@ class MB500App {
   }
 
   renderHotspotHtml(q) {
-    if (q.hotspot_boxes && q.hotspot_boxes.length > 0) {
-      return `
-        <div class="hotspot-interactive-card">
-          <div class="interactive-title">🎯 交互作答区：点击下方选项完成各下拉区域配置</div>
-          <div class="hotspot-boxes-list">
-            ${q.hotspot_boxes.map(box => `
-              <div class="hotspot-box-row" data-box-id="${box.box_id}">
-                <div class="hotspot-box-label">
-                  <span class="box-tag">Box ${box.box_id}</span>
-                  <span class="box-title-text">${this.language === 'en' ? this.escapeHtml(box.title_en) : this.escapeHtml(box.title_ja || box.title_en)}</span>
-                </div>
-                <div class="hotspot-chips-grid">
-                  ${box.options.map(opt => `
-                    <button type="button" class="hotspot-chip ${this.userHotspotAnswers[box.box_id] === opt ? 'selected' : ''}" 
-                      data-box="${box.box_id}" 
-                      data-val="${this.escapeHtml(opt)}"
-                      onclick="window.mbApp.handleHotspotChipSelect(${box.box_id}, '${this.escapeHtml(opt)}')">
-                      ${this.escapeHtml(opt)}
-                    </button>
-                  `).join('')}
-                </div>
-              </div>
-            `).join('')}
+    if (!q.hotspot_boxes || q.hotspot_boxes.length === 0) return '';
+    return `
+      <div class="hotspot-answer-table-card">
+        <div class="table-header-bar">
+          <div class="table-title">
+            <span class="table-icon">📋</span>
+            <span>Answer Area (作答区域 - 请在下方各下拉框中选择配置)</span>
           </div>
         </div>
-      `;
-    }
-    return `
-      <div class="hotspot-interactive-card">
-        <div class="interactive-title">💡 图解下拉题型（Hot Area）说明：</div>
-        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
-          本题作答下拉选框已在上方题干图示中展示。请在脑海中完成判断，点击下方【✓ 提交作答】或【👁️ 查看正解与深度解析】即可立即查看官方标准正解图解与绿框选项。
-        </p>
+        <div class="table-responsive-wrapper">
+          <table class="hotspot-native-table">
+            <thead>
+              <tr>
+                <th class="col-req">Element / Requirement (要件・項目)</th>
+                <th class="col-val">Value / Action (選択肢・設定値)</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${q.hotspot_boxes.map(box => {
+                const currentVal = this.userHotspotAnswers[box.box_id] || '';
+                const reqTitleJa = box.title_ja || box.title_en;
+                const reqTitleEn = box.title_en;
+                return `
+                  <tr class="hotspot-row" data-box-id="${box.box_id}">
+                    <td class="req-cell">
+                      <span class="box-badge">Box ${box.box_id}</span>
+                      <div class="req-text-primary">${this.language === 'en' ? this.escapeHtml(reqTitleEn) : this.escapeHtml(reqTitleJa)}</div>
+                      ${(this.language !== 'en' && reqTitleEn !== reqTitleJa) ? `<div class="req-text-secondary">${this.escapeHtml(reqTitleEn)}</div>` : ''}
+                    </td>
+                    <td class="val-cell">
+                      <div class="select-wrapper">
+                        <select class="native-dropdown ${currentVal ? 'has-value' : ''}" 
+                          id="hotspot-select-${box.box_id}" 
+                          data-box-id="${box.box_id}" 
+                          onchange="window.mbApp.handleHotspotDropdownChange(${box.box_id}, this.value)">
+                          <option value="" disabled ${!currentVal ? 'selected' : ''}>-- 请点击下拉选择 (Select option) --</option>
+                          ${box.options.map(opt => `
+                            <option value="${this.escapeHtml(opt)}" ${currentVal === opt ? 'selected' : ''}>
+                              ${this.escapeHtml(opt)}
+                            </option>
+                          `).join('')}
+                        </select>
+                        <div class="dropdown-feedback" id="feedback-box-${box.box_id}"></div>
+                      </div>
+                    </td>
+                  </tr>
+                `;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
       </div>
     `;
   }
 
-  handleHotspotChipSelect(boxId, val) {
+  handleHotspotDropdownChange(boxId, val) {
     if (this.answeredState) return;
     this.userHotspotAnswers[boxId] = val;
     if (window.appInteractions) {
       window.appInteractions.setHotspotSelection(boxId, val);
     }
-    const row = document.querySelector(`.hotspot-box-row[data-box-id="${boxId}"]`);
-    if (row) {
-      row.querySelectorAll('.hotspot-chip').forEach(chip => {
-        chip.classList.toggle('selected', chip.getAttribute('data-val') === val);
-      });
+    const selectEl = document.getElementById(`hotspot-select-${boxId}`);
+    if (selectEl) {
+      selectEl.classList.toggle('has-value', !!val);
+    }
+  }
+
+  toggleOriginalScan() {
+    const box = document.getElementById('original-scan-box');
+    if (box) {
+      const isHidden = (box.style.display === 'none' || !box.style.display);
+      box.style.display = isHidden ? 'block' : 'none';
     }
   }
 
@@ -683,19 +725,27 @@ class MB500App {
       }
     });
 
-    // Highlight hotspot chips for hotspot questions
+    // Highlight and evaluate native hotspot dropdowns
     if (q.type === 'hotspot' && q.hotspot_boxes) {
       q.hotspot_boxes.forEach(box => {
-        const row = document.querySelector(`.hotspot-box-row[data-box-id="${box.box_id}"]`);
-        if (row) {
-          row.querySelectorAll('.hotspot-chip').forEach(chip => {
-            const chipVal = chip.getAttribute('data-val');
-            if (chipVal && chipVal.trim().toLowerCase() === box.answer.trim().toLowerCase()) {
-              chip.classList.add('correct-chip');
-            } else if (chip.classList.contains('selected')) {
-              chip.classList.add('wrong-chip');
-            }
-          });
+        const selectEl = document.getElementById(`hotspot-select-${box.box_id}`);
+        const feedbackEl = document.getElementById(`feedback-box-${box.box_id}`);
+        const userVal = (this.userHotspotAnswers[box.box_id] || '').trim();
+        const isCorrect = (userVal.toLowerCase() === box.answer.trim().toLowerCase());
+        
+        if (selectEl) {
+          selectEl.classList.remove('select-correct', 'select-wrong');
+          selectEl.classList.add(isCorrect ? 'select-correct' : 'select-wrong');
+        }
+        if (feedbackEl) {
+          if (isCorrect) {
+            feedbackEl.innerHTML = `<span class="feedback-badge correct">✓ 选项正确</span>`;
+          } else {
+            feedbackEl.innerHTML = `
+              <span class="feedback-badge wrong">✗ 未答对</span>
+              <span class="feedback-correct-val">正解: <strong>${this.escapeHtml(box.answer)}</strong></span>
+            `;
+          }
         }
       });
     }
@@ -726,17 +776,18 @@ class MB500App {
           if (targetAns.includes(k)) card.classList.add('correct-answer');
         });
 
-        // Highlight correct hotspot chips
+        // Auto-fill and highlight native hotspot dropdowns
         if (q.type === 'hotspot' && q.hotspot_boxes) {
           q.hotspot_boxes.forEach(box => {
-            const row = document.querySelector(`.hotspot-box-row[data-box-id="${box.box_id}"]`);
-            if (row) {
-              row.querySelectorAll('.hotspot-chip').forEach(chip => {
-                const chipVal = chip.getAttribute('data-val');
-                if (chipVal && chipVal.trim().toLowerCase() === box.answer.trim().toLowerCase()) {
-                  chip.classList.add('correct-chip');
-                }
-              });
+            const selectEl = document.getElementById(`hotspot-select-${box.box_id}`);
+            const feedbackEl = document.getElementById(`feedback-box-${box.box_id}`);
+            if (selectEl) {
+              selectEl.value = box.answer;
+              selectEl.classList.remove('select-wrong');
+              selectEl.classList.add('select-correct');
+            }
+            if (feedbackEl) {
+              feedbackEl.innerHTML = `<span class="feedback-badge correct">✓ 官方正解: <strong>${this.escapeHtml(box.answer)}</strong></span>`;
             }
           });
         }

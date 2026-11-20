@@ -228,7 +228,7 @@
     "community_answer": "Box 1: LCS Environment Monitoring tool | Box 2: Trace Parser | Box 3: SQL Profiler",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: LCS | Box 2: Trace Parser | Box 3: SQL Profiler",
+      "correct_answer": "Box 1: LCS Environment Monitoring tool | Box 2: Trace Parser | Box 3: SQL Profiler",
       "dump_answer": "Box 1: LCS Environment Monitoring tool | Box 2: Trace Parser | Box 3: SQL Profiler",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -468,11 +468,11 @@
     "question_en": "HOTSPOT -\nYou have a Dynamics 365 Finance development environment.\nYou must add default filters to the fleet management form. You must view only sales that occur in the current sales period and where the\nCustomer name field contains the text Wholesales.\nYou need to configure filtering.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou have a Dynamics 365 Finance development environment.\nYou must add default filters to the fleet management form. You must view only sales that occur in the current sales period and where the\nCustomer name field contains the text Wholesales.\nフィルター処理を構成する必要があります。\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: range | Box 2: dateRange | Box 3: *Wholesales*",
+    "community_answer": "Box 1: range | Box 2: dateRange | Box 3: *Wholesales*",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: range | Box 2: dateRange | Box 3: *Wholesales*",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -533,37 +533,37 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "SysQuery method to filter a specific field",
-        "title_ja": "特定フィールドにフィルター条件を追加する SysQuery メソッド",
+        "title_en": "SysQuery method",
+        "title_ja": "SysQuery クラスのメソッド",
         "options": [
+          "addRangesFromKeyData",
           "range",
-          "addRange",
-          "queryFilter",
-          "recordLevelSecurity"
+          "packRangeAndSortOrder",
+          "mergeFilters"
         ],
         "answer": "range"
       },
       {
         "box_id": 2,
-        "title_en": "SysQueryRangeUtil method to filter sales records to current sales period",
-        "title_ja": "売上レコードを現在の販売期間に絞り込む SysQueryRangeUtil メソッド",
+        "title_en": "SysQueryRangeUtil",
+        "title_ja": "SysQueryRangeUtil クラスのメソッド",
         "options": [
-          "dateRange",
+          "lessThanDate",
           "currentDate",
-          "dayRange",
-          "yearRange"
+          "dateRange",
+          "monthRange"
         ],
         "answer": "dateRange"
       },
       {
         "box_id": 3,
-        "title_en": "Filter clause matching Customer name containing text Wholesales",
-        "title_ja": "顧客名に「Wholesales」を含むレコードに一致させるフィルター句",
+        "title_en": "Filter clause",
+        "title_ja": "フィルター句 (ワイルドカード構文)",
         "options": [
-          "*Wholesales*",
-          "Wholesales",
+          "*Wholesales",
+          "..Wholesales",
           "Wholesales*",
-          "*Wholesales"
+          "*Wholesales*"
         ],
         "answer": "*Wholesales*"
       }
@@ -2223,11 +2223,11 @@
     "question_en": "HOTSPOT -\nYou are building analytical components for users in Dynamics 365.\nYou need to determine the appropriate component to use for several scenarios.\nWhich component should you use for each scenario? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou are building analytical components for users in Dynamics 365.\nYou need to determine the appropriate component to use for several scenarios.\nWhich component should you use for each scenario? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Tile | Box 2: Dashboard | Box 3: Self-service BI",
+    "community_answer": "Box 1: Tile | Box 2: Dashboard | Box 3: Self-service BI",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Tile | Box 2: Dashboard | Box 3: Self-service BI",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -2295,39 +2295,39 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Component 1",
-        "title_ja": "コンポーネント 1",
+        "title_en": "Users need to see updated information in an object that can be pinned on their workspace.",
+        "title_ja": "ワークスペースに固定できるオブジェクトで、更新された情報を表示する必要がある。",
         "options": [
           "Tile",
+          "Enumeration",
           "Dashboard",
-          "SelfService-BI",
-          "Chart"
+          "Self-service BI"
         ],
         "answer": "Tile"
       },
       {
         "box_id": 2,
-        "title_en": "Component 2",
-        "title_ja": "コンポーネント 2",
+        "title_en": "A default homepage must be based on a user's security role.",
+        "title_ja": "既定のホームページはユーザーのセキュリティ ロールに基づく必要がある。",
         "options": [
           "Tile",
           "Dashboard",
-          "SelfService-BI",
-          "Chart"
+          "Self-service BI",
+          "Embedded BI"
         ],
         "answer": "Dashboard"
       },
       {
         "box_id": 3,
-        "title_en": "Component 3",
-        "title_ja": "コンポーネント 3",
+        "title_en": "Users must be able to modify or create new analytic content.",
+        "title_ja": "ユーザーは新しい分析コンテンツを変更または作成できる必要がある。",
         "options": [
           "Tile",
           "Dashboard",
-          "SelfService-BI",
-          "Chart"
+          "Contextual BI",
+          "Self-service BI"
         ],
-        "answer": "SelfService-BI"
+        "answer": "Self-service BI"
       }
     ]
   },
@@ -3028,11 +3028,11 @@
     "question_en": "HOTSPOT\n-\nCase study\n-\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However,\nthere may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions\nincluded on this exam in the time provided.\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might\ncontain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is\nindependent of the other questions in this case study.\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to\nthe next section of the exam. After you begin a new section, you cannot return to this section.\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study\nbefore you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem\nstatements. When you are ready to answer a question, click the Question button to return to the question.\nBackground\n-\nADatum Corporation is a market leader in the design and distribution of innovative aluminum systems. The company provides services to the\narchitectural, residential, industrial, and home improvement markets in Australia.\nThe company has warehouses in Perth. Sydney, and Melbourne. A team of warehouse employees provides delivery to the customer sites.\nCurrent Environment\n-\nADatum Corporation currently uses Microsoft Dynamics AX 2009.\nCustomers use email or phone calls to place orders. After the company provides a quote to customers, the customer must agree to the sale price\nbefore the company places a sales order.\nThe company is migrating to Dynamics 365 Finance and Dynamics 365 Supply Chain Management using a phased rollout strategy to its sites. The\ncompany has the Lifecycle services project to manage various environments and releases.\nThe company has the following Finance and Supply Chain Management environments:\n• Development\n• Quality assurance (QA)\n• User acceptance testing (UAT)\n• Production\nThe company uses Azure DevOps for a code repository. All developers use a development branch to check in code and a release branch to\nmaintain the code for production releases.\nRequirements. General\n-\n• Configure a cloud-based development environment for Finance and Supply Chain Management. Enable a code extension that supports updates.\n• Configure Microsoft-supported version control and an Azure-hosted build pipeline.\n• Migrate all document handling attachments for the customers to Finance and Supply Chain Management from Dynamics AX 2009.\n• Audit X++ code for a best practice check.\n• All new code must be unit tested in a development environment and then validated by the QA team before the code is merged into the Release\nbranch for further releases.\nRequirements. Business processes\n• All changes that are deployed to the UAT environment must be approved for code release to production.\n• The sales manager requires a solution that is extensible to ensure that new master tables document handling attachments are migrated to the\nnew system.\n• A base class named MigrateAttachment must be designed with methods that all child classes must implement.\n• A method named processAttachment must be created so that extenders are not able to subscribe to pre-events and post-events.\n• On the All sales orders list page, two new fields must be added for the total sales order amount. One field uses goods and services tax (GST) and\nthe other field does not use GST.\n• A process named Populate check data must be designed based on the following:\no The process must run from the All customers list page and populate a custom table named CustCheckData with 1000 rows.\no The table must have two fields named CheckNumber and BankNumber.\no The process must return to the current session after the data is processed.\n• The generated check data must be available for users to access in a tabular form without additional details and preview panes.\n• The purchase manager requires a new data entity to send out the information for purchase order inquiries that are generated in Finance and\nSupply Chain Management\n• The sales manager must be able to access the total quotation for the sites and item types.\n• The sales manager requires a quotation number to be printed on the sales invoice business document. Customers must be able to access the\nreference number on the invoice documents.\n• The purchase manager requires a new approval workflow for approving purchase orders that are more than $10,000.\nRequirements. Business systems\n-\n• After a user named UserA posts a packing slip for a sales order, customers must be informed of the product delivery in real-time. This\ninformation is provided using business events.\n• Purchase order inquiries must be exported from the Finance and Supply Chain Management using data packages. Users must be able to query\nusing OData but should not be able to update or create the data in the system.\n• A sales manager’s workspace must display the total quotations using key performance indicators.\n• The purchase order approval workflow must be configured from the procurement and sourcing module.\nIssues\n-\n• UserA reports delays when opening the All sales orders list page.\n• A customer is unable to access the business events for a packing slip that is posted by UserA.\n• A user named UserB reports that the system is unresponsive when they run the Populate check data process for a customer.\n• UserA reports that the print management settings in the accounts receivable module do not display the new layout when testing a new sales\ninvoice report layout in the UAT environment.\nYou need to create the new approval workflow for purchase orders.\nWhat should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nCase study\n-\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However,\nthere may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions\nincluded on this exam in the time provided.\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might\ncontain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is\nindependent of the other questions in this case study.\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to\nthe next section of the exam. After you begin a new section, you cannot return to this section.\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study\nbefore you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem\nstatements. When you are ready to answer a question, click the Question button to return to the question.\nBackground\n-\nADatum Corporation is a market leader in the design and distribution of innovative aluminum systems. The company provides services to the\narchitectural, residential, industrial, and home improvement markets in Australia.\nThe company has warehouses in Perth. Sydney, and Melbourne. A team of warehouse employees provides delivery to the customer sites.\nCurrent Environment\n-\nADatum Corporation currently uses Microsoft Dynamics AX 2009.\nCustomers use email or phone calls to place orders. After the company provides a quote to customers, the customer must agree to the sale price\nbefore the company places a sales order.\nThe company is migrating to Dynamics 365 Finance and Dynamics 365 Supply Chain Management using a phased rollout strategy to its sites. The\ncompany has the Lifecycle services project to manage various environments and releases.\nThe company has the following Finance and Supply Chain Management environments:\n• Development\n• Quality assurance (QA)\n• User acceptance testing (UAT)\n• Production\nThe company uses Azure DevOps for a code repository. All developers use a development branch to check in code and a release branch to\nmaintain the code for production releases.\nRequirements. General\n-\n• Configure a cloud-based development environment for Finance and Supply Chain Management. Enable a code extension that supports updates.\n• Configure Microsoft-supported version control and an Azure-hosted build pipeline.\n• Migrate all document handling attachments for the customers to Finance and Supply Chain Management from Dynamics AX 2009.\n• Audit X++ code for a best practice check.\n• All new code must be unit tested in a development environment and then validated by the QA team before the code is merged into the Release\nbranch for further releases.\nRequirements. Business processes\n• All changes that are deployed to the UAT environment must be approved for code release to production.\n• The sales manager requires a solution that is extensible to ensure that new master tables document handling attachments are migrated to the\nnew system.\n• A base class named MigrateAttachment must be designed with methods that all child classes must implement.\n• A method named processAttachment must be created so that extenders are not able to subscribe to pre-events and post-events.\n• On the All sales orders list page, two new fields must be added for the total sales order amount. One field uses goods and services tax (GST) and\nthe other field does not use GST.\n• A process named Populate check data must be designed based on the following:\no The process must run from the All customers list page and populate a custom table named CustCheckData with 1000 rows.\no The table must have two fields named CheckNumber and BankNumber.\no The process must return to the current session after the data is processed.\n• The generated check data must be available for users to access in a tabular form without additional details and preview panes.\n• The purchase manager requires a new データ エンティティ to send out the information for purchase order inquiries that are generated in Finance and\nSupply Chain Management\n• The sales manager must be able to access the total quotation for the sites and item types.\n• The sales manager requires a quotation number to be printed on the sales invoice business document. Customers must be able to access the\nreference number on the invoice documents.\n• The purchase manager requires a new approval workflow for approving purchase orders that are more than $10,000.\nRequirements. Business systems\n-\n• After a user named UserA posts a packing slip for a sales order, customers must be informed of the product delivery in real-time. This\ninformation is provided using business events.\n• Purchase order inquiries must be exported from the Finance and Supply Chain Management using data packages. Users must be able to query\nusing OData but should not be able to update or create the data in the system.\n• A sales manager’s workspace must display the total quotations using key performance indicators.\n• The purchase order approval workflow must be configured from the procurement and sourcing module.\nIssues\n-\n• UserA reports delays when opening the All sales orders list page.\n• A customer is unable to access the business events for a packing slip that is posted by UserA.\n• A user named UserB reports that the system is unresponsive when they run the Populate check data process for a customer.\n• UserA reports that the print management settings in the accounts receivable module do not display the new layout when testing a new sales\ninvoice report layout in the UAT environment.\nYou need to create the new approval workflow for purchase orders.\nWhat should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Procurement and Sourcing | Box 2: PurchTableListPage",
+    "community_answer": "Box 1: Procurement and Sourcing | Box 2: PurchTableListPage",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Procurement and Sourcing | Box 2: PurchTableListPage",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -3053,6 +3053,29 @@
     ],
     "answer_images": [
       "images/t1_q33_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Module",
+        "title_ja": "対象モジュール",
+        "options": [
+          "Procurement and Sourcing",
+          "Production control",
+          "Accounts payable"
+        ],
+        "answer": "Procurement and Sourcing"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Document menu item",
+        "title_ja": "ドキュメント メニュー項目",
+        "options": [
+          "PurchTableListPage",
+          "SalesTableListPage"
+        ],
+        "answer": "PurchTableListPage"
+      }
     ]
   },
   {
@@ -3258,11 +3281,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 Finance.\nThe company reports an issue with the current version of Finance in the UAT environment.\nYou must perform the following tasks to research the issue:\n• Search for the reported issue in Lifecycle Services (LCS) to locate the hotfix.\n• Download the hotfix package and upload it to the Software Deployable Packages section in the Asset library.\n• Locate the saved hotfix in the Asset library.\n• Deploy the hotfix to the environment.\nYou need to resolve the reported issue in the UAT environment.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nある企業が Dynamics 365 Finance を使用しています。\nThe company reports an issue with the current version of Finance in the UAT environment.\nYou must perform the following tasks to research the issue:\n• Search for the reported issue in Lifecycle Services (LCS) (LCS) to locate the hotfix.\n• Download the hotfix package and upload it to the Software Deployable Packages section in the Asset library.\n• Locate the saved hotfix in the Asset library.\n• Deploy the hotfix to the environment.\nYou need to resolve the reported issue in the UAT environment.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Select LCS project and then Issue Search. | Box 2: Select LCS project, Asset library, and then Software deployable package. | Box 3: Select Maintain and then Apply updates.",
+    "community_answer": "Box 1: Select LCS project and then Issue Search. | Box 2: Select LCS project, Asset library, and then Software deployable package. | Box 3: Select Maintain and then Apply updates.",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Select LCS project and then Issue Search. | Box 2: Select LCS project, Asset library, and then Software deployable package. | Box 3: Select Maintain and then Apply updates.",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -3283,6 +3306,42 @@
     ],
     "answer_images": [
       "images/t1_q38_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Search LCS to identify applicable hotfix.",
+        "title_ja": "LCS を検索して適用可能な修正プログラム (Hotfix) を特定する。",
+        "options": [
+          "Select LCS project and then Issue Search.",
+          "Select LCS project and then Solution Management.",
+          "Select LCS project and then Asset library."
+        ],
+        "answer": "Select LCS project and then Issue Search."
+      },
+      {
+        "box_id": 2,
+        "title_en": "Locate the saved hotfix in the asset library.",
+        "title_ja": "アセット ライブラリ内の保存済み修正プログラムを見つける。",
+        "options": [
+          "Select LCS project, Asset library, and then Software deployable package.",
+          "Select LCS project, Asset library, and then Solution package.",
+          "Select LCS project, Asset library, and then NuGet packages."
+        ],
+        "answer": "Select LCS project, Asset library, and then Software deployable package."
+      },
+      {
+        "box_id": 3,
+        "title_en": "Deploy the hotfix to the environment.",
+        "title_ja": "修正プログラムを環境にデプロイする。",
+        "options": [
+          "Select Maintain and then Apply updates.",
+          "Select Maintain and then Validate Package.",
+          "Select LCS project and then Asset library.",
+          "Select LCS project and then Code upgrade."
+        ],
+        "answer": "Select Maintain and then Apply updates."
+      }
     ]
   },
   {
@@ -3487,11 +3546,11 @@
     "question_en": "HOTSPOT -\nYou create the following cloud-based Dynamics 365 Finance environments:\nA developer creates code extensions in the Development environment. The developer checks the code changes into an Azure DevOps branch.\nYou need to deploy the code changes to the Standard Acceptance Test environment.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou create the following cloud-based Dynamics 365 Finance environments:\nA developer creates code extensions in the Development environment. The developer checks the code changes into an Azure DevOps branch.\nYou need to deploy the code changes to the Standard Acceptance Test environment.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Build the code in the DevOps pipeline. | Box 2: Asset library | Box 3: Select Maintain and Apply updates.",
-    "community_answer": "Box 1: Build the code in the DevOps pipeline. | Box 2: Asset library | Box 3: Select Maintain and Apply updates.",
+    "dump_answer": "Box 1: Build the code in a DevOps pipeline. | Box 2: Asset library | Box 3: Select Maintain and then Apply updates.",
+    "community_answer": "Box 1: Build the code in a DevOps pipeline. | Box 2: Asset library | Box 3: Select Maintain and then Apply updates.",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Build the code in the DevOps pipeline. | Box 2: Asset library | Box 3: Select Maintain and Apply updates.",
+      "correct_answer": "Box 1: Build the code in a DevOps pipeline. | Box 2: Asset library | Box 3: Select Maintain and then Apply updates.",
       "dump_answer": "Box 1: Build the code in the DevOps pipeline. | Box 2: Asset library | Box 3: Select Maintain and Apply updates.",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -3534,30 +3593,37 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "How should you prepare the package?",
+        "title_ja": "パッケージをどのように準備すべきか?",
         "options": [
-          "Build the code in the DevOps pipeline."
+          "Build the code in a DevOps pipeline.",
+          "Export the Visual Studio project as an axpp file.",
+          "Export the Visual Studio solution as a file."
         ],
-        "answer": "Build the code in the DevOps pipeline."
+        "answer": "Build the code in a DevOps pipeline."
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "In which section of Lifecycle Services (LCS) should you store the package?",
+        "title_ja": "LCS のどのセクションにパッケージを保存すべきか?",
         "options": [
-          "Asset library"
+          "Asset library",
+          "Work items",
+          "Solution management"
         ],
         "answer": "Asset library"
       },
       {
         "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
+        "title_en": "How should you install the customization?",
+        "title_ja": "カスタマイズをどのようにインストールすべきか?",
         "options": [
-          "Select Maintain and Apply updates."
+          "Select Maintain and then Apply updates.",
+          "Select Maintain and then Upgrade.",
+          "Select LCS project and then Business process modeler.",
+          "Select LCS project and then Code upgrade."
         ],
-        "answer": "Select Maintain and Apply updates."
+        "answer": "Select Maintain and then Apply updates."
       }
     ]
   },
@@ -4044,11 +4110,11 @@
     "question_en": "HOTSPOT -\nA company uses Dynamics 365 Finance and Dynamics 365 Supply Chain Management. The company wants to use new functionality that relates\nto purchase requisitions.\nYou need to promote the new functionality to a test environment.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nA company uses Dynamics 365 Finance and Dynamics 365 Supply Chain Management. The company wants to use new functionality that relates\nto purchase requisitions.\nYou need to promote the new functionality to a test environment.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Create a deployment package from the model | Box 2: Apply the update to the environment in Lifecycle Services",
+    "community_answer": "Box 1: Create a deployment package from the model | Box 2: Apply the update to the environment in Lifecycle Services",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Create a deployment package from the model | Box 2: Apply the update to the environment in Lifecycle Services",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -4098,6 +4164,32 @@
     ],
     "answer_images": [
       "images/t2_q8_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Export the functionality from the current environment",
+        "title_ja": "現在の環境から機能をエクスポートする",
+        "options": [
+          "Create a deployment package from the model",
+          "Create an extension as a managed solution",
+          "Export the model from the Application Object Tree (AOT)",
+          "Export the project and create an axpp file"
+        ],
+        "answer": "Create a deployment package from the model"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Import the functionality into the test environment",
+        "title_ja": "テスト環境に機能をインポートする",
+        "options": [
+          "Apply the update to the environment in Lifecycle Services",
+          "Import the extension as a managed solution",
+          "Import the extension to Azure Data Lake",
+          "Upload the extension into the Lifecycle Services Asset library"
+        ],
+        "answer": "Apply the update to the environment in Lifecycle Services"
+      }
     ]
   },
   {
@@ -4112,11 +4204,11 @@
     "question_en": "HOTSPOT\n-\nYou are a Dynamics 365 Finance developer.\nYou have the following source control branches:\nYou need to move the list of changesets from the development environment to the test environment.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nあなたは Dynamics 365 Finance の開発者です。\nYou have the following source control branches:\nYou need to move the list of changesets from the development environment to the test environment.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Main | Box 2: Dev | Box 3: Main",
+    "community_answer": "Box 1: Main | Box 2: Dev | Box 3: Main",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Main | Box 2: Dev | Box 3: Main",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -4174,6 +4266,38 @@
     "answer_images": [
       "images/t2_q9_2.png",
       "images/t2_q9_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Select a starting branch for the merge operation",
+        "title_ja": "マージ操作の開始ブランチを選択する",
+        "options": [
+          "Main",
+          "Dev"
+        ],
+        "answer": "Main"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Select the source branch",
+        "title_ja": "ソース (マージ元) ブランチを選択する",
+        "options": [
+          "Dev",
+          "Main"
+        ],
+        "answer": "Dev"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Select the destination branch",
+        "title_ja": "宛先 (マージ先) ブランチを選択する",
+        "options": [
+          "Main",
+          "Dev"
+        ],
+        "answer": "Main"
+      }
     ]
   },
   {
@@ -4188,11 +4312,11 @@
     "question_en": "HOTSPOT\n-\nYou are using the Metadata search tool in Visual Studio.\nYou need to select the appropriate query string for various scenarios.\nWhich query string should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nYou are using the Metadata search tool in Visual Studio.\nYou need to select the appropriate query string for various scenarios.\nWhich query string should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: type:table,method name:insert | Box 2: type:form ccount",
+    "community_answer": "Box 1: type:table,method name:insert | Box 2: type:form ccount",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: type:table,method name:insert | Box 2: type:form ccount",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -4270,6 +4394,30 @@
     ],
     "answer_images": [
       "images/t2_q10_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Find tables that have method names that contain the word insert",
+        "title_ja": "メソッド名に「insert」という単語が含まれるテーブルを検索する",
+        "options": [
+          "type:table,method name:insert",
+          "type:table method name:insert?",
+          "type:tables method name:insert"
+        ],
+        "answer": "type:table,method name:insert"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Find forms where the form name includes the phrase ccount",
+        "title_ja": "フォーム名に「ccount」というフレーズが含まれるフォームを検索する",
+        "options": [
+          "type:form ccount",
+          "type:form like ccount",
+          "type:forms like ccount"
+        ],
+        "answer": "type:form ccount"
+      }
     ]
   },
   {
@@ -4359,11 +4507,11 @@
     "question_en": "HOTSPOT\n-\nYou are a Dynamics 365 finance developer. You check out elements from version control in order to make modifications.\nYou need to check in the modified elements to version control.\nWhat should you do? To answer, select the appropriate option in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nあなたは Dynamics 365 Finance の開発者です。 You check out elements from version control in order to make modifications.\nYou need to check in the modified elements to version control.\nどの操作を実行すべきですか？ To answer, select the appropriate option in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Add files to source control | Box 2: Pending Changes",
+    "community_answer": "Box 1: Add files to source control | Box 2: Pending Changes",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Add files to source control | Box 2: Pending Changes",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -4406,6 +4554,31 @@
     ],
     "answer_images": [
       "images/t2_q12_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Right-click the modified element and select:",
+        "title_ja": "変更された要素を右クリックして選択する:",
+        "options": [
+          "Add files to source control",
+          "Check out for edit",
+          "Get latest version",
+          "Source Control Annotate"
+        ],
+        "answer": "Add files to source control"
+      },
+      {
+        "box_id": 2,
+        "title_en": "In Team Explorer, check in changes using the following option:",
+        "title_ja": "チーム エクスプローラーで、次のオプションを使用して変更をチェックインする:",
+        "options": [
+          "Pending Changes",
+          "Work Items",
+          "Source Control Explorer"
+        ],
+        "answer": "Pending Changes"
+      }
     ]
   },
   {
@@ -5990,11 +6163,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nYou need to add a new status named InTransit to the SalesTable.SalesStatus field and use the status in code.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nYou need to add a new status named InTransit to the SalesTable.SalesStatus field and use the status in code.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Create an extension of SalesStatus | Box 2: SalesStatus::InTransit",
-    "community_answer": "Box 1: Create an extension of SalesStatus | Box 2: SalesStatus::InTransit",
+    "dump_answer": "Box 1: Create an extension of SalesStatus. | Box 2: SalesStatus: InTransit",
+    "community_answer": "Box 1: Create an extension of SalesStatus. | Box 2: SalesStatus: InTransit",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Create an extension of SalesStatus | Box 2: SalesStatus::InTransit",
+      "correct_answer": "Box 1: Create an extension of SalesStatus. | Box 2: SalesStatus: InTransit",
       "dump_answer": "Box 1: Create an extension of SalesStatus | Box 2: SalesStatus::InTransit",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -6058,21 +6231,27 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Add the new status to SalesStatus.",
+        "title_ja": "SalesStatus に新しいステータスを追加する。",
         "options": [
-          "Create an extension of SalesStatus"
+          "Create an extension of SalesStatus.",
+          "Create an overlay of SalesStatus.",
+          "Create a new enumeration that extends SalesStatus.",
+          "Duplicate SalesStatus and add an element."
         ],
-        "answer": "Create an extension of SalesStatus"
+        "answer": "Create an extension of SalesStatus."
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Reference new values in code.",
+        "title_ja": "コード内で新しい値を参照する。",
         "options": [
-          "SalesStatus::InTransit"
+          "SalesStatus: InTransit",
+          "SalesStatus.Extension::InTransit",
+          "NewSalesStatus:InTransit",
+          "SalesTable.SalesStatus"
         ],
-        "answer": "SalesStatus::InTransit"
+        "answer": "SalesStatus: InTransit"
       }
     ]
   },
@@ -6304,11 +6483,11 @@
     "question_en": "HOTSPOT -\nA user reports that a form takes a long time to load. You suspect that the issue relates to a display method.\nYou need to resolve the issue.\nWhich actions should you perform? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nA user reports that a form takes a long time to load. You suspect that the issue relates to a display method.\nYou need to resolve the issue.\nWhich actions should you perform? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Yes | Box 2: No | Box 3: No | Box 4: No",
-    "community_answer": "Box 1: Yes | Box 2: No | Box 3: No | Box 4: No",
+    "dump_answer": "Box 1: Yes | Box 2: No | Box 3: Yes | Box 4: Yes",
+    "community_answer": "Box 1: Yes | Box 2: No | Box 3: Yes | Box 4: Yes",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Yes | Box 2: No | Box 3: No | Box 4: No",
+      "correct_answer": "Box 1: Yes | Box 2: No | Box 3: Yes | Box 4: Yes",
       "dump_answer": "Box 1: Yes | Box 2: No | Box 3: No | Box 4: No",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -6392,8 +6571,8 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "The caching will avoid executing the display method unnecessarily.",
+        "title_ja": "キャッシュにより、表示メソッドの不必要な実行が回避される。",
         "options": [
           "Yes",
           "No"
@@ -6402,8 +6581,8 @@
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Display method caching is enabled by default in Dynamics 365 Finance.",
+        "title_ja": "表示メソッドのキャッシュは既定で有効になっている。",
         "options": [
           "Yes",
           "No"
@@ -6412,23 +6591,23 @@
       },
       {
         "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
+        "title_en": "You can add caching for display methods at form runtime.",
+        "title_ja": "フォームの実行時に表示メソッドのキャッシュを追加できる。",
         "options": [
           "Yes",
           "No"
         ],
-        "answer": "No"
+        "answer": "Yes"
       },
       {
         "box_id": 4,
-        "title_en": "Box 4",
-        "title_ja": "空位 4",
+        "title_en": "The display method will execute only once per record fetch.",
+        "title_ja": "表示メソッドはレコードのフェッチごとに 1 回だけ実行される。",
         "options": [
           "Yes",
           "No"
         ],
-        "answer": "No"
+        "answer": "Yes"
       }
     ]
   },
@@ -7783,11 +7962,11 @@
     "question_en": "HOTSPOT -\nA company is implementing Dynamics 365 Finance. Vendors receive a risk rating that is determined by their on-time delivery performance as well\nas their credit rating.\nYou need to implement the following risk rating functionality:\n✑ The risk rating must accompany the credit rating when the credit rating is used.\n✑ The risk rating must be able to be used in other areas of the solution to determine processing outcomes.\n✑ The risk rating must consist of the following values:\n1 = Good\n2 = Medium\n3 = Risky\nThe risk rating must be displayed in the Miscellaneous Details tab below the Credit Rating and Credit Limit fields in the Vendor form.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nある企業が Dynamics 365 Finance を導入しています。 Vendors receive a risk rating that is determined by their on-time delivery performance as well\nas their credit rating.\nYou need to implement the following risk rating functionality:\n✑ The risk rating must accompany the credit rating when the credit rating is used.\n✑ The risk rating must be able to be used in other areas of the solution to determine processing outcomes.\n✑ The risk rating must consist of the following values:\n1 = Good\n2 = Medium\n3 = Risky\nThe risk rating must be displayed in the Miscellaneous Details tab below the Credit Rating and Credit Limit fields in the Vendor form.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Create a new enum base data type. | Box 2: Create a table extension | Box 3: Use a field group",
-    "community_answer": "Box 1: Create a new enum base data type. | Box 2: Create a table extension | Box 3: Use a field group",
+    "dump_answer": "Box 1: Create a new enum base data type. | Box 2: Create a table extension. | Box 3: Use a field group",
+    "community_answer": "Box 1: Create a new enum base data type. | Box 2: Create a table extension. | Box 3: Use a field group",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Create a new enum base data type. | Box 2: Create a table extension | Box 3: Use a field group",
+      "correct_answer": "Box 1: Create a new enum base data type. | Box 2: Create a table extension. | Box 3: Use a field group",
       "dump_answer": "Box 1: Create a new enum base data type. | Box 2: Create a table extension | Box 3: Use a field group",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -7858,28 +8037,35 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Create values for the risk ratings.",
+        "title_ja": "リスク評価 (Risk rating) の値を作成する。",
         "options": [
-          "Create a new enum base data type."
+          "Create a new enum base data type.",
+          "Create a composite entity.",
+          "Create a new enum extension.",
+          "Create an option set."
         ],
         "answer": "Create a new enum base data type."
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Create the risk rating field",
+        "title_ja": "リスク評価フィールドを作成する",
         "options": [
-          "Create a table extension"
+          "Create a table extension.",
+          "Create an aggregate data entity.",
+          "Create an enum extension."
         ],
-        "answer": "Create a table extension"
+        "answer": "Create a table extension."
       },
       {
         "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
+        "title_en": "Ensure that credit limit and risk rating are always used together.",
+        "title_ja": "与信限度額とリスク評価が常に一緒に使用されるようにする。",
         "options": [
-          "Use a field group"
+          "Use a field group",
+          "Use a relationship.",
+          "Use an index."
         ],
         "answer": "Use a field group"
       }
@@ -9104,11 +9290,11 @@
     "question_en": "HOTSPOT -\nYou are creating entities that will have unmapped fields.\nYou need determine which types of unmapped fields to use.\nWhich field types should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou are creating entities that will have unmapped fields.\nYou need determine which types of unmapped fields to use.\nWhich field types should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Computed | Box 2: Computed | Box 3: Virtual | Box 4: Virtual",
-    "community_answer": "Box 1: Computed | Box 2: Computed | Box 3: Virtual | Box 4: Virtual",
+    "dump_answer": "Box 1: Computed | Box 2: Virtual | Box 3: Computed | Box 4: Virtual",
+    "community_answer": "Box 1: Computed | Box 2: Virtual | Box 3: Computed | Box 4: Virtual",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Computed | Box 2: Computed | Box 3: Virtual | Box 4: Virtual",
+      "correct_answer": "Box 1: Computed | Box 2: Virtual | Box 3: Computed | Box 4: Virtual",
       "dump_answer": "Box 1: Computed | Box 2: Computed | Box 3: Virtual | Box 4: Virtual",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -9164,8 +9350,8 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Value is generated by an SQL view computed column.",
+        "title_ja": "値は SQL ビューの計算列 (Computed column) によって生成される。",
         "options": [
           "Computed",
           "Virtual"
@@ -9174,8 +9360,18 @@
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Field can be used in postLoad method for custom non-persisted calculation.",
+        "title_ja": "カスタムの非永続計算のために postLoad メソッドでフィールドを使用できる。",
+        "options": [
+          "Virtual",
+          "Computed"
+        ],
+        "answer": "Virtual"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Value can be filtered on efficiently at the database level.",
+        "title_ja": "データベース レベルで効率的にフィルター処理できる。",
         "options": [
           "Computed",
           "Virtual"
@@ -9183,22 +9379,12 @@
         "answer": "Computed"
       },
       {
-        "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
-        "options": [
-          "Computed",
-          "Virtual"
-        ],
-        "answer": "Virtual"
-      },
-      {
         "box_id": 4,
-        "title_en": "Box 4",
-        "title_ja": "空位 4",
+        "title_en": "Supports complex X++ business logic execution per record.",
+        "title_ja": "レコードごとに複雑な X++ ビジネス ロジックの実行をサポートする。",
         "options": [
-          "Computed",
-          "Virtual"
+          "Virtual",
+          "Computed"
         ],
         "answer": "Virtual"
       }
@@ -10763,11 +10949,11 @@
     "question_en": "HOTSPOT -\nA company uses Dynamics 365 Supply Chain Management.\nThe company must consume a third-party REST API. The API will return ItemId as the item number and InventQty as the available on-hand\ninventory.\nYou create a class that is used to retrieve the API response.\nYou need to add the attributes.\nWhich attributes should you add? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nある企業が Dynamics 365 Supply Chain Management を使用しています。\nThe company must consume a third-party REST API. The API will return ItemId as the item number and InventQty as the available on-hand\ninventory.\nYou create a class that is used to retrieve the API response.\nYou need to add the attributes.\nWhich attributes should you add? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 2: itemId; | Box 3: itemId; | Box 4: itemId; | Box 5: = itemId",
+    "community_answer": "Box 2: itemId; | Box 3: itemId; | Box 4: itemId; | Box 5: = itemId",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 2: itemId; | Box 3: itemId; | Box 4: itemId; | Box 5: = itemId",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -10788,6 +10974,50 @@
     ],
     "answer_images": [
       "images/t3_q63_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 2,
+        "title_en": "class InventOnHandResponseContract",
+        "title_ja": "class InventOnHandResponseContract",
+        "options": [
+          "itemId;",
+          "onhand;"
+        ],
+        "answer": "itemId;"
+      },
+      {
+        "box_id": 3,
+        "title_en": "ItemId Inventlty",
+        "title_ja": "ItemId Inventlty",
+        "options": [
+          "itemId;",
+          "onhand;"
+        ],
+        "answer": "itemId;"
+      },
+      {
+        "box_id": 4,
+        "title_en": "[DataMemher] (Data Contractl (Data Collection] [DataEventHandler] public ItemId parmItemId (ItemId",
+        "title_ja": "[DataMemher] (Data Contractl (Data Collection] [DataEventHandler] public ItemId parmItemId (ItemId",
+        "options": [
+          "itemId;",
+          "onhand;",
+          "= itemId",
+          "_itemId"
+        ],
+        "answer": "itemId;"
+      },
+      {
+        "box_id": 5,
+        "title_en": "itemId = _itemId; return itemId;",
+        "title_ja": "itemId = _itemId; return itemId;",
+        "options": [
+          "= itemId",
+          "_itemId"
+        ],
+        "answer": "= itemId"
+      }
     ]
   },
   {
@@ -12252,11 +12482,11 @@
     "question_en": "HOTSPOT\n-\nYou have the following code:\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nYou have the following code:\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: No | Box 2: Yes",
+    "community_answer": "Box 1: No | Box 2: Yes",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: No | Box 2: Yes",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -12278,6 +12508,28 @@
     "answer_images": [
       "images/t3_q86_2.png",
       "images/t3_q86_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "You can use the class as an entry point for a security privilege.",
+        "title_ja": "このクラスをセキュリティ特権のエントリ ポイントとして使用できる。",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "No"
+      },
+      {
+        "box_id": 2,
+        "title_en": "The class allows SQL Server Reporting Services to retrieve data.",
+        "title_ja": "このクラスにより、SSRS がデータを取得できるようになる。",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "Yes"
+      }
     ]
   },
   {
@@ -12526,11 +12778,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer. You have the following code: (Line numbers are created for reference only.)\nWhich values does the info() method return? To answer, select the appropriate option in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。 You have the following code: (Line numbers are created for reference only.)\nWhich values does the info() method return? To answer, select the appropriate option in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: SID1234 | Box 2: 5",
-    "community_answer": "Box 1: SID1234 | Box 2: 5",
+    "dump_answer": "Box 1: Parameter | Box 2: SID1234",
+    "community_answer": "Box 1: Parameter | Box 2: SID1234",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: SID1234 | Box 2: 5",
+      "correct_answer": "Box 1: Parameter | Box 2: SID1234",
       "dump_answer": "Box 1: SID1234 | Box 2: 5",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -12615,21 +12867,21 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Parameter",
+        "title_ja": "Parameter",
+        "options": [
+          "Parameter"
+        ],
+        "answer": "Parameter"
+      },
+      {
+        "box_id": 2,
+        "title_en": "tmpErmVirtual.Id",
+        "title_ja": "tmpErmVirtual.Id",
         "options": [
           "SID1234"
         ],
         "answer": "SID1234"
-      },
-      {
-        "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
-        "options": [
-          "5"
-        ],
-        "answer": "5"
       }
     ]
   },
@@ -12911,11 +13163,11 @@
     "question_en": "HOTSPOT -\nYou have a Dynamics 365 Finance environment.\nYou have the following code: (Line numbers are included for reference only.)\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou have a Dynamics 365 Finance environment.\nYou have the following code: (Line numbers are included for reference only.)\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Yes | Box 2: Yes | Box 3: Yes | Box 4: No",
-    "community_answer": "Box 1: Yes | Box 2: Yes | Box 3: Yes | Box 4: No",
+    "dump_answer": "Box 1: Yes | Box 3: O | Box 4: O",
+    "community_answer": "Box 1: Yes | Box 3: O | Box 4: O",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Yes | Box 2: Yes | Box 3: Yes | Box 4: No",
+      "correct_answer": "Box 1: Yes | Box 3: O | Box 4: O",
       "dump_answer": "Box 1: Yes | Box 2: Yes | Box 3: Yes | Box 4: No",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -13000,18 +13252,8 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
-        "options": [
-          "Yes",
-          "No"
-        ],
-        "answer": "Yes"
-      },
-      {
-        "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "The calculatePrice() method in the extension class can access and manage public and protected methods and variables of the base class.",
+        "title_ja": "The calculatePrice() method in the extension class can access and manage public and protected methods and variables of the base class.",
         "options": [
           "Yes",
           "No"
@@ -13020,23 +13262,21 @@
       },
       {
         "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
+        "title_en": "The static method getDiscount() in Line 10 of the base class can be wrapped and extended by adding business logic to the extension class.",
+        "title_ja": "The static method getDiscount() in Line 10 of the base class can be wrapped and extended by adding business logic to the extension class.",
         "options": [
-          "Yes",
-          "No"
+          "O"
         ],
-        "answer": "Yes"
+        "answer": "O"
       },
       {
         "box_id": 4,
-        "title_en": "Box 4",
-        "title_ja": "空位 4",
+        "title_en": "The extension class can be instantiated by running the following code: SalesPriceDiscountMy_Extension myInstance = new salespriceDiscountMy Extension () ;",
+        "title_ja": "The extension class can be instantiated by running the following code: SalesPriceDiscountMy_Extension myInstance = new salespriceDiscountMy Extension () ;",
         "options": [
-          "Yes",
-          "No"
+          "O"
         ],
-        "answer": "No"
+        "answer": "O"
       }
     ]
   },
@@ -13052,11 +13292,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nYou have the following code: (Line numbers are included for reference only.)\nYou need to evaluate the code.\nWhat is the correct output for the method? To answer, select the appropriate option in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nYou have the following code: (Line numbers are included for reference only.)\nYou need to evaluate the code.\nWhat is the correct output for the method? To answer, select the appropriate option in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: One, Two, Four, Fire | Box 2: One, Three, Four, Five | Box 3: One, Three | Box 4: One, Three, One, Two, Four, Five",
-    "community_answer": "Box 1: One, Two, Four, Fire | Box 2: One, Three, Four, Five | Box 3: One, Three | Box 4: One, Three, One, Two, Four, Five",
+    "dump_answer": "Box 1: Output | Box 2: Output | Box 3: One, Two, Five | Box 4: One, Four, Five | Box 5: One, Three",
+    "community_answer": "Box 1: Output | Box 2: Output | Box 3: One, Two, Five | Box 4: One, Four, Five | Box 5: One, Three",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: One, Two, Four, Fire | Box 2: One, Three, Four, Five | Box 3: One, Three | Box 4: One, Three, One, Two, Four, Five",
+      "correct_answer": "Box 1: Output | Box 2: Output | Box 3: One, Two, Five | Box 4: One, Four, Five | Box 5: One, Three",
       "dump_answer": "Box 1: One, Two, Four, Fire | Box 2: One, Three, Four, Five | Box 3: One, Three | Box 4: One, Three, One, Two, Four, Five",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -13141,39 +13381,58 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Method",
+        "title_ja": "Method",
         "options": [
-          "One, Two, Four, Fire"
+          "Output"
         ],
-        "answer": "One, Two, Four, Fire"
+        "answer": "Output"
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "tryMethod (5,2) ;",
+        "title_ja": "tryMethod (5,2) ;",
         "options": [
-          "One, Three, Four, Five"
+          "Output",
+          "One, Two, Four, Five",
+          "One, Two, Five"
         ],
-        "answer": "One, Three, Four, Five"
+        "answer": "Output"
       },
       {
         "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
+        "title_en": "tryMethod (4,0);",
+        "title_ja": "tryMethod (4,0);",
         "options": [
-          "One, Three"
+          "One, Two, Five",
+          "One, Three, Four, Five",
+          "One, Four, Five"
         ],
-        "answer": "One, Three"
+        "answer": "One, Two, Five"
       },
       {
         "box_id": 4,
-        "title_en": "Box 4",
-        "title_ja": "空位 4",
+        "title_en": "tryMethod (2,0);",
+        "title_ja": "tryMethod (2,0);",
         "options": [
+          "One, Four, Five",
+          "One, Two, Four, Five",
+          "One, Three, Four",
+          "One, Three"
+        ],
+        "answer": "One, Four, Five"
+      },
+      {
+        "box_id": 5,
+        "title_en": "tryMethod (3,0);",
+        "title_ja": "tryMethod (3,0);",
+        "options": [
+          "One, Three",
+          "One, Three, Four, Five",
+          "One, Two, Four, Five",
           "One, Three, One, Two, Four, Five"
         ],
-        "answer": "One, Three, One, Two, Four, Five"
+        "answer": "One, Three"
       }
     ]
   },
@@ -13369,11 +13628,11 @@
     "question_en": "HOTSPOT -\nYou have the following class definition:\nYou need to create an extension class and create a new static method in it that converts miles to kilometers and then call the method from\nanother class.\nHow should you complete the code and call the method? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou have the following class definition:\nYou need to create an extension class and create a new static method in it that converts miles to kilometers and then call the method from\nanother class.\nHow should you complete the code and call the method? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: [ExtensionOf(classStr(UnitConv))] | Box 2: final class CustUnitConv_Extension",
+    "community_answer": "Box 1: [ExtensionOf(classStr(UnitConv))] | Box 2: final class CustUnitConv_Extension",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: [ExtensionOf(classStr(UnitConv))] | Box 2: final class CustUnitConv_Extension",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -13452,6 +13711,29 @@
     "answer_images": [
       "images/t4_q9_2.png",
       "images/t4_q9_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Extension class definition attribute",
+        "title_ja": "拡張クラス定義の属性 (Attribute)",
+        "options": [
+          "[ExtensionOf(classStr(UnitConv))]",
+          "[ExtensionOf(tableStr(UnitConv))]"
+        ],
+        "answer": "[ExtensionOf(classStr(UnitConv))]"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Class declaration statement",
+        "title_ja": "クラス宣言ステートメント (Class declaration)",
+        "options": [
+          "final class CustUnitConv_Extension",
+          "final class UnitConv_MyExtension",
+          "static class UnitConvMy_Extension"
+        ],
+        "answer": "final class CustUnitConv_Extension"
+      }
     ]
   },
   {
@@ -13890,11 +14172,11 @@
     "question_en": "HOTSPOT -\nYou have the following code:\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou have the following code:\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: No | Box 2: Yes | Box 3: No",
+    "community_answer": "Box 1: No | Box 2: Yes | Box 3: No",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: No | Box 2: Yes | Box 3: No",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -13973,6 +14255,38 @@
     "answer_images": [
       "images/t4_q15_2.png",
       "images/t4_q15_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "You can use the class as an entry point for a security privilege.",
+        "title_ja": "このクラスをセキュリティ特権のエントリ ポイントとして使用できる。",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "No"
+      },
+      {
+        "box_id": 2,
+        "title_en": "The class requires a contract class to pass parameters.",
+        "title_ja": "パラメータを渡すためにコントラクト クラスが必要である。",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "Yes"
+      },
+      {
+        "box_id": 3,
+        "title_en": "The class can be run directly from an action menu item.",
+        "title_ja": "アクション メニュー項目から直接実行できる。",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "No"
+      }
     ]
   },
   {
@@ -14146,11 +14460,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nYou have the following code: (Line numbers are included for reference only.)\nYou need to evaluate the code.\nWhat is the correct output for the method? To answer, select the appropriate option in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nYou have the following code: (Line numbers are included for reference only.)\nYou need to evaluate the code.\nWhat is the correct output for the method? To answer, select the appropriate option in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 2: One, Three, Four, Five",
-    "community_answer": "Box 2: One, Three, Four, Five",
+    "dump_answer": "Box 1: Output | Box 2: One, Two, Four, Five | Box 3: One, Three, Four, Five",
+    "community_answer": "Box 1: Output | Box 2: One, Two, Four, Five | Box 3: One, Three, Four, Five",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 2: One, Three, Four, Five",
+      "correct_answer": "Box 1: Output | Box 2: One, Two, Four, Five | Box 3: One, Three, Four, Five",
       "dump_answer": "Box 2: One, Three, Four, Five",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -14213,9 +14527,27 @@
     ],
     "hotspot_boxes": [
       {
+        "box_id": 1,
+        "title_en": "Method",
+        "title_ja": "Method",
+        "options": [
+          "Output"
+        ],
+        "answer": "Output"
+      },
+      {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "tryMethod (5,2);",
+        "title_ja": "tryMethod (5,2);",
+        "options": [
+          "One, Two, Four, Five"
+        ],
+        "answer": "One, Two, Four, Five"
+      },
+      {
+        "box_id": 3,
+        "title_en": "tryMethod (4,0);",
+        "title_ja": "tryMethod (4,0);",
         "options": [
           "One, Three, Four, Five"
         ],
@@ -14310,11 +14642,11 @@
     "question_en": "HOTSPOT -\nYou have a Dynamics 365 Finance environment.\nYou have the following code: (Line numbers are included for reference only.)\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou have a Dynamics 365 Finance environment.\nYou have the following code: (Line numbers are included for reference only.)\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Yes",
+    "community_answer": "Box 1: Yes",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Yes",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -14344,6 +14676,18 @@
     "answer_images": [
       "images/t4_q20_2.png",
       "images/t4_q20_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "The calculatePrice) method in the extension class can access and manage public and protected methods and variables of the base class.",
+        "title_ja": "The calculatePrice) method in the extension class can access and manage public and protected methods and variables of the base class.",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "Yes"
+      }
     ]
   },
   {
@@ -15235,11 +15579,11 @@
     "question_en": "HOTSPOT\n-\nYou have a Dynamics 365 Finance environment.\nYou have the following code: (Line numbers are included for reference only.)\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nYou have a Dynamics 365 Finance environment.\nYou have the following code: (Line numbers are included for reference only.)\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Yes | Box 2: No",
+    "community_answer": "Box 1: Yes | Box 2: No",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Yes | Box 2: No",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -15297,6 +15641,28 @@
     "answer_images": [
       "images/t4_q33_2.png",
       "images/t4_q33_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "The calculatePrice() method in the extension class can access and manage public and protected methods.",
+        "title_ja": "拡張クラスの calculatePrice() メソッドは、パブリックおよび保護されたメソッドにアクセスできる。",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "Yes"
+      },
+      {
+        "box_id": 2,
+        "title_en": "The extension class can access private variables of the base class.",
+        "title_ja": "拡張クラスは基底クラスのプライベート変数にアクセスできる。",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "No"
+      }
     ]
   },
   {
@@ -17119,11 +17485,11 @@
     "question_en": "HOTSPOT\n-\nCase study\n-\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However,\nthere may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions\nincluded on this exam in the time provided.\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might\ncontain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is\nindependent of the other questions in this case study.\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to\nthe next section of the exam. After you begin a new section, you cannot return to this section.\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study\nbefore you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem\nstatements. When you are ready to answer a question, click the Question button to return to the question.\nBackground\n-\nADatum Corporation is a market leader in the design and distribution of innovative aluminum systems. The company provides services to the\narchitectural, residential, industrial, and home improvement markets in Australia.\nThe company has warehouses in Perth. Sydney, and Melbourne. A team of warehouse employees provides delivery to the customer sites.\nCurrent Environment\n-\nADatum Corporation currently uses Microsoft Dynamics AX 2009.\nCustomers use email or phone calls to place orders. After the company provides a quote to customers, the customer must agree to the sale price\nbefore the company places a sales order.\nThe company is migrating to Dynamics 365 Finance and Dynamics 365 Supply Chain Management using a phased rollout strategy to its sites. The\ncompany has the Lifecycle services project to manage various environments and releases.\nThe company has the following Finance and Supply Chain Management environments:\n• Development\n• Quality assurance (QA)\n• User acceptance testing (UAT)\n• Production\nThe company uses Azure DevOps for a code repository. All developers use a development branch to check in code and a release branch to\nmaintain the code for production releases.\nRequirements. General\n-\n• Configure a cloud-based development environment for Finance and Supply Chain Management. Enable a code extension that supports updates.\n• Configure Microsoft-supported version control and an Azure-hosted build pipeline.\n• Migrate all document handling attachments for the customers to Finance and Supply Chain Management from Dynamics AX 2009.\n• Audit X++ code for a best practice check.\n• All new code must be unit tested in a development environment and then validated by the QA team before the code is merged into the Release\nbranch for further releases.\nRequirements. Business processes\n• All changes that are deployed to the UAT environment must be approved for code release to production.\n• The sales manager requires a solution that is extensible to ensure that new master tables document handling attachments are migrated to the\nnew system.\n• A base class named MigrateAttachment must be designed with methods that all child classes must implement.\n• A method named processAttachment must be created so that extenders are not able to subscribe to pre-events and post-events.\n• On the All sales orders list page, two new fields must be added for the total sales order amount. One field uses goods and services tax (GST) and\nthe other field does not use GST.\n• A process named Populate check data must be designed based on the following:\no The process must run from the All customers list page and populate a custom table named CustCheckData with 1000 rows.\no The table must have two fields named CheckNumber and BankNumber.\no The process must return to the current session after the data is processed.\n• The generated check data must be available for users to access in a tabular form without additional details and preview panes.\n• The purchase manager requires a new data entity to send out the information for purchase order inquiries that are generated in Finance and\nSupply Chain Management\n• The sales manager must be able to access the total quotation for the sites and item types.\n• The sales manager requires a quotation number to be printed on the sales invoice business document. Customers must be able to access the\nreference number on the invoice documents.\n• The purchase manager requires a new approval workflow for approving purchase orders that are more than $10,000.\nRequirements. Business systems\n-\n• After a user named UserA posts a packing slip for a sales order, customers must be informed of the product delivery in real-time. This\ninformation is provided using business events.\n• Purchase order inquiries must be exported from the Finance and Supply Chain Management using data packages. Users must be able to query\nusing OData but should not be able to update or create the data in the system.\n• A sales manager’s workspace must display the total quotations using key performance indicators.\n• The purchase order approval workflow must be configured from the procurement and sourcing module.\nIssues\n-\n• UserA reports delays when opening the All sales orders list page.\n• A customer is unable to access the business events for a packing slip that is posted by UserA.\n• A user named UserB reports that the system is unresponsive when they run the Populate check data process for a customer.\n• UserA reports that the print management settings in the accounts receivable module do not display the new layout when testing a new sales\ninvoice report layout in the UAT environment.\nYou need to design the base class named MigrateAttachment.\nWhich solution should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nCase study\n-\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However,\nthere may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions\nincluded on this exam in the time provided.\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might\ncontain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is\nindependent of the other questions in this case study.\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to\nthe next section of the exam. After you begin a new section, you cannot return to this section.\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study\nbefore you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem\nstatements. When you are ready to answer a question, click the Question button to return to the question.\nBackground\n-\nADatum Corporation is a market leader in the design and distribution of innovative aluminum systems. The company provides services to the\narchitectural, residential, industrial, and home improvement markets in Australia.\nThe company has warehouses in Perth. Sydney, and Melbourne. A team of warehouse employees provides delivery to the customer sites.\nCurrent Environment\n-\nADatum Corporation currently uses Microsoft Dynamics AX 2009.\nCustomers use email or phone calls to place orders. After the company provides a quote to customers, the customer must agree to the sale price\nbefore the company places a sales order.\nThe company is migrating to Dynamics 365 Finance and Dynamics 365 Supply Chain Management using a phased rollout strategy to its sites. The\ncompany has the Lifecycle services project to manage various environments and releases.\nThe company has the following Finance and Supply Chain Management environments:\n• Development\n• Quality assurance (QA)\n• User acceptance testing (UAT)\n• Production\nThe company uses Azure DevOps for a code repository. All developers use a development branch to check in code and a release branch to\nmaintain the code for production releases.\nRequirements. General\n-\n• Configure a cloud-based development environment for Finance and Supply Chain Management. Enable a code extension that supports updates.\n• Configure Microsoft-supported version control and an Azure-hosted build pipeline.\n• Migrate all document handling attachments for the customers to Finance and Supply Chain Management from Dynamics AX 2009.\n• Audit X++ code for a best practice check.\n• All new code must be unit tested in a development environment and then validated by the QA team before the code is merged into the Release\nbranch for further releases.\nRequirements. Business processes\n• All changes that are deployed to the UAT environment must be approved for code release to production.\n• The sales manager requires a solution that is extensible to ensure that new master tables document handling attachments are migrated to the\nnew system.\n• A base class named MigrateAttachment must be designed with methods that all child classes must implement.\n• A method named processAttachment must be created so that extenders are not able to subscribe to pre-events and post-events.\n• On the All sales orders list page, two new fields must be added for the total sales order amount. One field uses goods and services tax (GST) and\nthe other field does not use GST.\n• A process named Populate check data must be designed based on the following:\no The process must run from the All customers list page and populate a custom table named CustCheckData with 1000 rows.\no The table must have two fields named CheckNumber and BankNumber.\no The process must return to the current session after the data is processed.\n• The generated check data must be available for users to access in a tabular form without additional details and preview panes.\n• The purchase manager requires a new データ エンティティ to send out the information for purchase order inquiries that are generated in Finance and\nSupply Chain Management\n• The sales manager must be able to access the total quotation for the sites and item types.\n• The sales manager requires a quotation number to be printed on the sales invoice business document. Customers must be able to access the\nreference number on the invoice documents.\n• The purchase manager requires a new approval workflow for approving purchase orders that are more than $10,000.\nRequirements. Business systems\n-\n• After a user named UserA posts a packing slip for a sales order, customers must be informed of the product delivery in real-time. This\ninformation is provided using business events.\n• Purchase order inquiries must be exported from the Finance and Supply Chain Management using data packages. Users must be able to query\nusing OData but should not be able to update or create the data in the system.\n• A sales manager’s workspace must display the total quotations using key performance indicators.\n• The purchase order approval workflow must be configured from the procurement and sourcing module.\nIssues\n-\n• UserA reports delays when opening the All sales orders list page.\n• A customer is unable to access the business events for a packing slip that is posted by UserA.\n• A user named UserB reports that the system is unresponsive when they run the Populate check data process for a customer.\n• UserA reports that the print management settings in the accounts receivable module do not display the new layout when testing a new sales\ninvoice report layout in the UAT environment.\nYou need to design the base class named MigrateAttachment.\nWhich solution should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 2: SysExtension|Attribute | Box 3: Abstract",
+    "community_answer": "Box 2: SysExtension|Attribute | Box 3: Abstract",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 2: SysExtension|Attribute | Box 3: Abstract",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -17144,6 +17510,26 @@
     ],
     "answer_images": [
       "images/t4_q61_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 2,
+        "title_en": "Implement interface for new attribute class",
+        "title_ja": "Implement interface for new attribute class",
+        "options": [
+          "SysExtension|Attribute"
+        ],
+        "answer": "SysExtension|Attribute"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Modifier for base class method",
+        "title_ja": "Modifier for base class method",
+        "options": [
+          "Abstract"
+        ],
+        "answer": "Abstract"
+      }
     ]
   },
   {
@@ -17644,11 +18030,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 Supply Chain Management.\nThe sales department must calculate the total invoice amount of an order. The calculation must consider the following constructs:\n• Loop through all open order lines.\n• Ignore sales lines with zero reservation.\n• Stop if the value reaches 10,000.\nYou need to complete the code by using keywords and values.\nHow should you complete the code segment? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nある企業が Dynamics 365 Supply Chain Management を使用しています。\nThe sales department must calculate the total invoice amount of an order. The calculation must consider the following constructs:\n• Loop through all open order lines.\n• Ignore sales lines with zero reservation.\n• Stop if the value reaches 10,000.\nYou need to complete the code by using keywords and values.\nHow should you complete the code segment? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: where salesline.SalesId == _salesId | Box 2: totalAmount += salesline.LineAmount;",
+    "community_answer": "Box 1: where salesline.SalesId == _salesId | Box 2: totalAmount += salesline.LineAmount;",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: where salesline.SalesId == _salesId | Box 2: totalAmount += salesline.LineAmount;",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -17669,6 +18055,28 @@
     ],
     "answer_images": [
       "images/t4_q71_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Statement to select salesline where salesline.SalesId == _salesId",
+        "title_ja": "salesline.SalesId == _salesId を選択するクエリ句",
+        "options": [
+          "where salesline.SalesId == _salesId",
+          "where salesline.SalesId = _salesId"
+        ],
+        "answer": "where salesline.SalesId == _salesId"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Calculation aggregation statement",
+        "title_ja": "合計金額の集計ステートメント",
+        "options": [
+          "totalAmount += salesline.LineAmount;",
+          "totalAmount = salesline.LineAmount;"
+        ],
+        "answer": "totalAmount += salesline.LineAmount;"
+      }
     ]
   },
   {
@@ -17683,11 +18091,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 Finance.\nThe company requires you to develop a dialog box to batch process customer records.\nYou need to use the SysOperation framework to run a custom operation.\nWhich two lines of code should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nある企業が Dynamics 365 Finance を使用しています。\nThe company requires you to develop a dialog box to batch process customer records.\nYou need to use the SysOperation framework to run a custom operation.\nWhich two lines of code should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: public static void main(Args args | Box 2: operation.startOperation0;",
+    "community_answer": "Box 1: public static void main(Args args | Box 2: operation.startOperation0;",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: public static void main(Args args | Box 2: operation.startOperation0;",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -17708,6 +18116,26 @@
     ],
     "answer_images": [
       "images/t4_q72_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Class extension for SysOperation Framework public class CustomserviceController extends SysOperationServiceController",
+        "title_ja": "Class extension for SysOperation Framework public class CustomserviceController extends SysOperationServiceController",
+        "options": [
+          "public static void main(Args args"
+        ],
+        "answer": "public static void main(Args args"
+      },
+      {
+        "box_id": 2,
+        "title_en": "}",
+        "title_ja": "}",
+        "options": [
+          "operation.startOperation0;"
+        ],
+        "answer": "operation.startOperation0;"
+      }
     ]
   },
   {
@@ -17762,11 +18190,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 Supply Chain Management.\nThe sales department requires an update to the delivery date of an open sales order from a third-party integration.\nYou need to complete the code by using keywords and values.\nHow should you complete the code segment? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nある企業が Dynamics 365 Supply Chain Management を使用しています。\nThe sales department requires an update to the delivery date of an open sales order from a third-party integration.\nYou need to complete the code by using keywords and values.\nHow should you complete the code segment? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 3: && salesTable.SalesStatus -- | Box 4: && salesTable.SalesStatus --",
+    "community_answer": "Box 3: && salesTable.SalesStatus -- | Box 4: && salesTable.SalesStatus --",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 3: && salesTable.SalesStatus -- | Box 4: && salesTable.SalesStatus --",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -17787,6 +18215,28 @@
     ],
     "answer_images": [
       "images/t4_q74_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 3,
+        "title_en": "salesTable.selectLocked(true): salesTable.selectForUpdate(true);",
+        "title_ja": "salesTable.selectLocked(true): salesTable.selectForUpdate(true);",
+        "options": [
+          "&& salesTable.SalesStatus --"
+        ],
+        "answer": "&& salesTable.SalesStatus --"
+      },
+      {
+        "box_id": 4,
+        "title_en": "* && salesTable.SalesStatus -- salesTable IsalesTable",
+        "title_ja": "* && salesTable.SalesStatus -- salesTable IsalesTable",
+        "options": [
+          "&& salesTable.SalesStatus --",
+          "SalesStatus::None",
+          "SalesStatus:BackOrder"
+        ],
+        "answer": "&& salesTable.SalesStatus --"
+      }
     ]
   },
   {
@@ -18033,11 +18483,11 @@
     "question_en": "HOTSPOT -\nA company requires a change to one of the base Microsoft SQL Server Reporting Services (SSRS) reports. The report must include a new field that\nautomatically filters the report based on the user who opens the report.\nYou need to add the new field as specified.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nA company requires a change to one of the base Microsoft SQL Server Reporting Services (SSRS) reports. The report must include a new field that\nautomatically filters the report based on the user who opens the report.\nYou need to add the new field as specified.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 2: Ise the Controller clas",
+    "community_answer": "Box 2: Ise the Controller clas",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 2: Ise the Controller clas",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -18115,6 +18565,17 @@
     ],
     "answer_images": [
       "images/t5_q4_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 2,
+        "title_en": "Automatically filter based on the user.",
+        "title_ja": "Automatically filter based on the user.",
+        "options": [
+          "Ise the Controller clas"
+        ],
+        "answer": "Ise the Controller clas"
+      }
     ]
   },
   {
@@ -18441,11 +18902,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nA form uses a synchronous call based on a saleID value. There are long wait times for the form to complete processing. You must allow the user\nto continue to work while the form processes and inform the user immediately when the processing completes.\nYou need to implement the correct method calls and behavior.\nWhich code segments should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nA form uses a synchronous call based on a saleID value. There are long wait times for the form to complete processing. You must allow the user\nto continue to work while the form processes and inform the user immediately when the processing completes.\nYou need to implement the correct method calls and behavior.\nWhich code segments should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Global:runAsync | Box 2: container",
-    "community_answer": "Box 1: Global:runAsync | Box 2: container",
+    "dump_answer": "Box 1: Code segment or object",
+    "community_answer": "Box 1: Code segment or object",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Global:runAsync | Box 2: container",
+      "correct_answer": "Box 1: Code segment or object",
       "dump_answer": "Box 1: Global:runAsync | Box 2: container",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -18529,21 +18990,12 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Run the form asynchronously.",
+        "title_ja": "Run the form asynchronously.",
         "options": [
-          "Global:runAsync"
+          "Code segment or object"
         ],
-        "answer": "Global:runAsync"
-      },
-      {
-        "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
-        "options": [
-          "container"
-        ],
-        "answer": "container"
+        "answer": "Code segment or object"
       }
     ]
   },
@@ -19073,11 +19525,11 @@
     "question_en": "HOTSPOT -\nYou are creating a Dynamics 365 Finance report. You cannot query the data for the report directly.\nYou must include parameters to specify data for the report.\nYou need to create the report.\nWhat should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou are creating a Dynamics 365 Finance report. You cannot query the data for the report directly.\nYou must include parameters to specify data for the report.\nYou need to create the report.\nWhat should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Data contract class | Box 2: Report data provider class | Box 3: DataContractAttribute | Box 4: DataMemberAttribute | Box 5: SRSReportParameterAttribute",
-    "community_answer": "Box 1: Data contract class | Box 2: Report data provider class | Box 3: DataContractAttribute | Box 4: DataMemberAttribute | Box 5: SRSReportParameterAttribute",
+    "dump_answer": "Box 1: Data contract class | Box 2: Report data provider class | Box 3: DataContractAttribute | Box 4: DataMemberAttribute | Box 5: DataMemberAttribute",
+    "community_answer": "Box 1: Data contract class | Box 2: Report data provider class | Box 3: DataContractAttribute | Box 4: DataMemberAttribute | Box 5: DataMemberAttribute",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Data contract class | Box 2: Report data provider class | Box 3: DataContractAttribute | Box 4: DataMemberAttribute | Box 5: SRSReportParameterAttribute",
+      "correct_answer": "Box 1: Data contract class | Box 2: Report data provider class | Box 3: DataContractAttribute | Box 4: DataMemberAttribute | Box 5: DataMemberAttribute",
       "dump_answer": "Box 1: Data contract class | Box 2: Report data provider class | Box 3: DataContractAttribute | Box 4: DataMemberAttribute | Box 5: SRSReportParameterAttribute",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -19147,48 +19599,67 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Which type of class should you create to pass parameters to the report?",
+        "title_ja": "Which type of class should you create to pass parameters to the report?",
         "options": [
-          "Data contract class"
+          "Data contract class",
+          "Report data provider class",
+          "Report controller class",
+          "Report Ul builder class"
         ],
         "answer": "Data contract class"
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Which type of class should you create to access and process the data for the report?",
+        "title_ja": "Which type of class should you create to access and process the data for the report?",
         "options": [
+          "Report controller class",
+          "Report Ul builder class",
+          "Data contract class",
           "Report data provider class"
         ],
         "answer": "Report data provider class"
       },
       {
         "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
+        "title_en": "Which attribute should you use to identify the class that defines report variables?",
+        "title_ja": "Which attribute should you use to identify the class that defines report variables?",
         "options": [
-          "DataContractAttribute"
+          "Report controller class",
+          "Report Ul builder class",
+          "DataContractAttribute",
+          "DataMemberAttribute",
+          "SysOperationContractProcessingAttribute",
+          "SysOperationGroupAttribute"
         ],
         "answer": "DataContractAttribute"
       },
       {
         "box_id": 4,
-        "title_en": "Box 4",
-        "title_ja": "空位 4",
+        "title_en": "Which attribute should you use to identify parm methods to send data for the report?",
+        "title_ja": "Which attribute should you use to identify parm methods to send data for the report?",
         "options": [
+          "SysOperationContractProcessingAttribute",
+          "SysOperationGroupAttribute",
+          "DataContractAttribute",
           "DataMemberAttribute"
         ],
         "answer": "DataMemberAttribute"
       },
       {
         "box_id": 5,
-        "title_en": "Box 5",
-        "title_ja": "空位 5",
+        "title_en": "Which attribute should you use to define the contract class for a provider class?",
+        "title_ja": "Which attribute should you use to define the contract class for a provider class?",
         "options": [
-          "SRSReportParameterAttribute"
+          "DataMemberAttribute",
+          "SysOperationContractProcessingAttribute",
+          "SysOperationGroupAttribute",
+          "SRSReportQueryAttribute",
+          "SRSReportParameterAttribute",
+          "SRSReportDataProviderBase"
         ],
-        "answer": "SRSReportParameterAttribute"
+        "answer": "DataMemberAttribute"
       }
     ]
   },
@@ -19498,11 +19969,11 @@
     "question_en": "HOTSPOT\n-\nYou are designing a new layout for the Vendor Payment Advice report. You add fields to the table that the report uses.\nThe design must include the new fields.\nYou need to ensure the standard Payment Advice report always uses the new design.\nWhich class should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nYou are designing a new layout for the Vendor Payment Advice report. You add fields to the table that the report uses.\nThe design must include the new fields.\nYou need to ensure the standard Payment Advice report always uses the new design.\nWhich class should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Class | Box 2: Report Ul builder",
+    "community_answer": "Box 1: Class | Box 2: Report Ul builder",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Class | Box 2: Report Ul builder",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -19545,6 +20016,27 @@
     ],
     "answer_images": [
       "images/t5_q19_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Populate data from new fields added to the report data source.",
+        "title_ja": "Populate data from new fields added to the report data source.",
+        "options": [
+          "Class"
+        ],
+        "answer": "Class"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Ensure the standard Payment Advice report always uses the new design.",
+        "title_ja": "Ensure the standard Payment Advice report always uses the new design.",
+        "options": [
+          "Report Ul builder",
+          "Report data provider"
+        ],
+        "answer": "Report Ul builder"
+      }
     ]
   },
   {
@@ -19559,11 +20051,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 finance and operations apps.\nThe company wants to use reporting data stores for Dynamics 365 Finance.\nYou need to select the appropriate reporting data store for each requirement.\nWhich reporting data store should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nある企業が Dynamics 365 Finance and Operations アプリを使用しています。\nThe company wants to use reporting data stores for Dynamics 365 Finance.\nYou need to select the appropriate reporting data store for each requirement.\nWhich reporting data store should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Bring your own database (BYOD | Box 2: AxDB",
+    "community_answer": "Box 1: Bring your own database (BYOD | Box 2: AxDB",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Bring your own database (BYOD | Box 2: AxDB",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -19599,6 +20091,27 @@
     ],
     "answer_images": [
       "images/t5_q20_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Export data into a new data warehouse.",
+        "title_ja": "Export data into a new data warehouse.",
+        "options": [
+          "Reporting data store",
+          "Bring your own database (BYOD"
+        ],
+        "answer": "Bring your own database (BYOD"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Author Power BI reports by using DirectQuery.",
+        "title_ja": "Author Power BI reports by using DirectQuery.",
+        "options": [
+          "AxDB"
+        ],
+        "answer": "AxDB"
+      }
     ]
   },
   {
@@ -19679,11 +20192,11 @@
     "question_en": "HOTSPOT\n-\nA company is implementing Dynamics 365 Supply Chain Management.\nThe company must import initial business document management templates to act as a start for future business documents. The templates must\nbe configured to work with print management.\nNo templates or configurations have been set up for the implementation.\nYou need to select and configure templates for printing.\nWhich solution components should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nA company is implementing Dynamics 365 Supply Chain Management.\nThe company must import initial business document management templates to act as a start for future business documents. The templates must\nbe configured to work with print management.\nNo templates or configurations have been set up for the implementation.\nYou need to select and configure templates for printing.\nWhich solution components should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Solution Component | Box 2: Dynamics 365 Supply Chain Management",
+    "community_answer": "Box 1: Solution Component | Box 2: Dynamics 365 Supply Chain Management",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Solution Component | Box 2: Dynamics 365 Supply Chain Management",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -19719,6 +20232,28 @@
     ],
     "answer_images": [
       "images/t5_q22_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "View the latest officially published report format configurations.",
+        "title_ja": "View the latest officially published report format configurations.",
+        "options": [
+          "Solution Component",
+          "I Lifecycle Services"
+        ],
+        "answer": "Solution Component"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Configure the business document template to allow for printing.",
+        "title_ja": "Configure the business document template to allow for printing.",
+        "options": [
+          "Dynamics 365 Supply Chain Management",
+          "Taa"
+        ],
+        "answer": "Dynamics 365 Supply Chain Management"
+      }
     ]
   },
   {
@@ -20329,11 +20864,11 @@
     "question_en": "HOTSPOT -\nYou have an SSRS report developed in a system.\nThe report times out when it is run. The report requires preprocessing.\nYou need to migrate a regular SSRS report to a preprocess data access method that does not store permanent data.\nWhich type of Report Data Provider (RDP) base class and table type should you use to migrate the report? To answer, select the appropriate\noptions in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou have an SSRS report developed in a system.\nThe report times out when it is run. The report requires preprocessing.\nYou need to migrate a regular SSRS report to a preprocess data access method that does not store permanent data.\nWhich type of Report Data Provider (RDP) base class and table type should you use to migrate the report? To answer, select the appropriate\noptions in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 2: Type | Box 3: sRsReportDataProviderPreProcessTempDB",
+    "community_answer": "Box 2: Type | Box 3: sRsReportDataProviderPreProcessTempDB",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 2: Type | Box 3: sRsReportDataProviderPreProcessTempDB",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -20354,6 +20889,28 @@
     ],
     "answer_images": [
       "images/t6_q1_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 2,
+        "title_en": "Migration change requirement RDP base class",
+        "title_ja": "Migration change requirement RDP base class",
+        "options": [
+          "Type",
+          "SRSReportDataProviderBase"
+        ],
+        "answer": "Type"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Table type",
+        "title_ja": "Table type",
+        "options": [
+          "sRsReportDataProviderPreProcessTempDB",
+          "InMemory"
+        ],
+        "answer": "sRsReportDataProviderPreProcessTempDB"
+      }
     ]
   },
   {
@@ -20445,11 +21002,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nYou have the following entities.\nYou must create the required fields and relationships in the staging tables.\nYou need to develop a composite entity that uses the OrderHeader and OrderLine entities.\nWhich object should you use for each action? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nYou have the following entities.\nYou must create the required fields and relationships in the staging tables.\nYou need to develop a composite entity that uses the OrderHeader and OrderLine entities.\nWhich object should you use for each action? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Reference",
-    "community_answer": "Reference",
+    "dump_answer": "Box 1: Object | Box 2: OrderLineStaging | Box 3: ParentTableld, ParentRecId",
+    "community_answer": "Box 1: Object | Box 2: OrderLineStaging | Box 3: ParentTableld, ParentRecId",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Reference",
+      "correct_answer": "Box 1: Object | Box 2: OrderLineStaging | Box 3: ParentTableld, ParentRecId",
       "dump_answer": "Reference",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -20495,6 +21052,39 @@
     "answer_images": [
       "images/t6_q3_2.png",
       "images/t6_q3_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Add a foreign key relation on the table based on the Orderld field.",
+        "title_ja": "Add a foreign key relation on the table based on the Orderld field.",
+        "options": [
+          "Object",
+          "OrderHeaderStaging",
+          "OrderLineStaging"
+        ],
+        "answer": "Object"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Add mandatory field names.",
+        "title_ja": "Add mandatory field names.",
+        "options": [
+          "OrderLineStaging",
+          "Rowld, ParentRowld"
+        ],
+        "answer": "OrderLineStaging"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Add mandatory fields on the tables.",
+        "title_ja": "Add mandatory fields on the tables.",
+        "options": [
+          "ParentTableld, ParentRecId",
+          "OrderHeaderStaging only"
+        ],
+        "answer": "ParentTableld, ParentRecId"
+      }
     ]
   },
   {
@@ -20509,11 +21099,11 @@
     "question_en": "HOTSPOT -\nA company has a cloud-based Dynamics 365 Finance environment and uses an e-commerce website for retail operations. The website has\nbusiness to business\n(B2B) capabilities. The company uses a middleware integration tool to process data.\nYou must create a batch job to automate some operations. The batch job must be able to process several thousand transactions in each run.\nYou need to configure the environment.\nWhich tools should you use? To answer, drag the appropriate tools to the correct requirements. Each tool may be used once, more than once, or\nnot at all. You may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nA company has a cloud-based Dynamics 365 Finance environment and uses an e-commerce website for retail operations. The website has\nbusiness to business\n(B2B) capabilities. The company uses a middleware integration tool to process data.\nYou must create a batch job to automate some operations. The batch job must be able to process several thousand transactions in each run.\nYou need to configure the environment.\nどのツールを使用すべきですか？ To answer, drag the appropriate tools to the correct requirements. Each tool may be used once, more than once, or\nnot at all. You may need to drag the split bar between panes or scroll to view content.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Reference",
-    "community_answer": "Reference",
+    "dump_answer": "Box 1: OData REST API | Box 2: Business events",
+    "community_answer": "Box 1: OData REST API | Box 2: Business events",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Reference",
+      "correct_answer": "Box 1: OData REST API | Box 2: Business events",
       "dump_answer": "Reference",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -20552,6 +21142,28 @@
     ],
     "answer_images": [
       "images/t6_q4_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Schedule a nightly batch in the middleware tool to import orders into Dynamics 365.",
+        "title_ja": "Schedule a nightly batch in the middleware tool to import orders into Dynamics 365.",
+        "options": [
+          "OData REST API",
+          "Data management framework's package API"
+        ],
+        "answer": "OData REST API"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Schedule a nightly batch in Dynamics 365 to export supplier data to a Microsoft Excel file. Configure the middleware tool to consume and process the data.",
+        "title_ja": "Schedule a nightly batch in Dynamics 365 to export supplier data to a Microsoft Excel file. Configure the middleware tool to consume and process the data.",
+        "options": [
+          "Business events",
+          "Recurring integration API"
+        ],
+        "answer": "Business events"
+      }
     ]
   },
   {
@@ -20975,11 +21587,11 @@
     "question_en": "HOTSPOT -\nA company plans to migrate purchase orders from an older system into Dynamics 365 Finance.\nYou need to generate field mapping between the source and the target data structures.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nA company plans to migrate purchase orders from an older system into Dynamics 365 Finance.\nYou need to generate field mapping between the source and the target data structures.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Import | Box 2: Define an XML manifest | Box 3: Generate mapping",
+    "community_answer": "Box 1: Import | Box 2: Define an XML manifest | Box 3: Generate mapping",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Import | Box 2: Define an XML manifest | Box 3: Generate mapping",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -21057,6 +21669,39 @@
     ],
     "answer_images": [
       "images/t6_q9_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Create this type of project in the data management workspace:",
+        "title_ja": "Create this type of project in the data management workspace:",
+        "options": [
+          "Import",
+          "Export",
+          "View map"
+        ],
+        "answer": "Import"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Open the project and select:",
+        "title_ja": "Open the project and select:",
+        "options": [
+          "View map",
+          "Define an XML manifest"
+        ],
+        "answer": "Define an XML manifest"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Select this Ul option:",
+        "title_ja": "Select this Ul option:",
+        "options": [
+          "Generate mapping",
+          "Generate integration"
+        ],
+        "answer": "Generate mapping"
+      }
     ]
   },
   {
@@ -21535,11 +22180,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nYou need to export data from all products into a data package every day at 2 a.m. You open the Data Management workspace.\nHow should you complete the process? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nYou need to export data from all products into a data package every day at 2 a.m. You open the Data Management workspace.\nHow should you complete the process? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Export | Box 2: Data source | Box 3: Data project page | Box 4: Setup authorization policy",
-    "community_answer": "Box 1: Export | Box 2: Data source | Box 3: Data project page | Box 4: Setup authorization policy",
+    "dump_answer": "Box 1: Actions",
+    "community_answer": "Box 1: Actions",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Export | Box 2: Data source | Box 3: Data project page | Box 4: Setup authorization policy",
+      "correct_answer": "Box 1: Actions",
       "dump_answer": "Box 1: Export | Box 2: Data source | Box 3: Data project page | Box 4: Setup authorization policy",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -21609,39 +22254,15 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Select the Export Import Templates Enter a valid Data target Data transformation scheme Data source On the Data project page Data management workspace Selected entities list On the Setup authorization policy Create authorization policy Authorization policy properties",
+        "title_ja": "Select the Export Import Templates Enter a valid Data target Data transformation scheme Data source On the Data project page Data management workspace Selected entities list On the Setup authorization policy Create authorization policy Authorization policy properties",
         "options": [
-          "Export"
+          "Actions",
+          "to create a new data project.",
+          "create a recurring data job.",
+          "tab, enter the ID for the application."
         ],
-        "answer": "Export"
-      },
-      {
-        "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
-        "options": [
-          "Data source"
-        ],
-        "answer": "Data source"
-      },
-      {
-        "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
-        "options": [
-          "Data project page"
-        ],
-        "answer": "Data project page"
-      },
-      {
-        "box_id": 4,
-        "title_en": "Box 4",
-        "title_ja": "空位 4",
-        "options": [
-          "Setup authorization policy"
-        ],
-        "answer": "Setup authorization policy"
+        "answer": "Actions"
       }
     ]
   },
@@ -22316,11 +22937,11 @@
     "question_en": "HOTSPOT\n-\nA company wants to integrate Dynamics 365 Finance with third-party applications.\nYou need to select integration patterns for various scenarios.\nWhich integration patterns should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nA company wants to integrate Dynamics 365 Finance with third-party applications.\nYou need to select integration patterns for various scenarios.\nWhich integration patterns should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Custom web servicel | Box 2: OData service endpoints | Box 3: Batch data API",
+    "community_answer": "Box 1: Custom web servicel | Box 2: OData service endpoints | Box 3: Batch data API",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Custom web servicel | Box 2: OData service endpoints | Box 3: Batch data API",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -22349,6 +22970,41 @@
     ],
     "answer_images": [
       "images/t6_q25_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "A customer calls customer support and asks to change their address information in real time.",
+        "title_ja": "A customer calls customer support and asks to change their address information in real time.",
+        "options": [
+          "Data integration API",
+          "Batch data API",
+          "Custom web servicel"
+        ],
+        "answer": "Custom web servicel"
+      },
+      {
+        "box_id": 2,
+        "title_en": "A company receives a large volume of purchase orders from a front-end system that runs on-premises. The orders must periodically be sent to Dynamics 365 Finance for processing and management.",
+        "title_ja": "A company receives a large volume of purchase orders from a front-end system that runs on-premises. The orders must periodically be sent to Dynamics 365 Finance for processing and management.",
+        "options": [
+          "OData service endpoints",
+          "Batch data API",
+          "Custom web service"
+        ],
+        "answer": "OData service endpoints"
+      },
+      {
+        "box_id": 3,
+        "title_en": "A company defines and configures products by using a third-party application that is hosted on-premises. This company wants to move the information from the on-premises application to Dynamics 365 Finance in real time.",
+        "title_ja": "A company defines and configures products by using a third-party application that is hosted on-premises. This company wants to move the information from the on-premises application to Dynamics 365 Finance in real time.",
+        "options": [
+          "OData service endpoints",
+          "Batch data API",
+          "Custom web service"
+        ],
+        "answer": "Batch data API"
+      }
     ]
   },
   {
@@ -22493,11 +23149,11 @@
     "question_en": "HOTSPOT\n-\nYou are developing a Power BI report.\nThe report must show the number of past due invoices in near real time.\nYou need to embed the report in the Analytics tab of a Vendor Payments workspace.\nWhat should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nYou are developing a Power BI report.\nThe report must show the number of past due invoices in near real time.\nYou need to embed the report in the Analytics tab of a Vendor Payments workspace.\nWhat should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: pbix file | Box 2: pbix file | Box 3: SQL Server DirectQuery | Box 4: SQL Server DirectQuery",
+    "community_answer": "Box 1: pbix file | Box 2: pbix file | Box 3: SQL Server DirectQuery | Box 4: SQL Server DirectQuery",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: pbix file | Box 2: pbix file | Box 3: SQL Server DirectQuery | Box 4: SQL Server DirectQuery",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -22526,6 +23182,46 @@
     ],
     "answer_images": [
       "images/t6_q28_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Which type of file should you create for the",
+        "title_ja": "Which type of file should you create for the",
+        "options": [
+          "pbix file"
+        ],
+        "answer": "pbix file"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Power BI report?",
+        "title_ja": "Power BI report?",
+        "options": [
+          "pbix file",
+          "pbit file"
+        ],
+        "answer": "pbix file"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Which type of data connectivity model should",
+        "title_ja": "Which type of data connectivity model should",
+        "options": [
+          "SQL Server DirectQuery"
+        ],
+        "answer": "SQL Server DirectQuery"
+      },
+      {
+        "box_id": 4,
+        "title_en": "you use?",
+        "title_ja": "you use?",
+        "options": [
+          "SQL Server DirectQuery",
+          "SQL Server import"
+        ],
+        "answer": "SQL Server DirectQuery"
+      }
     ]
   },
   {
@@ -23137,11 +23833,11 @@
     "question_en": "HOTSPOT\n-\nCase study\n-\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However,\nthere may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions\nincluded on this exam in the time provided.\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might\ncontain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is\nindependent of the other questions in this case study.\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to\nthe next section of the exam. After you begin a new section, you cannot return to this section.\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study\nbefore you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem\nstatements. When you are ready to answer a question, click the Question button to return to the question.\nBackground\n-\nMunson's Pickles and Preserves Farm produces and sells jarred food goods. The organization has several production and warehouse locations\nacross the United States. Each location runs both production and warehousing operations. The company has three locations: East, Central, and\nWest.\nThe company is upgrading its Dynamics AX 2009 system to Dynamics 365 Finance.\nCurrent environment. General\n-\nMunson's Pickles and Preserves Farm plans to migrate customizations, data, and integration from its legacy system into Dynamics 365 finance\nand operations apps.\nThe Dynamics 365 finance and operations environment includes:\n• multiple cloud-hosted development environments using Microsoft Visual Studio 2017\n• a Microsoft Azure DevOps project for source control\n• two tier 2 environments for user acceptance testing and staging, as well as production\nMunson's Pickles and Preserves Farm is currently in the planning and development phase of the upgrade process. The company's internal\ndevelopment team needs additional development resources to address issues. The company already created a project that is set up to use a\ncustom model named GPExtensions.\nCurrent environment. Integrations\nMunson's Pickles and Preserves Farm has a new integration for its freight processing information. The internal development team created the\nsecure file transfer protocol (SFTP) site for the source information to be stored and the staging table to house the source information once the\ndata is added to Dynamics 365 Finance. Information from the source will be transferred once a day from the source system and integrated with\nthe target system. More than 10,000 records will be transferred over the integration. The company created an aggregate entity for the integration\nto minimize the amount of transmitted data.\nMunson's Pickles and Preserves Farm has added a new integration for freight processing where all item weights, dimensions, and other factors\nwill be configured in the external portal while planning the loads. Once the load is planned, it will be integrated into Dynamics 365 finance and\noperations apps for the freight invoice processing to occur.\nNo duplicate invoices or posting are associated with the freight invoice charges. The integration of this information from the source system is\nintended only for report creation and compilation purposes.\nCurrent environment. Planned changes\nMunson's Pickles and Preserves Farm wants to change inventory forms to fit its current needs. Any modifications or enhancements must follow\nthe existing functionality for forms in Dynamics 365 Finance.\nRequirements. Integrations\n-\nAll data from integrations have the same format as an existing Dynamics 365 Finance apps field. All enhancements or customizations must use\nexisting assets before creating new functionality.\nMunson's Pickles and Preserves Farm wants to change its integration strategy to include real-time data from the freight processing source\nsystem. The inventory must update as it is sold from the system. That information will be updated in Dynamics 365 Finance.\nThe freight processing integration requires the use of an SFTP site to store XML files from the source system. The additional integration will use\nOData and must be transferred in real time.\nA periodic batch job must:\n• Pull data from the SFTP site.\n• Import the data to a staging table used to hold the information from the source system.\n• Map source data to the target table in Dynamics 365 Finance.\nThe imported Load ID field must be added to the Sales Order header for all processed orders. Additional requirements for integrations, including\nother integration strategies, may be necessary as the company grows. Existing tables must be changed to include the Load ID. The database will\nneed to be synched before adding the Load ID field.\nRequirements. Changes\n-\nMunson's Pickles and Preserves Farm must change the Inventory Status form to include more columns. It plans to create a table to enter the data\nfor the Inventory Status form as a new data source. The company wants to add both the Product Name field and Batch ID field to this new table.\nThe current form includes the item number, location, license plate, product inventory dimensions, and quantity.\nThe grid on the Inventory Status form must include the product name by using the item number and legal entity. The user interface must be\ncreated to include the new columns and the data must be available to add to the grid. The form must have only an Action Pane, a Navigation List,\na List Style Grid, a Details Header, and a Details Tab in the design and include the Load ID field.\nMunson's Pickles and Preserves Farm is currently in the process of adding the other required fields: one for Product Name and one for Batch ID.\nThe new fields must be related to extended data types for the original fields on the existing data source for the Inventory Status form. Munson's\nPickles and Preserves Farm plans to add the EcoResProductName and Batch ID data to the extended table for WHSTmpStatusChange. The fields\non the table extension must be populated with data and visible on the Inventory Status form on insert.\nIssues\n-\n• The internal development team has created the SFTP site connections, the staging table, and the batch jobs for the new integration for freight\nprocessing. The development team needs to map the source data to the target table and the data management workspace. The development team\nnotices errors with mapping target fields in the data management workspace. The team needs another developer to configure the table\nextensions, class extensions, and form extensions that are required for the planned changes.\n• The internal development team has issues adding the required fields to the Inventory Status standard form. The team needs another developer to\nconfigure the table extensions, class extensions, and form extensions that are required for the planned changes.\nYou need to design integrations for the freight processing source system.\nWhich integration strategies should you implement? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nCase study\n-\nThis is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However,\nthere may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions\nincluded on this exam in the time provided.\nTo answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might\ncontain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is\nindependent of the other questions in this case study.\nAt the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to\nthe next section of the exam. After you begin a new section, you cannot return to this section.\nTo start the case study\n-\nTo display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study\nbefore you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem\nstatements. When you are ready to answer a question, click the Question button to return to the question.\nBackground\n-\nMunson's Pickles and Preserves Farm produces and sells jarred food goods. The organization has several production and warehouse locations\nacross the United States. Each location runs both production and warehousing operations. The company has three locations: East, Central, and\nWest.\nThe company is upgrading its Dynamics AX 2009 system to Dynamics 365 Finance.\nCurrent environment. General\n-\nMunson's Pickles and Preserves Farm plans to migrate customizations, data, and integration from its legacy system into Dynamics 365 finance\nand operations apps.\nThe Dynamics 365 finance and operations environment includes:\n• multiple cloud-hosted development environments using Microsoft Visual Studio 2017\n• a Microsoft Azure DevOps project for source control\n• two tier 2 environments for user acceptance testing and staging, as well as production\nMunson's Pickles and Preserves Farm is currently in the planning and development phase of the upgrade process. The company's internal\ndevelopment team needs additional development resources to address issues. The company already created a project that is set up to use a\ncustom model named GPExtensions.\nCurrent environment. Integrations\nMunson's Pickles and Preserves Farm has a new integration for its freight processing information. The internal development team created the\nsecure file transfer protocol (SFTP) site for the source information to be stored and the staging table to house the source information once the\ndata is added to Dynamics 365 Finance. Information from the source will be transferred once a day from the source system and integrated with\nthe target system. More than 10,000 records will be transferred over the integration. The company created an aggregate entity for the integration\nto minimize the amount of transmitted data.\nMunson's Pickles and Preserves Farm has added a new integration for freight processing where all item weights, dimensions, and other factors\nwill be configured in the external portal while planning the loads. Once the load is planned, it will be integrated into Dynamics 365 finance and\noperations apps for the freight invoice processing to occur.\nNo duplicate invoices or posting are associated with the freight invoice charges. The integration of this information from the source system is\nintended only for report creation and compilation purposes.\nCurrent environment. Planned changes\nMunson's Pickles and Preserves Farm wants to change inventory forms to fit its current needs. Any modifications or enhancements must follow\nthe existing functionality for forms in Dynamics 365 Finance.\nRequirements. Integrations\n-\nAll data from integrations have the same format as an existing Dynamics 365 Finance apps field. All enhancements or customizations must use\nexisting assets before creating new functionality.\nMunson's Pickles and Preserves Farm wants to change its integration strategy to include real-time data from the freight processing source\nsystem. The inventory must update as it is sold from the system. That information will be updated in Dynamics 365 Finance.\nThe freight processing integration requires the use of an SFTP site to store XML files from the source system. The additional integration will use\nOData and must be transferred in real time.\nA periodic batch job must:\n• Pull data from the SFTP site.\n• Import the data to a staging table used to hold the information from the source system.\n• Map source data to the target table in Dynamics 365 Finance.\nThe imported Load ID field must be added to the Sales Order header for all processed orders. Additional requirements for integrations, including\nother integration strategies, may be necessary as the company grows. Existing tables must be changed to include the Load ID. The database will\nneed to be synched before adding the Load ID field.\nRequirements. Changes\n-\nMunson's Pickles and Preserves Farm must change the Inventory Status form to include more columns. It plans to create a table to enter the data\nfor the Inventory Status form as a new data source. The company wants to add both the Product Name field and Batch ID field to this new table.\nThe current form includes the item number, location, license plate, product inventory dimensions, and quantity.\nThe grid on the Inventory Status form must include the product name by using the item number and 法人. The user interface must be\ncreated to include the new columns and the data must be available to add to the grid. The form must have only an アクション ウィンドウ (Action Pane), a Navigation List,\na List Style Grid, a Details Header, and a Details Tab in the design and include the Load ID field.\nMunson's Pickles and Preserves Farm is currently in the process of adding the other required fields: one for Product Name and one for Batch ID.\nThe new fields must be related to extended data types for the original fields on the existing data source for the Inventory Status form. Munson's\nPickles and Preserves Farm plans to add the EcoResProductName and Batch ID data to the extended table for WHSTmpStatusChange. The fields\non the table extension must be populated with data and visible on the Inventory Status form on insert.\nIssues\n-\n• The internal development team has created the SFTP site connections, the staging table, and the batch jobs for the new integration for freight\nprocessing. The development team needs to map the source data to the target table and the data management workspace. The development team\nnotices errors with mapping target fields in the data management workspace. The team needs another developer to configure the table\nextensions, class extensions, and form extensions that are required for the planned changes.\n• The internal development team has issues adding the required fields to the Inventory Status standard form. The team needs another developer to\nconfigure the table extensions, class extensions, and form extensions that are required for the planned changes.\nYou need to design integrations for the freight processing source system.\nWhich integration strategies should you implement? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Asynchronous | Box 2: Recurring job | Box 3: Non-real time",
+    "community_answer": "Box 1: Asynchronous | Box 2: Recurring job | Box 3: Non-real time",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Asynchronous | Box 2: Recurring job | Box 3: Non-real time",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -23184,6 +23880,38 @@
     ],
     "answer_images": [
       "images/t6_q38_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Integration type for large volume recurring data export",
+        "title_ja": "大量データの定期バッチ エクスポート用統合タイプ",
+        "options": [
+          "Asynchronous",
+          "Synchronous"
+        ],
+        "answer": "Asynchronous"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Scheduling mechanism",
+        "title_ja": "スケジューリング メカニズム",
+        "options": [
+          "Recurring job",
+          "Real-time sync"
+        ],
+        "answer": "Recurring job"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Service level",
+        "title_ja": "サービス レベル",
+        "options": [
+          "Non-real time",
+          "Real time"
+        ],
+        "answer": "Non-real time"
+      }
     ]
   },
   {
@@ -23598,11 +24326,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 finance and operations apps.\nThe company is implementing dual-write between the finance and operations apps and Dataverse.\nThe company wants to restrict the data to sync only from the finance and operations apps to Dataverse. The company requires the following data\nto sync:\n• Account IDs (customer account ID fields exist in both the apps and Dataverse)\n• Customers with more than 1,000 employees whose names start with ABC\nYou need to configure the dual-write configuration values to meet the requirements.\nWhich values should you configure for each dual-write scenario? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nある企業が Dynamics 365 Finance and Operations アプリを使用しています。\nThe company is implementing dual-write between the finance and operations apps and Dataverse.\nThe company wants to restrict the data to sync only from the finance and operations apps to Dataverse. The company requires the following data\nto sync:\n• Account IDs (customer account ID fields exist in both the apps and Dataverse)\n• Customers with more than 1,000 employees whose names start with ABC\nYou need to configure the dual-write configuration values to meet the requirements.\nWhich values should you configure for each dual-write scenario? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Dual-write configuration | Box 2: unidirectional sync Value man transform",
+    "community_answer": "Box 1: Dual-write configuration | Box 2: unidirectional sync Value man transform",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Dual-write configuration | Box 2: unidirectional sync Value man transform",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -23623,6 +24351,28 @@
     ],
     "answer_images": [
       "images/t6_q45_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Sync direction and transform to use",
+        "title_ja": "Sync direction and transform to use",
+        "options": [
+          "Dual-write configuration",
+          "Bidirectional sync, Default transform"
+        ],
+        "answer": "Dual-write configuration"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Data filter to use",
+        "title_ja": "Data filter to use",
+        "options": [
+          "unidirectional sync Value man transform",
+          "numberotemplovees at 1000 and containsiname, \"ARC"
+        ],
+        "answer": "unidirectional sync Value man transform"
+      }
     ]
   },
   {
@@ -23788,11 +24538,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 finance and operations apps and Dataverse.\nThe company must be able to transfer data between the finance and operations apps and Dataverse by using virtual entities. The company\nrequires the finance and operations apps security role to be assigned to a service user to successfully use a virtual entity.\nYou need to configure the virtual entities.\nWhich configuration values should you use for each scenario? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nA company uses Dynamics 365 finance and operations apps and Dataverse.\nThe company must be able to transfer data between the finance and operations apps and Dataverse by using virtual entities. The company\nrequires the finance and operations apps security role to be assigned to a service user to successfully use a virtual entity.\nYou need to configure the virtual entities.\nWhich configuration values should you use for each scenario? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Virtual entities configuration value | Box 2: Data management operations user | Box 3: DMFStagingService",
+    "community_answer": "Box 1: Virtual entities configuration value | Box 2: Data management operations user | Box 3: DMFStagingService",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Virtual entities configuration value | Box 2: Data management operations user | Box 3: DMFStagingService",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -23813,6 +24563,44 @@
     ],
     "answer_images": [
       "images/t6_q48_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Assign the finance and operations apps security role to a service user.",
+        "title_ja": "Assign the finance and operations apps security role to a service user.",
+        "options": [
+          "Virtual entities configuration value",
+          "Dataverse virtual entity anonymous user",
+          "Dataverse virtual entity authenticated user",
+          "Dataverse virtual entity integration app"
+        ],
+        "answer": "Virtual entities configuration value"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Configure the point of translation within the finance and operations apps during a request.",
+        "title_ja": "Configure the point of translation within the finance and operations apps during a request.",
+        "options": [
+          "Data management operations user",
+          "DSVirtualEntityAdaptcrService",
+          "DSVirtualEntityAuthorizationService",
+          "DMFEntityWriterService"
+        ],
+        "answer": "Data management operations user"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Select the connection type between Dataverse and the finance and operations apps.",
+        "title_ja": "Select the connection type between Dataverse and the finance and operations apps.",
+        "options": [
+          "DMFStagingService",
+          "Business-to-Business (B2B",
+          "Business-to-Consumer (B2C",
+          "Consumer-to-Consumer (C2C"
+        ],
+        "answer": "DMFStagingService"
+      }
     ]
   },
   {
@@ -25117,11 +25905,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nUsers are experiencing slower load times for a data table on the All Customers form.\nYou need to update caching for the table in Dynamics 365 to improve data retrieval times.\nHow should you configure CacheLookup properties? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nUsers are experiencing slower load times for a data table on the All Customers form.\nYou need to update caching for the table in Dynamics 365 to improve data retrieval times.\nHow should you configure CacheLookup properties? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: Entire table | Box 2: Found",
-    "community_answer": "Box 1: Entire table | Box 2: Found",
+    "dump_answer": "Box 1: Entire table | Box 2: FoundandEmpty",
+    "community_answer": "Box 1: Entire table | Box 2: FoundandEmpty",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: Entire table | Box 2: Found",
+      "correct_answer": "Box 1: Entire table | Box 2: FoundandEmpty",
       "dump_answer": "Box 1: Entire table | Box 2: Found",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -25157,21 +25945,23 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Set-based caching",
+        "title_ja": "Set-based caching",
         "options": [
+          "Property",
           "Entire table"
         ],
         "answer": "Entire table"
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Single-record caching",
+        "title_ja": "Single-record caching",
         "options": [
+          "FoundandEmpty",
           "Found"
         ],
-        "answer": "Found"
+        "answer": "FoundandEmpty"
       }
     ]
   },
@@ -25283,11 +26073,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer. You create a form.\nYou must ensure that only sales managers can view the form.\nYou need to set up security for the form.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。 You create a form.\nYou must ensure that only sales managers can view the form.\nYou need to set up security for the form.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Add the menu item for the form to the entry point node of a new privilege. | Box 2: Add the privilege to the existing Accounts payable clerk duty.",
+    "community_answer": "Box 1: Add the menu item for the form to the entry point node of a new privilege. | Box 2: Add the privilege to the existing Accounts payable clerk duty.",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Add the menu item for the form to the entry point node of a new privilege. | Box 2: Add the privilege to the existing Accounts payable clerk duty.",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -25365,6 +26155,28 @@
     ],
     "answer_images": [
       "images/t7_q6_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Step 1: Add the entry point to the privilege",
+        "title_ja": "ステップ 1: 特権にエントリ ポイントを追加する",
+        "options": [
+          "Add the menu item for the form to the entry point node of a new privilege.",
+          "Add the form object to the entry point node of a new privilege."
+        ],
+        "answer": "Add the menu item for the form to the entry point node of a new privilege."
+      },
+      {
+        "box_id": 2,
+        "title_en": "Step 2: Assign privilege to duty/role",
+        "title_ja": "ステップ 2: 特権を職務権限/ロールに割り当てる",
+        "options": [
+          "Add the privilege to the existing Accounts payable clerk duty.",
+          "Add the privilege directly to the user profile."
+        ],
+        "answer": "Add the privilege to the existing Accounts payable clerk duty."
+      }
     ]
   },
   {
@@ -25379,11 +26191,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nYou need to create a security rule that meets the following requirements:\n✑ Provide the same permissions as HcmWorkerActionHireRead\n✑ Assign the Update level access and the HcmHumanResourceManager Role\nWhich settings should you use? To answer, select the appropriate option in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nYou need to create a security rule that meets the following requirements:\n✑ Provide the same permissions as HcmWorkerActionHireRead\n✑ Assign the Update level access and the HcmHumanResourceManager Role\nWhich settings should you use? To answer, select the appropriate option in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Property | Box 2: InsertUpdateDelete",
+    "community_answer": "Box 1: Property | Box 2: InsertUpdateDelete",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Property | Box 2: InsertUpdateDelete",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -25433,6 +26245,28 @@
     ],
     "answer_images": [
       "images/t7_q7_2.jpeg"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Setting",
+        "title_ja": "Setting",
+        "options": [
+          "Property",
+          "Operation"
+        ],
+        "answer": "Property"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Set HomHumanResource Manager",
+        "title_ja": "Set HomHumanResource Manager",
+        "options": [
+          "InsertUpdateDelete",
+          "Primary Table"
+        ],
+        "answer": "InsertUpdateDelete"
+      }
     ]
   },
   {
@@ -25447,11 +26281,11 @@
     "question_en": "HOTSPOT -\nYou are a Dynamics 365 Finance developer.\nYou launch the Performance Timer tool to troubleshoot performance issues with a business process.\nYou need to view the results from the tool.\nWhat does the tool present? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nあなたは Dynamics 365 Finance の開発者です。\nYou launch the Performance Timer tool to troubleshoot performance issues with a business process.\nYou need to view the results from the tool.\nWhat does the tool present? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: The number of open forms and ..(per second) | Box 2: Services Session provider",
-    "community_answer": "Box 1: The number of open forms and ..(per second) | Box 2: Services Session provider",
+    "dump_answer": "Box 1: Data | Box 2: Data",
+    "community_answer": "Box 1: Data | Box 2: Data",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: The number of open forms and ..(per second) | Box 2: Services Session provider",
+      "correct_answer": "Box 1: Data | Box 2: Data",
       "dump_answer": "Box 1: The number of open forms and ..(per second) | Box 2: Services Session provider",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -25500,21 +26334,21 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Performance Timer tool link",
+        "title_ja": "Performance Timer tool link",
         "options": [
-          "The number of open forms and ..(per second)"
+          "Data"
         ],
-        "answer": "The number of open forms and ..(per second)"
+        "answer": "Data"
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Forms",
+        "title_ja": "Forms",
         "options": [
-          "Services Session provider"
+          "Data"
         ],
-        "answer": "Services Session provider"
+        "answer": "Data"
       }
     ]
   },
@@ -25822,11 +26656,11 @@
     "question_en": "HOTSPOT -\nA company uses Dynamics 365 Finance.\nThe company requires a customization that sends sales order information to another process.\nYou need to create the customization by using a Singleton pattern.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nある企業が Dynamics 365 Finance を使用しています。\nThe company requires a customization that sends sales order information to another process.\nYou need to create the customization by using a Singleton pattern.\nHow should you complete the code? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: static SalesorderSingleton instance; | Box 2: static SalesorderSingleton instance; | Box 3: void new( | Box 4: static SalesorderSingleton getInstance ( | Box 5: instance = new SalesOrderSingleton ();",
+    "community_answer": "Box 1: static SalesorderSingleton instance; | Box 2: static SalesorderSingleton instance; | Box 3: void new( | Box 4: static SalesorderSingleton getInstance ( | Box 5: instance = new SalesOrderSingleton ();",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: static SalesorderSingleton instance; | Box 2: static SalesorderSingleton instance; | Box 3: void new( | Box 4: static SalesorderSingleton getInstance ( | Box 5: instance = new SalesOrderSingleton ();",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -25847,6 +26681,55 @@
     ],
     "answer_images": [
       "images/t7_q13_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Creating a Singleton class in X++ public class Salesordersingleton",
+        "title_ja": "Creating a Singleton class in X++ public class Salesordersingleton",
+        "options": [
+          "static SalesorderSingleton instance;"
+        ],
+        "answer": "static SalesorderSingleton instance;"
+      },
+      {
+        "box_id": 2,
+        "title_en": "public (private protected",
+        "title_ja": "public (private protected",
+        "options": [
+          "static SalesorderSingleton instance;",
+          "void new("
+        ],
+        "answer": "static SalesorderSingleton instance;"
+      },
+      {
+        "box_id": 3,
+        "title_en": "public private protected",
+        "title_ja": "public private protected",
+        "options": [
+          "void new("
+        ],
+        "answer": "void new("
+      },
+      {
+        "box_id": 4,
+        "title_en": "public private protected if (instance == null) instance = new SalesOrderSingleton ();",
+        "title_ja": "public private protected if (instance == null) instance = new SalesOrderSingleton ();",
+        "options": [
+          "static SalesorderSingleton getInstance (",
+          "instance = new SalesOrderSingleton ();"
+        ],
+        "answer": "static SalesorderSingleton getInstance ("
+      },
+      {
+        "box_id": 5,
+        "title_en": "return instance;",
+        "title_ja": "return instance;",
+        "options": [
+          "instance = new SalesOrderSingleton ();"
+        ],
+        "answer": "instance = new SalesOrderSingleton ();"
+      }
     ]
   },
   {
@@ -25861,11 +26744,11 @@
     "question_en": "HOTSPOT -\nYou develop a customization for Dynamics 365 Supply Chain Management.\nYou need to optimize performance for this customization.\nWhich concurrency control options should you implement? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou develop a customization for Dynamics 365 Supply Chain Management.\nYou need to optimize performance for this customization.\nWhich concurrency control options should you implement? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 3: Optimistic",
+    "community_answer": "Box 3: Optimistic",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 3: Optimistic",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -25901,6 +26784,17 @@
     ],
     "answer_images": [
       "images/t7_q14_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 3,
+        "title_en": "updates",
+        "title_ja": "updates",
+        "options": [
+          "Optimistic"
+        ],
+        "answer": "Optimistic"
+      }
     ]
   },
   {
@@ -26009,11 +26903,11 @@
     "question_en": "HOTSPOT\n-\nYou are implementing record-level security by using Extensible Data Security (XDS) in Dynamics 365 Finance.\nUsers must be permitted to view sales orders only from customers they manage.\nYou need to configure the CustGroup form.\nWhich options should you use? To answer select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nYou are implementing record-level security by using Extensible Data Security (XDS) in Dynamics 365 Finance.\nUsers must be permitted to view sales orders only from customers they manage.\nYou need to configure the CustGroup form.\nWhich options should you use? To answer select the appropriate options in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Composite query | Box 2: Constraint table | Box 3: Constraint table | Box 4: RoleName",
+    "community_answer": "Box 1: Composite query | Box 2: Constraint table | Box 3: Constraint table | Box 4: RoleName",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Composite query | Box 2: Constraint table | Box 3: Constraint table | Box 4: RoleName",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -26042,6 +26936,48 @@
     ],
     "answer_images": [
       "images/t7_q17_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Restrict CustGroup to a value of 12.",
+        "title_ja": "Restrict CustGroup to a value of 12.",
+        "options": [
+          "Composite query",
+          "Simple query"
+        ],
+        "answer": "Composite query"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Evaluate whether a policy should be applied.",
+        "title_ja": "Evaluate whether a policy should be applied.",
+        "options": [
+          "Constraint table",
+          "Context string"
+        ],
+        "answer": "Constraint table"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Set a policy to secure a primary table.",
+        "title_ja": "Set a policy to secure a primary table.",
+        "options": [
+          "Constraint table",
+          "Context string"
+        ],
+        "answer": "Constraint table"
+      },
+      {
+        "box_id": 4,
+        "title_en": "Set a policy for a specific user role.",
+        "title_ja": "Set a policy for a specific user role.",
+        "options": [
+          "RoleName",
+          "RoleProperty"
+        ],
+        "answer": "RoleName"
+      }
     ]
   },
   {
@@ -27531,11 +28467,11 @@
     "question_en": "HOTSPOT\n-\nA company uses Dynamics 365 Supply Chain Management.\nManagement requires Azure services to help perform the following tasks:\n• Periodically import files from a SharePoint site.\n• Store and analyze data.\n• Store certificates more securely.\nYou need to provide a solution that uses out-of-the-box connections to Supply Chain Management.\nWhich Azure services should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT\n-\nある企業が Dynamics 365 Supply Chain Management を使用しています。\nManagement requires Azure services to help perform the following tasks:\n• Periodically import files from a SharePoint site.\n• Store and analyze data.\n• Store certificates more securely.\nYou need to provide a solution that uses out-of-the-box connections to Supply Chain Management.\nWhich Azure services should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Service | Box 2: Service | Box 3: Azure Event Grid | Box 4: lAzure Synapse Analytics",
+    "community_answer": "Box 1: Service | Box 2: Service | Box 3: Azure Event Grid | Box 4: lAzure Synapse Analytics",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Service | Box 2: Service | Box 3: Azure Event Grid | Box 4: lAzure Synapse Analytics",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -27556,6 +28492,47 @@
     ],
     "answer_images": [
       "images/t7_q41_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Integrating Azure services with Supply Chain Management",
+        "title_ja": "Integrating Azure services with Supply Chain Management",
+        "options": [
+          "Service"
+        ],
+        "answer": "Service"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Periodically import files from a SharePoint site.",
+        "title_ja": "Periodically import files from a SharePoint site.",
+        "options": [
+          "Service",
+          "Azure Service Bus"
+        ],
+        "answer": "Service"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Store and analyze data.",
+        "title_ja": "Store and analyze data.",
+        "options": [
+          "Azure Event Grid",
+          "Azure Data Lake"
+        ],
+        "answer": "Azure Event Grid"
+      },
+      {
+        "box_id": 4,
+        "title_en": "Securely store certificates.",
+        "title_ja": "Securely store certificates.",
+        "options": [
+          "lAzure Synapse Analytics",
+          "Azure Storage Account"
+        ],
+        "answer": "lAzure Synapse Analytics"
+      }
     ]
   },
   {
@@ -27682,11 +28659,11 @@
     "question_en": "HOTSPOT -\nYou need to create the new table for the vendor exclusion list.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou need to create the new table for the vendor exclusion list.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: a table extension for Vendors and relation for the Vendor exclusions | Box 2: RelationShip Type",
-    "community_answer": "Box 1: a table extension for Vendors and relation for the Vendor exclusions | Box 2: RelationShip Type",
+    "dump_answer": "Box 1: a table extension for Vendors and a relation for Vendor exclusions | Box 2: Validate | Box 3: Validate | Box 4: Relationship Type",
+    "community_answer": "Box 1: a table extension for Vendors and a relation for Vendor exclusions | Box 2: Validate | Box 3: Validate | Box 4: Relationship Type",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: a table extension for Vendors and relation for the Vendor exclusions | Box 2: RelationShip Type",
+      "correct_answer": "Box 1: a table extension for Vendors and a relation for Vendor exclusions | Box 2: Validate | Box 3: Validate | Box 4: Relationship Type",
       "dump_answer": "Scenario",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -27735,21 +28712,41 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "What should you create?",
+        "title_ja": "What should you create?",
         "options": [
-          "a table extension for Vendors and relation for the Vendor exclusions"
+          "a table extension for Vendors and a relation for Vendor exclusions"
         ],
-        "answer": "a table extension for Vendors and relation for the Vendor exclusions"
+        "answer": "a table extension for Vendors and a relation for Vendor exclusions"
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "For which property on the relationship node",
+        "title_ja": "For which property on the relationship node",
         "options": [
-          "RelationShip Type"
+          "Validate"
         ],
-        "answer": "RelationShip Type"
+        "answer": "Validate"
+      },
+      {
+        "box_id": 3,
+        "title_en": "should you set a value? Validate",
+        "title_ja": "should you set a value? Validate",
+        "options": [
+          "Validate",
+          "OnDelete"
+        ],
+        "answer": "Validate"
+      },
+      {
+        "box_id": 4,
+        "title_en": "Relationship Type",
+        "title_ja": "Relationship Type",
+        "options": [
+          "OnDelete",
+          "Relationship Type"
+        ],
+        "answer": "Relationship Type"
       }
     ]
   },
@@ -28705,11 +29702,11 @@
     "question_en": "HOTSPOT -\nYou need to configure security for the CashDisc form.\nWhat changes should you make? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou need to configure security for the CashDisc form.\nWhat changes should you make? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Duplicate the role and modify the existing privilege entry point access. | Box 2: Create a new duty and privilege and add both to the role.",
+    "community_answer": "Box 1: Duplicate the role and modify the existing privilege entry point access. | Box 2: Create a new duty and privilege and add both to the role.",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Duplicate the role and modify the existing privilege entry point access. | Box 2: Create a new duty and privilege and add both to the role.",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -28773,6 +29770,30 @@
     ],
     "answer_images": [
       "images/t12_q1_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Action for Accounts Payable Manager role",
+        "title_ja": "買掛金マネージャー (Accounts Payable Manager) ロールに対するアクション",
+        "options": [
+          "Duplicate the role and modify the existing privilege entry point access.",
+          "Create a new duty and privilege and add both to the role.",
+          "Customize the standard role directly."
+        ],
+        "answer": "Duplicate the role and modify the existing privilege entry point access."
+      },
+      {
+        "box_id": 2,
+        "title_en": "Action for Accounts Payable Clerk role",
+        "title_ja": "買掛金担当者 (Accounts Payable Clerk) ロールに対するアクション",
+        "options": [
+          "Create a new duty and privilege and add both to the role.",
+          "Duplicate the role and modify the privilege.",
+          "Remove duty from user."
+        ],
+        "answer": "Create a new duty and privilege and add both to the role."
+      }
     ]
   },
   {
@@ -29116,11 +30137,11 @@
     "question_en": "HOTSPOT -\nYou need to implement the integration for the Vendor Exclusion List form.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou need to implement the integration for the Vendor Exclusion List form.\nどの操作を実行すべきですか？ 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Table extension | Box 2: Unique key | Box 3: Foreign key",
+    "community_answer": "Box 1: Table extension | Box 2: Unique key | Box 3: Foreign key",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Table extension | Box 2: Unique key | Box 3: Foreign key",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -29177,6 +30198,39 @@
     ],
     "answer_images": [
       "images/t15_q1_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Element to add to project",
+        "title_ja": "Element to add to project",
+        "options": [
+          "Option",
+          "Table extension",
+          "Data Entity"
+        ],
+        "answer": "Table extension"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Key type to create",
+        "title_ja": "Key type to create",
+        "options": [
+          "Query",
+          "Unique key"
+        ],
+        "answer": "Unique key"
+      },
+      {
+        "box_id": 3,
+        "title_en": "Action to perform",
+        "title_ja": "Action to perform",
+        "options": [
+          "Foreign key",
+          "Build the project."
+        ],
+        "answer": "Foreign key"
+      }
     ]
   },
   {
@@ -29191,11 +30245,11 @@
     "question_en": "HOTSPOT -\nThe system includes the following code: (Line numbers are included for reference only.)\nYou need to apply changes to address User2's issues.\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nThe system includes the following code: (Line numbers are included for reference only.)\nYou need to apply changes to address User2's issues.\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Add the firstonly keyword to the query and",
+    "community_answer": "Box 1: Add the firstonly keyword to the query and",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Add the firstonly keyword to the query and",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -29274,6 +30328,18 @@
     "answer_images": [
       "images/t15_q2_2.png",
       "images/t15_q2_3.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Add the firstonly keyword to the query and choose a field list in the select statement.",
+        "title_ja": "Add the firstonly keyword to the query and choose a field list in the select statement.",
+        "options": [
+          "Add the firstonly keyword to the query and",
+          "choose a field list in the select statement."
+        ],
+        "answer": "Add the firstonly keyword to the query and"
+      }
     ]
   },
   {
@@ -29288,11 +30354,11 @@
     "question_en": "HOTSPOT -\nYou need to modify the CashDisc form to meet the requirements.\nWhich objects should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou need to modify the CashDisc form to meet the requirements.\nWhich objects should you use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "Box 1: extension | Box 2: field | Box 3: field group | Box 4: data source",
-    "community_answer": "Box 1: extension | Box 2: field | Box 3: field group | Box 4: data source",
+    "dump_answer": "Box 1: duplicate | Box 2: index | Box 3: relation",
+    "community_answer": "Box 1: duplicate | Box 2: index | Box 3: relation",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "Box 1: extension | Box 2: field | Box 3: field group | Box 4: data source",
+      "correct_answer": "Box 1: duplicate | Box 2: index | Box 3: relation",
       "dump_answer": "Scenario",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -29334,39 +30400,38 @@
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Box 1",
-        "title_ja": "空位 1",
+        "title_en": "Create the following object on the CashDisc table:",
+        "title_ja": "Create the following object on the CashDisc table:",
         "options": [
+          "duplicate",
           "extension"
         ],
-        "answer": "extension"
+        "answer": "duplicate"
       },
       {
         "box_id": 2,
-        "title_en": "Box 2",
-        "title_ja": "空位 2",
+        "title_en": "Add a relation field display method field group",
+        "title_ja": "Add a relation field display method field group",
         "options": [
-          "field"
+          "inheritance",
+          "overlayering",
+          "to the table and then add the object to an existing",
+          "index",
+          "field group",
+          "map",
+          "relation"
         ],
-        "answer": "field"
+        "answer": "index"
       },
       {
         "box_id": 3,
-        "title_en": "Box 3",
-        "title_ja": "空位 3",
+        "title_en": "Restore the design data source form parts form methods",
+        "title_ja": "Restore the design data source form parts form methods",
         "options": [
-          "field group"
+          "relation",
+          "of the CashDisc form."
         ],
-        "answer": "field group"
-      },
-      {
-        "box_id": 4,
-        "title_en": "Box 4",
-        "title_ja": "空位 4",
-        "options": [
-          "data source"
-        ],
-        "answer": "data source"
+        "answer": "relation"
       }
     ]
   },
@@ -29619,11 +30684,11 @@
     "question_en": "HOTSPOT -\nYou need to create a chain of command method for inserting the data on the table for the new fields.\nHow should you complete the code? To answer, select the appropriate configuration in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou need to create a chain of command method for inserting the data on the table for the new fields.\nHow should you complete the code? To answer, select the appropriate configuration in the answer area.\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: [ExtensionOf(tableStr(WHSTmpStatusChange))] | Box 2: final",
+    "community_answer": "Box 1: [ExtensionOf(tableStr(WHSTmpStatusChange))] | Box 2: final",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: [ExtensionOf(tableStr(WHSTmpStatusChange))] | Box 2: final",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -29673,6 +30738,29 @@
     ],
     "answer_images": [
       "images/t18_q1_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Extension attribute for WHSTmpStatusChange table",
+        "title_ja": "WHSTmpStatusChange テーブルに対する拡張属性",
+        "options": [
+          "[ExtensionOf(tableStr(WHSTmpStatusChange))]",
+          "[ExtensionOf(classStr(WHSTmpStatusChange))]"
+        ],
+        "answer": "[ExtensionOf(tableStr(WHSTmpStatusChange))]"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Class access modifier",
+        "title_ja": "クラス アクセス修飾子",
+        "options": [
+          "final",
+          "public",
+          "static"
+        ],
+        "answer": "final"
+      }
     ]
   },
   {
@@ -29687,11 +30775,11 @@
     "question_en": "HOTSPOT -\nYou need to implement the reporting requirements for the Vendor exclusion list.\nWhich options you should use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
     "question_ja": "HOTSPOT -\nYou need to implement the reporting requirements for the Vendor exclusion list.\nWhich options you should use? 回答するには、回答領域で適切なオプションを選択してください。\n注: 正しい選択ごとに 1 ポイントの価値があります。",
     "options": [],
-    "dump_answer": "图解下拉题（见下方标准图解对照）",
-    "community_answer": "见官方图解",
+    "dump_answer": "Box 1: Power Platform | Box 2: Controller class",
+    "community_answer": "Box 1: Power Platform | Box 2: Controller class",
     "community_votes": {},
     "ai_verdict": {
-      "correct_answer": "图解下拉题（见下方标准图解对照）",
+      "correct_answer": "Box 1: Power Platform | Box 2: Controller class",
       "dump_answer": "图解下拉题（见下方标准图解对照）",
       "agreement_type": "agree_all",
       "dump_status": "accurate",
@@ -29769,6 +30857,27 @@
     ],
     "answer_images": [
       "images/t19_q1_2.png"
+    ],
+    "hotspot_boxes": [
+      {
+        "box_id": 1,
+        "title_en": "Implement reporting.",
+        "title_ja": "Implement reporting.",
+        "options": [
+          "Power Platform"
+        ],
+        "answer": "Power Platform"
+      },
+      {
+        "box_id": 2,
+        "title_en": "Automatically set the query range based on session context.",
+        "title_ja": "Automatically set the query range based on session context.",
+        "options": [
+          "Controller class",
+          "ReportDataP rovider class"
+        ],
+        "answer": "Controller class"
+      }
     ]
   },
   {

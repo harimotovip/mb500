@@ -1818,3 +1818,206 @@ body {
   border-radius: var(--radius-md);
   padding: 1rem;
 }
+
+/* ==========================================================================
+   Native HTML Answer Area Table & Dropdowns (Hotspot Native Redesign)
+   ========================================================================== */
+.hotspot-answer-table-card {
+  background-color: var(--bg-card);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.table-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  background-color: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.table-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.btn-toggle-scan {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--accent-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-toggle-scan:hover {
+  background-color: var(--bg-subtle);
+  border-color: var(--accent-primary);
+}
+
+.original-scan-box {
+  padding: 1rem;
+  background-color: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-responsive-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hotspot-native-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.hotspot-native-table th {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background-color: var(--bg-subtle);
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+.hotspot-native-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.hotspot-native-table tr:last-child td {
+  border-bottom: none;
+}
+
+.req-cell {
+  width: 45%;
+}
+
+.box-badge {
+  display: inline-block;
+  background-color: var(--accent-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.35rem;
+}
+
+.req-text-primary {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.req-text-secondary {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.val-cell {
+  width: 55%;
+}
+
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.native-dropdown {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text-primary);
+  background-color: var(--bg-subtle);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  outline: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.native-dropdown:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.native-dropdown.has-value {
+  border-color: var(--accent-primary);
+  background-color: var(--bg-card);
+  font-weight: 600;
+}
+
+.native-dropdown.select-correct {
+  border-color: #10b981 !important;
+  background-color: #ecfdf5 !important;
+  color: #065f46 !important;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .native-dropdown.select-correct {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+  color: #34d399 !important;
+}
+
+.native-dropdown.select-wrong {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+  color: #991b1b !important;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .native-dropdown.select-wrong {
+  background-color: rgba(239, 68, 68, 0.2) !important;
+  color: #f87171 !important;
+}
+
+.dropdown-feedback {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.feedback-badge.correct {
+  color: #059669;
+  font-weight: 700;
+}
+
+.feedback-badge.wrong {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.feedback-correct-val {
+  color: #047857;
+  font-size: 0.85rem;
+}
+
+.original-scan-toggle-wrap {
+  margin: 1rem 0;
+}
