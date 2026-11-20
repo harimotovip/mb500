@@ -1527,3 +1527,294 @@ body {
     width: 140px;
   }
 }
+
+/* ==========================================================================
+   Hero Solution & Interactive Hotspot Styles (V4 Redesign)
+   ========================================================================== */
+.solution-hero-banner {
+  background-color: #f0fdf4;
+  border: 2px solid #10b981;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+}
+
+[data-theme="dark"] .solution-hero-banner {
+  background-color: rgba(16, 185, 129, 0.12);
+  border-color: #10b981;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.hero-badge-tag {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #047857;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background-color: #d1fae5;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+[data-theme="dark"] .hero-badge-tag {
+  color: #34d399;
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.hero-alert-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #b91c1c;
+  background-color: #fee2e2;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+}
+
+[data-theme="dark"] .hero-alert-badge {
+  color: #f87171;
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+.hero-agree-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #047857;
+}
+
+[data-theme="dark"] .hero-agree-badge {
+  color: #34d399;
+}
+
+/* MCQ Hero Answer */
+.mcq-hero-answer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mcq-hero-letter {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: var(--radius-full);
+  background-color: #10b981;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+.mcq-hero-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .mcq-hero-text {
+  color: #f8fafc;
+}
+
+/* Hotspot Hero Answer */
+.hotspot-hero-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hotspot-hero-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid #a7f3d0;
+  border-radius: var(--radius-md);
+  padding: 0.6rem 0.85rem;
+  flex-wrap: wrap;
+}
+
+[data-theme="dark"] .hotspot-hero-item {
+  background-color: var(--bg-card);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.hero-box-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  background-color: #10b981;
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.hero-box-val {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #065f46;
+}
+
+[data-theme="dark"] .hero-box-val {
+  color: #34d399;
+}
+
+.hero-box-title {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+/* Drag Steps Hero */
+.drag-hero-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.drag-hero-step-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid #a7f3d0;
+  border-radius: var(--radius-md);
+  padding: 0.6rem 0.85rem;
+}
+
+[data-theme="dark"] .drag-hero-step-row {
+  background-color: var(--bg-card);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.hero-step-num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  background-color: #2563eb;
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.hero-step-action {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.hero-summary-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #065f46;
+}
+
+[data-theme="dark"] .hero-summary-text {
+  color: #34d399;
+}
+
+/* Hotspot Interactive Panel */
+.hotspot-interactive-card {
+  background-color: var(--bg-subtle);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.interactive-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.hotspot-boxes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hotspot-box-row {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.hotspot-box-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.box-tag {
+  background-color: var(--accent-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+}
+
+.hotspot-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hotspot-chip {
+  background-color: var(--bg-card);
+  border: 1.5px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.hotspot-chip:hover {
+  border-color: var(--accent-primary);
+  background-color: var(--bg-subtle);
+}
+
+.hotspot-chip.selected {
+  background-color: #2563eb !important;
+  border-color: #2563eb !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.hotspot-chip.correct-chip {
+  background-color: #10b981 !important;
+  border-color: #10b981 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.hotspot-chip.wrong-chip {
+  background-color: #ef4444 !important;
+  border-color: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+.hero-solution-image-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}

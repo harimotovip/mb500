@@ -23,6 +23,7 @@ class MB500App {
     this.searchQuery = '';
     this.showAnswerImmediately = false;
     this.answeredState = false; // whether current question in practice mode has been submitted
+    this.userHotspotAnswers = {};
   }
 
   async init() {
@@ -187,6 +188,7 @@ class MB500App {
     }
 
     window.appInteractions.resetCurrent();
+    this.userHotspotAnswers = {};
     const isStarred = window.appStorage.isStarred(q.id);
     const prevAnswer = window.appStorage.answers[q.id];
 
@@ -275,13 +277,11 @@ class MB500App {
         <div class="question-footer">
           <div class="footer-left">
             <button class="btn btn-secondary" onclick="window.mbApp.toggleRevealAnswer()">
-              ${this.answeredState ? '隐藏答案解析' : '👁️ 立刻看正确答案与AI观点'}
+              ${this.answeredState ? '隐藏答案解析' : '👁️ 查看正解与深度解析'}
             </button>
-            ${q.type.includes('choice') ? `
-              <button class="btn btn-primary" id="btn-submit-answer" onclick="window.mbApp.submitPracticeAnswer()">
-                提交作答
-              </button>
-            ` : ''}
+            <button class="btn btn-primary" id="btn-submit-answer" onclick="window.mbApp.submitPracticeAnswer()">
+              ✓ 提交作答
+            </button>
           </div>
           <div class="footer-right">
             ${this.currentMode === 'mistakes' ? `
@@ -367,35 +367,192 @@ class MB500App {
   }
 
   renderHotspotHtml(q) {
-    return `
-      <div class="hotspot-interactive">
-        <div class="drag-instructions">
-          💡 本题为 Hot Area 题型，请在上图选择或对照下方官方解法与 AI 剖析。
+    if (q.hotspot_boxes && q.hotspot_boxes.length > 0) {
+      return `
+        <div class="hotspot-interactive-card">
+          <div class="interactive-title">🎯 交互作答区：点击下方选项完成各下拉区域配置</div>
+          <div class="hotspot-boxes-list">
+            ${q.hotspot_boxes.map(box => `
+              <div class="hotspot-box-row" data-box-id="${box.box_id}">
+                <div class="hotspot-box-label">
+                  <span class="box-tag">Box ${box.box_id}</span>
+                  <span class="box-title-text">${this.language === 'en' ? this.escapeHtml(box.title_en) : this.escapeHtml(box.title_ja || box.title_en)}</span>
+                </div>
+                <div class="hotspot-chips-grid">
+                  ${box.options.map(opt => `
+                    <button type="button" class="hotspot-chip ${this.userHotspotAnswers[box.box_id] === opt ? 'selected' : ''}" 
+                      data-box="${box.box_id}" 
+                      data-val="${this.escapeHtml(opt)}"
+                      onclick="window.mbApp.handleHotspotChipSelect(${box.box_id}, '${this.escapeHtml(opt)}')">
+                      ${this.escapeHtml(opt)}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+            `).join('')}
+          </div>
         </div>
+      `;
+    }
+    return `
+      <div class="hotspot-interactive-card">
+        <div class="interactive-title">💡 图解下拉题型（Hot Area）说明：</div>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+          本题作答下拉选框已在上方题干图示中展示。请在脑海中完成判断，点击下方【✓ 提交作答】或【👁️ 查看正解与深度解析】即可立即查看官方标准正解图解与绿框选项。
+        </p>
       </div>
     `;
   }
 
+  handleHotspotChipSelect(boxId, val) {
+    if (this.answeredState) return;
+    this.userHotspotAnswers[boxId] = val;
+    if (window.appInteractions) {
+      window.appInteractions.setHotspotSelection(boxId, val);
+    }
+    const row = document.querySelector(`.hotspot-box-row[data-box-id="${boxId}"]`);
+    if (row) {
+      row.querySelectorAll('.hotspot-chip').forEach(chip => {
+        chip.classList.toggle('selected', chip.getAttribute('data-val') === val);
+      });
+    }
+  }
+
+  extractSteps(q) {
+    if (q.drag_steps && q.drag_steps.length > 0) return q.drag_steps;
+    const exp = q.explanation_en || q.explanation || '';
+    const matches = exp.match(/Step\s*\d+\s*:\s*([^\n]+)/gi);
+    if (matches && matches.length > 0) {
+      return matches.map(m => m.replace(/Step\s*\d+\s*:\s*/i, '').trim());
+    }
+    const verdict = q.ai_verdict && q.ai_verdict.correct_answer;
+    if (verdict && verdict.includes('Step')) {
+      const parts = verdict.split(/\|\s*Step\s*\d+\s*:\s*/i);
+      return parts.map(p => p.replace(/^Step\s*\d+\s*:\s*/i, '').trim()).filter(Boolean);
+    }
+    return [q.ai_verdict ? q.ai_verdict.correct_answer : q.dump_answer];
+  }
+
   renderSolutionHtml(q) {
-    const verdict = q.ai_verdict;
+    const verdict = q.ai_verdict || {};
     const isDumpWrong = verdict.is_dump_wrong;
 
-    // Badge styling
-    let bannerClass = 'banner-agree';
-    let bannerTitle = '🟢 官方、AI与社区一致认可';
+    // Header badge
+    let headerStatusHtml = '';
     if (isDumpWrong) {
-      bannerClass = 'banner-danger';
-      bannerTitle = '🔴 题库官方答案疑似有误 · AI 权威裁决';
-    } else if (verdict.agreement_type === 'agree_community') {
-      bannerClass = 'banner-warning';
-      bannerTitle = '🟡 社区分歧已澄清 · AI 深度佐证';
+      headerStatusHtml = `
+        <div class="hero-header">
+          <span class="hero-badge-tag" style="background-color:#fee2e2;color:#b91c1c;">【官方正解 · AI权威纠偏】</span>
+          <span class="hero-alert-badge">⚠️ 题库官方答案疑似有误（原标为 ${this.escapeHtml(q.dump_answer || '错误选项')}），经微软官方文档与社区100%确认正解如下</span>
+        </div>
+      `;
+    } else {
+      headerStatusHtml = `
+        <div class="hero-header">
+          <span class="hero-badge-tag">【官方正解】</span>
+          <span class="hero-agree-badge">✓ 官方题库 · 社区 · AI 100%一致认可</span>
+        </div>
+      `;
+    }
+
+    // Hero Answer Content depending on question type
+    let heroAnswerContent = '';
+    if (q.type === 'single_choice' || q.type === 'exhibit_choice') {
+      const targetKey = (verdict.correct_answer || q.dump_answer || '').trim();
+      const opt = (q.options || []).find(o => o.key.toUpperCase() === targetKey.toUpperCase());
+      let optText = '';
+      if (opt) {
+        if (this.language === 'en') optText = opt.text_en;
+        else if (this.language === 'ja') optText = opt.text_ja || opt.text_en;
+        else optText = `${opt.text_ja || opt.text_en} (${opt.text_en})`;
+      }
+      heroAnswerContent = `
+        <div class="mcq-hero-answer">
+          <div class="mcq-hero-letter">${this.escapeHtml(targetKey)}</div>
+          <div class="mcq-hero-text">${this.escapeHtml(targetKey)}. ${this.escapeHtml(optText || targetKey)}</div>
+        </div>
+      `;
+    } else if (q.type === 'multi_choice') {
+      const targetKeys = (verdict.correct_answer || q.dump_answer || '').trim();
+      const matchedOpts = (q.options || []).filter(o => targetKeys.toUpperCase().includes(o.key.toUpperCase()));
+      heroAnswerContent = `
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <div style="font-size:0.95rem;font-weight:700;color:#065f46;">多选题正解组合: ${this.escapeHtml(targetKeys)}</div>
+          ${matchedOpts.map(opt => {
+            const optText = (this.language === 'en') ? opt.text_en : (opt.text_ja || opt.text_en);
+            return `
+              <div class="hotspot-hero-item">
+                <span class="mcq-hero-letter" style="width:32px;height:32px;min-width:32px;font-size:1.1rem;">${opt.key}</span>
+                <span class="hero-box-val" style="font-size:1rem;">${this.escapeHtml(optText)}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    } else if (q.type === 'hotspot') {
+      if (q.hotspot_boxes && q.hotspot_boxes.length > 0) {
+        heroAnswerContent = `
+          <div class="hotspot-hero-grid">
+            ${q.hotspot_boxes.map(box => `
+              <div class="hotspot-hero-item">
+                <span class="hero-box-tag">Box ${box.box_id}</span>
+                <span class="hero-box-val">${this.escapeHtml(box.answer)}</span>
+                <span class="hero-box-title">${this.language === 'en' ? this.escapeHtml(box.title_en) : this.escapeHtml(box.title_ja || box.title_en)}</span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      } else {
+        heroAnswerContent = `
+          <div class="hotspot-hero-grid">
+            <div class="hero-summary-text">
+              ${this.escapeHtml(verdict.correct_answer || q.dump_answer)}
+            </div>
+            <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.3rem;">
+              💡 对应下方【官方解答图示】中的绿框选中项
+            </div>
+          </div>
+        `;
+      }
+    } else if (q.type === 'drag_drop') {
+      const steps = this.extractSteps(q);
+      heroAnswerContent = `
+        <div class="drag-hero-steps">
+          ${steps.map((step, idx) => `
+            <div class="drag-hero-step-row">
+              <span class="hero-step-num">Step ${idx + 1}</span>
+              <span class="hero-step-action">${this.escapeHtml(step)}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // Solution Images (Answer diagrams) - PROMINENTLY DISPLAYED DIRECTLY UNDER HERO ANSWER
+    let answerImagesHtml = '';
+    if (q.answer_images && q.answer_images.length > 0) {
+      answerImagesHtml = `
+        <div class="hero-solution-image-card" style="margin-top: 1.25rem;">
+          <div style="font-size: 0.9rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🖼️ 官方解答标准图示 (Official Solution Exhibit - 对应上图绿框标注)</span>
+          </div>
+          <div class="answer-images-grid">
+            ${q.answer_images.map(img => `
+              <div class="image-wrapper" onclick="window.mbApp.openLightbox('./${img}')">
+                <img src="./${img}" alt="Solution Exhibit" loading="lazy" />
+                <div class="zoom-hint">🔍 点击放大图片</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
     }
 
     // Community votes
     let votesHtml = '';
     if (q.community_votes && Object.keys(q.community_votes).length > 0) {
       votesHtml = `
-        <div class="vote-distribution">
+        <div class="vote-distribution" style="margin-top: 1.25rem;">
           <div class="vote-title">👥 社区投票分布 (Community Votes):</div>
           <div class="vote-bars">
             ${Object.entries(q.community_votes).map(([key, val]) => `
@@ -412,29 +569,11 @@ class MB500App {
       `;
     }
 
-    // Solution Images (Answer diagrams)
-    let answerImagesHtml = '';
-    if (q.answer_images && q.answer_images.length > 0) {
-      answerImagesHtml = `
-        <div class="answer-images-section">
-          <div class="section-title">🖼️ 官方解答图解 (Official Solution Exhibit):</div>
-          <div class="answer-images-grid">
-            ${q.answer_images.map(img => `
-              <div class="image-wrapper" onclick="window.mbApp.openLightbox('./${img}')">
-                <img src="./${img}" alt="Solution Exhibit" loading="lazy" />
-                <div class="zoom-hint">🔍 点击放大图片</div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      `;
-    }
-
     // Comments section
     let commentsHtml = '';
     if (q.comments && q.comments.length > 0) {
       commentsHtml = `
-        <div class="comments-section">
+        <div class="comments-section" style="margin-top: 1.25rem;">
           <div class="section-title">💬 社区高赞讨论精选 (${q.comments.length} 条):</div>
           <div class="comments-list">
             ${q.comments.map(c => `
@@ -442,7 +581,7 @@ class MB500App {
                 <div class="comment-header">
                   <span class="comment-user">👤 ${this.escapeHtml(c.user)}</span>
                   <span class="comment-time">${c.time}</span>
-                  ${c.selected_answer ? `<span class="badge badge-blue">选择: ${c.selected_answer}</span>` : ''}
+                  ${c.selected_answer ? `<span class="badge badge-blue">选择: ${this.escapeHtml(c.selected_answer)}</span>` : ''}
                   <span class="comment-upvotes">▲ ${c.upvotes}</span>
                 </div>
                 <div class="comment-body">${this.escapeHtml(c.text)}</div>
@@ -453,58 +592,48 @@ class MB500App {
       `;
     }
 
-    const aiAnalysis = (this.language === 'en') ? verdict.analysis_en : verdict.analysis_ja;
-    const aiConcept = (this.language === 'en') ? verdict.concept_en : verdict.concept_ja;
+    const aiAnalysis = (this.language === 'en') ? (verdict.analysis_en || '') : (verdict.analysis_ja || verdict.analysis_en || '');
+    const aiConcept = (this.language === 'en') ? (verdict.concept_en || '') : (verdict.concept_ja || verdict.concept_en || '');
 
     return `
       <div class="solution-card">
-        <div class="solution-banner ${bannerClass}">
-          <div class="banner-icon">🤖</div>
-          <div class="banner-text">
-            <div class="banner-title">${bannerTitle}</div>
-            <div class="banner-sub">${this.language === 'en' ? verdict.badge_en : verdict.badge_ja}</div>
-          </div>
+        <!-- 1. HERO ANSWER BANNER (INSTANT CLARITY) -->
+        <div class="solution-hero-banner">
+          ${headerStatusHtml}
+          ${heroAnswerContent}
         </div>
 
-        <div class="answers-comparison-grid">
-          <div class="answer-box">
-            <div class="ans-label">📌 题库原给答案</div>
-            <div class="ans-value ${isDumpWrong ? 'strikethrough' : ''}">${q.dump_answer || '无'}</div>
-          </div>
-          <div class="answer-box highlight">
-            <div class="ans-label">✨ AI 验证正确答案</div>
-            <div class="ans-value text-success">${verdict.correct_answer}</div>
-          </div>
-          <div class="answer-box">
-            <div class="ans-label">👥 社区最高得票</div>
-            <div class="ans-value">${q.community_answer || '无'}</div>
-          </div>
-        </div>
+        <!-- 2. OFFICIAL SOLUTION EXHIBIT IMAGE (DIRECTLY UNDER ANSWER) -->
+        ${answerImagesHtml}
 
-        ${votesHtml}
-
-        <div class="ai-analysis-block">
-          <div class="analysis-header">
-            <span class="analysis-icon">💡</span>
-            <span class="analysis-title">考点核心剖析 (${aiConcept})</span>
+        <!-- 3. AI CONCEPT & IN-DEPTH ANALYSIS -->
+        ${aiConcept ? `
+          <div class="ai-analysis-block" style="margin-top: 1.25rem;">
+            <div class="analysis-header">
+              <span class="analysis-icon">💡</span>
+              <span class="analysis-title">考点核心剖析 (${aiConcept})</span>
+            </div>
+            <div class="analysis-body">
+              ${aiAnalysis.replace(/\n/g, '<br/>')}
+            </div>
           </div>
-          <div class="analysis-body">
-            ${aiAnalysis.replace(/\n/g, '<br/>')}
-          </div>
-        </div>
+        ` : ''}
 
+        <!-- 4. OFFICIAL KNOWLEDGE EXPLANATION -->
         ${q.explanation ? `
-          <div class="official-explanation">
-            <div class="section-title">📖 官方知识点详解:</div>
+          <div class="official-explanation" style="margin-top: 1.25rem;">
+            <div class="section-title">📖 知识点详解与考点延伸:</div>
             <div class="exp-text">${this.escapeHtml((this.language === 'ja' ? q.explanation_ja : q.explanation_en) || q.explanation).replace(/\n/g, '<br/>')}</div>
           </div>
         ` : ''}
 
-        ${answerImagesHtml}
+        <!-- 5. COMMUNITY VOTES & DISCUSSIONS -->
+        ${votesHtml}
         ${commentsHtml}
 
+        <!-- 6. MICROSOFT LEARN REFERENCES -->
         ${q.reference_urls && q.reference_urls.length > 0 ? `
-          <div class="references-section">
+          <div class="references-section" style="margin-top: 1.25rem;">
             <div class="section-title">🔗 微软官方文档参考 (Microsoft Learn):</div>
             <ul>
               ${q.reference_urls.map(url => `
@@ -543,16 +672,33 @@ class MB500App {
     const grade = window.appInteractions.gradeQuestion(q);
     window.appStorage.recordAnswer(q.id, grade.userAnswer, grade.isCorrect, 'practice');
 
-    // Highlight options
+    // Highlight options for choice questions
     document.querySelectorAll('.option-card').forEach(card => {
       const k = card.dataset.key;
-      const targetAns = q.ai_verdict.correct_answer.toUpperCase();
+      const targetAns = (q.ai_verdict && q.ai_verdict.correct_answer) ? q.ai_verdict.correct_answer.toUpperCase() : '';
       if (targetAns.includes(k)) {
         card.classList.add('correct-answer');
       } else if (card.classList.contains('selected')) {
         card.classList.add('wrong-answer');
       }
     });
+
+    // Highlight hotspot chips for hotspot questions
+    if (q.type === 'hotspot' && q.hotspot_boxes) {
+      q.hotspot_boxes.forEach(box => {
+        const row = document.querySelector(`.hotspot-box-row[data-box-id="${box.box_id}"]`);
+        if (row) {
+          row.querySelectorAll('.hotspot-chip').forEach(chip => {
+            const chipVal = chip.getAttribute('data-val');
+            if (chipVal && chipVal.trim().toLowerCase() === box.answer.trim().toLowerCase()) {
+              chip.classList.add('correct-chip');
+            } else if (chip.classList.contains('selected')) {
+              chip.classList.add('wrong-chip');
+            }
+          });
+        }
+      });
+    }
 
     this.answeredState = true;
     const solEl = document.getElementById('solution-container');
@@ -573,12 +719,28 @@ class MB500App {
     if (solEl) {
       solEl.style.display = this.answeredState ? 'block' : 'none';
       if (this.answeredState) {
-        // Highlight correct options
+        // Highlight correct options for choice questions
         document.querySelectorAll('.option-card').forEach(card => {
           const k = card.dataset.key;
-          const targetAns = q.ai_verdict.correct_answer.toUpperCase();
+          const targetAns = (q.ai_verdict && q.ai_verdict.correct_answer) ? q.ai_verdict.correct_answer.toUpperCase() : '';
           if (targetAns.includes(k)) card.classList.add('correct-answer');
         });
+
+        // Highlight correct hotspot chips
+        if (q.type === 'hotspot' && q.hotspot_boxes) {
+          q.hotspot_boxes.forEach(box => {
+            const row = document.querySelector(`.hotspot-box-row[data-box-id="${box.box_id}"]`);
+            if (row) {
+              row.querySelectorAll('.hotspot-chip').forEach(chip => {
+                const chipVal = chip.getAttribute('data-val');
+                if (chipVal && chipVal.trim().toLowerCase() === box.answer.trim().toLowerCase()) {
+                  chip.classList.add('correct-chip');
+                }
+              });
+            }
+          });
+        }
+
         solEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     }

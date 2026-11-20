@@ -142,9 +142,14 @@ class InteractionEngine {
     if (callback) callback(this.dragPlacements);
   }
 
+  // --- Hotspot Dropdowns ---
+  setHotspotSelection(boxId, val) {
+    this.hotspotSelections[boxId] = val;
+  }
+
   // --- Evaluate Answer ---
   gradeQuestion(q) {
-    const targetAns = q.ai_verdict.correct_answer.toUpperCase().trim();
+    const targetAns = (q.ai_verdict && q.ai_verdict.correct_answer) ? q.ai_verdict.correct_answer.toUpperCase().trim() : '';
     let isCorrect = false;
     let userAnsStr = '';
 
@@ -157,18 +162,31 @@ class InteractionEngine {
       // Compare sorted keys (e.g. 'CD' vs 'CD')
       const targetSorted = targetAns.split('').sort().join('');
       isCorrect = (userAnsStr.toUpperCase() === targetSorted);
-    } else if (q.type === 'hotspot' || q.type === 'drag_drop') {
-      // For Hotspot / Drag Drop with interactive slots
+    } else if (q.type === 'hotspot') {
+      if (q.hotspot_boxes && q.hotspot_boxes.length > 0) {
+        let correctCount = 0;
+        const total = q.hotspot_boxes.length;
+        const userAnswers = [];
+        q.hotspot_boxes.forEach(box => {
+          const userVal = this.hotspotSelections[box.box_id];
+          userAnswers.push(`Box ${box.box_id}: ${userVal || '未选'}`);
+          if (userVal && userVal.trim().toLowerCase() === box.answer.trim().toLowerCase()) {
+            correctCount++;
+          }
+        });
+        isCorrect = (correctCount === total);
+        userAnsStr = userAnswers.join(' | ');
+      } else {
+        userAnsStr = 'Checked Solution';
+        isCorrect = true;
+      }
+    } else if (q.type === 'drag_drop') {
       if (Object.keys(this.dragPlacements).length > 0) {
         userAnsStr = Object.keys(this.dragPlacements)
           .sort()
           .map(k => `${parseInt(k)+1}: ${this.dragPlacements[k].text}`)
           .join(', ');
-        // For drag/drop, if user placed items, count as practiced
-        isCorrect = true; // Review solution image
-      } else if (this.selectedSingle) {
-        userAnsStr = this.selectedSingle;
-        isCorrect = (userAnsStr.toUpperCase() === targetAns);
+        isCorrect = true;
       } else {
         userAnsStr = 'Viewed Solution';
         isCorrect = true;

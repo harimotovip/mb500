@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool
-const CACHE_NAME = 'mb500-cache-v1';
+// Service Worker for MB-500 Offline Quiz Tool - v4 (Network First for Code)
+const CACHE_NAME = 'mb500-cache-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -9,11 +9,12 @@ const ASSETS_TO_CACHE = [
   './js/exam.js',
   './js/app.js',
   './manifest.json',
-  '../data/questions.json',
-  '../data/topics.json'
+  './data/questions.json',
+  './data/topics.json'
 ];
 
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(ASSETS_TO_CACHE).catch(err => {
@@ -21,7 +22,6 @@ self.addEventListener('install', (event) => {
       });
     })
   );
-  self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
@@ -39,24 +39,37 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+// Network First for HTML, CSS, JS; Cache First for Images
 self.addEventListener('fetch', (event) => {
+  const url = event.request.url;
+
+  // Images: Cache first with network fallback
+  if (url.includes('/images/')) {
+    event.respondWith(
+      caches.match(event.request).then((cached) => {
+        if (cached) return cached;
+        return fetch(event.request).then((response) => {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          return response;
+        });
+      })
+    );
+    return;
+  }
+
+  // Code & Data: Network first, fall back to cache
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request).then((networkResponse) => {
-        // Cache images dynamically
-        if (event.request.url.includes('/images/')) {
+    fetch(event.request)
+      .then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
           const responseToCache = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
-          });
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
         }
         return networkResponse;
-      }).catch(() => {
-        return caches.match('./index.html');
-      });
-    })
+      })
+      .catch(() => {
+        return caches.match(event.request);
+      })
   );
 });
