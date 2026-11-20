@@ -636,6 +636,104 @@ class MB500App {
 
     const aiAnalysis = (this.language === 'en') ? (verdict.analysis_en || '') : (verdict.analysis_ja || verdict.analysis_en || '');
     const aiConcept = (this.language === 'en') ? (verdict.concept_en || '') : (verdict.concept_ja || verdict.concept_en || '');
+    const aiStrategy = (this.language === 'en') ? (verdict.strategy_en || '') : (verdict.strategy_ja || verdict.strategy_en || '');
+    const trapClarification = (this.language === 'en') ? (verdict.trap_clarification_en || '') : (verdict.trap_clarification_ja || verdict.trap_clarification_en || '');
+    const finalVerdictText = (this.language === 'en') ? (verdict.verification_verdict_en || '') : (verdict.verification_verdict_ja || verdict.verification_verdict_en || '');
+
+    // Box breakdowns for hotspot questions
+    let boxBreakdownsHtml = '';
+    if (verdict.box_breakdowns && verdict.box_breakdowns.length > 0) {
+      boxBreakdownsHtml = `
+        <div class="box-breakdowns-container">
+          <div style="font-weight:700;font-size:0.95rem;color:var(--text-primary);margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem;">
+            <span>🔍 逐空深度核验与排除法对答案:</span>
+          </div>
+          ${verdict.box_breakdowns.map(b => {
+            const req = (this.language === 'en') ? b.requirement_en : (b.requirement_ja || b.requirement_en);
+            const why = (this.language === 'en') ? b.why_en : (b.why_ja || b.why_en);
+            const whyNot = (this.language === 'en') ? (b.why_not_en || b.why_not_ja) : (b.why_not_ja || b.why_not_en);
+            return `
+              <div class="box-breakdown-card">
+                <div class="bb-header">
+                  <div class="bb-tag-answer">
+                    <span class="bb-badge">Box ${b.box_id}</span>
+                    <span class="bb-answer-text">${this.escapeHtml(b.answer)}</span>
+                  </div>
+                </div>
+                <div class="bb-requirement">
+                  <strong>🎯 对应题目要求:</strong> ${this.escapeHtml(req)}
+                </div>
+                <div class="bb-why-row">
+                  <span style="color:#059669;font-weight:700;min-width:75px;">✅ 为何选它:</span>
+                  <span>${this.escapeHtml(why)}</span>
+                </div>
+                ${whyNot ? `
+                  <div class="bb-whynot-row">
+                    <span style="color:#dc2626;font-weight:700;min-width:75px;">❌ 排除干扰:</span>
+                    <span>${this.escapeHtml(whyNot)}</span>
+                  </div>
+                ` : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    // Comprehensive AI Thought Card
+    const aiThoughtCardHtml = `
+      <div class="ai-thought-card">
+        <div class="ai-thought-header">
+          <div class="ai-thought-title-group">
+            <span class="ai-thought-icon">🧠</span>
+            <div>
+              <div class="ai-thought-title">AI 深度思考与逐项核验 (AI Reasoning & Step-by-Step Verification)</div>
+              <div class="ai-thought-subtitle">基于微软官方技术标准 (Microsoft Learn)、考纲逻辑与社区高频争议全方位对标</div>
+            </div>
+          </div>
+          ${aiConcept ? `<span class="badge badge-purple" style="font-size:0.8rem;padding:0.25rem 0.6rem;">${this.escapeHtml(aiConcept)}</span>` : ''}
+        </div>
+
+        ${aiStrategy ? `
+          <div class="ai-strategy-box">
+            <div class="ai-strategy-title">
+              <span>💭 题意脉络与解题核心思路:</span>
+            </div>
+            <div>${this.escapeHtml(aiStrategy)}</div>
+          </div>
+        ` : ''}
+
+        ${boxBreakdownsHtml}
+
+        ${aiAnalysis ? `
+          <div class="ai-analysis-block" style="margin-bottom: 1rem; border-left-color: #6366f1;">
+            <div class="analysis-header" style="color: #4f46e5;">
+              <span class="analysis-icon">💡</span>
+              <span class="analysis-title">考点核心剖析与技术要领</span>
+            </div>
+            <div class="analysis-body">
+              ${aiAnalysis.replace(/\n/g, '<br/>')}
+            </div>
+          </div>
+        ` : ''}
+
+        ${trapClarification ? `
+          <div class="ai-trap-box">
+            <div class="ai-trap-title">
+              <span>⚠️ 考场避坑要点与高频争议对标</span>
+            </div>
+            <div>${this.escapeHtml(trapClarification)}</div>
+          </div>
+        ` : ''}
+
+        ${finalVerdictText ? `
+          <div class="ai-verdict-banner ${isDumpWrong ? 'alert' : ''}">
+            <span>${isDumpWrong ? '🚨' : '🎯'}</span>
+            <span>${this.escapeHtml(finalVerdictText)}</span>
+          </div>
+        ` : ''}
+      </div>
+    `;
 
     return `
       <div class="solution-card">
@@ -648,18 +746,8 @@ class MB500App {
         <!-- 2. OFFICIAL SOLUTION EXHIBIT IMAGE (DIRECTLY UNDER ANSWER) -->
         ${answerImagesHtml}
 
-        <!-- 3. AI CONCEPT & IN-DEPTH ANALYSIS -->
-        ${aiConcept ? `
-          <div class="ai-analysis-block" style="margin-top: 1.25rem;">
-            <div class="analysis-header">
-              <span class="analysis-icon">💡</span>
-              <span class="analysis-title">考点核心剖析 (${aiConcept})</span>
-            </div>
-            <div class="analysis-body">
-              ${aiAnalysis.replace(/\n/g, '<br/>')}
-            </div>
-          </div>
-        ` : ''}
+        <!-- 3. AI REASONING & STEP-BY-STEP VERIFICATION -->
+        ${aiThoughtCardHtml}
 
         <!-- 4. OFFICIAL KNOWLEDGE EXPLANATION -->
         ${q.explanation ? `
