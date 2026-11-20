@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>MB-500 Master · Microsoft Dynamics 365 F&O Developer 刷题神器</title>
+  <meta name="description" content="MB-500 微软认证刷题工具：随时随地手机练习、一键切换官方日语、AI权威观点辨析、拖拽点选交互、全真模考与错题本。">
+
+  <!-- Mobile PWA Support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MB-500">
+  <meta name="theme-color" content="#0b0f19">
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area" onclick="window.mbApp.setMode('practice')" style="cursor:pointer;">
+        <div class="logo-icon">D365</div>
+        <div class="logo-title">
+          <h1>MB-500 Master</h1>
+          <div class="logo-sub">F&O Apps Developer 刷题工具</div>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop">
+        <div class="nav-item active" data-mode="practice">⚡ 即时练习</div>
+        <div class="nav-item" data-mode="exam">📝 全真模考</div>
+        <div class="nav-item" data-mode="mistakes">
+          ❌ 错题本 <span class="badge-count" id="badge-mistakes-count">0</span>
+        </div>
+        <div class="nav-item" data-mode="starred">
+          ⭐ 收藏夹 <span class="badge-count" id="badge-starred-count">0</span>
+        </div>
+        <div class="nav-item" data-mode="stats">📊 学习统计</div>
+      </nav>
+
+      <!-- Header Controls: Language, Theme & Accuracy -->
+      <div class="header-controls">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="ja" title="微软日本官方术语翻译">🇯🇵 日语</button>
+          <button class="lang-btn" data-lang="en" title="English Original">🇬🇧 EN</button>
+          <button class="lang-btn" data-lang="bilingual" title="日英双语对照">🌐 双语</button>
+        </div>
+
+        <button class="theme-btn" id="theme-toggle-btn" title="切换深色/浅色模式">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter & Search Toolbar (Practice Mode) -->
+  <div class="filter-bar" id="practice-filter-bar">
+    <div class="filter-container">
+      <div class="filter-group">
+        <select class="select-control" id="topic-select">
+          <option value="all">📚 所有章节 (Topic 1 ~ 20)</option>
+        </select>
+
+        <select class="select-control" id="type-select">
+          <option value="all">🎯 所有题型</option>
+          <option value="single_choice">单选题</option>
+          <option value="multi_choice">多选题</option>
+          <option value="hotspot">Hot Area / 下拉选择</option>
+          <option value="drag_drop">Drag & Drop 拖拽排序</option>
+        </select>
+
+        <input type="text" class="search-control" id="search-input" placeholder="🔍 搜索考点/关键词 (如 Trace Parser)..." />
+      </div>
+
+      <div class="jump-group">
+        <span style="font-size:0.85rem;color:var(--text-muted);">直达:</span>
+        <input type="number" class="jump-input" id="jump-input" min="1" max="400" placeholder="1" />
+        <button class="btn btn-secondary btn-sm" id="btn-jump">跳转</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main View Area -->
+  <main class="main-content">
+    
+    <!-- View 1: Practice / Mistakes / Starred Mode -->
+    <section id="practice-view">
+      <div id="question-container">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Pagination Controls -->
+      <div class="app-pagination">
+        <button class="btn btn-secondary" id="btn-prev">⬅️ 上一题</button>
+        <span class="page-indicator" id="progress-indicator">1 / 400</span>
+        <button class="btn btn-primary" id="btn-next">下一题 ➡️</button>
+      </div>
+    </section>
+
+    <!-- View 2: Mock Exam Mode -->
+    <section id="exam-view" style="display: none;">
+      <div id="exam-container">
+        <!-- Rendered by exam.js / app.js -->
+      </div>
+    </section>
+
+    <!-- View 3: Learning Analytics Mode -->
+    <section id="stats-view" style="display: none;">
+      <div id="stats-container">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Mobile Bottom Navigation Bar (Thumb Friendly) -->
+  <nav class="mobile-nav-bar">
+    <div class="mobile-nav-item active" data-mode="practice">
+      <span class="mobile-nav-icon">⚡</span>
+      <span>练习</span>
+    </div>
+    <div class="mobile-nav-item" data-mode="exam">
+      <span class="mobile-nav-icon">📝</span>
+      <span>模考</span>
+    </div>
+    <div class="mobile-nav-item" data-mode="mistakes">
+      <span class="mobile-nav-icon">❌</span>
+      <span>错题</span>
+    </div>
+    <div class="mobile-nav-item" data-mode="starred">
+      <span class="mobile-nav-icon">⭐</span>
+      <span>收藏</span>
+    </div>
+    <div class="mobile-nav-item" data-mode="stats">
+      <span class="mobile-nav-icon">📊</span>
+      <span>统计</span>
+    </div>
+  </nav>
+
+  <!-- Exhibit Image Zoom Lightbox Modal -->
+  <div class="modal-overlay" id="lightbox-modal" style="display:none;" onclick="window.mbApp.closeLightbox()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="modal-close" onclick="window.mbApp.closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="Enlarged Exhibit" />
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/storage.js"></script>
+  <script src="./js/interactions.js"></script>
+  <script src="./js/exam.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "name_en": "Topic 1",
+    "name_ja": "開発環境・アーキテクチャ・ライフサイクル管理 (LCS & Dev Tools)",
+    "total_questions": 40,
+    "types": {
+      "single_choice": 16,
+      "hotspot": 5,
+      "multi_choice": 5,
+      "drag_drop": 14
+    }
+  },
+  {
+    "id": 2,
+    "name_en": "Topic 2",
+    "name_ja": "X++ オブジェクト指向開発・言語機能 (X++ Core & OOP)",
+    "total_questions": 26,
+    "types": {
+      "single_choice": 5,
+      "hotspot": 5,
+      "multi_choice": 2,
+      "drag_drop": 14
+    }
+  },
+  {
+    "id": 3,
+    "name_en": "Topic 3",
+    "name_ja": "ユーザーインターフェイス・フォームパターン設計 (UI & Form Patterns)",
+    "total_questions": 91,
+    "types": {
+      "drag_drop": 14,
+      "multi_choice": 15,
+      "single_choice": 56,
+      "hotspot": 6
+    }
+  },
+  {
+    "id": 4,
+    "name_en": "Topic 4",
+    "name_ja": "データエンティティ・OData & データ統合 (Data Entities & Integration)",
+    "total_questions": 74,
+    "types": {
+      "hotspot": 14,
+      "single_choice": 36,
+      "multi_choice": 10,
+      "drag_drop": 14
+    }
+  },
+  {
+    "id": 5,
+    "name_en": "Topic 5",
+    "name_ja": "セキュリティ・ロール・権限管理 (Security & Compliance)",
+    "total_questions": 32,
+    "types": {
+      "drag_drop": 9,
+      "multi_choice": 4,
+      "single_choice": 13,
+      "hotspot": 6
+    }
+  },
+  {
+    "id": 6,
+    "name_en": "Topic 6",
+    "name_ja": "パフォーマンスチューニング・トレース診断 (Performance & Trace Parser)",
+    "total_questions": 69,
+    "types": {
+      "hotspot": 10,
+      "drag_drop": 28,
+      "single_choice": 17,
+      "multi_choice": 14
+    }
+  },
+  {
+    "id": 7,
+    "name_en": "Topic 7",
+    "name_ja": "レポート・電子申告・ビジネスイベント (Reporting & Business Events)",
+    "total_questions": 43,
+    "types": {
+      "single_choice": 18,
+      "drag_drop": 11,
+      "hotspot": 8,
+      "multi_choice": 6
+    }
+  },
+  {
+    "id": 8,
+    "name_en": "Topic 8",
+    "name_ja": "総合開発シナリオ・ケーススタディ A (Comprehensive Case Study A)",
+    "total_questions": 4,
+    "types": {
+      "hotspot": 1,
+      "single_choice": 1,
+      "multi_choice": 1,
+      "drag_drop": 1
+    }
+  },
+  {
+    "id": 9,
+    "name_en": "Topic 9",
+    "name_ja": "総合開発シナリオ・ケーススタディ B (Comprehensive Case Study B)",
+    "total_questions": 4,
+    "types": {
+      "multi_choice": 2,
+      "drag_drop": 1,
+      "single_choice": 1
+    }
+  },
+  {
+    "id": 10,
+    "name_en": "Topic 10",
+    "name_ja": "高度なデータ移行とデュアルライト (Dual-write & Migration)",
+    "total_questions": 2,
+    "types": {
+      "multi_choice": 1,
+      "single_choice": 1
+    }
+  },
+  {
+    "id": 11,
+    "name_en": "Topic 11",
+    "name_ja": "ワークフロー開発とビジネスプロセス (Workflow Engineering)",
+    "total_questions": 2,
+    "types": {
+      "multi_choice": 1,
+      "single_choice": 1
+    }
+  },
+  {
+    "id": 12,
+    "name_en": "Topic 12",
+    "name_ja": "リテール・コマース拡張開発 (Commerce Extensions)",
+    "total_questions": 1,
+    "types": {
+      "hotspot": 1
+    }
+  },
+  {
+    "id": 13,
+    "name_en": "Topic 13",
+    "name_ja": "バッチフレームワークと非同期処理 (Batch & SysOperation)",
+    "total_questions": 2,
+    "types": {
+      "multi_choice": 2
+    }
+  },
+  {
+    "id": 14,
+    "name_en": "Topic 14",
+    "name_ja": "拡張機能 (Extension) & コマンドチェーン (CoC)",
+    "total_questions": 1,
+    "types": {
+      "drag_drop": 1
+    }
+  },
+  {
+    "id": 15,
+    "name_en": "Topic 15",
+    "name_ja": "外部API統合とAzure Service Bus (External APIs & Messaging)",
+    "total_questions": 2,
+    "types": {
+      "hotspot": 2
+    }
+  },
+  {
+    "id": 16,
+    "name_en": "Topic 16",
+    "name_ja": "Power Platform 連携とDataverse (Power Platform & Dataverse)",
+    "total_questions": 3,
+    "types": {
+      "hotspot": 1,
+      "single_choice": 2
+    }
+  },
+  {
+    "id": 17,
+    "name_en": "Topic 17",
+    "name_ja": "データベース設計・テーブル継承 (Data Modeling & Inheritance)",
+    "total_questions": 1,
+    "types": {
+      "drag_drop": 1
+    }
+  },
+  {
+    "id": 18,
+    "name_en": "Topic 18",
+    "name_ja": "テスト自動化・SysTestフレームワーク (Automated Testing & SysTest)",
+    "total_questions": 1,
+    "types": {
+      "hotspot": 1
+    }
+  },
+  {
+    "id": 19,
+    "name_en": "Topic 19",
+    "name_ja": "展開パイプラインとCI/CD (DevOps & CI/CD Pipelines)",
+    "total_questions": 1,
+    "types": {
+      "hotspot": 1
+    }
+  },
+  {
+    "id": 20,
+    "name_en": "Topic 20",
+    "name_ja": "最新アップデートとベストプラクティス (Best Practices & New Features)",
+    "total_questions": 1,
+    "types": {
+      "drag_drop": 1
+    }
+  }
+]
