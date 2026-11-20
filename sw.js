@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v5 (Native Dropdowns & OCR Text)
-const CACHE_NAME = 'mb500-cache-v5';
+// Service Worker for MB-500 Offline Quiz Tool - v6 (AI Deep Reasoning & Verification)
+const CACHE_NAME = 'mb500-cache-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -30,6 +30,7 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         keys.map((key) => {
           if (key !== CACHE_NAME) {
+            console.log('Purging legacy cache:', key);
             return caches.delete(key);
           }
         })
@@ -39,7 +40,7 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Network First for HTML, CSS, JS; Cache First for Images
+// Network First for HTML, CSS, JS, JSON; Cache First for Images
 self.addEventListener('fetch', (event) => {
   const url = event.request.url;
 
@@ -58,9 +59,9 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Code & Data: Network first, fall back to cache
+  // Code & Data: Strict Network First with Cache Fallback
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: 'no-cache' })
       .then((networkResponse) => {
         if (networkResponse && networkResponse.status === 200) {
           const responseToCache = networkResponse.clone();

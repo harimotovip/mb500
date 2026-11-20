@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json').then(r => r.json()),
-        fetch('./data/topics.json').then(r => r.json())
+        fetch('./data/questions.json?v=6.0.2').then(r => r.json()),
+        fetch('./data/topics.json?v=6.0.2').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -43,10 +43,15 @@ class MB500App {
       this.setMode('practice');
       this.updateGlobalBadges();
 
-      // Register Service Worker
+      // Register Service Worker with forced update
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js').catch(err => {
+        navigator.serviceWorker.register('./sw.js?v=6.0.2').then(reg => {
+          reg.update();
+        }).catch(err => {
           console.log('SW registration error:', err);
+        });
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          console.log('New Service Worker activated, refreshing cache...');
         });
       }
     } catch (err) {
@@ -74,6 +79,22 @@ class MB500App {
       themeBtn.title = theme === 'dark' ? '切换浅色模式' : '切换深色模式';
     }
     window.appStorage.saveSettings({ theme });
+  }
+
+  async forcePurgeCache() {
+    if (confirm('是否清除浏览器离线缓存并强制更新至最新版本？')) {
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+      }
+      if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        for (const reg of registrations) {
+          await reg.unregister();
+        }
+      }
+      window.location.reload(true);
+    }
   }
 
   setLanguage(lang) {
