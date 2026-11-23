@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v6 (AI Deep Reasoning & Verification)
-const CACHE_NAME = 'mb500-cache-v6';
+// Service Worker for MB-500 Offline Quiz Tool - v7 (Full Professional Japanese Localization)
+const CACHE_NAME = 'mb500-cache-v7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
