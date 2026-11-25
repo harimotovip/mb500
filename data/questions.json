@@ -1832,10 +1832,10 @@
         "text": "B is correct.\nhttps://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting"
       }
     ],
-    "question_images": [
+    "question_images": [],
+    "answer_images": [
       "images/t1_q17_1.png"
-    ],
-    "answer_images": []
+    ]
   },
   {
     "id": 18,
@@ -9682,11 +9682,11 @@
         "text": "But the question says \"You must extend CarType and add a new element named MUV to CarType.\" not just \"add a new element named MUV to\nCarType.\""
       }
     ],
-    "question_images": [
+    "question_images": [],
+    "answer_images": [
       "images/t3_q36_1.jpeg",
       "images/t3_q36_2.png"
-    ],
-    "answer_images": []
+    ]
   },
   {
     "id": 103,
@@ -22090,10 +22090,10 @@
         "text": "So, the answer is D and E?"
       }
     ],
-    "question_images": [
+    "question_images": [],
+    "answer_images": [
       "images/t5_q15_1.png"
-    ],
-    "answer_images": []
+    ]
   },
   {
     "id": 247,
@@ -24682,10 +24682,10 @@
         "text": "Correct"
       }
     ],
-    "question_images": [
+    "question_images": [],
+    "answer_images": [
       "images/t6_q13_1.jpeg"
-    ],
-    "answer_images": []
+    ]
   },
   {
     "id": 277,
@@ -33404,10 +33404,10 @@
         "text": "Correct"
       }
     ],
-    "question_images": [
+    "question_images": [],
+    "answer_images": [
       "images/t11_q2_1.jpeg"
-    ],
-    "answer_images": []
+    ]
   },
   {
     "id": 388,

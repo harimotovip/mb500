@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v7 (Full Professional Japanese Localization)
-const CACHE_NAME = 'mb500-cache-v7';
+// Service Worker for MB-500 Offline Quiz Tool - v8 (Fix DragDrop crash & leaked answer images)
+const CACHE_NAME = 'mb500-cache-v8';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

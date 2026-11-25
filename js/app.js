@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.0.0').then(r => r.json()),
-        fetch('./data/topics.json?v=7.0.0').then(r => r.json())
+        fetch('./data/questions.json?v=7.0.1').then(r => r.json()),
+        fetch('./data/topics.json?v=7.0.1').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -377,6 +377,12 @@ class MB500App {
   }
 
   renderDragDropHtml(q) {
+    const expText = q.explanation_en || q.explanation_ja || q.explanation || '';
+    const stepMatches = expText.match(/Step\s*\d+\s*:\s*([^\n]+)/gi);
+    const items = (stepMatches && stepMatches.length > 0)
+      ? stepMatches.map(s => s.replace(/Step\s*\d+\s*:\s*/i, '').trim())
+      : ['Action A', 'Action B', 'Action C', 'Action D'];
+
     return `
       <div class="drag-drop-container">
         <div class="drag-instructions">
@@ -385,18 +391,17 @@ class MB500App {
         <div class="drag-slots-pool">
           <div class="pool-header">🎯 目标顺序槽位 (Target Order)</div>
           <div class="slots-grid">
-            <div class="drop-slot" data-slot-index="0"><span class="slot-placeholder">Step 1 (点击或拖拽放入)</span></div>
-            <div class="drop-slot" data-slot-index="1"><span class="slot-placeholder">Step 2 (点击或拖拽放入)</span></div>
-            <div class="drop-slot" data-slot-index="2"><span class="slot-placeholder">Step 3 (点击或拖拽放入)</span></div>
-            <div class="drop-slot" data-slot-index="3"><span class="slot-placeholder">Step 4 (点击或拖拽放入)</span></div>
+            ${items.map((_, idx) => `
+              <div class="drop-slot" data-slot-index="${idx}"><span class="slot-placeholder">Step ${idx + 1} (点击或拖拽放入)</span></div>
+            `).join('')}
           </div>
         </div>
         <div class="drag-sources-pool">
           <div class="pool-header">📋 可选操作列表 (Actions Pool)</div>
           <div class="sources-list">
-            ${(q.explanation.match(/Step \d+:\s*([^\n]+)/g) || ['Action A', 'Action B', 'Action C', 'Action D']).map((s, idx) => `
+            ${items.map((s, idx) => `
               <div class="drag-item" draggable="true" data-id="item_${idx}">
-                ${this.escapeHtml(s.replace(/Step \d+:\s*/, ''))}
+                ${this.escapeHtml(s)}
               </div>
             `).join('')}
           </div>
@@ -482,8 +487,10 @@ class MB500App {
   }
 
   extractSteps(q) {
-    if (q.drag_steps && q.drag_steps.length > 0) return q.drag_steps;
-    const exp = q.explanation_en || q.explanation || '';
+    if (q.drag_steps && q.drag_steps.length > 0) {
+      return q.drag_steps.map(s => typeof s === 'string' ? s : (s.action || s.text || String(s)));
+    }
+    const exp = q.explanation_en || q.explanation_ja || q.explanation || '';
     const matches = exp.match(/Step\s*\d+\s*:\s*([^\n]+)/gi);
     if (matches && matches.length > 0) {
       return matches.map(m => m.replace(/Step\s*\d+\s*:\s*/i, '').trim());
@@ -493,7 +500,7 @@ class MB500App {
       const parts = verdict.split(/\|\s*Step\s*\d+\s*:\s*/i);
       return parts.map(p => p.replace(/^Step\s*\d+\s*:\s*/i, '').trim()).filter(Boolean);
     }
-    return [q.ai_verdict ? q.ai_verdict.correct_answer : q.dump_answer];
+    return [q.ai_verdict ? q.ai_verdict.correct_answer : q.dump_answer].filter(Boolean);
   }
 
   renderSolutionHtml(q) {
@@ -771,10 +778,10 @@ class MB500App {
         ${aiThoughtCardHtml}
 
         <!-- 4. OFFICIAL KNOWLEDGE EXPLANATION -->
-        ${q.explanation ? `
+        ${(q.explanation_ja || q.explanation_en || q.explanation) ? `
           <div class="official-explanation" style="margin-top: 1.25rem;">
             <div class="section-title">📖 知识点详解与考点延伸:</div>
-            <div class="exp-text">${this.escapeHtml((this.language === 'ja' ? q.explanation_ja : q.explanation_en) || q.explanation).replace(/\n/g, '<br/>')}</div>
+            <div class="exp-text">${this.escapeHtml((this.language === 'ja' ? (q.explanation_ja || q.explanation_en) : (q.explanation_en || q.explanation_ja)) || q.explanation).replace(/\n/g, '<br/>')}</div>
           </div>
         ` : ''}
 
@@ -1344,8 +1351,8 @@ class MB500App {
 
   // --- Utilities ---
   escapeHtml(str) {
-    if (!str) return '';
-    return str
+    if (str === null || str === undefined) return '';
+    return String(str)
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
