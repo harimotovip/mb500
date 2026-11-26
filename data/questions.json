@@ -1250,7 +1250,7 @@
       },
       {
         "text_en": "Select Configure.",
-        "text_ja": "Select Configure."
+        "text_ja": "「構成 (Configure)」を選択します。"
       },
       {
         "text_en": "Select the General menu item then select Add to workspace.",
@@ -1376,7 +1376,7 @@
       },
       {
         "text_en": "Build only",
-        "text_ja": "Build only"
+        "text_ja": "ビルドのみ"
       },
       {
         "text_en": "User Acceptance Testing (UAT) and Build",
@@ -1733,15 +1733,15 @@
     "drag_actions": [
       {
         "text_en": "Application Platform",
-        "text_ja": "Application Platform"
+        "text_ja": "アプリケーションプラットフォーム"
       },
       {
         "text_en": "Application Suite",
-        "text_ja": "Application Suite"
+        "text_ja": "アプリケーションスイート"
       },
       {
         "text_en": "Application Foundation",
-        "text_ja": "Application Foundation"
+        "text_ja": "アプリケーション基盤"
       }
     ],
     "drag_slots": [
@@ -2450,11 +2450,11 @@
       },
       {
         "text_en": "Marketing asset",
-        "text_ja": "Marketing asset"
+        "text_ja": "マーケティングアセット"
       },
       {
         "text_en": "Retail SDK",
-        "text_ja": "Retail SDK"
+        "text_ja": "リテールSDK"
       },
       {
         "text_en": "Localized financial report",
@@ -3932,11 +3932,11 @@
     "drag_actions": [
       {
         "text_en": "Platform model",
-        "text_ja": "Platform model"
+        "text_ja": "プラットフォームモデル"
       },
       {
         "text_en": "Application model",
-        "text_ja": "Application model"
+        "text_ja": "<x id=\"287177673\"/>アプリケーションモデル"
       }
     ],
     "drag_slots": [
@@ -6679,7 +6679,7 @@
     "drag_actions": [
       {
         "text_en": "Branch name",
-        "text_ja": "Branch name"
+        "text_ja": "支店名"
       },
       {
         "text_en": "Development",
@@ -6756,7 +6756,7 @@
     "drag_actions": [
       {
         "text_en": "Take Source",
-        "text_ja": "Take Source"
+        "text_ja": "ソースを取得"
       },
       {
         "text_en": "Merge by using Merge Tool",
@@ -13937,11 +13937,11 @@
       },
       {
         "text_en": "Public class",
-        "text_ja": "Public class"
+        "text_ja": "公開クラス"
       },
       {
         "text_en": "Final class",
-        "text_ja": "Final class"
+        "text_ja": "最後のクラス"
       }
     ],
     "drag_slots": [
@@ -14812,7 +14812,7 @@
     "drag_actions": [
       {
         "text_en": "Method types",
-        "text_ja": "Method types"
+        "text_ja": "メソッドの種類"
       },
       {
         "text_en": "[ Private instance",
@@ -14820,7 +14820,7 @@
       },
       {
         "text_en": "Public static",
-        "text_ja": "Public static"
+        "text_ja": "パブリック静的"
       },
       {
         "text_en": "| Private static",
@@ -20200,11 +20200,11 @@
       },
       {
         "text_en": "where custTable AccountNum > '1000'",
-        "text_ja": "where custTable AccountNum > '1000'"
+        "text_ja": "custTable AccountNum > '1000'の場合"
       },
       {
         "text_en": "select firstonly100 custTable",
-        "text_ja": "select firstonly100 custTable"
+        "text_ja": "最初の100件のみのcustTableを選択"
       },
       {
         "text_en": "while select top 100 custtable",
@@ -20212,7 +20212,7 @@
       },
       {
         "text_en": "where custTable.AccountNum > 1000",
-        "text_ja": "where custTable.AccountNum > 1000"
+        "text_ja": "custTable.AccountNum > 1000の場合"
       },
       {
         "text_en": "order by AccountNum desc",
@@ -21643,7 +21643,7 @@
       },
       {
         "text_en": "Task recorder",
-        "text_ja": "Task recorder"
+        "text_ja": "タスクレコーダー"
       },
       {
         "text_en": "SysTest framework",
@@ -22959,7 +22959,7 @@
     "drag_actions": [
       {
         "text_en": "SSRS Report",
-        "text_ja": "SSRS Report"
+        "text_ja": "SSRSレポート"
       },
       {
         "text_en": "Power BI service",
@@ -22967,7 +22967,7 @@
       },
       {
         "text_en": "Electronic reporting",
-        "text_ja": "Electronic reporting"
+        "text_ja": "電子報告"
       }
     ],
     "drag_slots": [
@@ -24005,7 +24005,7 @@
     "drag_actions": [
       {
         "text_en": "Aggregate dimension",
-        "text_ja": "Aggregate dimension"
+        "text_ja": "集計ディメンション"
       },
       {
         "text_en": "Aggregate data entity",
@@ -25739,11 +25739,11 @@
     "drag_actions": [
       {
         "text_en": "Aggregate measurement",
-        "text_ja": "Aggregate measurement"
+        "text_ja": "集計測定"
       },
       {
         "text_en": "Aggregate dimension",
-        "text_ja": "Aggregate dimension"
+        "text_ja": "集計ディメンション"
       },
       {
         "text_en": "Aggregate data entity",
@@ -27192,7 +27192,7 @@
     "drag_actions": [
       {
         "text_en": "OData endpoint",
-        "text_ja": "OData endpoint"
+        "text_ja": "ODataエンドポイント"
       },
       {
         "text_en": "batch data API",
@@ -27200,11 +27200,11 @@
       },
       {
         "text_en": "custom service",
-        "text_ja": "custom service"
+        "text_ja": "カスタマーサービス"
       },
       {
         "text_en": "Excel integration",
-        "text_ja": "Excel integration"
+        "text_ja": "Excelとの連携"
       }
     ],
     "drag_slots": [
@@ -28189,11 +28189,11 @@
     "drag_actions": [
       {
         "text_en": "cloud only",
-        "text_ja": "cloud only"
+        "text_ja": "クラウドオンリー"
       },
       {
         "text_en": "on-premises only",
-        "text_ja": "on-premises only"
+        "text_ja": "オンプレミス"
       },
       {
         "text_en": "cloud or on-premises",
@@ -28648,11 +28648,11 @@
       },
       {
         "text_en": "Virtual entity",
-        "text_ja": "Virtual entity"
+        "text_ja": "仮想エンティティ"
       },
       {
         "text_en": "Composite entity",
-        "text_ja": "Composite entity"
+        "text_ja": "複合エンティティ"
       }
     ],
     "drag_slots": [
@@ -29454,7 +29454,7 @@
       },
       {
         "text_en": "e-commerce website",
-        "text_ja": "e-commerce website"
+        "text_ja": "Eコマースウェブサイト"
       },
       {
         "text_en": "on-premises mainframe system",
@@ -29750,7 +29750,7 @@
       },
       {
         "text_en": "Public API",
-        "text_ja": "Public API"
+        "text_ja": "*公開APIキー"
       }
     ],
     "drag_slots": [
@@ -30119,7 +30119,7 @@
       },
       {
         "text_en": "Replacement key",
-        "text_ja": "Replacement key"
+        "text_ja": "交換用キー"
       }
     ],
     "drag_slots": [
@@ -30206,7 +30206,7 @@
     "drag_actions": [
       {
         "text_en": "Custom service",
-        "text_ja": "Custom service"
+        "text_ja": "カスタムサービス"
       },
       {
         "text_en": "Azure Data Lake integration",
@@ -31375,7 +31375,7 @@
       },
       {
         "text_en": "Custom service",
-        "text_ja": "Custom service"
+        "text_ja": "カスタムサービス"
       },
       {
         "text_en": "Azure Data Lake integration",
@@ -32146,7 +32146,7 @@
     "drag_actions": [
       {
         "text_en": "Integration endpoints",
-        "text_ja": "Integration endpoints"
+        "text_ja": "統合エンドポイント"
       },
       {
         "text_en": "OData",
@@ -32154,11 +32154,11 @@
       },
       {
         "text_en": "Excel add-in",
-        "text_ja": "Excel add-in"
+        "text_ja": "excel アドイン"
       },
       {
         "text_en": "Custom service",
-        "text_ja": "Custom service"
+        "text_ja": "カスタムサービス"
       }
     ],
     "drag_slots": [
@@ -32737,7 +32737,7 @@
     "drag_actions": [
       {
         "text_en": "Integration patterns",
-        "text_ja": "Integration patterns"
+        "text_ja": "統合パターン"
       },
       {
         "text_en": "Asynchronous",
@@ -36578,7 +36578,7 @@
       },
       {
         "text_en": "Recurring integrations",
-        "text_ja": "Recurring integrations"
+        "text_ja": "定期的な連携"
       }
     ],
     "drag_slots": [
@@ -37264,15 +37264,15 @@
     "drag_actions": [
       {
         "text_en": "existing model",
-        "text_ja": "existing model"
+        "text_ja": "既存のモデル"
       },
       {
         "text_en": "new model",
-        "text_ja": "new model"
+        "text_ja": "新しいモデル"
       },
       {
         "text_en": "deployable package",
-        "text_ja": "deployable package"
+        "text_ja": "展開可能なパッケージ"
       },
       {
         "text_en": "package",
@@ -37280,7 +37280,7 @@
       },
       {
         "text_en": "model file",
-        "text_ja": "model file"
+        "text_ja": "モデルファイル"
       },
       {
         "text_en": "project",

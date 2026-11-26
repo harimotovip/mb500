@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v13 (Dual-AI Blind Verification: Claude + Gemini)
-const CACHE_NAME = 'mb500-cache-v13';
+// Service Worker for MB-500 Offline Quiz Tool - v14 (Clean short drag_actions translations)
+const CACHE_NAME = 'mb500-cache-v14';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
