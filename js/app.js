@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.1.2').then(r => r.json()),
-        fetch('./data/topics.json?v=7.1.2').then(r => r.json())
+        fetch('./data/questions.json?v=7.1.3').then(r => r.json()),
+        fetch('./data/topics.json?v=7.1.3').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -526,7 +526,8 @@ class MB500App {
       const parts = aiAns.split('|').map(p => p.replace(/^\s*\d+\s*:\s*/, '').trim()).filter(Boolean);
       if (parts.length >= 2) {
         return parts.map(p => {
-          const matched = (q.drag_actions || []).find(a => a.text_en.toLowerCase() === p.toLowerCase());
+          const norm = s => s.toLowerCase().replace(/\.$/, '').trim();
+          const matched = (q.drag_actions || []).find(a => norm(a.text_en) === norm(p));
           if (matched) {
             if (this.language === 'en') return matched.text_en;
             if (this.language === 'ja') return matched.text_ja || matched.text_en;

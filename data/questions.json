@@ -16580,7 +16580,7 @@
           "Yes",
           "No"
         ],
-        "answer": "O"
+        "answer": "Yes"
       },
       {
         "box_id": 4,
@@ -16590,7 +16590,7 @@
           "Yes",
           "No"
         ],
-        "answer": "O"
+        "answer": "No"
       }
     ]
   },
@@ -22895,7 +22895,7 @@
           "SalesStatus::BackOrder",
           "SalesStatus::Invoiced"
         ],
-        "answer": "&& salesTable.SalesStatus --"
+        "answer": "SalesStatus::BackOrder"
       },
       {
         "box_id": 4,
@@ -33786,7 +33786,7 @@
           "The number of open forms and the rate at which they are opened and closed (per minute).",
           "The total number of forms and the rate at which they are opened and closed (per minute)."
         ],
-        "answer": "Data"
+        "answer": "The number of open forms and the rate at which they are opened and closed (per second)."
       },
       {
         "box_id": 2,
@@ -33797,7 +33797,7 @@
           "The number of current web client sessions and how many are in use.",
           "Information about the garbage collection processes on the server."
         ],
-        "answer": "Data"
+        "answer": "The total number of sessions created."
       }
     ]
   },
@@ -36693,7 +36693,7 @@
           "Azure Logic Apps",
           "Azure Event Grid"
         ],
-        "answer": "Service"
+        "answer": "Azure Logic Apps"
       },
       {
         "box_id": 2,
