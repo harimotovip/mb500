@@ -843,23 +843,23 @@
     "drag_actions": [
       {
         "text_en": "Map the Microsoft Azure DevOps project to your local developer machine.",
-        "text_ja": "Map the Microsoft Azure DevOps project to your local developer machine."
+        "text_ja": "Microsoft Azure DevOps プロジェクトをローカルの開発者マシンにマップします。"
       },
       {
         "text_en": "Create a test branch.",
-        "text_ja": "Create a test branch."
+        "text_ja": "テストブランチを作成します。"
       },
       {
         "text_en": "Create a dev branch.",
-        "text_ja": "Create a dev branch."
+        "text_ja": "dev ブランチを作成します。"
       },
       {
         "text_en": "Connect to the Microsoft Azure DevOps project.",
-        "text_ja": "Connect to the Microsoft Azure DevOps project."
+        "text_ja": "Microsoft Azure DevOps プロジェクトに接続します。"
       },
       {
         "text_en": "Create a main branch.",
-        "text_ja": "Create a main branch."
+        "text_ja": "メインブランチを作成します。"
       }
     ],
     "drag_slots": [
@@ -1214,19 +1214,19 @@
     "drag_actions": [
       {
         "text_en": "Navigate to the Workspace form and select Find form to add.",
-        "text_ja": "Navigate to the Workspace form and select Find form to add."
+        "text_ja": "ワークスペース フォームに移動し、追加するフォームを検索を選択します。"
       },
       {
         "text_en": "Select Workspace and Presentation options.",
-        "text_ja": "Select Workspace and Presentation options."
+        "text_ja": "ワークスペースとプレゼンテーションのオプションを選択します。"
       },
       {
         "text_en": "Select the Options action pane tab and then select Add to workspace.",
-        "text_ja": "Select the Options action pane tab and then select Add to workspace."
+        "text_ja": "[オプション] アクション ペイン タブを選択し、[ワークスペースに追加] を選択します。"
       },
       {
         "text_en": "Open the customer form and apply filters to the grid.",
-        "text_ja": "Open the customer form and apply filters to the grid."
+        "text_ja": "顧客フォームを開き、グリッドにフィルターを適用します。"
       },
       {
         "text_en": "Select Configure.",
@@ -1234,7 +1234,7 @@
       },
       {
         "text_en": "Select the General menu item then select Add to workspace.",
-        "text_ja": "Select the General menu item then select Add to workspace."
+        "text_ja": "「一般」メニュー項目を選択し、「ワークスペースに追加」を選択します。"
       }
     ],
     "drag_slots": [
@@ -1350,7 +1350,7 @@
     "drag_actions": [
       {
         "text_en": "User Acceptance Testing (UAT) only",
-        "text_ja": "User Acceptance Testing (UAT) only"
+        "text_ja": "ユーザー受け入れテスト (UAT) のみ"
       },
       {
         "text_en": "Build only",
@@ -1358,7 +1358,7 @@
       },
       {
         "text_en": "User Acceptance Testing (UAT) and Build",
-        "text_ja": "User Acceptance Testing (UAT) and Build"
+        "text_ja": "ユーザー受け入れテスト (UAT) とビルド"
       }
     ],
     "drag_slots": [
@@ -1725,12 +1725,12 @@
       {
         "index": 2,
         "label_en": "Global Address Book",
-        "label_ja": "Global Address Book"
+        "label_ja": "グローバル アドレス帳"
       },
       {
         "index": 3,
         "label_en": "Workflow & Services",
-        "label_ja": "Workflow & Services"
+        "label_ja": "ワークフローとサービス"
       },
       {
         "index": 4,
@@ -1915,15 +1915,15 @@
     "drag_actions": [
       {
         "text_en": "Requirement Activity monitoring",
-        "text_ja": "Requirement Activity monitoring"
+        "text_ja": "要件アクティビティの監視"
       },
       {
         "text_en": "SQL insights Determine what a user was doing during a specific i",
-        "text_ja": "SQL insights Determine what a user was doing during a specific i"
+        "text_ja": "SQL の洞察 特定の操作中にユーザーが何をしていたかを判断します。"
       },
       {
         "text_en": "time period Health metrics Identify the number of distinct user sessions View a list of transaction locks",
-        "text_ja": "time period Health metrics Identify the number of distinct user sessions View a list of transaction locks"
+        "text_ja": "期間 健全性メトリクス 個別のユーザー セッションの数を特定する トランザクション ロックのリストを表示する"
       }
     ],
     "drag_slots": [
@@ -2416,24 +2416,24 @@
       },
       {
         "text_en": "Localized financial report",
-        "text_ja": "Localized financial report"
+        "text_ja": "ローカライズされた財務レポート"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
         "label_en": "Upload a logo of various sizes to be used in other environments",
-        "label_ja": "Upload a logo of various sizes to be used in other environments"
+        "label_ja": "他の環境で使用するさまざまなサイズのロゴをアップロードします"
       },
       {
         "index": 2,
         "label_en": "Upload an electronic report to be used for a free text invoice in Dynamics 365 Finance",
-        "label_ja": "Upload an electronic report to be used for a free text invoice in Dynamics 365 Finance"
+        "label_ja": "Dynamics 365 Finance の自由テキスト請求書に使用する電子レポートをアップロードします"
       },
       {
         "index": 3,
         "label_en": "Upload a region-specific solution developed for a ledger account in the form of an ISV",
-        "label_ja": "Upload a region-specific solution developed for a ledger account in the form of an ISV"
+        "label_ja": "ISV の形式で勘定科目用に開発された地域固有のソリューションをアップロードします"
       }
     ]
   },
@@ -2649,12 +2649,12 @@
       {
         "index": 1,
         "label_en": "Group elements for deployment as a unit.",
-        "label_ja": "Group elements for deployment as a unit."
+        "label_ja": "デプロイメント用の要素をユニットとしてグループ化します。"
       },
       {
         "index": 2,
         "label_en": "Manage and organize a group of elements during development.",
-        "label_ja": "Manage and organize a group of elements during development."
+        "label_ja": "開発中に要素のグループを管理および整理します。"
       }
     ]
   },
@@ -3267,15 +3267,15 @@
     "drag_actions": [
       {
         "text_en": "Mobile app, workspaces, and platform",
-        "text_ja": "Mobile app, workspaces, and platform"
+        "text_ja": "モバイル アプリ、ワークスペース、プラットフォーム"
       },
       {
         "text_en": "Save or load task recordings from the BPM library",
-        "text_ja": "Save or load task recordings from the BPM library"
+        "text_ja": "BPM ライブラリからタスクの記録を保存またはロードする"
       },
       {
         "text_en": "Integration with Power BI Desktop",
-        "text_ja": "Integration with Power BI Desktop"
+        "text_ja": "Power BI Desktop との統合"
       }
     ],
     "drag_slots": [
@@ -3292,7 +3292,7 @@
       {
         "index": 3,
         "label_en": "Both cloud and on-premises",
-        "label_ja": "Both cloud and on-premises"
+        "label_ja": "クラウドとオンプレミスの両方"
       }
     ]
   },
@@ -3610,23 +3610,23 @@
     "drag_actions": [
       {
         "text_en": "In the Source Control Merge wizard, set the target branch to Test.",
-        "text_ja": "In the Source Control Merge wizard, set the target branch to Test."
+        "text_ja": "ソース管理マージ ウィザードで、ターゲット ブランチを「テスト」に設定します。"
       },
       {
         "text_en": "In the Source Control Merge wizard, select Selected changesets.",
-        "text_ja": "In the Source Control Merge wizard, select Selected changesets."
+        "text_ja": "ソース管理マージ ウィザードで、[選択された変更セット] を選択します。"
       },
       {
         "text_en": "Right-click the Test branch and select Merge.",
-        "text_ja": "Right-click the Test branch and select Merge."
+        "text_ja": "[テスト] ブランチを右クリックし、[マージ] を選択します。"
       },
       {
         "text_en": "Connect a Visual Studio workspace to an Azure DevOps project.",
-        "text_ja": "Connect a Visual Studio workspace to an Azure DevOps project."
+        "text_ja": "Visual Studio ワークスペースを Azure DevOps プロジェクトに接続します。"
       },
       {
         "text_en": "Map the Test branch to a local folder on your machine.",
-        "text_ja": "Map the Test branch to a local folder on your machine."
+        "text_ja": "Test ブランチをマシン上のローカル フォルダーにマップします。"
       }
     ],
     "drag_slots": [
@@ -3934,19 +3934,19 @@
     "drag_actions": [
       {
         "text_en": "Add the task named Add Licenses to Deployable Package.",
-        "text_ja": "Add the task named Add Licenses to Deployable Package."
+        "text_ja": "「ライセンスを展開可能パッケージに追加」という名前のタスクを追加します。"
       },
       {
         "text_en": "Provide a search pattern for the license file to add to the package.",
-        "text_ja": "Provide a search pattern for the license file to add to the package."
+        "text_ja": "パッケージに追加するライセンス ファイルの検索パターンを指定します。"
       },
       {
         "text_en": "Add the license file to a source control repository.",
-        "text_ja": "Add the license file to a source control repository."
+        "text_ja": "ライセンス ファイルをソース管理リポジトリに追加します。"
       },
       {
         "text_en": "Provide a file name and the path of the deployable package to update.",
-        "text_ja": "Provide a file name and the path of the deployable package to update."
+        "text_ja": "更新する配置可能パッケージのファイル名とパスを指定します。"
       }
     ],
     "drag_slots": [
@@ -4215,17 +4215,17 @@
       {
         "index": 1,
         "label_en": "Create and use Al agents.",
-        "label_ja": "Create and use Al agents."
+        "label_ja": "Al エージェントを作成して使用します。"
       },
       {
         "index": 2,
         "label_en": "Use a local file system to store ER configurations.",
-        "label_ja": "Use a local file system to store ER configurations."
+        "label_ja": "ローカル ファイル システムを使用して ER 構成を保存します。"
       },
       {
         "index": 3,
         "label_en": "Integrate with Power BI desktop.",
-        "label_ja": "Integrate with Power BI desktop."
+        "label_ja": "Power BI デスクトップと統合します。"
       }
     ]
   },
@@ -4817,19 +4817,19 @@
     "drag_actions": [
       {
         "text_en": "Add the custom Data service endpoints in the ODataClient list.",
-        "text_ja": "Add the custom Data service endpoints in the ODataClient list."
+        "text_ja": "カスタム データ サービス エンドポイントを ODataClient リストに追加します。"
       },
       {
         "text_en": "Add the OData v4 client code generator.",
-        "text_ja": "Add the OData v4 client code generator."
+        "text_ja": "OData v4 クライアント コード ジェネレーターを追加します。"
       },
       {
         "text_en": "Point the MetadataDocumentUri variable to the Dynamics 365 Finance instance.",
-        "text_ja": "Point the MetadataDocumentUri variable to the Dynamics 365 Finance instance."
+        "text_ja": "MetadataDocumentUri 変数を Dynamics 365 Finance インスタンスにポイントします。"
       },
       {
         "text_en": "Generate proxy classes.",
-        "text_ja": "Generate proxy classes."
+        "text_ja": "プロキシ クラスを生成します。"
       }
     ],
     "drag_slots": [
@@ -5050,19 +5050,19 @@
     "drag_actions": [
       {
         "text_en": "Develop the workflow approval component.",
-        "text_ja": "Develop the workflow approval component."
+        "text_ja": "ワークフロー承認コンポーネントを開発します。"
       },
       {
         "text_en": "Configure the business process steps.",
-        "text_ja": "Configure the business process steps."
+        "text_ja": "ビジネスプロセスのステップを設定します。"
       },
       {
         "text_en": "Create a workflow structure.",
-        "text_ja": "Create a workflow structure."
+        "text_ja": "ワークフロー構造を作成します。"
       },
       {
         "text_en": "Enable the workflow for the business scenario.",
-        "text_ja": "Enable the workflow for the business scenario."
+        "text_ja": "ビジネス シナリオのワークフローを有効にします。"
       }
     ],
     "drag_slots": [
@@ -5580,15 +5580,15 @@
     "drag_actions": [
       {
         "text_en": "FormRun Use case",
-        "text_ja": "FormRun Use case"
+        "text_ja": "FormRun 使用例"
       },
       {
         "text_en": "Global The process is run outside the client.",
-        "text_ja": "Global The process is run outside the client."
+        "text_ja": "グローバル プロセスはクライアントの外部で実行されます。"
       },
       {
         "text_en": "Display a message when the process is completed without a page refresh. The page must be refreshed for the message to be displayed.",
-        "text_ja": "Display a message when the process is completed without a page refresh. The page must be refreshed for the message to be displayed."
+        "text_ja": "ページを更新せずに処理が完了した場合にメッセージを表示します。メッセージを表示するには、ページを更新する必要があります。"
       }
     ],
     "drag_slots": [
@@ -5840,12 +5840,12 @@
       {
         "index": 1,
         "label_en": "Create new rentals.",
-        "label_ja": "Create new rentals."
+        "label_ja": "新しいレンタルを作成します。"
       },
       {
         "index": 2,
         "label_en": "View all rental assets.",
-        "label_ja": "View all rental assets."
+        "label_ja": "すべてのレンタル資産を表示します。"
       }
     ]
   },
@@ -5978,12 +5978,12 @@
       {
         "index": 1,
         "label_en": "Add a new field.",
-        "label_ja": "Add a new field."
+        "label_ja": "新しいフィールドを追加します。"
       },
       {
         "index": 2,
         "label_en": "Adjust the customer address location.",
-        "label_ja": "Adjust the customer address location."
+        "label_ja": "顧客の住所の位置を調整します。"
       }
     ]
   },
@@ -6049,27 +6049,27 @@
     "drag_actions": [
       {
         "text_en": "Merge the changes to the Release target branch.",
-        "text_ja": "Merge the changes to the Release target branch."
+        "text_ja": "変更をリリース ターゲット ブランチにマージします。"
       },
       {
         "text_en": "Merge the changes to the Dev target branch.",
-        "text_ja": "Merge the changes to the Dev target branch."
+        "text_ja": "変更を開発ターゲット ブランチにマージします。"
       },
       {
         "text_en": "Choose the all changes up to a specific version option.",
-        "text_ja": "Choose the all changes up to a specific version option."
+        "text_ja": "[特定のバージョンまでのすべての変更] オプションを選択します。"
       },
       {
         "text_en": "Choose the selected changesets option.",
-        "text_ja": "Choose the selected changesets option."
+        "text_ja": "選択した変更セット オプションを選択します。"
       },
       {
         "text_en": "Perform a merge from the Release source branch.",
-        "text_ja": "Perform a merge from the Release source branch."
+        "text_ja": "リリース ソース ブランチからマージを実行します。"
       },
       {
         "text_en": "Perform a merge from the Dev source branch.",
-        "text_ja": "Perform a merge from the Dev source branch."
+        "text_ja": "Dev ソース ブランチからマージを実行します。"
       }
     ],
     "drag_slots": [
@@ -6145,19 +6145,19 @@
     "drag_actions": [
       {
         "text_en": "Develop the workflow approval component.",
-        "text_ja": "Develop the workflow approval component."
+        "text_ja": "ワークフロー承認コンポーネントを開発します。"
       },
       {
         "text_en": "Configure the business process steps.",
-        "text_ja": "Configure the business process steps."
+        "text_ja": "ビジネスプロセスのステップを設定します。"
       },
       {
         "text_en": "Create a workflow structure.",
-        "text_ja": "Create a workflow structure."
+        "text_ja": "ワークフロー構造を作成します。"
       },
       {
         "text_en": "Enable the workflow for the business scenario.",
-        "text_ja": "Enable the workflow for the business scenario."
+        "text_ja": "ビジネス シナリオのワークフローを有効にします。"
       }
     ],
     "drag_slots": [
@@ -6367,23 +6367,23 @@
     "drag_actions": [
       {
         "text_en": "Select the repository that requires the new pipeline.",
-        "text_ja": "Select the repository that requires the new pipeline."
+        "text_ja": "新しいパイプラインを必要とするリポジトリを選択します。"
       },
       {
         "text_en": "Add a step for the Develop branch.",
-        "text_ja": "Add a step for the Develop branch."
+        "text_ja": "Develop ブランチのステップを追加します。"
       },
       {
         "text_en": "Configure the pipeline.",
-        "text_ja": "Configure the pipeline."
+        "text_ja": "パイプラインを構成します。"
       },
       {
         "text_en": "Add a trigger for the Develop branch.",
-        "text_ja": "Add a trigger for the Develop branch."
+        "text_ja": "Develop ブランチのトリガーを追加します。"
       },
       {
         "text_en": "Create the pipeline based on the requirements.",
-        "text_ja": "Create the pipeline based on the requirements."
+        "text_ja": "要件に基づいてパイプラインを作成します。"
       }
     ],
     "drag_slots": [
@@ -6456,27 +6456,27 @@
     "drag_actions": [
       {
         "text_en": "Schedule the production update with the release candidate version.",
-        "text_ja": "Schedule the production update with the release candidate version."
+        "text_ja": "リリース候補バージョンを使用した運用アップデートをスケジュールします。"
       },
       {
         "text_en": "Generate a deployable package in Azure DevOps by using a build pipeline.",
-        "text_ja": "Generate a deployable package in Azure DevOps by using a build pipeline."
+        "text_ja": "ビルド パイプラインを使用して、Azure DevOps でデプロイ可能なパッケージを生成します。"
       },
       {
         "text_en": "Apply the deployable package to a sandbox environment.",
-        "text_ja": "Apply the deployable package to a sandbox environment."
+        "text_ja": "デプロイ可能なパッケージをサンドボックス環境に適用します。"
       },
       {
         "text_en": "Build the solution in Visual Studio and create a deployable package with the generated DLLs for your model.",
-        "text_ja": "Build the solution in Visual Studio and create a deployable package with the generated DLLs for your model."
+        "text_ja": "Visual Studio でソリューションを構築し、モデル用に生成された DLL を使用して配置可能なパッケージを作成します。"
       },
       {
         "text_en": "Mark the deployable package as a release candidate on the sandbox environment.",
-        "text_ja": "Mark the deployable package as a release candidate on the sandbox environment."
+        "text_ja": "展開可能なパッケージをサンドボックス環境のリリース候補としてマークします。"
       },
       {
         "text_en": "Develop the code and check it in to your version control system.",
-        "text_ja": "Develop the code and check it in to your version control system."
+        "text_ja": "コードを開発し、バージョン管理システムにチェックインします。"
       }
     ],
     "drag_slots": [
@@ -6634,19 +6634,19 @@
       },
       {
         "text_en": "Merge by using Merge Tool",
-        "text_ja": "Merge by using Merge Tool"
+        "text_ja": "マージ ツールを使用してマージ"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
         "label_en": "Erase local changes",
-        "label_ja": "Erase local changes"
+        "label_ja": "ローカルの変更を消去"
       },
       {
         "index": 2,
         "label_en": "Keep or discard each change, one at a time",
-        "label_ja": "Keep or discard each change, one at a time"
+        "label_ja": "各変更を一度に 1 つずつ保持または破棄"
       }
     ]
   },
@@ -6697,23 +6697,23 @@
     "drag_actions": [
       {
         "text_en": "Merge ServicePU1 into the Main branch.",
-        "text_ja": "Merge ServicePU1 into the Main branch."
+        "text_ja": "ServicePU1 を Main ブランチにマージします。"
       },
       {
         "text_en": "Create a Release branch named Release1 from ServicePU1.",
-        "text_ja": "Create a Release branch named Release1 from ServicePU1."
+        "text_ja": "ServicePU1 から Release1 という名前のリリース ブランチを作成します。"
       },
       {
         "text_en": "Create a Service update branch named ServicePU1 from the Main branch.",
-        "text_ja": "Create a Service update branch named ServicePU1 from the Main branch."
+        "text_ja": "Main ブランチから ServicePU1 という名前のサービス更新ブランチを作成します。"
       },
       {
         "text_en": "Apply the latest Microsoft service updates to the new branch named ServicePU1.",
-        "text_ja": "Apply the latest Microsoft service updates to the new branch named ServicePU1."
+        "text_ja": "最新の Microsoft サービス更新を ServicePU1 という名前の新しいブランチに適用します。"
       },
       {
         "text_en": "Merge Release1 into ServicePU1.",
-        "text_ja": "Merge Release1 into ServicePU1."
+        "text_ja": "Release1 を ServicePU1 にマージします。"
       }
     ],
     "drag_slots": [
@@ -6799,23 +6799,23 @@
     "drag_actions": [
       {
         "text_en": "Edit, save, and commit the code changes.",
-        "text_ja": "Edit, save, and commit the code changes."
+        "text_ja": "コードの変更を編集、保存、コミットします。"
       },
       {
         "text_en": "From a Git command line tool or user interface, select the existing branch you want to branch from.",
-        "text_ja": "From a Git command line tool or user interface, select the existing branch you want to branch from."
+        "text_ja": "Git コマンド ライン ツールまたはユーザー インターフェイスから、分岐元の既存のブランチを選択します。"
       },
       {
         "text_en": "Create a new branch that includes all recent changes.",
-        "text_ja": "Create a new branch that includes all recent changes."
+        "text_ja": "最近の変更をすべて含む新しいブランチを作成します。"
       },
       {
         "text_en": "Pull and merge any new changes to the existing branch since the original branching.",
-        "text_ja": "Pull and merge any new changes to the existing branch since the original branching."
+        "text_ja": "元のブランチ以降の既存のブランチへの新しい変更をプルしてマージします。"
       },
       {
         "text_en": "Push code and create a pull request.",
-        "text_ja": "Push code and create a pull request."
+        "text_ja": "コードをプッシュし、プル リクエストを作成します。"
       }
     ],
     "drag_slots": [
@@ -6915,23 +6915,23 @@
     "drag_actions": [
       {
         "text_en": "Run the upgrade process on Lifecycle Services.",
-        "text_ja": "Run the upgrade process on Lifecycle Services."
+        "text_ja": "Lifecycle Services でアップグレード プロセスを実行します。"
       },
       {
         "text_en": "Build the code and fix the conflicts on Visual Studio and then merge the Releases branch into the Trunk\\Main branch.",
-        "text_ja": "Build the code and fix the conflicts on Visual Studio and then merge the Releases branch into the Trunk\\Main branch."
+        "text_ja": "コードをビルドし、Visual Studio で競合を修正してから、Releases ブランチを Trunk\\Main ブランチにマージします。"
       },
       {
         "text_en": "Create the Trunk \\Main folder structure on your Azure DevOps project repository and add the code in your upgraded metadata file.",
-        "text_ja": "Create the Trunk \\Main folder structure on your Azure DevOps project repository and add the code in your upgraded metadata file."
+        "text_ja": "Azure DevOps プロジェクト リポジトリに Trunk \\Main フォルダー構造を作成し、アップグレードされたメタデータ ファイルにコードを追加します。"
       },
       {
         "text_en": "Create a personal access token and use it to connect your Lifecycle Services project to Azure DevOps.",
-        "text_ja": "Create a personal access token and use it to connect your Lifecycle Services project to Azure DevOps."
+        "text_ja": "個人用アクセス トークンを作成し、それを使用して Lifecycle Services プロジェクトを Azure DevOps に接続します。"
       },
       {
         "text_en": "Map your development environment to the Releases branch.",
-        "text_ja": "Map your development environment to the Releases branch."
+        "text_ja": "開発環境を Releases ブランチにマップします。"
       }
     ],
     "drag_slots": [
@@ -7041,17 +7041,17 @@
       {
         "index": 1,
         "label_en": "Provide a unique key for each record in a table.",
-        "label_ja": "Provide a unique key for each record in a table."
+        "label_ja": "テーブル内の各レコードに一意のキーを指定します。"
       },
       {
         "index": 2,
         "label_en": "Organize the data for a table according to the physical order of the specified column.",
-        "label_ja": "Organize the data for a table according to the physical order of the specified column."
+        "label_ja": "指定された列の物理的な順序に従ってテーブルのデータを整理します。"
       },
       {
         "index": 3,
         "label_en": "Quickly reference data that is found by using a specified set of columns.",
-        "label_ja": "Quickly reference data that is found by using a specified set of columns."
+        "label_ja": "指定した一連の列を使用して検索されたデータを迅速に参照します。"
       }
     ]
   },
@@ -8251,27 +8251,27 @@
     "drag_actions": [
       {
         "text_en": "Select the IsExtensible property for the CustTable form.",
-        "text_ja": "Select the IsExtensible property for the CustTable form."
+        "text_ja": "CustTable フォームの IsExtensible プロパティを選択します。"
       },
       {
         "text_en": "In Solution Explorer, drag the CustTable form into the project.",
-        "text_ja": "In Solution Explorer, drag the CustTable form into the project."
+        "text_ja": "ソリューション エクスプローラーで、CustTable フォームをプロジェクトにドラッグします。"
       },
       {
         "text_en": "Rename the new CustTable extension.",
-        "text_ja": "Rename the new CustTable extension."
+        "text_ja": "新しい CustTable 拡張機能の名前を変更します。"
       },
       {
         "text_en": "In the Application Object Tree (AOT), right-click the CustTable form and select Add to project.",
-        "text_ja": "In the Application Object Tree (AOT), right-click the CustTable form and select Add to project."
+        "text_ja": "アプリケーション オブジェクト ツリー (AOT) で、CustTable フォームを右クリックし、[プロジェクトに追加] を選択します。"
       },
       {
         "text_en": "In the Application Object Tree (AOT), right-click the CustTable form.",
-        "text_ja": "In the Application Object Tree (AOT), right-click the CustTable form."
+        "text_ja": "アプリケーション オブジェクト ツリー (AOT) で、CustTable フォームを右クリックします。"
       },
       {
         "text_en": "Select Create extension.",
-        "text_ja": "Select Create extension."
+        "text_ja": "[拡張機能の作成] を選択します。"
       }
     ],
     "drag_slots": [
@@ -9907,23 +9907,23 @@
     "drag_actions": [
       {
         "text_en": "Copy the onWriting event handler on the CustTable table object.",
-        "text_ja": "Copy the onWriting event handler on the CustTable table object."
+        "text_ja": "CustTable テーブル オブジェクトの onWriting イベント ハンドラーをコピーします。"
       },
       {
         "text_en": "Copy the validatedWrite event handler on the CustTable object.",
-        "text_ja": "Copy the validatedWrite event handler on the CustTable object."
+        "text_ja": "ValidatedWrite イベント ハンドラーを CustTable オブジェクトにコピーします。"
       },
       {
         "text_en": "Add code to perform the validation.",
-        "text_ja": "Add code to perform the validation."
+        "text_ja": "検証を実行するコードを追加します。"
       },
       {
         "text_en": "Copy the onModified event handler on the Custlable object.",
-        "text_ja": "Copy the onModified event handler on the Custlable object."
+        "text_ja": "Custlable オブジェクトの onModified イベント ハンドラーをコピーします。"
       },
       {
         "text_en": "Add the event handler method to a class.",
-        "text_ja": "Add the event handler method to a class."
+        "text_ja": "イベント ハンドラー メソッドをクラスに追加します。"
       }
     ],
     "drag_slots": [
@@ -10889,17 +10889,17 @@
       {
         "index": 1,
         "label_en": "Extenders must be able to subscribe to pre- and post- event handlers.",
-        "label_ja": "Extenders must be able to subscribe to pre- and post- event handlers."
+        "label_ja": "エクステンダーは、イベント前およびイベント後のハンドラーをサブスクライブできる必要があります。"
       },
       {
         "index": 2,
         "label_en": "Extenders must not be able to use chain of command (CoC) to wrap a specific method.",
-        "label_ja": "Extenders must not be able to use chain of command (CoC) to wrap a specific method."
+        "label_ja": "エクステンダーは、コマンド チェーン (CoC) を使用して特定のメソッドをラップできません。"
       },
       {
         "index": 3,
         "label_en": "Extenders must be able to wrap the method but must not i be required to call next in the chain of command (CoC).",
-        "label_ja": "Extenders must be able to wrap the method but must not i be required to call next in the chain of command (CoC)."
+        "label_ja": "エクステンダーはメソッドをラップできなければなりませんが、コマンド チェーン (CoC) の次の呼び出しを要求されてはなりません。"
       }
     ]
   },
@@ -13587,12 +13587,12 @@
       {
         "index": 1,
         "label_en": "Track the day",
-        "label_ja": "Track the day"
+        "label_ja": "日を追跡"
       },
       {
         "index": 2,
         "label_en": "Track the quantity",
-        "label_ja": "Track the quantity"
+        "label_ja": "数量を追跡"
       }
     ]
   },
@@ -13684,17 +13684,17 @@
       {
         "index": 1,
         "label_en": "Ensure that child classes have common private and public methods.",
-        "label_ja": "Ensure that child classes have common private and public methods."
+        "label_ja": "子クラスに共通のプライベート メソッドとパブリック メソッドがあることを確認します。"
       },
       {
         "index": 2,
         "label_en": "Implement all methods in the child classes.",
-        "label_ja": "Implement all methods in the child classes."
+        "label_ja": "すべてのメソッドを子クラスに実装します。"
       },
       {
         "index": 3,
         "label_en": "Implement the methods of the parent class.",
-        "label_ja": "Implement the methods of the parent class."
+        "label_ja": "親クラスのメソッドを実装します。"
       }
     ]
   },
@@ -13838,23 +13838,23 @@
     "drag_actions": [
       {
         "text_en": "Create a new EDT type of AnyType.",
-        "text_ja": "Create a new EDT type of AnyType."
+        "text_ja": "AnyType の新しい EDT タイプを作成します。"
       },
       {
         "text_en": "Add the new field to the CustTable.",
-        "text_ja": "Add the new field to the CustTable."
+        "text_ja": "新しいフィールドを CustTable に追加します。"
       },
       {
         "text_en": "Create a new EDT type of string.",
-        "text_ja": "Create a new EDT type of string."
+        "text_ja": "新しい EDT タイプの文字列を作成します。"
       },
       {
         "text_en": "Change the length property on the new EDT to Note.",
-        "text_ja": "Change the length property on the new EDT to Note."
+        "text_ja": "新しい EDT の長さプロパティを Note に変更します。"
       },
       {
         "text_en": "Extend the All customers form and add the new EDT field.",
-        "text_ja": "Extend the All customers form and add the new EDT field."
+        "text_ja": "[すべての顧客] フォームを拡張し、新しい EDT フィールドを追加します。"
       }
     ],
     "drag_slots": [
@@ -14035,23 +14035,23 @@
     "drag_actions": [
       {
         "text_en": "Right-click the project, select Properties, set the Synchronize Database on Build property to True, and then select OK.",
-        "text_ja": "Right-click the project, select Properties, set the Synchronize Database on Build property to True, and then select OK."
+        "text_ja": "プロジェクトを右クリックし、「プロパティ」を選択し、「ビルド時にデータベースを同期」プロパティを「True」に設定して、「OK」を選択します。"
       },
       {
         "text_en": "Right-click the WhsTmpStatusChange table in the solution explorer and create an extension.",
-        "text_ja": "Right-click the WhsTmpStatusChange table in the solution explorer and create an extension."
+        "text_ja": "ソリューション エクスプローラーで WhsTmpStatusChange テーブルを右クリックし、拡張機能を作成します。"
       },
       {
         "text_en": "Right-click WhsTmpStatusChange in the Application Object Tree (AOT) to create the extension and add it to the project.",
-        "text_ja": "Right-click WhsTmpStatusChange in the Application Object Tree (AOT) to create the extension and add it to the project."
+        "text_ja": "アプリケーション オブジェクト ツリー (AOT) で WhsTmpStatusChange を右クリックし、拡張機能を作成し、プロジェクトに追加します。"
       },
       {
         "text_en": "Right-click the project and build the project.",
-        "text_ja": "Right-click the project and build the project."
+        "text_ja": "プロジェクトを右クリックし、プロジェクトをビルドします。"
       },
       {
         "text_en": "Open the WhsTmpStatusChange table from the application explorer.",
-        "text_ja": "Open the WhsTmpStatusChange table from the application explorer."
+        "text_ja": "アプリケーション エクスプローラーから WhsTmpStatusChange テーブルを開きます。"
       }
     ],
     "drag_slots": [
@@ -14532,7 +14532,7 @@
       },
       {
         "text_en": "[ Private instance",
-        "text_ja": "[ Private instance"
+        "text_ja": "[ プライベートインスタンス"
       },
       {
         "text_en": "Public static",
@@ -14540,7 +14540,7 @@
       },
       {
         "text_en": "| Private static",
-        "text_ja": "| Private static"
+        "text_ja": "|プライベート静的"
       }
     ],
     "drag_slots": [
@@ -14772,31 +14772,31 @@
     "drag_actions": [
       {
         "text_en": "In the index node, change the alternate key property to Yes.",
-        "text_ja": "In the index node, change the alternate key property to Yes."
+        "text_ja": "インデックス ノードで、代替キー プロパティを [はい] に変更します。"
       },
       {
         "text_en": "In the table properties, set the index in the clustered index property.",
-        "text_ja": "In the table properties, set the index in the clustered index property."
+        "text_ja": "テーブルのプロパティで、クラスター化インデックスのプロパティにインデックスを設定します。"
       },
       {
         "text_en": "Drag the FMAssetld field to the Indexes node.",
-        "text_ja": "Drag the FMAssetld field to the Indexes node."
+        "text_ja": "FMAssetld フィールドを Indexes ノードにドラッグします。"
       },
       {
         "text_en": "In the Indexes node in the table designer, select New index.",
-        "text_ja": "In the Indexes node in the table designer, select New index."
+        "text_ja": "テーブル デザイナーの [インデックス] ノードで、[新しいインデックス] を選択します。"
       },
       {
         "text_en": "Drag the FMAssetld field to the new index.",
-        "text_ja": "Drag the FMAssetld field to the new index."
+        "text_ja": "FMAssetld フィールドを新しいインデックスにドラッグします。"
       },
       {
         "text_en": "In the Indexes node, change the allow duplicates property to No.",
-        "text_ja": "In the Indexes node, change the allow duplicates property to No."
+        "text_ja": "[インデックス] ノードで、重複を許可するプロパティを [いいえ] に変更します。"
       },
       {
         "text_en": "In the table properties, set the index in the primary index property.",
-        "text_ja": "In the table properties, set the index in the primary index property."
+        "text_ja": "テーブルのプロパティで、プライマリ インデックスのプロパティにインデックスを設定します。"
       }
     ],
     "drag_slots": [
@@ -15336,27 +15336,27 @@
     "drag_actions": [
       {
         "text_en": "Add the CustGroup table to the project.",
-        "text_ja": "Add the CustGroup table to the project."
+        "text_ja": "CustGroup テーブルをプロジェクトに追加します。"
       },
       {
         "text_en": "Create a new string field and name it PaymMode.",
-        "text_ja": "Create a new string field and name it PaymMode."
+        "text_ja": "新しい文字列フィールドを作成し、PaymMode という名前を付けます。"
       },
       {
         "text_en": "Create a new project in Visual Studio.",
-        "text_ja": "Create a new project in Visual Studio."
+        "text_ja": "Visual Studio で新しいプロジェクトを作成します。"
       },
       {
         "text_en": "Drag the PaymMode EDT to the table extension.",
-        "text_ja": "Drag the PaymMode EDT to the table extension."
+        "text_ja": "PaymMode EDT を表拡張子にドラッグします。"
       },
       {
         "text_en": "Create an extension of the CustGroup table and add it to the project.",
-        "text_ja": "Create an extension of the CustGroup table and add it to the project."
+        "text_ja": "CustGroup テーブルの拡張機能を作成し、プロジェクトに追加します。"
       },
       {
         "text_en": "Create a display method to display the PaymMode field.",
-        "text_ja": "Create a display method to display the PaymMode field."
+        "text_ja": "PaymMode フィールドを表示する表示メソッドを作成します。"
       }
     ],
     "drag_slots": [
@@ -15424,19 +15424,19 @@
     "drag_actions": [
       {
         "text_en": "Select the model references.",
-        "text_ja": "Select the model references."
+        "text_ja": "モデル参照を選択します。"
       },
       {
         "text_en": "In the model creation wizard, enter a name and publisher for the model.",
-        "text_ja": "In the model creation wizard, enter a name and publisher for the model."
+        "text_ja": "モデル作成ウィザードで、モデルの名前と発行者を入力します。"
       },
       {
         "text_en": "Create the model as a new package.",
-        "text_ja": "Create the model as a new package."
+        "text_ja": "モデルを新しいパッケージとして作成します。"
       },
       {
         "text_en": "Create a new class that extends the SysExtModelElement class.",
-        "text_ja": "Create a new class that extends the SysExtModelElement class."
+        "text_ja": "SysExtModelElement クラスを拡張する新しいクラスを作成します。"
       }
     ],
     "drag_slots": [
@@ -15523,22 +15523,22 @@
       {
         "index": 1,
         "label_en": "Class that defines report variables",
-        "label_ja": "Class that defines report variables"
+        "label_ja": "レポート変数を定義するクラス"
       },
       {
         "index": 2,
         "label_en": "Parm methods to send data for the report",
-        "label_ja": "Parm methods to send data for the report"
+        "label_ja": "レポートのデータを送信するメソッドを設定します。"
       },
       {
         "index": 3,
         "label_en": "Defines the contract class for a report provider class",
-        "label_ja": "Defines the contract class for a report provider class"
+        "label_ja": "レポート プロバイダー クラスのコントラクト クラスを定義します"
       },
       {
         "index": 4,
         "label_en": "Method that returns data for Report to show",
-        "label_ja": "Method that returns data for Report to show"
+        "label_ja": "表示するレポートのデータを返すメソッド"
       }
     ]
   },
@@ -17000,19 +17000,19 @@
     "drag_actions": [
       {
         "text_en": "Create a runnable class and add the class to the CustomerDetailUpdate project",
-        "text_ja": "Create a runnable class and add the class to the CustomerDetailUpdate project"
+        "text_ja": "実行可能クラスを作成し、そのクラスを CustomerDetailUpdate プロジェクトに追加します"
       },
       {
         "text_en": "Set the class as the startup project and run the class",
-        "text_ja": "Set the class as the startup project and run the class"
+        "text_ja": "クラスをスタートアップ プロジェクトとして設定し、クラスを実行します"
       },
       {
         "text_en": "Build the project",
-        "text_ja": "Build the project"
+        "text_ja": "プロジェクトをビルドする"
       },
       {
         "text_en": "Write code in the class to update the customer table",
-        "text_ja": "Write code in the class to update the customer table"
+        "text_ja": "顧客テーブルを更新するコードをクラスに記述します"
       }
     ],
     "drag_slots": [
@@ -17221,12 +17221,12 @@
       {
         "index": 1,
         "label_en": "Track and delete only insert statements.",
-        "label_ja": "Track and delete only insert statements."
+        "label_ja": "挿入ステートメントのみを追跡および削除します。"
       },
       {
         "index": 2,
         "label_en": "Roll back transactions by using SQL save points.",
-        "label_ja": "Roll back transactions by using SQL save points."
+        "label_ja": "SQL セーブポイントを使用してトランザクションをロールバックします。"
       }
     ]
   },
@@ -17643,27 +17643,27 @@
     "drag_actions": [
       {
         "text_en": "Add the ExtensionOf attribute to the class.",
-        "text_ja": "Add the ExtensionOf attribute to the class."
+        "text_ja": "ExtensionOf 属性をクラスに追加します。"
       },
       {
         "text_en": "Set the class as the startup object.",
-        "text_ja": "Set the class as the startup object."
+        "text_ja": "クラスを起動オブジェクトとして設定します。"
       },
       {
         "text_en": "Write database manipulation code in the class.",
-        "text_ja": "Write database manipulation code in the class."
+        "text_ja": "データベース操作コードをクラスに記述します。"
       },
       {
         "text_en": "Build and run the class.",
-        "text_ja": "Build and run the class."
+        "text_ja": "クラスをビルドして実行します。"
       },
       {
         "text_en": "Create a runnable class and add it to the ProdcutUpdates project.",
-        "text_ja": "Create a runnable class and add it to the ProdcutUpdates project."
+        "text_ja": "実行可能クラスを作成し、ProdcutUpdates プロジェクトに追加します。"
       },
       {
         "text_en": "Create a class extension of the ProductTable and add it to the ProductUpdates project.",
-        "text_ja": "Create a class extension of the ProductTable and add it to the ProductUpdates project."
+        "text_ja": "ProductTable のクラス拡張を作成し、ProductUpdates プロジェクトに追加します。"
       }
     ],
     "drag_slots": [
@@ -17760,27 +17760,27 @@
     "drag_actions": [
       {
         "text_en": "Compare and merge code",
-        "text_ja": "Compare and merge code"
+        "text_ja": "コードの比較とマージ"
       },
       {
         "text_en": "Compare code with baseline",
-        "text_ja": "Compare code with baseline"
+        "text_ja": "コードとベースラインの比較"
       },
       {
         "text_en": "Compare metadata with baseline",
-        "text_ja": "Compare metadata with baseline"
+        "text_ja": "メタデータとベースラインの比較"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
         "label_en": "Compare the custom code with the code in the ISV solution.",
-        "label_ja": "Compare the custom code with the code in the ISV solution."
+        "label_ja": "カスタム コードを ISV ソリューションのコードと比較します。"
       },
       {
         "index": 2,
         "label_en": "Compare the code with the code in the ISV solution to identify and resolve conflicts.",
-        "label_ja": "Compare the code with the code in the ISV solution to identify and resolve conflicts."
+        "label_ja": "コードを ISV ソリューションのコードと比較して、競合を特定して解決します。"
       }
     ]
   },
@@ -18009,27 +18009,27 @@
     "drag_actions": [
       {
         "text_en": "Set the class as internal.",
-        "text_ja": "Set the class as internal."
+        "text_ja": "クラスを内部として設定します。"
       },
       {
         "text_en": "Decorate the class with the [ExtensionOf(tableStr(TableName))] attribute.",
-        "text_ja": "Decorate the class with the [ExtensionOf(tableStr(TableName))] attribute."
+        "text_ja": "クラスを [ExtensionOf(tableStr(TableName))] 属性で装飾します。"
       },
       {
         "text_en": "Set the class as final.",
-        "text_ja": "Set the class as final."
+        "text_ja": "クラスを最終クラスに設定します。"
       },
       {
         "text_en": "Add a new method to the class and implement it.",
-        "text_ja": "Add a new method to the class and implement it."
+        "text_ja": "新しいメソッドをクラスに追加して実装します。"
       },
       {
         "text_en": "Create a new project in Visual Studio.",
-        "text_ja": "Create a new project in Visual Studio."
+        "text_ja": "Visual Studio で新しいプロジェクトを作成します。"
       },
       {
         "text_en": "Add a new class to the Visual Studio project with the _Extension suffix.",
-        "text_ja": "Add a new class to the Visual Studio project with the _Extension suffix."
+        "text_ja": "_Extension サフィックスを付けて新しいクラスを Visual Studio プロジェクトに追加します。"
       }
     ],
     "drag_slots": [
@@ -18693,23 +18693,23 @@
     "drag_actions": [
       {
         "text_en": "Declare a QueryBuildRange object and add a range for the CustGroup field on the QueryBuildDataSource.",
-        "text_ja": "Declare a QueryBuildRange object and add a range for the CustGroup field on the QueryBuildDataSource."
+        "text_ja": "QueryBuildRange オブジェクトを宣言し、QueryBuildDataSource の CustGroup フィールドの範囲を追加します。"
       },
       {
         "text_en": "Declare a QueryBuildDataSource object. Call the addDataSource method on the query object and assign it to the QueryBuildDataSource by using CustTable.",
-        "text_ja": "Declare a QueryBuildDataSource object. Call the addDataSource method on the query object and assign it to the QueryBuildDataSource by using CustTable."
+        "text_ja": "QueryBuildDataSource オブジェクトを宣言します。クエリ オブジェクトで addDataSource メソッドを呼び出し、CustTable を使用してクエリ オブジェクトを QueryBuildDataSource に割り当てます。"
       },
       {
         "text_en": "Add a value to range for the CustGroup EXT to the QueryBuildRange object.",
-        "text_ja": "Add a value to range for the CustGroup EXT to the QueryBuildRange object."
+        "text_ja": "CustGroup EXT の範囲の値を QueryBuildRange オブジェクトに追加します。"
       },
       {
         "text_en": "Loop through the QueryRun object by using the Next method.",
-        "text_ja": "Loop through the QueryRun object by using the Next method."
+        "text_ja": "Next メソッドを使用して、QueryRun オブジェクトをループします。"
       },
       {
         "text_en": "Declare and initialize the QueryRun object by using the query object.",
-        "text_ja": "Declare and initialize the QueryRun object by using the query object."
+        "text_ja": "Query オブジェクトを使用して、QueryRun オブジェクトを宣言して初期化します。"
       }
     ],
     "drag_slots": [
@@ -19050,35 +19050,35 @@
     "drag_actions": [
       {
         "text_en": "Extend the SysTestCase class in the class declaration.",
-        "text_ja": "Extend the SysTestCase class in the class declaration."
+        "text_ja": "クラス宣言内の SysTestCase クラスを拡張します。"
       },
       {
         "text_en": "Add a new class to the project.",
-        "text_ja": "Add a new class to the project."
+        "text_ja": "新しいクラスをプロジェクトに追加します。"
       },
       {
         "text_en": "Add an extension to the project.",
-        "text_ja": "Add an extension to the project."
+        "text_ja": "プロジェクトに拡張機能を追加します。"
       },
       {
         "text_en": "Create a new project.",
-        "text_ja": "Create a new project."
+        "text_ja": "新しいプロジェクトを作成します。"
       },
       {
         "text_en": "Add methods to the class and decorate the methods with the [SysTestMethod] attribute.",
-        "text_ja": "Add methods to the class and decorate the methods with the [SysTestMethod] attribute."
+        "text_ja": "クラスにメソッドを追加し、[SysTestMethod] 属性でメソッドを装飾します。"
       },
       {
         "text_en": "Add a Runnable class to the project.",
-        "text_ja": "Add a Runnable class to the project."
+        "text_ja": "Runnable クラスをプロジェクトに追加します。"
       },
       {
         "text_en": "Open Visual Studio as a non-administrator.",
-        "text_ja": "Open Visual Studio as a non-administrator."
+        "text_ja": "非管理者として Visual Studio を開きます。"
       },
       {
         "text_en": "Open Visual Studio as an administrator.",
-        "text_ja": "Open Visual Studio as an administrator."
+        "text_ja": "Visual Studio を管理者として開きます。"
       }
     ],
     "drag_slots": [
@@ -19800,11 +19800,11 @@
     "drag_actions": [
       {
         "text_en": "{ info(custTable-AccountNum); }",
-        "text_ja": "{ info(custTable-AccountNum); }"
+        "text_ja": "{ info(custTable-AccountNum);"
       },
       {
         "text_en": "order by AccountNum asc",
-        "text_ja": "order by AccountNum asc"
+        "text_ja": "AccountNum による注文"
       },
       {
         "text_en": "while select firstonly100 custTable",
@@ -19820,7 +19820,7 @@
       },
       {
         "text_en": "while select top 100 custtable",
-        "text_ja": "while select top 100 custtable"
+        "text_ja": "while select Top 100 custtable"
       },
       {
         "text_en": "where custTable.AccountNum > 1000",
@@ -19828,7 +19828,7 @@
       },
       {
         "text_en": "order by AccountNum desc",
-        "text_ja": "order by AccountNum desc"
+        "text_ja": "AccountNum desc による注文"
       }
     ],
     "drag_slots": [
@@ -19981,23 +19981,23 @@
     "drag_actions": [
       {
         "text_en": "Custom service creation steps",
-        "text_ja": "Custom service creation steps"
+        "text_ja": "カスタム サービスの作成手順"
       },
       {
         "text_en": "Create and assign the service group.",
-        "text_ja": "Create and assign the service group."
+        "text_ja": "サービスグル​​ープを作成して割り当てます。"
       },
       {
         "text_en": "Create and assign the service object.",
-        "text_ja": "Create and assign the service object."
+        "text_ja": "サービス オブジェクトを作成して割り当てます。"
       },
       {
         "text_en": "Create request and response classes.",
-        "text_ja": "Create request and response classes."
+        "text_ja": "リクエストクラスとレスポンスクラスを作成します。"
       },
       {
         "text_en": "Create a service class.",
-        "text_ja": "Create a service class."
+        "text_ja": "サービスクラスを作成します。"
       }
     ],
     "drag_slots": [
@@ -20860,12 +20860,12 @@
       {
         "index": 1,
         "label_en": "Track and delete insert statements during cleanup.",
-        "label_ja": "Track and delete insert statements during cleanup."
+        "label_ja": "クリーンアップ中に挿入ステートメントを追跡および削除します。"
       },
       {
         "index": 2,
         "label_en": "Roll back transactions by using SQL save points.",
-        "label_ja": "Roll back transactions by using SQL save points."
+        "label_ja": "SQL セーブポイントを使用してトランザクションをロールバックします。"
       }
     ]
   },
@@ -21215,7 +21215,7 @@
     "drag_actions": [
       {
         "text_en": "Testing framework or functionalities",
-        "text_ja": "Testing framework or functionalities"
+        "text_ja": "フレームワークまたは機能のテスト"
       },
       {
         "text_en": "Task recorder",
@@ -21238,22 +21238,22 @@
       {
         "index": 1,
         "label_en": "Run a suite of tests to reduce user acceptance testing cost and time.",
-        "label_ja": "Run a suite of tests to reduce user acceptance testing cost and time."
+        "label_ja": "一連のテストを実行して、ユーザー受け入れテストのコストと時間を削減します。"
       },
       {
         "index": 2,
         "label_en": "Document steps a user performs in an application for testing purposes.",
-        "label_ja": "Document steps a user performs in an application for testing purposes."
+        "label_ja": "テスト目的でユーザーがアプリケーションで実行する手順を文書化します。"
       },
       {
         "index": 3,
         "label_en": "Create consistent test data using structured, readable code.",
-        "label_ja": "Create consistent test data using structured, readable code."
+        "label_ja": "構造化された読みやすいコードを使用して、一貫したテスト データを作成します。"
       },
       {
         "index": 4,
         "label_en": "Allow for continuous validation of code changes in a development environment.",
-        "label_ja": "Allow for continuous validation of code changes in a development environment."
+        "label_ja": "開発環境でのコード変更の継続的な検証を可能にします。"
       }
     ]
   },
@@ -22040,7 +22040,7 @@
       {
         "index": 1,
         "label_en": "Query for record search",
-        "label_ja": "Query for record search"
+        "label_ja": "レコード検索のクエリ"
       },
       {
         "index": 2,
@@ -22494,7 +22494,7 @@
       },
       {
         "text_en": "Power BI service",
-        "text_ja": "Power BI service"
+        "text_ja": "Power BI サービス"
       },
       {
         "text_en": "Electronic reporting",
@@ -23519,7 +23519,7 @@
       },
       {
         "text_en": "Aggregate data entity",
-        "text_ja": "Aggregate data entity"
+        "text_ja": "集約データ エンティティ"
       },
       {
         "text_en": "Aggregate measurements",
@@ -23648,23 +23648,23 @@
     "drag_actions": [
       {
         "text_en": "Create a duplicate from the report in the model and add the new field on the report design.",
-        "text_ja": "Create a duplicate from the report in the model and add the new field on the report design."
+        "text_ja": "モデル内のレポートから複製を作成し、レポート デザインに新しいフィールドを追加します。"
       },
       {
         "text_en": "Create an extension of the existing report controller class in the model. Update the class logic to point to the new report.",
-        "text_ja": "Create an extension of the existing report controller class in the model. Update the class logic to point to the new report."
+        "text_ja": "モデル内に既存のレポート コントローラー クラスの拡張機能を作成します。新しいレポートを指すようにクラス ロジックを更新します。"
       },
       {
         "text_en": "Create a duplicate from the existing data provider class in the model. Update the class to fill the value of the newly added field.",
-        "text_ja": "Create a duplicate from the existing data provider class in the model. Update the class to fill the value of the newly added field."
+        "text_ja": "モデル内の既存のデータ プロバイダー クラスから複製を作成します。クラスを更新して、新しく追加されたフィールドの値を入力します。"
       },
       {
         "text_en": "Create a duplicate from the existing report controller class in the model. Update the class logic to point to the new report.",
-        "text_ja": "Create a duplicate from the existing report controller class in the model. Update the class logic to point to the new report."
+        "text_ja": "モデル内の既存のレポート コントローラー クラスから複製を作成します。新しいレポートを指すようにクラス ロジックを更新します。"
       },
       {
         "text_en": "Create an extension of the existing data provider class in the model. Update the class to fill the value of the newly added field.",
-        "text_ja": "Create an extension of the existing data provider class in the model. Update the class to fill the value of the newly added field."
+        "text_ja": "モデル内に既存のデータ プロバイダー クラスの拡張機能を作成します。クラスを更新して、新しく追加されたフィールドの値を入力します。"
       }
     ],
     "drag_slots": [
@@ -24385,11 +24385,11 @@
       },
       {
         "text_en": "Import data from various systems into one reporting Bring your own database database and extend tables.",
-        "text_ja": "Import data from various systems into one reporting Bring your own database database and extend tables."
+        "text_ja": "さまざまなシステムから 1 つのレポートにデータをインポートする 独自のデータベースを導入し、テーブルを拡張します。"
       },
       {
         "text_en": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle.",
-        "text_ja": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle."
+        "text_ja": "Power BI レポートを開発および拡張し、アプリケーション展開ライフサイクルを通じて自動的に発行します。"
       }
     ],
     "drag_slots": [
@@ -24486,17 +24486,17 @@
       {
         "index": 1,
         "label_en": "Identify the contract name in the data provider class",
-        "label_ja": "Identify the contract name in the data provider class"
+        "label_ja": "データ プロバイダー クラスのコントラクト名を特定します"
       },
       {
         "index": 2,
         "label_en": "Enables parameters in the report dialog",
-        "label_ja": "Enables parameters in the report dialog"
+        "label_ja": "レポート ダイアログでパラメータを有効にする"
       },
       {
         "index": 3,
         "label_en": "Provide parameters for the report",
-        "label_ja": "Provide parameters for the report"
+        "label_ja": "レポートのパラメーターを指定します"
       }
     ]
   },
@@ -25053,23 +25053,23 @@
     "drag_actions": [
       {
         "text_en": "Create an aggregate measurement named MyCustTransAgg. Change the value of the measure group Table property to MyCustTransView.",
-        "text_ja": "Create an aggregate measurement named MyCustTransAgg. Change the value of the measure group Table property to MyCustTransView."
+        "text_ja": "MyCustTransAgg という名前の集計測定を作成します。メジャー グループの Table プロパティの値を MyCustTransView に変更します。"
       },
       {
         "text_en": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Ensure that the value of the Default Aggregate property is set to Count.",
-        "text_ja": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Ensure that the value of the Default Aggregate property is set to Count."
+        "text_ja": "AmountCurSum という名前のメジャーを追加します。列プロパティの値を AmountCur に変更します。 「Default Aggregate」プロパティの値が「Count」に設定されていることを確認します。"
       },
       {
         "text_en": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Change the value for the Default Aggregate property to Sum.",
-        "text_ja": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Change the value for the Default Aggregate property to Sum."
+        "text_ja": "AmountCurSum という名前のメジャーを追加します。列プロパティの値を AmountCur に変更します。 「デフォルトの集計」プロパティの値を「合計」に変更します。"
       },
       {
         "text_en": "Create a view named MyCustTransView.",
-        "text_ja": "Create a view named MyCustTransView."
+        "text_ja": "MyCustTransView という名前のビューを作成します。"
       },
       {
         "text_en": "Set the value of the Date_ by dimension relation constraint for the Related Field property to TransDate.",
-        "text_ja": "Set the value of the Date_ by dimension relation constraint for the Related Field property to TransDate."
+        "text_ja": "関連フィールド プロパティの Date_ by ディメンション リレーション制約の値を TransDate に設定します。"
       }
     ],
     "drag_slots": [
@@ -25220,7 +25220,7 @@
       },
       {
         "text_en": "Aggregate data entity",
-        "text_ja": "Aggregate data entity"
+        "text_ja": "集約データ エンティティ"
       }
     ],
     "drag_slots": [
@@ -25509,19 +25509,19 @@
     "drag_actions": [
       {
         "text_en": "Define the structure of a party participating in a payment process.",
-        "text_ja": "Define the structure of a party participating in a payment process."
+        "text_ja": "支払いプロセスに参加する当事者の構造を定義します。"
       },
       {
         "text_en": "Create the data model configuration.",
-        "text_ja": "Create the data model configuration."
+        "text_ja": "データモデル構成を作成します。"
       },
       {
         "text_en": "Define the bank structure for the model.",
-        "text_ja": "Define the bank structure for the model."
+        "text_ja": "モデルのバンク構造を定義します。"
       },
       {
         "text_en": "Create the data model.",
-        "text_ja": "Create the data model."
+        "text_ja": "データモデルを作成します。"
       }
     ],
     "drag_slots": [
@@ -25667,7 +25667,7 @@
       {
         "index": 1,
         "label_en": "Report1: Invoice layout",
-        "label_ja": "Report1: Invoice layout"
+        "label_ja": "レポート 1: 請求書のレイアウト"
       },
       {
         "index": 2,
@@ -25677,7 +25677,7 @@
       {
         "index": 3,
         "label_en": "Report3: Editable data",
-        "label_ja": "Report3: Editable data"
+        "label_ja": "レポート 3: 編集可能なデータ"
       }
     ]
   },
@@ -25853,19 +25853,19 @@
     "drag_actions": [
       {
         "text_en": "Create a security policy and set primary table, query, and context type parameters.",
-        "text_ja": "Create a security policy and set primary table, query, and context type parameters."
+        "text_ja": "セキュリティ ポリシーを作成し、プライマリ テーブル、クエリ、およびコンテキスト タイプのパラメータを設定します。"
       },
       {
         "text_en": "Create a query.",
-        "text_ja": "Create a query."
+        "text_ja": "クエリを作成します。"
       },
       {
         "text_en": "Build the solution and refresh the browser.",
-        "text_ja": "Build the solution and refresh the browser."
+        "text_ja": "ソリューションを構築し、ブラウザを更新します。"
       },
       {
         "text_en": "Add a constrained table to the policy.",
-        "text_ja": "Add a constrained table to the policy."
+        "text_ja": "制約付きテーブルをポリシーに追加します。"
       }
     ],
     "drag_slots": [
@@ -26345,11 +26345,11 @@
     "drag_actions": [
       {
         "text_en": "Map the data entity to the data view.",
-        "text_ja": "Map the data entity to the data view."
+        "text_ja": "データ エンティティをデータ ビューにマップします。"
       },
       {
         "text_en": "Configure properties for the data entity.",
-        "text_ja": "Configure properties for the data entity."
+        "text_ja": "データ エンティティのプロパティを構成します。"
       },
       {
         "text_en": "Synchronize the database.",
@@ -26484,23 +26484,23 @@
     "drag_actions": [
       {
         "text_en": "Specify the target entity.",
-        "text_ja": "Specify the target entity."
+        "text_ja": "対象エンティティを指定します。"
       },
       {
         "text_en": "Specify the source data format.",
-        "text_ja": "Specify the source data format."
+        "text_ja": "ソースデータ形式を指定します。"
       },
       {
         "text_en": "Import the source file to the project.",
-        "text_ja": "Import the source file to the project."
+        "text_ja": "ソースファイルをプロジェクトにインポートします。"
       },
       {
         "text_en": "Create a new import project.",
-        "text_ja": "Create a new import project."
+        "text_ja": "新しいインポート プロジェクトを作成します。"
       },
       {
         "text_en": "Specify the project category for the import.",
-        "text_ja": "Specify the project category for the import."
+        "text_ja": "インポートするプロジェクトのカテゴリを指定します。"
       }
     ],
     "drag_slots": [
@@ -26656,22 +26656,22 @@
       {
         "index": 1,
         "label_en": "Users have a customer portal and must be able to query the status of orders for customers in near real time. Less than",
-        "label_ja": "Users have a customer portal and must be able to query the status of orders for customers in near real time. Less than"
+        "label_ja": "ユーザーは顧客ポータルを持っており、顧客の注文ステータスをほぼリアルタイムでクエリできる必要があります。未満"
       },
       {
         "index": 2,
         "label_en": "500 status requests occur per hour. Employees use a third-party app to record customer orders.",
-        "label_ja": "500 status requests occur per hour. Employees use a third-party app to record customer orders."
+        "label_ja": "1 時間あたり 500 件のステータス リクエストが発生します。従業員はサードパーティのアプリを使用して顧客の注文を記録します。"
       },
       {
         "index": 3,
         "label_en": "Employees use a third-party app to record customer orders. You must upload orders to the system once each hour. The",
-        "label_ja": "Employees use a third-party app to record customer orders. You must upload orders to the system once each hour. The"
+        "label_ja": "従業員はサードパーティのアプリを使用して顧客の注文を記録します。 1 時間ごとに注文をシステムにアップロードする必要があります。"
       },
       {
         "index": 4,
         "label_en": "Employees use a third-party software as a service app to manage delivery schedules. The software must be able to",
-        "label_ja": "Employees use a third-party software as a service app to manage delivery schedules. The software must be able to"
+        "label_ja": "従業員は、配達スケジュールを管理するためにサービス アプリとしてサードパーティ製ソフトウェアを使用しています。ソフトウェアは、新しいデータ エンティティの一部である各データ ソースのパブリック API を"
       }
     ]
   },
@@ -27624,29 +27624,29 @@
       },
       {
         "text_en": "cloud or on-premises",
-        "text_ja": "cloud or on-premises"
+        "text_ja": "クラウドまたはオンプレミス"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
         "label_en": "Export data to your own data warehouse.",
-        "label_ja": "Export data to your own data warehouse."
+        "label_ja": "データを独自のデータ ウェアハウスにエクスポートします。"
       },
       {
         "index": 2,
         "label_en": "Configure SharePoint integration.",
-        "label_ja": "Configure SharePoint integration."
+        "label_ja": "SharePoint 統合を構成します。"
       },
       {
         "index": 3,
         "label_en": "Implement Lifecycle services features.",
-        "label_ja": "Implement Lifecycle services features."
+        "label_ja": "ライフサイクル サービス機能を実装します。"
       },
       {
         "index": 4,
         "label_en": "Safe or load Task Recorder recordings from a BPM library.",
-        "label_ja": "Safe or load Task Recorder recordings from a BPM library."
+        "label_ja": "タスク レコーダーの記録を安全にするか、BPM ライブラリから読み込みます。"
       }
     ]
   },
@@ -27756,23 +27756,23 @@
     "drag_actions": [
       {
         "text_en": "Set up the processing recurrence.",
-        "text_ja": "Set up the processing recurrence."
+        "text_ja": "処理の繰り返しを設定します。"
       },
       {
         "text_en": "Link a new application ID to the data recurring data job.",
-        "text_ja": "Link a new application ID to the data recurring data job."
+        "text_ja": "新しいアプリケーション ID をデータ繰り返しデータ ジョブにリンクします。"
       },
       {
         "text_en": "Specify whether you are using a file or data package.",
-        "text_ja": "Specify whether you are using a file or data package."
+        "text_ja": "ファイルとデータ パッケージのどちらを使用しているかを指定します。"
       },
       {
         "text_en": "Set up a data project.",
-        "text_ja": "Set up a data project."
+        "text_ja": "データ プロジェクトを設定します。"
       },
       {
         "text_en": "Create a recurring data job.",
-        "text_ja": "Create a recurring data job."
+        "text_ja": "定期的なデータ ジョブを作成します。"
       }
     ],
     "drag_slots": [
@@ -27885,22 +27885,22 @@
       {
         "index": 1,
         "label_en": "Request information about product availability from a web page to calculate the extended price.",
-        "label_ja": "Request information about product availability from a web page to calculate the extended price."
+        "label_ja": "延長価格を計算するには、Web ページから製品の在庫状況に関する情報をリクエストします。"
       },
       {
         "index": 2,
         "label_en": "Periodically update a reporting database.",
-        "label_ja": "Periodically update a reporting database."
+        "label_ja": "レポート データベースを定期的に更新します。"
       },
       {
         "index": 3,
         "label_en": "Edit data in Microsoft Excel by using the Excel Data Connector add-in.",
-        "label_ja": "Edit data in Microsoft Excel by using the Excel Data Connector add-in."
+        "label_ja": "Excel データ コネクタ アドインを使用して、Microsoft Excel でデータを編集します。"
       },
       {
         "index": 4,
         "label_en": "Import a credit card data file once each day.",
-        "label_ja": "Import a credit card data file once each day."
+        "label_ja": "クレジット カード データ ファイルを毎日 1 回インポートします。"
       }
     ]
   },
@@ -28311,23 +28311,23 @@
     "drag_actions": [
       {
         "text_en": "Batch data API Scenario",
-        "text_ja": "Batch data API Scenario"
+        "text_ja": "バッチ データ API シナリオ"
       },
       {
         "text_en": "Custom service Move asset status information from an on-premises application to Dynamics",
-        "text_ja": "Custom service Move asset status information from an on-premises application to Dynamics"
+        "text_ja": "カスタム サービス 資産ステータス情報をオンプレミス アプリケーションから Dynamics に移動"
       },
       {
         "text_en": "365 Finance in near real time by using a publicly exposed data entity.",
-        "text_ja": "365 Finance in near real time by using a publicly exposed data entity."
+        "text_ja": "365 公開されたデータ エンティティを使用して、ほぼリアルタイムでファイナンスを実行します。"
       },
       {
         "text_en": "OData Provide information from Dynamics 365 Finance to a website to display item",
-        "text_ja": "OData Provide information from Dynamics 365 Finance to a website to display item"
+        "text_ja": "OData Dynamics 365 Finance からの情報を Web サイトに提供してアイテムを表示します"
       },
       {
         "text_en": "prices in near real time by using the SOAP protocol. Import vendor invoices into Dynamics 365 Finance at the end of each business day.",
-        "text_ja": "prices in near real time by using the SOAP protocol. Import vendor invoices into Dynamics 365 Finance at the end of each business day."
+        "text_ja": "価格をサポートする外部の Web ベースの電子商取引アプリケーションを使用して、製品の手持ち数量に関する情報をほぼリアルタイムで取得します。各営業日の終わりに、仕入先の請求書を Dynamics 365 Finance にインポートします。"
       }
     ],
     "drag_slots": [
@@ -28527,19 +28527,19 @@
     "drag_actions": [
       {
         "text_en": "Navigate to the Sales order form.",
-        "text_ja": "Navigate to the Sales order form."
+        "text_ja": "販売注文フォームに移動します。"
       },
       {
         "text_en": "Personalize the page.",
-        "text_ja": "Personalize the page."
+        "text_ja": "ページをパーソナライズします。"
       },
       {
         "text_en": "Refresh the browser.",
-        "text_ja": "Refresh the browser."
+        "text_ja": "ブラウザを更新します。"
       },
       {
         "text_en": "Configure and embed the app.",
-        "text_ja": "Configure and embed the app."
+        "text_ja": "アプリを設定して埋め込みます。"
       }
     ],
     "drag_slots": [
@@ -28639,19 +28639,19 @@
     "drag_actions": [
       {
         "text_en": "Batch process Description and requirements",
-        "text_ja": "Batch process Description and requirements"
+        "text_ja": "バッチ プロセスの説明と要件"
       },
       {
         "text_en": "This process is lengthy. Users must be able to continue working while the process runs. The process must complete successfully.",
-        "text_ja": "This process is lengthy. Users must be able to continue working while the process runs. The process must complete successfully."
+        "text_ja": "このプロセスには時間がかかります。ユーザーは、プロセスの実行中も作業を続行できる必要があります。プロセスは正常に完了する必要があります。"
       },
       {
         "text_en": "2 This is a short process. The process is permitted to block the work of a user while the process runs.",
-        "text_ja": "2 This is a short process. The process is permitted to block the work of a user while the process runs."
+        "text_ja": "2 これは短いプロセスです。プロセスは、プロセスの実行中にユーザーの作業をブロックすることが許可されています。"
       },
       {
         "text_en": "3 | This is a process that must run every night of each workday.",
-        "text_ja": "3 | This is a process that must run every night of each workday."
+        "text_ja": "3 |これは、就業日の毎晩実行する必要があるプロセスです。"
       }
     ],
     "drag_slots": [
@@ -28850,7 +28850,7 @@
       },
       {
         "text_en": "Dynamics 365 Customer Service app",
-        "text_ja": "Dynamics 365 Customer Service app"
+        "text_ja": "Dynamics 365 Customer Service アプリ"
       },
       {
         "text_en": "e-commerce website",
@@ -28858,7 +28858,7 @@
       },
       {
         "text_en": "on-premises mainframe system",
-        "text_ja": "on-premises mainframe system"
+        "text_ja": "オンプレミスのメインフレーム システム"
       }
     ],
     "drag_slots": [
@@ -29132,15 +29132,15 @@
     "drag_actions": [
       {
         "text_en": "Set-based SQL operations",
-        "text_ja": "Set-based SQL operations"
+        "text_ja": "セットベースの SQL 操作"
       },
       {
         "text_en": "Data management capabilities",
-        "text_ja": "Data management capabilities"
+        "text_ja": "データ管理機能"
       },
       {
         "text_en": "Is Read Only",
-        "text_ja": "Is Read Only"
+        "text_ja": "読み取り専用"
       },
       {
         "text_en": "Public API",
@@ -29151,12 +29151,12 @@
       {
         "index": 1,
         "label_en": "Customer groups entity",
-        "label_ja": "Customer groups entity"
+        "label_ja": "顧客グループ エンティティ"
       },
       {
         "index": 2,
         "label_en": "Customer data entity",
-        "label_ja": "Customer data entity"
+        "label_ja": "顧客データ エンティティ"
       }
     ]
   },
@@ -29236,27 +29236,27 @@
     "drag_actions": [
       {
         "text_en": "Select Configure entity export to database from the Data management workspace.",
-        "text_ja": "Select Configure entity export to database from the Data management workspace."
+        "text_ja": "データ管理ワークスペースから [データベースへのエンティティ エクスポートの構成] を選択します。"
       },
       {
         "text_en": "Select the database to export data to and then select Publish.",
-        "text_ja": "Select the database to export data to and then select Publish."
+        "text_ja": "データのエクスポート先のデータベースを選択し、[公開] を選択します。"
       },
       {
         "text_en": "Select the Enable entire entity option.",
-        "text_ja": "Select the Enable entire entity option."
+        "text_ja": "[エンティティ全体を有効にする] オプションを選択します。"
       },
       {
         "text_en": "Select the data entity list page from the Data management workspace and then select Change tracking.",
-        "text_ja": "Select the data entity list page from the Data management workspace and then select Change tracking."
+        "text_ja": "データ管理ワークスペースからデータ エンティティ リスト ページを選択し、変更追跡を選択します。"
       },
       {
         "text_en": "Select the Enable primary table option.",
-        "text_ja": "Select the Enable primary table option."
+        "text_ja": "[プライマリ テーブルを有効にする] オプションを選択します。"
       },
       {
         "text_en": "Select the published entity and then select Change tracking.",
-        "text_ja": "Select the published entity and then select Change tracking."
+        "text_ja": "公開されたエンティティを選択し、[変更追跡] を選択します。"
       }
     ],
     "drag_slots": [
@@ -29594,7 +29594,7 @@
       },
       {
         "text_en": "Azure Data Lake integration",
-        "text_ja": "Azure Data Lake integration"
+        "text_ja": "Azure Data Lake の統合"
       },
       {
         "text_en": "Dual-write",
@@ -29614,12 +29614,12 @@
       {
         "index": 2,
         "label_en": "Chan anagemental created or pated in ornames 385 as",
-        "label_ja": "Chan anagemental created or pated in ornames 385 as"
+        "label_ja": "orname 385 で作成または貼り付けられた管理を"
       },
       {
         "index": 3,
         "label_en": "hare information about the on-hand quantity of products in near real tim ith an external web-based e-commerce application that supports th",
-        "label_ja": "hare information about the on-hand quantity of products in near real tim ith an external web-based e-commerce application that supports th"
+        "label_ja": "SOAP プロトコルを使用して、"
       }
     ]
   },
@@ -29820,27 +29820,27 @@
     "drag_actions": [
       {
         "text_en": "In the Data entities list, select Modify target mapping for the custom data entity.",
-        "text_ja": "In the Data entities list, select Modify target mapping for the custom data entity."
+        "text_ja": "[データ エンティティ] リストで、カスタム データ エンティティのターゲット マッピングを変更するを選択します。"
       },
       {
         "text_en": "Refresh the entity list from the Data management workspace.",
-        "text_ja": "Refresh the entity list from the Data management workspace."
+        "text_ja": "データ管理ワークスペースからエンティティ リストを更新します。"
       },
       {
         "text_en": "In the Data entities list, select Target fields for the custom data entity.",
-        "text_ja": "In the Data entities list, select Target fields for the custom data entity."
+        "text_ja": "[データ エンティティ] リストで、カスタム データ エンティティの [ターゲット フィールド] を選択します。"
       },
       {
         "text_en": "Publish the entity.",
-        "text_ja": "Publish the entity."
+        "text_ja": "エンティティを公開します。"
       },
       {
         "text_en": "Generate the correct target field mapping.",
-        "text_ja": "Generate the correct target field mapping."
+        "text_ja": "正しいターゲット フィールド マッピングを生成します。"
       },
       {
         "text_en": "Validate data management from the Data management workspace.",
-        "text_ja": "Validate data management from the Data management workspace."
+        "text_ja": "データ管理ワークスペースからデータ管理を検証します。"
       }
     ],
     "drag_slots": [
@@ -29916,23 +29916,23 @@
     "drag_actions": [
       {
         "text_en": "Enable the data entity for Public API and data management use.",
-        "text_ja": "Enable the data entity for Public API and data management use."
+        "text_ja": "パブリック API およびデータ管理の使用に対してデータ エンティティを有効にします。"
       },
       {
         "text_en": "Create a new data entity.",
-        "text_ja": "Create a new data entity."
+        "text_ja": "新しいデータ エンティティを作成します。"
       },
       {
         "text_en": "Add the WHSTmpStatusChange table as the data source of the new entity.",
-        "text_ja": "Add the WHSTmpStatusChange table as the data source of the new entity."
+        "text_ja": "新しいエンティティのデータ ソースとして WHSTmpStatusChange テーブルを追加します。"
       },
       {
         "text_en": "Enable Public API for each data source that is part of the new data entity.",
-        "text_ja": "Enable Public API for each data source that is part of the new data entity."
+        "text_ja": "有効にすることができる必要があります。"
       },
       {
         "text_en": "Create an aggregate data entity.",
-        "text_ja": "Create an aggregate data entity."
+        "text_ja": "集約データ エンティティを作成します。"
       }
     ],
     "drag_slots": [
@@ -30192,23 +30192,23 @@
     "drag_actions": [
       {
         "text_en": "Refresh the browser.",
-        "text_ja": "Refresh the browser."
+        "text_ja": "ブラウザを更新します。"
       },
       {
         "text_en": "Navigate to the Sales order form.",
-        "text_ja": "Navigate to the Sales order form."
+        "text_ja": "販売注文フォームに移動します。"
       },
       {
         "text_en": "Configure and embed the app.",
-        "text_ja": "Configure and embed the app."
+        "text_ja": "アプリを設定して埋め込みます。"
       },
       {
         "text_en": "Personalize the page.",
-        "text_ja": "Personalize the page."
+        "text_ja": "ページをパーソナライズします。"
       },
       {
         "text_en": "Modify the OnStart function of the app.",
-        "text_ja": "Modify the OnStart function of the app."
+        "text_ja": "アプリの OnStart 関数を変更します。"
       }
     ],
     "drag_slots": [
@@ -30727,7 +30727,7 @@
     "drag_actions": [
       {
         "text_en": "Open Data Protocol (OData)",
-        "text_ja": "Open Data Protocol (OData)"
+        "text_ja": "オープン データ プロトコル (OData)"
       },
       {
         "text_en": "Dual-write",
@@ -30739,24 +30739,24 @@
       },
       {
         "text_en": "Azure Data Lake integration",
-        "text_ja": "Azure Data Lake integration"
+        "text_ja": "Azure Data Lake の統合"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
         "label_en": "Move customer data from an on-premises app to Finance in near-real time by using an API.",
-        "label_ja": "Move customer data from an on-premises app to Finance in near-real time by using an API."
+        "label_ja": "API を使用して、顧客データをオンプレミス アプリから Finance にほぼリアルタイムで移動します。"
       },
       {
         "index": 2,
         "label_en": "Sync Sales customer data with Supply Chain Management.",
-        "label_ja": "Sync Sales customer data with Supply Chain Management."
+        "label_ja": "Sales 顧客データを Supply Chain Management と同期します。"
       },
       {
         "index": 3,
         "label_en": "Update customer data from Dynamics 365 finance and operations apps by using SOAP with an e-commerce app.",
-        "label_ja": "Update customer data from Dynamics 365 finance and operations apps by using SOAP with an e-commerce app."
+        "label_ja": "電子商取引アプリで SOAP を使用して、Dynamics 365 財務および運用アプリから顧客データを更新します。"
       }
     ]
   },
@@ -30807,23 +30807,23 @@
     "drag_actions": [
       {
         "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint.",
-        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint."
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl エンドポイントへの POST メソッドを呼び出します。"
       },
       {
         "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint",
-        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint"
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage エンドポイントへの POST メソッドを呼び出します"
       },
       {
         "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities. GetAzureWriteUrl endpoint",
-        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities. GetAzureWriteUrl endpoint"
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities への POST メソッドを呼び出します。 GetAzureWriteUrl エンドポイント"
       },
       {
         "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionErrors endpoint",
-        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionErrors endpoint"
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics への POST メソッドを呼び出します。 GetExecutionErrors エンドポイント"
       },
       {
         "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionSummary Status endpoint",
-        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionSummary Status endpoint"
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics への POST メソッドを呼び出します。 GetExecutionsummary ステータス エンドポイント"
       }
     ],
     "drag_slots": [
@@ -30902,7 +30902,7 @@
       {
         "index": 1,
         "label_en": "Data Management Enabled",
-        "label_ja": "Data Management Enabled"
+        "label_ja": "データ管理有効"
       },
       {
         "index": 2,
@@ -30912,7 +30912,7 @@
       {
         "index": 3,
         "label_en": "Is Read Only",
-        "label_ja": "Is Read Only"
+        "label_ja": "読み取り専用"
       }
     ]
   },
@@ -31087,31 +31087,31 @@
     "drag_actions": [
       {
         "text_en": "Build the solution and perform a database sync.",
-        "text_ja": "Build the solution and perform a database sync."
+        "text_ja": "ソリューションをビルドし、データベース同期を実行します。"
       },
       {
         "text_en": "Add all fields from the SalesTable data source to the data entity.",
-        "text_ja": "Add all fields from the SalesTable data source to the data entity."
+        "text_ja": "SalesTable データ ソースのすべてのフィールドをデータ エンティティに追加します。"
       },
       {
         "text_en": "Add a new item to the Visual Studio project of category Data Model, type of DataEntity.",
-        "text_ja": "Add a new item to the Visual Studio project of category Data Model, type of DataEntity."
+        "text_ja": "カテゴリ データ モデル、タイプ DataEntity の Visual Studio プロジェクトに新しい項目を追加します。"
       },
       {
         "text_en": "Disable the public API and disable data management capabilities.",
-        "text_ja": "Disable the public API and disable data management capabilities."
+        "text_ja": "パブリック API を無効にし、データ管理機能を無効にします。"
       },
       {
         "text_en": "Disable the public API and enable data management capabilities.",
-        "text_ja": "Disable the public API and enable data management capabilities."
+        "text_ja": "パブリック API を無効にし、データ管理機能を有効にします。"
       },
       {
         "text_en": "Use the data entity wizard to specify the primary data source as SalesTable, and the Entity category as Transaction.",
-        "text_ja": "Use the data entity wizard to specify the primary data source as SalesTable, and the Entity category as Transaction."
+        "text_ja": "データ エンティティ ウィザードを使用して、プライマリ データ ソースを SalesTable として指定し、エンティティ カテゴリをトランザクションとして指定します。"
       },
       {
         "text_en": "Enable the public API and disable data management capabilities.",
-        "text_ja": "Enable the public API and disable data management capabilities."
+        "text_ja": "パブリック API を有効にし、データ管理機能を無効にします。"
       }
     ],
     "drag_slots": [
@@ -31197,27 +31197,27 @@
     "drag_actions": [
       {
         "text_en": "Select Get data from Power BI.",
-        "text_ja": "Select Get data from Power BI."
+        "text_ja": "[Power BI からデータを取得] を選択します。"
       },
       {
         "text_en": "Enter the name of the Customers data entity.",
-        "text_ja": "Enter the name of the Customers data entity."
+        "text_ja": "顧客データ エンティティの名前を入力します。"
       },
       {
         "text_en": "Create a Power BI report by using the customer data.",
-        "text_ja": "Create a Power BI report by using the customer data."
+        "text_ja": "顧客データを使用して Power BI レポートを作成します。"
       },
       {
         "text_en": "Enter credentials to connect a database.",
-        "text_ja": "Enter credentials to connect a database."
+        "text_ja": "データベースに接続するための資格情報を入力します。"
       },
       {
         "text_en": "Enter the URL of the Customers OData endpoint.",
-        "text_ja": "Enter the URL of the Customers OData endpoint."
+        "text_ja": "顧客の OData エンドポイントの URL を入力します。"
       },
       {
         "text_en": "Select OData feed.",
-        "text_ja": "Select OData feed."
+        "text_ja": "OData フィードを選択します。"
       }
     ],
     "drag_slots": [
@@ -31352,23 +31352,23 @@
     "drag_actions": [
       {
         "text_en": "Aggregate data entity",
-        "text_ja": "Aggregate data entity"
+        "text_ja": "集約データ エンティティ"
       },
       {
         "text_en": "Composite data entity",
-        "text_ja": "Composite data entity"
+        "text_ja": "複合データ エンティティ"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
         "label_en": "Asynchronously import XML sales order header information and line data.",
-        "label_ja": "Asynchronously import XML sales order header information and line data."
+        "label_ja": "XML 販売注文ヘッダー情報と明細データを非同期的にインポートします。"
       },
       {
         "index": 2,
         "label_en": "Use OData endpoint to enable two measures and two attributes from CustTransView.",
-        "label_ja": "Use OData endpoint to enable two measures and two attributes from CustTransView."
+        "label_ja": "OData エンドポイントを使用して、CustTransView から 2 つのメジャーと 2 つの属性を有効にします。"
       }
     ]
   },
@@ -31505,7 +31505,7 @@
       {
         "index": 1,
         "label_en": "Get a list of customers filtered on the customer group field.",
-        "label_ja": "Get a list of customers filtered on the customer group field."
+        "label_ja": "顧客グループフィールドでフィルタリングされた顧客のリストを取得します。"
       },
       {
         "index": 2,
@@ -31515,12 +31515,12 @@
       {
         "index": 3,
         "label_en": "Post a sales order invoice.",
-        "label_ja": "Post a sales order invoice."
+        "label_ja": "販売注文の請求書​​を転記します。"
       },
       {
         "index": 4,
         "label_en": "Get the balance of a vendor.",
-        "label_ja": "Get the balance of a vendor."
+        "label_ja": "ベンダーの残高を取得します。"
       }
     ]
   },
@@ -31851,23 +31851,23 @@
     "drag_actions": [
       {
         "text_en": "Call an HTTP POST method to the /data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint.",
-        "text_ja": "Call an HTTP POST method to the /data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint."
+        "text_ja": "/data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage エンドポイントへの HTTP POST メソッドを呼び出します。"
       },
       {
         "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint.",
-        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint."
+        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExportedPackageUrl エンドポイントへの POST メソッドを呼び出します。"
       },
       {
         "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint.",
-        "text_ja": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint."
+        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl エンドポイントへの POST 呼び出しをトリガーします。"
       },
       {
         "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionErrors endpoint.",
-        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionErrors endpoint."
+        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionErrors エンドポイントへの POST メソッドを呼び出します。"
       },
       {
         "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint.",
-        "text_ja": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint."
+        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionsummaryStatus エンドポイントへの POST 呼び出しをトリガーします。"
       }
     ],
     "drag_slots": [
@@ -32074,7 +32074,7 @@
       {
         "index": 1,
         "label_en": "Master data update",
-        "label_ja": "Master data update"
+        "label_ja": "マスターデータ更新"
       },
       {
         "index": 2,
@@ -32454,23 +32454,23 @@
     "drag_actions": [
       {
         "text_en": "Create a security policy that links to the query and primary table.",
-        "text_ja": "Create a security policy that links to the query and primary table."
+        "text_ja": "クエリとプライマリ テーブルにリンクするセキュリティ ポリシーを作成します。"
       },
       {
         "text_en": "Create a query to define filters.",
-        "text_ja": "Create a query to define filters."
+        "text_ja": "フィルタを定義するクエリを作成します。"
       },
       {
         "text_en": "Define the list of constrained tables.",
-        "text_ja": "Define the list of constrained tables."
+        "text_ja": "制約されたテーブルのリストを定義します。"
       },
       {
         "text_en": "Assign the newly created role to the user.",
-        "text_ja": "Assign the newly created role to the user."
+        "text_ja": "新しく作成したロールをユーザーに割り当てます。"
       },
       {
         "text_en": "Create new user role and add required privileges.",
-        "text_ja": "Create new user role and add required privileges."
+        "text_ja": "新しいユーザー ロールを作成し、必要な権限を追加します。"
       }
     ],
     "drag_slots": [
@@ -32727,7 +32727,7 @@
       {
         "index": 4,
         "label_en": "Region specific master data",
-        "label_ja": "Region specific master data"
+        "label_ja": "地域固有のマスター データ"
       }
     ]
   },
@@ -33273,17 +33273,17 @@
       {
         "index": 1,
         "label_en": "Hierarchy Level 1 (Top)",
-        "label_ja": "Hierarchy Level 1 (Top)"
+        "label_ja": "階層レベル 1 (最上位)"
       },
       {
         "index": 2,
         "label_en": "Hierarchy Level 2 (Middle)",
-        "label_ja": "Hierarchy Level 2 (Middle)"
+        "label_ja": "階層レベル 2 (中)"
       },
       {
         "index": 3,
         "label_en": "Hierarchy Level 3 (Above Permission)",
-        "label_ja": "Hierarchy Level 3 (Above Permission)"
+        "label_ja": "階層レベル 3 (権限以上)"
       }
     ]
   },
@@ -33349,23 +33349,23 @@
     "drag_actions": [
       {
         "text_en": "Add the duty extension to a role",
-        "text_ja": "Add the duty extension to a role"
+        "text_ja": "職務拡張をロールに追加します"
       },
       {
         "text_en": "Create a new privilege and duty extension",
-        "text_ja": "Create a new privilege and duty extension"
+        "text_ja": "新しい権限と義務の拡張を作成する"
       },
       {
         "text_en": "Add the new privilege to a duty extension and output the menu item to the privilege",
-        "text_ja": "Add the new privilege to a duty extension and output the menu item to the privilege"
+        "text_ja": "新しい権限を職務拡張に追加し、その権限にメニュー項目を出力します。"
       },
       {
         "text_en": "Add a display menu item to the privilege",
-        "text_ja": "Add a display menu item to the privilege"
+        "text_ja": "表示メニュー項目を権限に追加します"
       },
       {
         "text_en": "Create a new security policy and duty extension",
-        "text_ja": "Create a new security policy and duty extension"
+        "text_ja": "新しいセキュリティ ポリシーと義務延長を作成します"
       }
     ],
     "drag_slots": [
@@ -33783,12 +33783,12 @@
       {
         "index": 1,
         "label_en": "Unit testing code",
-        "label_ja": "Unit testing code"
+        "label_ja": "単体テストコード"
       },
       {
         "index": 2,
         "label_en": "Indicates the class or method is deactivated",
-        "label_ja": "Indicates the class or method is deactivated"
+        "label_ja": "クラスまたはメソッドが非アクティブ化されていることを示します"
       }
     ]
   },
@@ -33847,19 +33847,19 @@
     "drag_actions": [
       {
         "text_en": "Create a policy query for the primary table.",
-        "text_ja": "Create a policy query for the primary table."
+        "text_ja": "プライマリ テーブルのポリシー クエリを作成します。"
       },
       {
         "text_en": "Add a constraint table to the security policy.",
-        "text_ja": "Add a constraint table to the security policy."
+        "text_ja": "制約テーブルをセキュリティ ポリシーに追加します。"
       },
       {
         "text_en": "Build and sync the XDS policy.",
-        "text_ja": "Build and sync the XDS policy."
+        "text_ja": "XDS ポリシーを構築して同期します。"
       },
       {
         "text_en": "Create a security policy.",
-        "text_ja": "Create a security policy."
+        "text_ja": "セキュリティ ポリシーを作成します。"
       }
     ],
     "drag_slots": [
@@ -34414,23 +34414,23 @@
     "drag_actions": [
       {
         "text_en": "Select the Vendor groups entity and the CSV format and add the entity to the export project.",
-        "text_ja": "Select the Vendor groups entity and the CSV format and add the entity to the export project."
+        "text_ja": "ベンダー グループ エンティティと CSV 形式を選択し、エンティティをエクスポート プロジェクトに追加します。"
       },
       {
         "text_en": "Export the entity.",
-        "text_ja": "Export the entity."
+        "text_ja": "エンティティをエクスポートします。"
       },
       {
         "text_en": "Select the Vendor groups entity and the Excel format and add the entity to the export project.",
-        "text_ja": "Select the Vendor groups entity and the Excel format and add the entity to the export project."
+        "text_ja": "ベンダー グループ エンティティと Excel 形式を選択し、エンティティをエクスポート プロジェクトに追加します。"
       },
       {
         "text_en": "Enter a group name and description for the new project.",
-        "text_ja": "Enter a group name and description for the new project."
+        "text_ja": "新しいプロジェクトのグループ名と説明を入力します。"
       },
       {
         "text_en": "In the Data management workspace, create an Export definition group.",
-        "text_ja": "In the Data management workspace, create an Export definition group."
+        "text_ja": "データ管理ワークスペースで、エクスポート定義グループを作成します。"
       }
     ],
     "drag_slots": [
@@ -35297,12 +35297,12 @@
       {
         "index": 1,
         "label_en": "Unit testing code",
-        "label_ja": "Unit testing code"
+        "label_ja": "単体テストコード"
       },
       {
         "index": 2,
         "label_en": "Indicates the class or method is deactivated",
-        "label_ja": "Indicates the class or method is deactivated"
+        "label_ja": "クラスまたはメソッドが非アクティブ化されていることを示します"
       }
     ]
   },
@@ -35550,27 +35550,27 @@
     "drag_actions": [
       {
         "text_en": "Add the privilege to the Accounts Payable clerk role.",
-        "text_ja": "Add the privilege to the Accounts Payable clerk role."
+        "text_ja": "買掛金担当者ロールに権限を追加します。"
       },
       {
         "text_en": "Create an extension of the Accounts Payable clerk role and add the duty.",
-        "text_ja": "Create an extension of the Accounts Payable clerk role and add the duty."
+        "text_ja": "買掛金担当者ロールの拡張機能を作成し、職務を追加します。"
       },
       {
         "text_en": "Add the menu item to the privilege data entity permissions node and grant Read access.",
-        "text_ja": "Add the menu item to the privilege data entity permissions node and grant Read access."
+        "text_ja": "メニュー項目を特権データ エンティティ権限ノードに追加し、読み取りアクセスを付与します。"
       },
       {
         "text_en": "Create a privilege and add the menu item to the privilege entry points node with Correct access.",
-        "text_ja": "Create a privilege and add the menu item to the privilege entry points node with Correct access."
+        "text_ja": "特権を作成し、正しいアクセス権を持つ特権エントリ ポイント ノードにメニュー項目を追加します。"
       },
       {
         "text_en": "Create a privilege and add the menu item to the privilege entry points node with Read access.",
-        "text_ja": "Create a privilege and add the menu item to the privilege entry points node with Read access."
+        "text_ja": "権限を作成し、読み取りアクセス権を持つメニュー項目を権限エントリ ポイント ノードに追加します。"
       },
       {
         "text_en": "Create a duty and add the privilege.",
-        "text_ja": "Create a duty and add the privilege."
+        "text_ja": "義務を作成し、権限を追加します。"
       }
     ],
     "drag_slots": [
@@ -35638,31 +35638,31 @@
     "drag_actions": [
       {
         "text_en": "Start or stop the data collector set in Windows Performance Monitor to capture the trace.",
-        "text_ja": "Start or stop the data collector set in Windows Performance Monitor to capture the trace."
+        "text_ja": "Windows パフォーマンス モニターでデータ コレクター セットを開始または停止して、トレースをキャプチャします。"
       },
       {
         "text_en": "Select Help and choose the Trace option.",
-        "text_ja": "Select Help and choose the Trace option."
+        "text_ja": "[ヘルプ] を選択し、[トレース] オプションを選択します。"
       },
       {
         "text_en": "Add the providers to the event trace provider list.",
-        "text_ja": "Add the providers to the event trace provider list."
+        "text_ja": "プロバイダーをイベント トレース プロバイダー リストに追加します。"
       },
       {
         "text_en": "Use Remote Desktop to connect to a cloud- hosted environment.",
-        "text_ja": "Use Remote Desktop to connect to a cloud- hosted environment."
+        "text_ja": "リモート デスクトップを使用して、クラウドでホストされている環境に接続します。"
       },
       {
         "text_en": "Open Windows Performance Monitor and add a new user-defined data collector set.",
-        "text_ja": "Open Windows Performance Monitor and add a new user-defined data collector set."
+        "text_ja": "Windows パフォーマンス モニターを開き、新しいユーザー定義のデータ コレクター セットを追加します。"
       },
       {
         "text_en": "Provide a trace name and start the trace.",
-        "text_ja": "Provide a trace name and start the trace."
+        "text_ja": "トレース名を指定してトレースを開始します。"
       },
       {
         "text_en": "Perform the activity in the application and stop the trace when it finishes.",
-        "text_ja": "Perform the activity in the application and stop the trace when it finishes."
+        "text_ja": "アプリケーションでアクティビティを実行し、終了したらトレースを停止します。"
       }
     ],
     "drag_slots": [
@@ -35802,7 +35802,7 @@
     "drag_actions": [
       {
         "text_en": "Data management framework's package",
-        "text_ja": "Data management framework's package"
+        "text_ja": "データ管理フレームワークのパッケージ"
       },
       {
         "text_en": "Recurring integrations",
@@ -35813,17 +35813,17 @@
       {
         "index": 1,
         "label_en": "Scheduling occurs outside the application.",
-        "label_ja": "Scheduling occurs outside the application."
+        "label_ja": "スケジュールはアプリケーションの外部で行われます。"
       },
       {
         "index": 2,
         "label_en": "Support SOAP and REST protocols.",
-        "label_ja": "Support SOAP and REST protocols."
+        "label_ja": "SOAP および REST プロトコルをサポートします。"
       },
       {
         "index": 3,
         "label_en": "Support transformation from XML.",
-        "label_ja": "Support transformation from XML."
+        "label_ja": "XML からの変換をサポートします。"
       }
     ]
   },
@@ -36499,22 +36499,22 @@
       {
         "index": 1,
         "label_en": "Create a new deployable unit.",
-        "label_ja": "Create a new deployable unit."
+        "label_ja": "新しい展開可能なユニットを作成します。"
       },
       {
         "index": 2,
         "label_en": "Create, manage, and group elements.",
-        "label_ja": "Create, manage, and group elements."
+        "label_ja": "要素を作成、管理、グループ化します。"
       },
       {
         "index": 3,
         "label_en": "Group elements from a model together.",
-        "label_ja": "Group elements from a model together."
+        "label_ja": "モデルの要素をグループ化します。"
       },
       {
         "index": 4,
         "label_en": "Distribute the solution to customers.",
-        "label_ja": "Distribute the solution to customers."
+        "label_ja": "ソリューションを顧客に配布します。"
       }
     ]
   },
@@ -36755,22 +36755,22 @@
       {
         "index": 1,
         "label_en": "Export the vendor list for Power BI reporting.",
-        "label_ja": "Export the vendor list for Power BI reporting."
+        "label_ja": "Power BI レポート用のベンダー リストをエクスポートします。"
       },
       {
         "index": 2,
         "label_en": "Implement web portal products integration.",
-        "label_ja": "Implement web portal products integration."
+        "label_ja": "Web ポータル製品の統合を実装します。"
       },
       {
         "index": 3,
         "label_en": "Update worker compensation details.",
-        "label_ja": "Update worker compensation details."
+        "label_ja": "労働者補償の詳細を更新します。"
       },
       {
         "index": 4,
         "label_en": "Import payroll journals.",
-        "label_ja": "Import payroll journals."
+        "label_ja": "給与仕訳帳をインポートします。"
       }
     ]
   },
@@ -37789,31 +37789,31 @@
     "drag_actions": [
       {
         "text_en": "Add the package to source control and check in changes.",
-        "text_ja": "Add the package to source control and check in changes."
+        "text_ja": "パッケージをソース管理に追加し、変更をチェックインします。"
       },
       {
         "text_en": "Build and create a deployment package.",
-        "text_ja": "Build and create a deployment package."
+        "text_ja": "展開パッケージをビルドして作成します。"
       },
       {
         "text_en": "Import the model into a Development environment.",
-        "text_ja": "Import the model into a Development environment."
+        "text_ja": "モデルを開発環境にインポートします。"
       },
       {
         "text_en": "Synchronize the models in the Developer environment by using Get latest feature.",
-        "text_ja": "Synchronize the models in the Developer environment by using Get latest feature."
+        "text_ja": "最新機能の取得を使用して、開発者環境のモデルを同期します。"
       },
       {
         "text_en": "Import the model into the Build environment.",
-        "text_ja": "Import the model into the Build environment."
+        "text_ja": "モデルをビルド環境にインポートします。"
       },
       {
         "text_en": "Import the model into a QA environment.",
-        "text_ja": "Import the model into a QA environment."
+        "text_ja": "モデルを QA 環境にインポートします。"
       },
       {
         "text_en": "Import the deployment package in another development environment.",
-        "text_ja": "Import the deployment package in another development environment."
+        "text_ja": "別の開発環境に展開パッケージをインポートします。"
       }
     ],
     "drag_slots": [
@@ -38493,19 +38493,19 @@
     "drag_actions": [
       {
         "text_en": "Create an extension of the form in the project.",
-        "text_ja": "Create an extension of the form in the project."
+        "text_ja": "プロジェクト内にフォームの拡張機能を作成します。"
       },
       {
         "text_en": "Drag the Product Name and Batch ID fields from the data source to the grid on the form extension.",
-        "text_ja": "Drag the Product Name and Batch ID fields from the data source to the grid on the form extension."
+        "text_ja": "製品名フィールドとバッチ ID フィールドをデータ ソースからフォーム拡張機能のグリッドにドラッグします。"
       },
       {
         "text_en": "Right-click the form in the Application Object Tree (AOT).",
-        "text_ja": "Right-click the form in the Application Object Tree (AOT)."
+        "text_ja": "アプリケーション オブジェクト ツリー (AOT) でフォームを右クリックします。"
       },
       {
         "text_en": "Find the WHSTmpStatusChangeDetails form in the Application Object Tree (AOT).",
-        "text_ja": "Find the WHSTmpStatusChangeDetails form in the Application Object Tree (AOT)."
+        "text_ja": "アプリケーション オブジェクト ツリー (AOT) で WHSTmpStatusChangeDetails フォームを見つけます。"
       }
     ],
     "drag_slots": [
@@ -38867,17 +38867,17 @@
       {
         "index": 1,
         "label_en": "Identify the class that provides parameters for the report.",
-        "label_ja": "Identify the class that provides parameters for the report."
+        "label_ja": "レポートのパラメーターを提供するクラスを識別します。"
       },
       {
         "index": 2,
         "label_en": "Enable contract parameters in the report dialog.",
-        "label_ja": "Enable contract parameters in the report dialog."
+        "label_ja": "レポートダイアログでコントラクトパラメータを有効にします。"
       },
       {
         "index": 3,
         "label_en": "Indicate the contract name in the data provider class.",
-        "label_ja": "Indicate the contract name in the data provider class."
+        "label_ja": "データプロバイダークラスにコントラクト名を指定します。"
       }
     ]
   }
