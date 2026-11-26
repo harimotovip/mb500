@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.0.3').then(r => r.json()),
-        fetch('./data/topics.json?v=7.0.3').then(r => r.json())
+        fetch('./data/questions.json?v=7.0.4').then(r => r.json()),
+        fetch('./data/topics.json?v=7.0.4').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -110,10 +110,15 @@ class MB500App {
     this.currentMode = mode;
     this.answeredState = false;
 
-    // Update nav tabs
-    document.querySelectorAll('.nav-item').forEach(el => {
+    // Update nav tabs (both desktop & mobile)
+    document.querySelectorAll('.nav-item, .mobile-nav-item').forEach(el => {
       el.classList.toggle('active', el.dataset.mode === mode);
     });
+
+    const filterBar = document.getElementById('practice-filter-bar');
+    if (filterBar) {
+      filterBar.style.display = (mode === 'practice') ? 'block' : 'none';
+    }
 
     const practiceView = document.getElementById('practice-view');
     const examView = document.getElementById('exam-view');
@@ -1396,10 +1401,11 @@ class MB500App {
   }
 
   setupEventListeners() {
-    // Mode navigation
-    document.querySelectorAll('.nav-item').forEach(el => {
+    // Mode navigation (desktop + mobile)
+    document.querySelectorAll('.nav-item, .mobile-nav-item').forEach(el => {
       el.addEventListener('click', () => {
         this.setMode(el.dataset.mode);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
 
