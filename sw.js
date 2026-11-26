@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v9 (Complete Drag & Drop Actions/Slots)
-const CACHE_NAME = 'mb500-cache-v9';
+// Service Worker for MB-500 Offline Quiz Tool - v10 (100% Full Question Bank Audit & Hotspot Fixes)
+const CACHE_NAME = 'mb500-cache-v10';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

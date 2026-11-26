@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.0.2').then(r => r.json()),
-        fetch('./data/topics.json?v=7.0.2').then(r => r.json())
+        fetch('./data/questions.json?v=7.0.3').then(r => r.json()),
+        fetch('./data/topics.json?v=7.0.3').then(r => r.json())
       ]);
 
       this.questions = qRes;

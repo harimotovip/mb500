@@ -15789,30 +15789,34 @@
       }
     ],
     "question_images": [
-      "images/t4_q1_1.png"
+      "images/t4_q1_1.png",
+      "images/t4_q1_2.png"
     ],
     "answer_images": [
-      "images/t4_q1_2.png",
       "images/t4_q1_3.png"
     ],
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Parameter",
-        "title_ja": "パラメーター",
+        "title_en": "tmpFrmVirtual.Id",
+        "title_ja": "tmpFrmVirtual.Id",
         "options": [
-          "Parameter"
+          "SID1234",
+          "SID1234-Updated",
+          "SID1234 SID1234-Updated"
         ],
-        "answer": "Parameter"
+        "answer": "SID1234"
       },
       {
         "box_id": 2,
-        "title_en": "tmpErmVirtual.Id",
-        "title_ja": "tmpErmVirtual.Id",
+        "title_en": "salesQty",
+        "title_ja": "salesQty",
         "options": [
-          "SID1234"
+          "5",
+          "10",
+          "15"
         ],
-        "answer": "SID1234"
+        "answer": "5"
       }
     ]
   },
@@ -16227,10 +16231,10 @@
       }
     ],
     "question_images": [
-      "images/t4_q5_1.png"
+      "images/t4_q5_1.png",
+      "images/t4_q5_2.png"
     ],
     "answer_images": [
-      "images/t4_q5_2.png",
       "images/t4_q5_3.png"
     ],
     "hotspot_boxes": [
@@ -16249,7 +16253,8 @@
         "title_en": "The static method getDiscount() in Line 10 of the base class can be wrapped and extended by adding business logic to the extension class.",
         "title_ja": "基本クラスの 10 行目の静的メソッド getDiscount() は、ビジネス ロジックを拡張クラスに追加することでラップおよび拡張できます。",
         "options": [
-          "O"
+          "Yes",
+          "No"
         ],
         "answer": "O"
       },
@@ -16258,7 +16263,8 @@
         "title_en": "The extension class can be instantiated by running the following code: SalesPriceDiscountMy_Extension myInstance = new salespriceDiscountMy Extension () ;",
         "title_ja": "拡張クラスは、次のコードを実行することでインスタンス化できます。 SalesPriceDiscountMy_Extension myInstance = new salespriceDiscountMy Extension () ;",
         "options": [
-          "O"
+          "Yes",
+          "No"
         ],
         "answer": "O"
       }
@@ -16409,67 +16415,56 @@
       }
     ],
     "question_images": [
-      "images/t4_q6_1.png"
+      "images/t4_q6_1.png",
+      "images/t4_q6_2.png"
     ],
     "answer_images": [
-      "images/t4_q6_2.png",
       "images/t4_q6_3.png"
     ],
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Method",
-        "title_ja": "メソッド",
+        "title_en": "tryMethod(5,2);",
+        "title_ja": "tryMethod(5,2);",
         "options": [
-          "Output"
+          "One, Two, Four, Five",
+          "One, Two, Five",
+          "One, Three, Four, Five"
         ],
-        "answer": "Output"
+        "answer": "One, Two, Four, Five"
       },
       {
         "box_id": 2,
-        "title_en": "tryMethod (5,2) ;",
-        "title_ja": "tryMethod (5,2) ;",
+        "title_en": "tryMethod(4,0);",
+        "title_ja": "tryMethod(4,0);",
         "options": [
-          "Output",
-          "One, Two, Four, Five",
-          "One, Two, Five"
+          "One, Three, Four, Five",
+          "One, Four, Five",
+          "One, Two, Four, Five"
         ],
-        "answer": "Output"
+        "answer": "One, Three, Four, Five"
       },
       {
         "box_id": 3,
-        "title_en": "tryMethod (4,0);",
-        "title_ja": "tryMethod (4,0);",
+        "title_en": "tryMethod(2,0);",
+        "title_ja": "tryMethod(2,0);",
         "options": [
-          "One, Two, Five",
-          "One, Three, Four, Five",
-          "One, Four, Five"
+          "One, Three, Four",
+          "One, Three",
+          "One, Three, Four, Five"
         ],
-        "answer": "One, Two, Five"
+        "answer": "One, Three, Four"
       },
       {
         "box_id": 4,
-        "title_en": "tryMethod (2,0);",
-        "title_ja": "tryMethod (2,0);",
+        "title_en": "tryMethod(3,0);",
+        "title_ja": "tryMethod(3,0);",
         "options": [
-          "One, Four, Five",
           "One, Two, Four, Five",
-          "One, Three, Four",
-          "One, Three"
+          "One, Three, One, Two, Four, Five",
+          "One, Three, Four, One, Two, Four, Five"
         ],
-        "answer": "One, Four, Five"
-      },
-      {
-        "box_id": 5,
-        "title_en": "tryMethod (3,0);",
-        "title_ja": "tryMethod (3,0);",
-        "options": [
-          "One, Three",
-          "One, Three, Four, Five",
-          "One, Two, Four, Five",
-          "One, Three, One, Two, Four, Five"
-        ],
-        "answer": "One, Three"
+        "answer": "One, Two, Four, Five"
       }
     ]
   },
@@ -17348,10 +17343,10 @@
       }
     ],
     "question_images": [
-      "images/t4_q14_1.png"
+      "images/t4_q14_1.png",
+      "images/t4_q14_2.png"
     ],
     "answer_images": [
-      "images/t4_q14_2.png",
       "images/t4_q14_3.png"
     ],
     "hotspot_boxes": [
@@ -17360,7 +17355,10 @@
         "title_en": "Box 1",
         "title_ja": "ボックス 1",
         "options": [
-          "final class WebShopOrderVal_Extension"
+          "final class WebShopOrderVal_Extension",
+          "final class WebShopOrderValidations_MyExtension",
+          "static class WebShopOrderValidationsMy_Extension",
+          "class WebShopOrderValidations_Extension"
         ],
         "answer": "final class WebShopOrderVal_Extension"
       },
@@ -17369,7 +17367,10 @@
         "title_en": "Box 2",
         "title_ja": "ボックス 2",
         "options": [
-          "public static void checkQtyValue(int Qty)"
+          "public static void checkQtyValue(int Qty)",
+          "public void checkQtyValue(int Qty)",
+          "public static int checkQtyValue(int Qty)",
+          "public static void checkQtyValue(int Qty = 0)"
         ],
         "answer": "public static void checkQtyValue(int Qty)"
       }
@@ -17890,37 +17891,32 @@
       }
     ],
     "question_images": [
-      "images/t4_q18_1.png"
+      "images/t4_q18_1.png",
+      "images/t4_q18_2.png"
     ],
     "answer_images": [
-      "images/t4_q18_2.png",
       "images/t4_q18_3.png"
     ],
     "hotspot_boxes": [
       {
         "box_id": 1,
-        "title_en": "Method",
-        "title_ja": "メソッド",
+        "title_en": "tryMethod(5,2);",
+        "title_ja": "tryMethod(5,2);",
         "options": [
-          "Output"
-        ],
-        "answer": "Output"
-      },
-      {
-        "box_id": 2,
-        "title_en": "tryMethod (5,2);",
-        "title_ja": "tryMethod (5,2);",
-        "options": [
-          "One, Two, Four, Five"
+          "One, Two, Four, Five",
+          "One, Two, Five",
+          "One, Three, Four, Five"
         ],
         "answer": "One, Two, Four, Five"
       },
       {
-        "box_id": 3,
-        "title_en": "tryMethod (4,0);",
-        "title_ja": "tryMethod (4,0);",
+        "box_id": 2,
+        "title_en": "tryMethod(4,0);",
+        "title_ja": "tryMethod(4,0);",
         "options": [
-          "One, Three, Four, Five"
+          "One, Three, Four, Five",
+          "One, Four, Five",
+          "One, Two, Four, Five"
         ],
         "answer": "One, Three, Four, Five"
       }
@@ -21535,16 +21531,19 @@
         "title_en": "Implement interface for new attribute class",
         "title_ja": "新しい属性クラスのインターフェースを実装する",
         "options": [
-          "SysExtension|Attribute"
+          "SysExtensionIAttribute",
+          "SysExtensionISearchStrategy"
         ],
-        "answer": "SysExtension|Attribute"
+        "answer": "SysExtensionIAttribute"
       },
       {
         "box_id": 3,
         "title_en": "Modifier for base class method",
         "title_ja": "基本クラスメソッドの修飾子",
         "options": [
-          "Abstract"
+          "Abstract",
+          "Protected",
+          "Private"
         ],
         "answer": "Abstract"
       }
@@ -22273,18 +22272,22 @@
         "title_en": "Class extension for SysOperation Framework public class CustomserviceController extends SysOperationServiceController",
         "title_ja": "SysOperation Framework のクラス拡張機能 public class CustomserviceController extends SysOperationServiceController",
         "options": [
-          "public static void main(Args args"
+          "var operation = new CustomServiceController();",
+          "var operation = new SysOperationController();",
+          "var operation = new SysOperationServiceController();"
         ],
-        "answer": "public static void main(Args args"
+        "answer": "var operation = new CustomServiceController();"
       },
       {
         "box_id": 2,
         "title_en": "}",
         "title_ja": "}",
         "options": [
-          "operation.startOperation0;"
+          "operation.run();",
+          "operation.doBatch();",
+          "operation.startOperation();"
         ],
-        "answer": "operation.startOperation0;"
+        "answer": "operation.startOperation();"
       }
     ]
   },
@@ -22426,7 +22429,9 @@
         "title_en": "salesTable.selectLocked(true): salesTable.selectForUpdate(true);",
         "title_ja": "salesTable.selectLocked(true): salesTable.selectForUpdate(true);",
         "options": [
-          "&& salesTable.SalesStatus --"
+          "SalesStatus::None",
+          "SalesStatus::BackOrder",
+          "SalesStatus::Invoiced"
         ],
         "answer": "&& salesTable.SalesStatus --"
       },
@@ -22842,9 +22847,10 @@
         "title_en": "Automatically filter based on the user.",
         "title_ja": "ユーザーに基づいて自動的にフィルタリングします。",
         "options": [
-          "Ise the Controller clas"
+          "Use the Controller class",
+          "Use the ReportDataProvider class"
         ],
-        "answer": "Ise the Controller clas"
+        "answer": "Use the Controller class"
       }
     ]
   },
@@ -23298,9 +23304,11 @@
         "title_en": "Run the form asynchronously.",
         "title_ja": "フォームを非同期的に実行します。",
         "options": [
-          "Code segment or object"
+          "element.runAsync(classNum(CallReport), staticMethodStr(CallReport, RunReport), ...)",
+          "Global::runAsync(classNum(CallReport), staticMethodStr(CallReport, RunReport), ...)",
+          "SysOperationSandbox::callStaticMethod(classNum(CallReport), staticMethodStr(CallReport, RunReport), ...)"
         ],
-        "answer": "Code segment or object"
+        "answer": "SysOperationSandbox::callStaticMethod(classNum(CallReport), staticMethodStr(CallReport, RunReport), ...)"
       }
     ]
   },
@@ -24592,9 +24600,12 @@
         "title_en": "Populate data from new fields added to the report data source.",
         "title_ja": "レポート データ ソースに追加された新しいフィールドからデータを入力します。",
         "options": [
-          "Class"
+          "Data contract",
+          "Report controller",
+          "Report data provider",
+          "Report UI builder"
         ],
-        "answer": "Class"
+        "answer": "Report data provider"
       },
       {
         "box_id": 2,
@@ -24703,7 +24714,9 @@
         "title_en": "Author Power BI reports by using DirectQuery.",
         "title_ja": "DirectQuery を使用して Power BI レポートを作成します。",
         "options": [
-          "AxDB"
+          "AxDB",
+          "Entity store",
+          "MongoDB"
         ],
         "answer": "AxDB"
       }
@@ -28763,9 +28776,10 @@
         "title_en": "Which type of file should you create for the",
         "title_ja": "どのタイプのファイルを作成する必要がありますか",
         "options": [
-          "pbix file"
+          ".pbix file",
+          ".pbit file"
         ],
-        "answer": "pbix file"
+        "answer": ".pbix file"
       },
       {
         "box_id": 2,
@@ -28782,7 +28796,9 @@
         "title_en": "Which type of data connectivity model should",
         "title_ja": "どのタイプのデータ接続モデルを使用する必要があります",
         "options": [
-          "SQL Server DirectQuery"
+          "SQL Server DirectQuery",
+          "SQL Server import",
+          "OData feed"
         ],
         "answer": "SQL Server DirectQuery"
       },
@@ -33085,7 +33101,10 @@
         "title_en": "Performance Timer tool link",
         "title_ja": "パフォーマンス タイマー ツールのリンク",
         "options": [
-          "Data"
+          "The number of open forms and the rate at which they are opened and closed (per second).",
+          "The total number of forms and the rate at which they are opened and closed (per second).",
+          "The number of open forms and the rate at which they are opened and closed (per minute).",
+          "The total number of forms and the rate at which they are opened and closed (per minute)."
         ],
         "answer": "Data"
       },
@@ -33094,7 +33113,9 @@
         "title_en": "Forms",
         "title_ja": "フォーム",
         "options": [
-          "Data"
+          "The total number of sessions created.",
+          "The number of current web client sessions and how many are in use.",
+          "Information about the garbage collection processes on the server."
         ],
         "answer": "Data"
       }
@@ -33583,9 +33604,11 @@
         "title_en": "Creating a Singleton class in X++ public class Salesordersingleton",
         "title_ja": "X++ パブリック クラス Salesordersingleton でシングルトン クラスを作成する",
         "options": [
-          "static SalesorderSingleton instance;"
+          "public",
+          "private",
+          "protected"
         ],
-        "answer": "static SalesorderSingleton instance;"
+        "answer": "private"
       },
       {
         "box_id": 2,
@@ -33602,9 +33625,11 @@
         "title_en": "public private protected",
         "title_ja": "public private protected",
         "options": [
-          "void new("
+          "public",
+          "private",
+          "protected"
         ],
-        "answer": "void new("
+        "answer": "private"
       },
       {
         "box_id": 4,
@@ -33621,9 +33646,11 @@
         "title_en": "return instance;",
         "title_ja": "インスタンスを返す;",
         "options": [
-          "instance = new SalesOrderSingleton ();"
+          "public",
+          "private",
+          "protected"
         ],
-        "answer": "instance = new SalesOrderSingleton ();"
+        "answer": "public"
       }
     ]
   },
@@ -33703,7 +33730,8 @@
         "title_en": "updates",
         "title_ja": "更新",
         "options": [
-          "Optimistic"
+          "Optimistic",
+          "Pessimistic"
         ],
         "answer": "Optimistic"
       }
@@ -35915,7 +35943,9 @@
         "title_en": "Integrating Azure services with Supply Chain Management",
         "title_ja": "Azure サービスと Supply Chain Management の統合",
         "options": [
-          "Service"
+          "Azure Service Bus",
+          "Azure Logic Apps",
+          "Azure Event Grid"
         ],
         "answer": "Service"
       },
@@ -36187,7 +36217,9 @@
         "title_en": "What should you create?",
         "title_ja": "何を作るべきですか?",
         "options": [
-          "a table extension for Vendors and a relation for Vendor exclusions"
+          "a table extension for Vendors and a relation for Vendor exclusions",
+          "a relation between the Vendor exclusions table and the Vendors table",
+          "a table extension for Vendors and add a Delete Action for Vendor exclusions"
         ],
         "answer": "a table extension for Vendors and a relation for Vendor exclusions"
       },
@@ -36196,7 +36228,9 @@
         "title_en": "For which property on the relationship node",
         "title_ja": "リレーションシップ ノードのどのプロパティに対するもの",
         "options": [
-          "Validate"
+          "Validate",
+          "OnDelete",
+          "Relationship Type"
         ],
         "answer": "Validate"
       },
@@ -38775,7 +38809,9 @@
         "title_en": "Implement reporting.",
         "title_ja": "レポートを実装します。",
         "options": [
-          "Power Platform"
+          "Power Platform",
+          "SQL Server Reporting Services",
+          "Financial Reporting"
         ],
         "answer": "Power Platform"
       },
