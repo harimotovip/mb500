@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.1.1').then(r => r.json()),
-        fetch('./data/topics.json?v=7.1.1').then(r => r.json())
+        fetch('./data/questions.json?v=7.1.2').then(r => r.json()),
+        fetch('./data/topics.json?v=7.1.2').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -521,8 +521,20 @@ class MB500App {
   }
 
   extractSteps(q) {
-    if (q.drag_steps && q.drag_steps.length > 0) {
-      return q.drag_steps.map(s => typeof s === 'string' ? s : (s.action || s.text || String(s)));
+    const aiAns = (q.ai_verdict && (q.ai_verdict.claude_answer || q.ai_verdict.gemini_answer)) || '';
+    if (aiAns && aiAns.includes('|')) {
+      const parts = aiAns.split('|').map(p => p.replace(/^\s*\d+\s*:\s*/, '').trim()).filter(Boolean);
+      if (parts.length >= 2) {
+        return parts.map(p => {
+          const matched = (q.drag_actions || []).find(a => a.text_en.toLowerCase() === p.toLowerCase());
+          if (matched) {
+            if (this.language === 'en') return matched.text_en;
+            if (this.language === 'ja') return matched.text_ja || matched.text_en;
+            return `${matched.text_ja || matched.text_en} (${matched.text_en})`;
+          }
+          return p;
+        });
+      }
     }
     const exp = q.explanation_en || q.explanation_ja || q.explanation || '';
     const matches = exp.match(/Step\s*\d+\s*:\s*([^\n]+)/gi);

@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v14 (Clean short drag_actions translations)
-const CACHE_NAME = 'mb500-cache-v14';
+// Service Worker for MB-500 Offline Quiz Tool - v15 (Exact Verbatim Drag & Drop Answer Steps)
+const CACHE_NAME = 'mb500-cache-v15';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
