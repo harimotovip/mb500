@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.0.1').then(r => r.json()),
-        fetch('./data/topics.json?v=7.0.1').then(r => r.json())
+        fetch('./data/questions.json?v=7.0.2').then(r => r.json()),
+        fetch('./data/topics.json?v=7.0.2').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -377,31 +377,60 @@ class MB500App {
   }
 
   renderDragDropHtml(q) {
-    const expText = q.explanation_en || q.explanation_ja || q.explanation || '';
-    const stepMatches = expText.match(/Step\s*\d+\s*:\s*([^\n]+)/gi);
-    const items = (stepMatches && stepMatches.length > 0)
-      ? stepMatches.map(s => s.replace(/Step\s*\d+\s*:\s*/i, '').trim())
-      : ['Action A', 'Action B', 'Action C', 'Action D'];
+    let actions = [];
+    if (q.drag_actions && q.drag_actions.length > 0) {
+      actions = q.drag_actions;
+    } else {
+      const expText = q.explanation_en || q.explanation_ja || q.explanation || '';
+      const stepMatches = expText.match(/Step\s*\d+\s*:\s*([^\n]+)/gi);
+      const fallback = (stepMatches && stepMatches.length > 0)
+        ? stepMatches.map(s => s.replace(/Step\s*\d+\s*:\s*/i, '').trim())
+        : ['Action A', 'Action B', 'Action C', 'Action D'];
+      actions = fallback.map(t => ({ text_en: t, text_ja: t }));
+    }
+
+    const slots = (q.drag_slots && q.drag_slots.length > 0)
+      ? q.drag_slots
+      : actions.map((_, idx) => ({ index: idx + 1, label_en: '', label_ja: '' }));
+
+    const hasLabels = slots.some(s => s.label_en);
+
+    const formatLang = (ja, en) => {
+      if (this.language === 'en') return this.escapeHtml(en || ja);
+      if (this.language === 'ja') return this.escapeHtml(ja || en);
+      if (!ja || ja === en) return this.escapeHtml(en);
+      return `<div class="bilingual-opt"><div>${this.escapeHtml(ja)}</div><div class="en-sub">${this.escapeHtml(en)}</div></div>`;
+    };
 
     return `
       <div class="drag-drop-container">
         <div class="drag-instructions">
-          💡 <strong>交互提示</strong>: 电脑端可直接拖拽，手机端可<strong>先点击选项，再点击目标槽位</strong>即可自动填入！
+          💡 <strong>交互提示</strong>: 电脑端可直接拖拽，手机端可<strong>先点击下方操作项，再点击目标槽位</strong>即可自动填入！（共 ${actions.length} 个可选项 ➔ 填入 ${slots.length} 个目标槽位）
         </div>
         <div class="drag-slots-pool">
-          <div class="pool-header">🎯 目标顺序槽位 (Target Order)</div>
+          <div class="pool-header">${hasLabels ? '🎯 目标匹配槽位 (Answer Area)' : '🎯 目标顺序槽位 (Target Order)'}</div>
           <div class="slots-grid">
-            ${items.map((_, idx) => `
-              <div class="drop-slot" data-slot-index="${idx}"><span class="slot-placeholder">Step ${idx + 1} (点击或拖拽放入)</span></div>
-            `).join('')}
+            ${slots.map((slot, idx) => {
+              const placeholderText = hasLabels
+                ? `匹配第 ${idx + 1} 项 (点击或拖拽放入)`
+                : `Step ${idx + 1} (点击或拖拽放入)`;
+              return `
+                <div class="drag-slot-row">
+                  ${hasLabels ? `<div class="slot-req-label"><strong>#${idx + 1}:</strong> ${formatLang(slot.label_ja, slot.label_en)}</div>` : ''}
+                  <div class="drop-slot" data-slot-index="${idx}" data-placeholder="${this.escapeHtml(placeholderText)}">
+                    <span class="slot-placeholder">${this.escapeHtml(placeholderText)}</span>
+                  </div>
+                </div>
+              `;
+            }).join('')}
           </div>
         </div>
         <div class="drag-sources-pool">
-          <div class="pool-header">📋 可选操作列表 (Actions Pool)</div>
+          <div class="pool-header">📋 可选操作列表 (Actions Pool · 共 ${actions.length} 项)</div>
           <div class="sources-list">
-            ${items.map((s, idx) => `
+            ${actions.map((act, idx) => `
               <div class="drag-item" draggable="true" data-id="item_${idx}">
-                ${this.escapeHtml(s)}
+                ${formatLang(act.text_ja, act.text_en)}
               </div>
             `).join('')}
           </div>

@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v8 (Fix DragDrop crash & leaked answer images)
-const CACHE_NAME = 'mb500-cache-v8';
+// Service Worker for MB-500 Offline Quiz Tool - v9 (Complete Drag & Drop Actions/Slots)
+const CACHE_NAME = 'mb500-cache-v9';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

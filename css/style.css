@@ -635,6 +635,21 @@ body {
   pointer-events: none;
 }
 
+.drag-slot-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.slot-req-label {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  padding: 0.25rem 0.4rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent-primary);
+}
+
 /* ==========================================================================
    Question Footer & Navigation
    ========================================================================== */

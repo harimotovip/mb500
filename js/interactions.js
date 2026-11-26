@@ -40,6 +40,7 @@ class InteractionEngine {
   setupDragAndDrop(container, qData, onChangeCallback) {
     this.dragPlacements = {};
     this.activeDragSource = null;
+    this.currentDragQ = qData;
 
     const sourceItems = container.querySelectorAll('.drag-item');
     const targetSlots = container.querySelectorAll('.drop-slot');
@@ -103,6 +104,19 @@ class InteractionEngine {
     const sourceEl = container.querySelector(`.drag-item[data-id="${itemId}"]`);
     if (!sourceEl) return;
 
+    const q = this.currentDragQ || {};
+    const allowReuse = (q.drag_actions && q.drag_slots && (q.drag_actions.length < q.drag_slots.length || q.drag_slots.some(s => s.label_en)));
+
+    // If this slot already had another item, free it if not used elsewhere
+    const prev = this.dragPlacements[slotIndex];
+    if (prev && prev.id !== itemId) {
+      const stillUsed = Object.entries(this.dragPlacements).some(([k, v]) => k !== String(slotIndex) && v.id === prev.id);
+      if (!stillUsed) {
+        const prevEl = container.querySelector(`.drag-item[data-id="${prev.id}"]`);
+        if (prevEl) prevEl.classList.remove('already-used');
+      }
+    }
+
     this.dragPlacements[slotIndex] = {
       id: itemId,
       text: sourceEl.innerText.trim()
@@ -117,7 +131,9 @@ class InteractionEngine {
         </div>
       `;
       targetSlot.classList.add('filled');
-      sourceEl.classList.add('already-used');
+      if (!allowReuse) {
+        sourceEl.classList.add('already-used');
+      }
     }
 
     if (callback) callback(this.dragPlacements);
@@ -127,15 +143,19 @@ class InteractionEngine {
     const placed = this.dragPlacements[slotIndex];
     if (!placed) return;
 
-    const sourceEl = container.querySelector(`.drag-item[data-id="${placed.id}"]`);
-    if (sourceEl) {
-      sourceEl.classList.remove('already-used');
+    delete this.dragPlacements[slotIndex];
+    const stillUsed = Object.values(this.dragPlacements).some(v => v.id === placed.id);
+    if (!stillUsed) {
+      const sourceEl = container.querySelector(`.drag-item[data-id="${placed.id}"]`);
+      if (sourceEl) {
+        sourceEl.classList.remove('already-used');
+      }
     }
 
-    delete this.dragPlacements[slotIndex];
     const targetSlot = container.querySelector(`.drop-slot[data-slot-index="${slotIndex}"]`);
     if (targetSlot) {
-      targetSlot.innerHTML = `<span class="slot-placeholder">Slot ${parseInt(slotIndex) + 1} (Tap to place)</span>`;
+      const ph = targetSlot.dataset.placeholder || `Step ${parseInt(slotIndex) + 1} (点击或拖拽放入)`;
+      targetSlot.innerHTML = `<span class="slot-placeholder">${ph}</span>`;
       targetSlot.classList.remove('filled');
     }
 

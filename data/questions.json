@@ -839,6 +839,47 @@
     ],
     "answer_images": [
       "images/t1_q7_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a test branch.",
+        "text_ja": "Create a test branch."
+      },
+      {
+        "text_en": "Connect to the Microsoft Azure DevOps",
+        "text_ja": "Connect to the Microsoft Azure DevOps"
+      },
+      {
+        "text_en": "Create a main branch.",
+        "text_ja": "Create a main branch."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 5,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -1161,6 +1202,38 @@
         "step": 4,
         "action": "Select Configure and choose presentation style (Tile, List, or Link)."
       }
+    ],
+    "drag_actions": [
+      {
+        "text_en": "the grid.",
+        "text_ja": "the grid."
+      },
+      {
+        "text_en": "Select the General menu item then select",
+        "text_ja": "Select the General menu item then select"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -1249,6 +1322,37 @@
     ],
     "answer_images": [
       "images/t1_q11_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "User Acceptance Testing (UAT) only",
+        "text_ja": "User Acceptance Testing (UAT) only"
+      },
+      {
+        "text_en": "Build only",
+        "text_ja": "Build only"
+      },
+      {
+        "text_en": "User Acceptance Testing (UAT) and Build",
+        "text_ja": "User Acceptance Testing (UAT) and Build"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Activity Monitoring",
+        "label_ja": "Activity Monitoring"
+      },
+      {
+        "index": 2,
+        "label_en": "SQL Insights",
+        "label_ja": "SQL インサイト"
+      },
+      {
+        "index": 3,
+        "label_en": "System Diagnostics",
+        "label_ja": "System Diagnostics"
+      }
     ]
   },
   {
@@ -1573,6 +1677,42 @@
     ],
     "answer_images": [
       "images/t1_q14_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Application Platform",
+        "text_ja": "Application Platform"
+      },
+      {
+        "text_en": "Application Suite",
+        "text_ja": "Application Suite"
+      },
+      {
+        "text_en": "Application Foundation",
+        "text_ja": "Application Foundation"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Number Sequence",
+        "label_ja": "Number Sequence"
+      },
+      {
+        "index": 2,
+        "label_en": "Global Address Book",
+        "label_ja": "Global Address Book"
+      },
+      {
+        "index": 3,
+        "label_en": "Workflow & Services",
+        "label_ja": "Workflow & Services"
+      },
+      {
+        "index": 4,
+        "label_en": "SSRS Reporting",
+        "label_ja": "SSRS Reporting"
+      }
     ]
   },
   {
@@ -1747,6 +1887,32 @@
     ],
     "answer_images": [
       "images/t1_q16_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Activity monitoring",
+        "text_ja": "Activity monitoring"
+      },
+      {
+        "text_en": "SQL insights",
+        "text_ja": "SQL の洞察"
+      },
+      {
+        "text_en": "Health metrics",
+        "text_ja": "健康指標"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Determine what a user was doing during a specific i",
+        "label_ja": "Determine what a user was doing during a specific i"
+      },
+      {
+        "index": 2,
+        "label_en": "Identify the number of distinct user sessions",
+        "label_ja": "Identify the number of distinct user sessions"
+      }
     ]
   },
   {
@@ -2210,6 +2376,41 @@
     ],
     "answer_images": [
       "images/t1_q21_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "GER configuration",
+        "text_ja": "GER configuration"
+      },
+      {
+        "text_en": "Marketing asset",
+        "text_ja": "Marketing asset"
+      },
+      {
+        "text_en": "Retail SDK",
+        "text_ja": "Retail SDK"
+      },
+      {
+        "text_en": "Localized financial report",
+        "text_ja": "Localized financial report"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Upload a logo of various sizes to be used in other environments",
+        "label_ja": "Upload a logo of various sizes to be used in other environments"
+      },
+      {
+        "index": 2,
+        "label_en": "Upload an electronic report to be used for a free text invoice in Dynamics 365 Finance",
+        "label_ja": "Upload an electronic report to be used for a free text invoice in Dynamics 365 Finance"
+      },
+      {
+        "index": 3,
+        "label_en": "Upload a region-specific solution developed for a ledger account in the form of an ISV",
+        "label_ja": "Upload a region-specific solution developed for a ledger account in the form of an ISV"
+      }
     ]
   },
   {
@@ -2405,6 +2606,28 @@
     ],
     "answer_images": [
       "images/t1_q23_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Package",
+        "text_ja": "Package"
+      },
+      {
+        "text_en": "Project",
+        "text_ja": "Project"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Requirement",
+        "label_ja": "Requirement"
+      },
+      {
+        "index": 2,
+        "label_en": "Manage and organize a group of elements during development.",
+        "label_ja": "Manage and organize a group of elements during development."
+      }
     ]
   },
   {
@@ -2765,6 +2988,37 @@
     ],
     "answer_images": [
       "images/t1_q26_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Action",
+        "text_ja": "Action"
+      },
+      {
+        "text_en": "Display",
+        "text_ja": "Display"
+      },
+      {
+        "text_en": "Output",
+        "text_ja": "Output"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Process1",
+        "label_ja": "Process1"
+      },
+      {
+        "index": 2,
+        "label_en": "Process2",
+        "label_ja": "Process2"
+      },
+      {
+        "index": 3,
+        "label_en": "Process3",
+        "label_ja": "Process3"
+      }
     ]
   },
   {
@@ -2981,6 +3235,37 @@
     ],
     "answer_images": [
       "images/t1_q29_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Mobile app, workspaces, and platform",
+        "text_ja": "Mobile app, workspaces, and platform"
+      },
+      {
+        "text_en": "Save or load task recordings from the BPM library",
+        "text_ja": "Save or load task recordings from the BPM library"
+      },
+      {
+        "text_en": "Integration with Power BI Desktop",
+        "text_ja": "Integration with Power BI Desktop"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Cloud only",
+        "label_ja": "Cloud only"
+      },
+      {
+        "index": 2,
+        "label_en": "On-premises only",
+        "label_ja": "On-premises only"
+      },
+      {
+        "index": 3,
+        "label_en": "Both cloud and on-premises",
+        "label_ja": "Both cloud and on-premises"
+      }
     ]
   },
   {
@@ -3293,6 +3578,50 @@
     ],
     "answer_images": [
       "images/t1_q32_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "In the Source Control Merge wizard, set the target branch to Test.",
+        "text_ja": "In the Source Control Merge wizard, set the target branch to Test."
+      },
+      {
+        "text_en": "In the Source Control Merge wizard, select Selected changesets.",
+        "text_ja": "In the Source Control Merge wizard, select Selected changesets."
+      },
+      {
+        "text_en": "Right-click the Test branch and select Merge.",
+        "text_ja": "Right-click the Test branch and select Merge."
+      },
+      {
+        "text_en": "Connect a Visual Studio workspace to an Azure DevOps project.",
+        "text_ja": "Connect a Visual Studio workspace to an Azure DevOps project."
+      },
+      {
+        "text_en": "Map the Test branch to a local folder on your machine.",
+        "text_ja": "Map the Test branch to a local folder on your machine."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -3506,6 +3835,33 @@
     ],
     "answer_images": [
       "images/t1_q35_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Platform model",
+        "text_ja": "Platform model"
+      },
+      {
+        "text_en": "Application model",
+        "text_ja": "Application model"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Application Foundation",
+        "label_ja": "Application Foundation"
+      },
+      {
+        "index": 2,
+        "label_en": "Ledger",
+        "label_ja": "Ledger"
+      },
+      {
+        "index": 3,
+        "label_en": "Test Essentials",
+        "label_ja": "Test Essentials"
+      }
     ]
   },
   {
@@ -3551,6 +3907,46 @@
     ],
     "answer_images": [
       "images/t1_q36_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add the task named Add Licenses to Deployable Package.",
+        "text_ja": "Add the task named Add Licenses to Deployable Package."
+      },
+      {
+        "text_en": "Provide a search pattern for the license file to add to the package.",
+        "text_ja": "Provide a search pattern for the license file to add to the package."
+      },
+      {
+        "text_en": "Add the license file to a source control repository.",
+        "text_ja": "Add the license file to a source control repository."
+      },
+      {
+        "text_en": "Provide a file name and the path of the deployable package to update.",
+        "text_ja": "Provide a file name and the path of the deployable package to update."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "2.",
+        "label_ja": "2."
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -3596,6 +3992,28 @@
     ],
     "answer_images": [
       "images/t1_q37_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "On-premises",
+        "text_ja": "On-premises"
+      },
+      {
+        "text_en": "Cloud",
+        "text_ja": "Cloud"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "CompanyA",
+        "label_ja": "CompanyA"
+      },
+      {
+        "index": 2,
+        "label_en": "CompanyB",
+        "label_ja": "CompanyB"
+      }
     ]
   },
   {
@@ -3759,6 +4177,33 @@
     ],
     "answer_images": [
       "images/t1_q39_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Cloud",
+        "text_ja": "Cloud"
+      },
+      {
+        "text_en": "On-premises",
+        "text_ja": "On-premises"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Create and use Al agents.",
+        "label_ja": "Create and use Al agents."
+      },
+      {
+        "index": 2,
+        "label_en": "Use a local file system to store ER configurations.",
+        "label_ja": "Use a local file system to store ER configurations."
+      },
+      {
+        "index": 3,
+        "label_en": "Integrate with Power BI desktop.",
+        "label_ja": "Integrate with Power BI desktop."
+      }
     ]
   },
   {
@@ -4345,6 +4790,41 @@
     ],
     "answer_images": [
       "images/t2_q5_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add the custom Data service endpoints in the ODataClient list.",
+        "text_ja": "Add the custom Data service endpoints in the ODataClient list."
+      },
+      {
+        "text_en": "Add the OData v4 client code generator.",
+        "text_ja": "Add the OData v4 client code generator."
+      },
+      {
+        "text_en": "Point the MetadataDocumentUri variable to the Dynamics 365 Finance instance.",
+        "text_ja": "Point the MetadataDocumentUri variable to the Dynamics 365 Finance instance."
+      },
+      {
+        "text_en": "Generate proxy classes.",
+        "text_ja": "Generate proxy classes."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -4543,6 +5023,46 @@
     ],
     "answer_images": [
       "images/t2_q7_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Develop the workflow approval component.",
+        "text_ja": "Develop the workflow approval component."
+      },
+      {
+        "text_en": "Configure the business process steps.",
+        "text_ja": "Configure the business process steps."
+      },
+      {
+        "text_en": "Create a workflow structure.",
+        "text_ja": "Create a workflow structure."
+      },
+      {
+        "text_en": "Enable the workflow for the business scenario.",
+        "text_ja": "Enable the workflow for the business scenario."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -5033,6 +5553,33 @@
     ],
     "answer_images": [
       "images/t2_q11_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "FormRun",
+        "text_ja": "FormRun"
+      },
+      {
+        "text_en": "Global",
+        "text_ja": "グローバル"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "The process is run outside the client.",
+        "label_ja": "The process is run outside the client."
+      },
+      {
+        "index": 2,
+        "label_en": "Display a message when the process is completed without a page refresh.",
+        "label_ja": "Display a message when the process is completed without a page refresh."
+      },
+      {
+        "index": 3,
+        "label_en": "The page must be refreshed for the message to be displayed.",
+        "label_ja": "The page must be refreshed for the message to be displayed."
+      }
     ]
   },
   {
@@ -5247,6 +5794,32 @@
     ],
     "answer_images": [
       "images/t2_q13_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Action",
+        "text_ja": "Action"
+      },
+      {
+        "text_en": "Display",
+        "text_ja": "Display"
+      },
+      {
+        "text_en": "Output",
+        "text_ja": "Output"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Create new rentals.",
+        "label_ja": "Create new rentals."
+      },
+      {
+        "index": 2,
+        "label_en": "View all rental assets.",
+        "label_ja": "View all rental assets."
+      }
     ]
   },
   {
@@ -5359,6 +5932,32 @@
     ],
     "answer_images": [
       "images/t2_q15_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Power BI",
+        "text_ja": "Power BI"
+      },
+      {
+        "text_en": "Visual Studio",
+        "text_ja": "Visual Studio"
+      },
+      {
+        "text_en": "Microsoft 365",
+        "text_ja": "Microsoft 365"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Add a new field.",
+        "label_ja": "Add a new field."
+      },
+      {
+        "index": 2,
+        "label_en": "Adjust the customer address location.",
+        "label_ja": "Adjust the customer address location."
+      }
     ]
   },
   {
@@ -5419,6 +6018,49 @@
     ],
     "answer_images": [
       "images/t2_q16_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Merge the changes to the Release target branch.",
+        "text_ja": "Merge the changes to the Release target branch."
+      },
+      {
+        "text_en": "Merge the changes to the Dev target branch.",
+        "text_ja": "Merge the changes to the Dev target branch."
+      },
+      {
+        "text_en": "Choose the all changes up to a specific version option.",
+        "text_ja": "Choose the all changes up to a specific version option."
+      },
+      {
+        "text_en": "Choose the selected changesets option.",
+        "text_ja": "Choose the selected changesets option."
+      },
+      {
+        "text_en": "Perform a merge from the Release source branch.",
+        "text_ja": "Perform a merge from the Release source branch."
+      },
+      {
+        "text_en": "Perform a merge from the Dev source branch.",
+        "text_ja": "Perform a merge from the Dev source branch."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -5472,6 +6114,46 @@
     ],
     "answer_images": [
       "images/t2_q17_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Develop the workflow approval component.",
+        "text_ja": "Develop the workflow approval component."
+      },
+      {
+        "text_en": "Configure the business process steps.",
+        "text_ja": "Configure the business process steps."
+      },
+      {
+        "text_en": "Create a workflow structure.",
+        "text_ja": "Create a workflow structure."
+      },
+      {
+        "text_en": "Enable the workflow for the business scenario.",
+        "text_ja": "Enable the workflow for the business scenario."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -5654,6 +6336,46 @@
     ],
     "answer_images": [
       "images/t2_q20_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add a step for the Develop branch.",
+        "text_ja": "Add a step for the Develop branch."
+      },
+      {
+        "text_en": "Configure the pipeline.",
+        "text_ja": "Configure the pipeline."
+      },
+      {
+        "text_en": "Add a trigger for the Develop branch.",
+        "text_ja": "Add a trigger for the Develop branch."
+      },
+      {
+        "text_en": "Create the pipeline",
+        "text_ja": "Create the pipeline"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -5699,6 +6421,63 @@
     ],
     "answer_images": [
       "images/t2_q21_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Steps to package code and upgrade the production environment",
+        "text_ja": "Steps to package code and upgrade the production environment"
+      },
+      {
+        "text_en": "with the release candidate version.",
+        "text_ja": "with the release candidate version."
+      },
+      {
+        "text_en": "in Azure DevOps by using a build",
+        "text_ja": "in Azure DevOps by using a build"
+      },
+      {
+        "text_en": "to a sandbox environment.",
+        "text_ja": "to a sandbox environment."
+      },
+      {
+        "text_en": "Build the solution in Visual Studio",
+        "text_ja": "Build the solution in Visual Studio"
+      },
+      {
+        "text_en": "as a release candidate on the sandbox environment.",
+        "text_ja": "as a release candidate on the sandbox environment."
+      },
+      {
+        "text_en": "in to your version control system.",
+        "text_ja": "in to your version control system."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 5,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -5745,6 +6524,40 @@
     "answer_images": [
       "images/t2_q22_2.png",
       "images/t2_q22_3.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "branch into the Release branch",
+        "text_ja": "branch into the Release branch"
+      },
+      {
+        "text_en": "Resolve conflicts and check in the code in the Release branch.",
+        "text_ja": "Resolve conflicts and check in the code in the Release branch."
+      },
+      {
+        "text_en": "Resolve conflicts and check",
+        "text_ja": "Resolve conflicts and check"
+      },
+      {
+        "text_en": "Perform Get Latest on the Release branch.",
+        "text_ja": "Perform Get Latest on the Release branch."
+      },
+      {
+        "text_en": "branch into the Release branch and",
+        "text_ja": "branch into the Release branch and"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -5790,6 +6603,28 @@
     ],
     "answer_images": [
       "images/t2_q23_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Take Source",
+        "text_ja": "Take Source"
+      },
+      {
+        "text_en": "Merge by using Merge Tool",
+        "text_ja": "Merge by using Merge Tool"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Erase local changes",
+        "label_ja": "Erase local changes"
+      },
+      {
+        "index": 2,
+        "label_en": "Keep or discard each change, one at a time",
+        "label_ja": "Keep or discard each change, one at a time"
+      }
     ]
   },
   {
@@ -5835,6 +6670,55 @@
     ],
     "answer_images": [
       "images/t2_q24_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Merge ServicePU1 into the Main branch.",
+        "text_ja": "Merge ServicePU1 into the Main branch."
+      },
+      {
+        "text_en": "Create a Release branch named Release1 from ServicePU1.",
+        "text_ja": "Create a Release branch named Release1 from ServicePU1."
+      },
+      {
+        "text_en": "Create a Service update branch named ServicePU1 from the Main branch.",
+        "text_ja": "Create a Service update branch named ServicePU1 from the Main branch."
+      },
+      {
+        "text_en": "Apply the latest Microsoft service updates to the new branch named ServicePU1.",
+        "text_ja": "Apply the latest Microsoft service updates to the new branch named ServicePU1."
+      },
+      {
+        "text_en": "Merge Release1 into ServicePU1.",
+        "text_ja": "Merge Release1 into ServicePU1."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "2.",
+        "label_ja": "2."
+      },
+      {
+        "index": 3,
+        "label_en": "3.",
+        "label_ja": "3."
+      },
+      {
+        "index": 4,
+        "label_en": "4.",
+        "label_ja": "4."
+      },
+      {
+        "index": 5,
+        "label_en": "5.",
+        "label_ja": "5."
+      }
     ]
   },
   {
@@ -5888,6 +6772,55 @@
     ],
     "answer_images": [
       "images/t2_q25_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Edit, save, and commit the code changes.",
+        "text_ja": "Edit, save, and commit the code changes."
+      },
+      {
+        "text_en": "From a Git command line tool or user interface, select the existing branch you want to branch from.",
+        "text_ja": "From a Git command line tool or user interface, select the existing branch you want to branch from."
+      },
+      {
+        "text_en": "Create a new branch that includes all recent changes.",
+        "text_ja": "Create a new branch that includes all recent changes."
+      },
+      {
+        "text_en": "Pull and merge any new changes to the existing branch since the original branching.",
+        "text_ja": "Pull and merge any new changes to the existing branch since the original branching."
+      },
+      {
+        "text_en": "Push code and create a pull request.",
+        "text_ja": "Push code and create a pull request."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "2.",
+        "label_ja": "2."
+      },
+      {
+        "index": 3,
+        "label_en": "3.",
+        "label_ja": "3."
+      },
+      {
+        "index": 4,
+        "label_en": "4.",
+        "label_ja": "4."
+      },
+      {
+        "index": 5,
+        "label_en": "5.",
+        "label_ja": "5."
+      }
     ]
   },
   {
@@ -5955,6 +6888,55 @@
     ],
     "answer_images": [
       "images/t2_q26_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Run the upgrade process on Lifecycle Services.",
+        "text_ja": "Run the upgrade process on Lifecycle Services."
+      },
+      {
+        "text_en": "Build the code and fix the conflicts on Visual Studio and then merge the Releases branch into the Trunk\\Main branch.",
+        "text_ja": "Build the code and fix the conflicts on Visual Studio and then merge the Releases branch into the Trunk\\Main branch."
+      },
+      {
+        "text_en": "Create the Trunk \\Main folder structure on your Azure DevOps project repository and add the code in your upgraded metadata file.",
+        "text_ja": "Create the Trunk \\Main folder structure on your Azure DevOps project repository and add the code in your upgraded metadata file."
+      },
+      {
+        "text_en": "Create a personal access token and use it to connect your Lifecycle Services project to Azure DevOps.",
+        "text_ja": "Create a personal access token and use it to connect your Lifecycle Services project to Azure DevOps."
+      },
+      {
+        "text_en": "Map your development environment to the Releases branch.",
+        "text_ja": "Map your development environment to the Releases branch."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "1.",
+        "label_ja": "1."
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "'3.",
+        "label_ja": "'3."
+      },
+      {
+        "index": 4,
+        "label_en": "4.",
+        "label_ja": "4."
+      },
+      {
+        "index": 5,
+        "label_en": "5.",
+        "label_ja": "5."
+      }
     ]
   },
   {
@@ -6017,6 +6999,37 @@
     ],
     "answer_images": [
       "images/t3_q1_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Primary",
+        "text_ja": "Primary"
+      },
+      {
+        "text_en": "Clustered",
+        "text_ja": "Clustered"
+      },
+      {
+        "text_en": "Non-Clustered",
+        "text_ja": "Non-Clustered"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Provide a unique key for each record in a table.",
+        "label_ja": "Provide a unique key for each record in a table."
+      },
+      {
+        "index": 2,
+        "label_en": "Organize the data for a table according to the physical order of the specified column.",
+        "label_ja": "Organize the data for a table according to the physical order of the specified column."
+      },
+      {
+        "index": 3,
+        "label_en": "Quickly reference data that is found by using a specified set of columns.",
+        "label_ja": "Quickly reference data that is found by using a specified set of columns."
+      }
     ]
   },
   {
@@ -7211,6 +8224,33 @@
     ],
     "answer_images": [
       "images/t3_q12_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Select the IsExtensible property for the CustTable form.",
+        "text_ja": "Select the IsExtensible property for the CustTable form."
+      },
+      {
+        "text_en": "Select Create extension.",
+        "text_ja": "Select Create extension."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -8824,6 +9864,45 @@
     ],
     "answer_images": [
       "images/t3_q28_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Copy the onWriting event handler on the CustTable table object.",
+        "text_ja": "Copy the onWriting event handler on the CustTable table object."
+      },
+      {
+        "text_en": "Copy the validatedWrite event handler on the CustTable object.",
+        "text_ja": "Copy the validatedWrite event handler on the CustTable object."
+      },
+      {
+        "text_en": "Add code to perform the validation.",
+        "text_ja": "Add code to perform the validation."
+      },
+      {
+        "text_en": "Copy the onModified event handler on the Custlable object.",
+        "text_ja": "Copy the onModified event handler on the Custlable object."
+      },
+      {
+        "text_en": "Add the event handler method to a class.",
+        "text_ja": "Add the event handler method to a class."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -9748,6 +10827,41 @@
     ],
     "answer_images": [
       "images/t3_q37_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "[Hooktable(true)]",
+        "text_ja": "[Hooktable(true)]"
+      },
+      {
+        "text_en": "[Wrappable(false)]",
+        "text_ja": "[Wrappable(false)]"
+      },
+      {
+        "text_en": "[Replaceable]",
+        "text_ja": "[Replaceable]"
+      },
+      {
+        "text_en": "[Hooktable(false)]",
+        "text_ja": "[Hooktable(false)]"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Extenders must be able to subscribe to pre- and post- event handlers.",
+        "label_ja": "Extenders must be able to subscribe to pre- and post- event handlers."
+      },
+      {
+        "index": 2,
+        "label_en": "Extenders must not be able to use chain of command (CoC) to wrap a specific method.",
+        "label_ja": "Extenders must not be able to use chain of command (CoC) to wrap a specific method."
+      },
+      {
+        "index": 3,
+        "label_en": "Extenders must be able to wrap the method but must not i be required to call next in the chain of command (CoC).",
+        "label_ja": "Extenders must be able to wrap the method but must not i be required to call next in the chain of command (CoC)."
+      }
     ]
   },
   {
@@ -11218,6 +12332,28 @@
     "answer_images": [
       "images/t3_q52_2.png",
       "images/t3_q52_3.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Table Requirement",
+        "text_ja": "Table Requirement"
+      },
+      {
+        "text_en": "TableB Prevent deletion of data from TableB if related data exists in another table.",
+        "text_ja": "TableB Prevent deletion of data from TableB if related data exists in another table."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -12376,6 +13512,36 @@
     ],
     "answer_images": [
       "images/t3_q65_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Date",
+        "text_ja": "Date"
+      },
+      {
+        "text_en": "Int",
+        "text_ja": "Int"
+      },
+      {
+        "text_en": "TransDate",
+        "text_ja": "TransDate"
+      },
+      {
+        "text_en": "Integer",
+        "text_ja": "Integer"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Track the day",
+        "label_ja": "Track the day"
+      },
+      {
+        "index": 2,
+        "label_en": "Track the quantity",
+        "label_ja": "Track the quantity"
+      }
     ]
   },
   {
@@ -12443,6 +13609,41 @@
     ],
     "answer_images": [
       "images/t3_q66_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Abstract",
+        "text_ja": "Abstract"
+      },
+      {
+        "text_en": "Interface",
+        "text_ja": "Interface"
+      },
+      {
+        "text_en": "Public class",
+        "text_ja": "Public class"
+      },
+      {
+        "text_en": "Final class",
+        "text_ja": "Final class"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Ensure that child classes have common private and public methods.",
+        "label_ja": "Ensure that child classes have common private and public methods."
+      },
+      {
+        "index": 2,
+        "label_en": "Implement all methods in the child classes.",
+        "label_ja": "Implement all methods in the child classes."
+      },
+      {
+        "index": 3,
+        "label_en": "Implement the methods of the parent class.",
+        "label_ja": "Implement the methods of the parent class."
+      }
     ]
   },
   {
@@ -12581,6 +13782,50 @@
     ],
     "answer_images": [
       "images/t3_q68_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a new EDT type of AnyType.",
+        "text_ja": "Create a new EDT type of AnyType."
+      },
+      {
+        "text_en": "Add the new field to the CustTable.",
+        "text_ja": "Add the new field to the CustTable."
+      },
+      {
+        "text_en": "Create a new EDT type of string.",
+        "text_ja": "Create a new EDT type of string."
+      },
+      {
+        "text_en": "Change the length property on the new EDT to Note.",
+        "text_ja": "Change the length property on the new EDT to Note."
+      },
+      {
+        "text_en": "Extend the All customers form and add the new EDT field.",
+        "text_ja": "Extend the All customers form and add the new EDT field."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "1",
+        "label_ja": "1"
+      },
+      {
+        "index": 2,
+        "label_en": "2",
+        "label_ja": "2"
+      },
+      {
+        "index": 3,
+        "label_en": "3",
+        "label_ja": "3"
+      },
+      {
+        "index": 4,
+        "label_en": "4",
+        "label_ja": "4"
+      }
     ]
   },
   {
@@ -12734,6 +13979,45 @@
     ],
     "answer_images": [
       "images/t3_q70_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Right-click the project, select Properties, set the Synchronize Database on Build property to True, and then select OK.",
+        "text_ja": "Right-click the project, select Properties, set the Synchronize Database on Build property to True, and then select OK."
+      },
+      {
+        "text_en": "Right-click the WhsTmpStatusChange table in the solution explorer and create an extension.",
+        "text_ja": "Right-click the WhsTmpStatusChange table in the solution explorer and create an extension."
+      },
+      {
+        "text_en": "Right-click WhsTmpStatusChange in the Application Object Tree (AOT) to create the extension and add it to the project.",
+        "text_ja": "Right-click WhsTmpStatusChange in the Application Object Tree (AOT) to create the extension and add it to the project."
+      },
+      {
+        "text_en": "Right-click the project and build the project.",
+        "text_ja": "Right-click the project and build the project."
+      },
+      {
+        "text_en": "Open the WhsTmpStatusChange table from the application explorer.",
+        "text_ja": "Open the WhsTmpStatusChange table from the application explorer."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "3",
+        "label_ja": "3"
+      }
     ]
   },
   {
@@ -13188,6 +14472,28 @@
     ],
     "answer_images": [
       "images/t3_q76_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "[ Private instance",
+        "text_ja": "[ Private instance"
+      },
+      {
+        "text_en": "| Private static",
+        "text_ja": "| Private static"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "MethodA",
+        "label_ja": "MethodA"
+      },
+      {
+        "index": 2,
+        "label_en": "MethodB",
+        "label_ja": "MethodB"
+      }
     ]
   },
   {
@@ -13402,6 +14708,58 @@
     ],
     "answer_images": [
       "images/t3_q79_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "In the index node, change the alternate key property to Yes.",
+        "text_ja": "In the index node, change the alternate key property to Yes."
+      },
+      {
+        "text_en": "In the table properties, set the index in the clustered index property.",
+        "text_ja": "In the table properties, set the index in the clustered index property."
+      },
+      {
+        "text_en": "Drag the FMAssetld field to the Indexes node.",
+        "text_ja": "Drag the FMAssetld field to the Indexes node."
+      },
+      {
+        "text_en": "In the Indexes node in the table designer, select New index.",
+        "text_ja": "In the Indexes node in the table designer, select New index."
+      },
+      {
+        "text_en": "Drag the FMAssetld field to the new index.",
+        "text_ja": "Drag the FMAssetld field to the new index."
+      },
+      {
+        "text_en": "In the Indexes node, change the allow duplicates property to No.",
+        "text_ja": "In the Indexes node, change the allow duplicates property to No."
+      },
+      {
+        "text_en": "In the table properties, set the index in the primary index property.",
+        "text_ja": "In the table properties, set the index in the primary index property."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -13924,6 +15282,33 @@
     ],
     "answer_images": [
       "images/t3_q87_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add the CustGroup table to the project. 1",
+        "text_ja": "Add the CustGroup table to the project. 1"
+      },
+      {
+        "text_en": "field.",
+        "text_ja": "field."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -13969,6 +15354,33 @@
     ],
     "answer_images": [
       "images/t3_q88_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "2 Create the model as a new package.",
+        "text_ja": "2 Create the model as a new package."
+      },
+      {
+        "text_en": "3 Select the model references.",
+        "text_ja": "3 Select the model references."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "1",
+        "label_ja": "1"
+      },
+      {
+        "index": 2,
+        "label_en": "2",
+        "label_ja": "2"
+      },
+      {
+        "index": 3,
+        "label_en": "3",
+        "label_ja": "3"
+      }
     ]
   },
   {
@@ -14014,6 +15426,46 @@
     ],
     "answer_images": [
       "images/t3_q89_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "DataContractAttribute",
+        "text_ja": "DataContractAttribute"
+      },
+      {
+        "text_en": "DataMemberAttribute",
+        "text_ja": "DataMemberAttribute"
+      },
+      {
+        "text_en": "SRSReportParameterAttribute",
+        "text_ja": "SRSReportParameterAttribute"
+      },
+      {
+        "text_en": "SRSReportDataSetAttribute",
+        "text_ja": "SRSReportDataSetAttribute"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Class that defines report variables",
+        "label_ja": "Class that defines report variables"
+      },
+      {
+        "index": 2,
+        "label_en": "Parm methods to send data for the report",
+        "label_ja": "Parm methods to send data for the report"
+      },
+      {
+        "index": 3,
+        "label_en": "Defines the contract class for a report provider class",
+        "label_ja": "Defines the contract class for a report provider class"
+      },
+      {
+        "index": 4,
+        "label_en": "Method that returns data for Report to show",
+        "label_ja": "Method that returns data for Report to show"
+      }
     ]
   },
   {
@@ -15470,6 +16922,46 @@
     ],
     "answer_images": [
       "images/t4_q11_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a runnable class and add the class to the CustomerDetailUpdate project",
+        "text_ja": "Create a runnable class and add the class to the CustomerDetailUpdate project"
+      },
+      {
+        "text_en": "Set the class as the startup project and run the class",
+        "text_ja": "Set the class as the startup project and run the class"
+      },
+      {
+        "text_en": "Build the project",
+        "text_ja": "Build the project"
+      },
+      {
+        "text_en": "Write code in the class to update the customer table",
+        "text_ja": "Write code in the class to update the customer table"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -15632,6 +17124,36 @@
     ],
     "answer_images": [
       "images/t4_q13_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "AutoRollback",
+        "text_ja": "AutoRollback"
+      },
+      {
+        "text_en": "LegacyRollback",
+        "text_ja": "LegacyRollback"
+      },
+      {
+        "text_en": "LegacyRollbackWithUpdateTracking",
+        "text_ja": "LegacyRollbackWithUpdateTracking"
+      },
+      {
+        "text_en": "None",
+        "text_ja": "なし"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Track and delete only insert statements.",
+        "label_ja": "Track and delete only insert statements."
+      },
+      {
+        "index": 2,
+        "label_en": "Roll back transactions by using SQL save points.",
+        "label_ja": "Roll back transactions by using SQL save points."
+      }
     ]
   },
   {
@@ -16043,6 +17565,54 @@
     ],
     "answer_images": [
       "images/t4_q16_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add the ExtensionOf attribute to the class.",
+        "text_ja": "Add the ExtensionOf attribute to the class."
+      },
+      {
+        "text_en": "Set the class as the startup object.",
+        "text_ja": "Set the class as the startup object."
+      },
+      {
+        "text_en": "Write database manipulation code in the class.",
+        "text_ja": "Write database manipulation code in the class."
+      },
+      {
+        "text_en": "Build and run the class.",
+        "text_ja": "Build and run the class."
+      },
+      {
+        "text_en": "Create a runnable class and add it to the ProdcutUpdates project.",
+        "text_ja": "Create a runnable class and add it to the ProdcutUpdates project."
+      },
+      {
+        "text_en": "Create a class extension of the ProductTable and add it to the ProductUpdates project.",
+        "text_ja": "Create a class extension of the ProductTable and add it to the ProductUpdates project."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -16112,6 +17682,32 @@
     ],
     "answer_images": [
       "images/t4_q17_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Scenario Compare and merge code",
+        "text_ja": "Scenario Compare and merge code"
+      },
+      {
+        "text_en": "Compare the custom code with the code in the ISV solution. Compare code with baseline Compare the code with the code in the ISV solution to identify and",
+        "text_ja": "Compare the custom code with the code in the ISV solution. Compare code with baseline Compare the code with the code in the ISV solution to identify and"
+      },
+      {
+        "text_en": "resolve conflicts. Compare metadata with baseline",
+        "text_ja": "resolve conflicts. Compare metadata with baseline"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -16335,6 +17931,59 @@
     ],
     "answer_images": [
       "images/t4_q19_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Set the class as internal.",
+        "text_ja": "Set the class as internal."
+      },
+      {
+        "text_en": "Decorate the class with the [ExtensionOf(tableStr(TableName))] attribute.",
+        "text_ja": "Decorate the class with the [ExtensionOf(tableStr(TableName))] attribute."
+      },
+      {
+        "text_en": "Set the class as final.",
+        "text_ja": "Set the class as final."
+      },
+      {
+        "text_en": "Add a new method to the class and implement it.",
+        "text_ja": "Add a new method to the class and implement it."
+      },
+      {
+        "text_en": "Create a new project in Visual Studio.",
+        "text_ja": "Create a new project in Visual Studio."
+      },
+      {
+        "text_en": "Add a new class to the Visual Studio project with the _Extension suffix.",
+        "text_ja": "Add a new class to the Visual Studio project with the _Extension suffix."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "2",
+        "label_ja": "2"
+      },
+      {
+        "index": 3,
+        "label_en": "3",
+        "label_ja": "3"
+      },
+      {
+        "index": 4,
+        "label_en": "4",
+        "label_ja": "4"
+      },
+      {
+        "index": 5,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -16966,6 +18615,41 @@
     ],
     "answer_images": [
       "images/t4_q27_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Declare a QueryBuildRange object and add a range for the CustGroup field on the QueryBuildDataSource.",
+        "text_ja": "Declare a QueryBuildRange object and add a range for the CustGroup field on the QueryBuildDataSource."
+      },
+      {
+        "text_en": "Declare a QueryBuildDataSource object. Call the addDataSource method on the query object and assign it to the QueryBuildDataSource by using CustTable.",
+        "text_ja": "Declare a QueryBuildDataSource object. Call the addDataSource method on the query object and assign it to the QueryBuildDataSource by using CustTable."
+      },
+      {
+        "text_en": "Add a value to range for the CustGroup EXT to the QueryBuildRange object.",
+        "text_ja": "Add a value to range for the CustGroup EXT to the QueryBuildRange object."
+      },
+      {
+        "text_en": "Loop through the QueryRun object by using the Next method.",
+        "text_ja": "Loop through the QueryRun object by using the Next method."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -17284,6 +18968,62 @@
     ],
     "answer_images": [
       "images/t4_q31_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Extend the SysTestCase class in the class declaration.",
+        "text_ja": "Extend the SysTestCase class in the class declaration."
+      },
+      {
+        "text_en": "Add a new class to the project.",
+        "text_ja": "Add a new class to the project."
+      },
+      {
+        "text_en": "Add an extension to the project.",
+        "text_ja": "Add an extension to the project."
+      },
+      {
+        "text_en": "Create a new project.",
+        "text_ja": "Create a new project."
+      },
+      {
+        "text_en": "Add methods to the class and decorate the methods with the [SysTestMethod] attribute.",
+        "text_ja": "Add methods to the class and decorate the methods with the [SysTestMethod] attribute."
+      },
+      {
+        "text_en": "Add a Runnable class to the project.",
+        "text_ja": "Add a Runnable class to the project."
+      },
+      {
+        "text_en": "Open Visual Studio as a non-administrator.",
+        "text_ja": "Open Visual Studio as a non-administrator."
+      },
+      {
+        "text_en": "Open Visual Studio as an administrator.",
+        "text_ja": "Open Visual Studio as an administrator."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -17545,6 +19285,32 @@
     ],
     "answer_images": [
       "images/t4_q34_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Protected",
+        "text_ja": "Protected"
+      },
+      {
+        "text_en": "Private",
+        "text_ja": "Private"
+      },
+      {
+        "text_en": "Public",
+        "text_ja": "Public"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "ClassA",
+        "label_ja": "ClassA"
+      },
+      {
+        "index": 2,
+        "label_en": "ClassC",
+        "label_ja": "ClassC"
+      }
     ]
   },
   {
@@ -17957,6 +19723,38 @@
     ],
     "answer_images": [
       "images/t4_q39_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "while select firstonly100 custTable",
+        "text_ja": "while select firstonly100 custTable"
+      },
+      {
+        "text_en": "where custTable.AccountNum > 1000",
+        "text_ja": "where custTable.AccountNum > 1000"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -18087,6 +19885,46 @@
     ],
     "answer_images": [
       "images/t4_q41_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Custom service creation steps",
+        "text_ja": "Custom service creation steps"
+      },
+      {
+        "text_en": "Create and assign the service object.",
+        "text_ja": "Create and assign the service object."
+      },
+      {
+        "text_en": "Create request and response classes.",
+        "text_ja": "Create request and response classes."
+      },
+      {
+        "text_en": "Create a service class.",
+        "text_ja": "Create a service class."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -18903,6 +20741,36 @@
     ],
     "answer_images": [
       "images/t4_q52_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "None",
+        "text_ja": "なし"
+      },
+      {
+        "text_en": "AutoRollback",
+        "text_ja": "AutoRollback"
+      },
+      {
+        "text_en": "LegacyRollback",
+        "text_ja": "LegacyRollback"
+      },
+      {
+        "text_en": "LegacyRollbackWithUpdateTracking",
+        "text_ja": "LegacyRollbackWithUpdateTracking"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Track and delete insert statements during cleanup.",
+        "label_ja": "Track and delete insert statements during cleanup."
+      },
+      {
+        "index": 2,
+        "label_en": "Roll back transactions by using SQL save points.",
+        "label_ja": "Roll back transactions by using SQL save points."
+      }
     ]
   },
   {
@@ -19247,6 +21115,46 @@
     ],
     "answer_images": [
       "images/t4_q57_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Testing framework or functionalities",
+        "text_ja": "Testing framework or functionalities"
+      },
+      {
+        "text_en": "SysTest framework",
+        "text_ja": "SysTest フレームワーク"
+      },
+      {
+        "text_en": "Acceptance test library (ATL)",
+        "text_ja": "受け入れテスト ライブラリ (ATL)"
+      },
+      {
+        "text_en": "Regression suite automation tool (RSAT)",
+        "text_ja": "回帰スイート自動化ツール (RSAT)"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Run a suite of tests to reduce user acceptance testing cost and time.",
+        "label_ja": "Run a suite of tests to reduce user acceptance testing cost and time."
+      },
+      {
+        "index": 2,
+        "label_en": "Document steps a user performs in an application for testing purposes.",
+        "label_ja": "Document steps a user performs in an application for testing purposes."
+      },
+      {
+        "index": 3,
+        "label_en": "Create consistent test data using structured, readable code.",
+        "label_ja": "Create consistent test data using structured, readable code."
+      },
+      {
+        "index": 4,
+        "label_en": "Allow for continuous validation of code changes in a development environment.",
+        "label_ja": "Allow for continuous validation of code changes in a development environment."
+      }
     ]
   },
   {
@@ -20013,6 +21921,32 @@
     ],
     "answer_images": [
       "images/t4_q69_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "SysDaSearchObject",
+        "text_ja": "SysDaSearchObject"
+      },
+      {
+        "text_en": "SysDaSearchStatement",
+        "text_ja": "SysDaSearchStatement"
+      },
+      {
+        "text_en": "SysDaQueryObject",
+        "text_ja": "SysDaQueryObject"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Query for record search",
+        "label_ja": "Query for record search"
+      },
+      {
+        "index": 2,
+        "label_en": "Run search",
+        "label_ja": "Run search"
+      }
     ]
   },
   {
@@ -20298,6 +22232,28 @@
     "answer_images": [
       "images/t4_q73_2.png",
       "images/t4_q73_3.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Static",
+        "text_ja": "Static"
+      },
+      {
+        "text_en": "Instance",
+        "text_ja": "Instance"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "convertToCurrency",
+        "label_ja": "convertToCurrency"
+      },
+      {
+        "index": 2,
+        "label_en": "calculate",
+        "label_ja": "calculate"
+      }
     ]
   },
   {
@@ -20430,6 +22386,37 @@
     ],
     "answer_images": [
       "images/t5_q1_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "SSRS Report",
+        "text_ja": "SSRS Report"
+      },
+      {
+        "text_en": "Power BI service",
+        "text_ja": "Power BI service"
+      },
+      {
+        "text_en": "Electronic reporting",
+        "text_ja": "Electronic reporting"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Sales invoice",
+        "label_ja": "Sales invoice"
+      },
+      {
+        "index": 2,
+        "label_en": "Budget dashboard",
+        "label_ja": "Budget dashboard"
+      },
+      {
+        "index": 3,
+        "label_en": "Payment file",
+        "label_ja": "Payment file"
+      }
     ]
   },
   {
@@ -21424,6 +23411,37 @@
     ],
     "answer_images": [
       "images/t5_q10_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Aggregate dimension",
+        "text_ja": "Aggregate dimension"
+      },
+      {
+        "text_en": "Aggregate data entity",
+        "text_ja": "Aggregate data entity"
+      },
+      {
+        "text_en": "Aggregate measurements",
+        "text_ja": "集計測定値"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Total sales",
+        "label_ja": "Total sales"
+      },
+      {
+        "index": 2,
+        "label_en": "Customers",
+        "label_ja": "Customers"
+      },
+      {
+        "index": 3,
+        "label_en": "Region",
+        "label_ja": "Region"
+      }
     ]
   },
   {
@@ -21526,6 +23544,45 @@
     ],
     "answer_images": [
       "images/t5_q11_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a duplicate from the report in the model and add the new field on the report design.",
+        "text_ja": "Create a duplicate from the report in the model and add the new field on the report design."
+      },
+      {
+        "text_en": "Create an extension of the existing report controller class in the model. Update the class logic to point to the new report.",
+        "text_ja": "Create an extension of the existing report controller class in the model. Update the class logic to point to the new report."
+      },
+      {
+        "text_en": "Create a duplicate from the existing data provider class in the model. Update the class to fill the value of the newly added field.",
+        "text_ja": "Create a duplicate from the existing data provider class in the model. Update the class to fill the value of the newly added field."
+      },
+      {
+        "text_en": "Create a duplicate from the existing report controller class in the model. Update the class logic to point to the new report.",
+        "text_ja": "Create a duplicate from the existing report controller class in the model. Update the class logic to point to the new report."
+      },
+      {
+        "text_en": "Create an extension of the existing data provider class in the model. Update the class to fill the value of the newly added field.",
+        "text_ja": "Create an extension of the existing data provider class in the model. Update the class to fill the value of the newly added field."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -22220,6 +24277,28 @@
     ],
     "answer_images": [
       "images/t5_q17_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Entity store",
+        "text_ja": "エンティティ ストア"
+      },
+      {
+        "text_en": "Bring your own database",
+        "text_ja": "Bring your own database"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Import data from various systems into one reporting database and extend tables.",
+        "label_ja": "Import data from various systems into one reporting database and extend tables."
+      },
+      {
+        "index": 2,
+        "label_en": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle.",
+        "label_ja": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle."
+      }
     ]
   },
   {
@@ -22280,6 +24359,41 @@
     ],
     "answer_images": [
       "images/t5_q18_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "DataContractAttribute",
+        "text_ja": "DataContractAttribute"
+      },
+      {
+        "text_en": "SRSReportParameterAttribute",
+        "text_ja": "SRSReportParameterAttribute"
+      },
+      {
+        "text_en": "DataMemberAttribute",
+        "text_ja": "DataMemberAttribute"
+      },
+      {
+        "text_en": "SysOperationControlVisibilityAttribute",
+        "text_ja": "SysOperationControlVisibilityAttribute"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Identify the contract name in the data provider class",
+        "label_ja": "Identify the contract name in the data provider class"
+      },
+      {
+        "index": 2,
+        "label_en": "Enables parameters in the report dialog",
+        "label_ja": "Enables parameters in the report dialog"
+      },
+      {
+        "index": 3,
+        "label_en": "Provide parameters for the report",
+        "label_ja": "Provide parameters for the report"
+      }
     ]
   },
   {
@@ -22831,6 +24945,50 @@
     ],
     "answer_images": [
       "images/t5_q24_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create an aggregate measurement named MyCustTransAgg. Change the value of the measure group Table property to MyCustTransView.",
+        "text_ja": "Create an aggregate measurement named MyCustTransAgg. Change the value of the measure group Table property to MyCustTransView."
+      },
+      {
+        "text_en": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Ensure that the value of the Default Aggregate property is set to Count.",
+        "text_ja": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Ensure that the value of the Default Aggregate property is set to Count."
+      },
+      {
+        "text_en": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Change the value for the Default Aggregate property to Sum.",
+        "text_ja": "Add a measure named AmountCurSum. Change the value of the column property to AmountCur. Change the value for the Default Aggregate property to Sum."
+      },
+      {
+        "text_en": "Create a view named MyCustTransView.",
+        "text_ja": "Create a view named MyCustTransView."
+      },
+      {
+        "text_en": "Set the value of the Date_ by dimension relation constraint for the Related Field property to TransDate.",
+        "text_ja": "Set the value of the Date_ by dimension relation constraint for the Related Field property to TransDate."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -22946,6 +25104,37 @@
     ],
     "answer_images": [
       "images/t5_q26_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Aggregate measurement",
+        "text_ja": "Aggregate measurement"
+      },
+      {
+        "text_en": "Aggregate dimension",
+        "text_ja": "Aggregate dimension"
+      },
+      {
+        "text_en": "Aggregate data entity",
+        "text_ja": "Aggregate data entity"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Item type",
+        "label_ja": "Item type"
+      },
+      {
+        "index": 2,
+        "label_en": "Total quotation",
+        "label_ja": "Total quotation"
+      },
+      {
+        "index": 3,
+        "label_en": "Sites",
+        "label_ja": "Sites"
+      }
     ]
   },
   {
@@ -23212,6 +25401,46 @@
     ],
     "answer_images": [
       "images/t5_q30_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Define the structure of a party participating in a payment process.",
+        "text_ja": "Define the structure of a party participating in a payment process."
+      },
+      {
+        "text_en": "Create the data model configuration.",
+        "text_ja": "Create the data model configuration."
+      },
+      {
+        "text_en": "Define the bank structure for the model.",
+        "text_ja": "Define the bank structure for the model."
+      },
+      {
+        "text_en": "Create the data model.",
+        "text_ja": "Create the data model."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -23319,6 +25548,33 @@
     ],
     "answer_images": [
       "images/t5_q32_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Power BI",
+        "text_ja": "Power BI"
+      },
+      {
+        "text_en": "SSRS",
+        "text_ja": "SSRS"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Report1: Invoice layout",
+        "label_ja": "Report1: Invoice layout"
+      },
+      {
+        "index": 2,
+        "label_en": "Report2: Dashboard",
+        "label_ja": "Report2: Dashboard"
+      },
+      {
+        "index": 3,
+        "label_en": "Report3: Editable data",
+        "label_ja": "Report3: Editable data"
+      }
     ]
   },
   {
@@ -23489,6 +25745,32 @@
     ],
     "answer_images": [
       "images/t6_q2_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a security policy and set primary table, query, and context type parameters.",
+        "text_ja": "Create a security policy and set primary table, query, and context type parameters."
+      },
+      {
+        "text_en": "Build the solution and refresh the browser.",
+        "text_ja": "Build the solution and refresh the browser."
+      },
+      {
+        "text_en": "Add a constrained table to the policy.",
+        "text_ja": "Add a constrained table to the policy."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -23951,6 +26233,41 @@
     ],
     "answer_images": [
       "images/t6_q6_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Map the data entity to the data view.",
+        "text_ja": "Map the data entity to the data view."
+      },
+      {
+        "text_en": "Configure properties for the data entity.",
+        "text_ja": "Configure properties for the data entity."
+      },
+      {
+        "text_en": "Synchronize the database.",
+        "text_ja": "データベースを同期します。"
+      },
+      {
+        "text_en": "Build the solution.",
+        "text_ja": "ソリューションを構築します。"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -24055,6 +26372,55 @@
     ],
     "answer_images": [
       "images/t6_q7_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Specify the target entity.",
+        "text_ja": "Specify the target entity."
+      },
+      {
+        "text_en": "Specify the source data format.",
+        "text_ja": "Specify the source data format."
+      },
+      {
+        "text_en": "Import the source file to the project.",
+        "text_ja": "Import the source file to the project."
+      },
+      {
+        "text_en": "Create a new import project.",
+        "text_ja": "Create a new import project."
+      },
+      {
+        "text_en": "Specify the project category for the import.",
+        "text_ja": "Specify the project category for the import."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 5,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -24159,6 +26525,46 @@
     ],
     "answer_images": [
       "images/t6_q8_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "OData endpoint",
+        "text_ja": "OData endpoint"
+      },
+      {
+        "text_en": "batch data API",
+        "text_ja": "バッチ データ API"
+      },
+      {
+        "text_en": "custom service",
+        "text_ja": "custom service"
+      },
+      {
+        "text_en": "Excel integration",
+        "text_ja": "Excel integration"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Users have a customer portal and must be able to query the status of orders for customers in near real time. Less than",
+        "label_ja": "Users have a customer portal and must be able to query the status of orders for customers in near real time. Less than"
+      },
+      {
+        "index": 2,
+        "label_en": "500 status requests occur per hour. Employees use a third-party app to record customer orders.",
+        "label_ja": "500 status requests occur per hour. Employees use a third-party app to record customer orders."
+      },
+      {
+        "index": 3,
+        "label_en": "Employees use a third-party app to record customer orders. You must upload orders to the system once each hour. The",
+        "label_ja": "Employees use a third-party app to record customer orders. You must upload orders to the system once each hour. The"
+      },
+      {
+        "index": 4,
+        "label_en": "Employees use a third-party software as a service app to manage delivery schedules. The software must be able to",
+        "label_ja": "Employees use a third-party software as a service app to manage delivery schedules. The software must be able to"
+      }
     ]
   },
   {
@@ -25098,6 +27504,42 @@
     ],
     "answer_images": [
       "images/t6_q17_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "cloud only",
+        "text_ja": "cloud only"
+      },
+      {
+        "text_en": "on-premises only",
+        "text_ja": "on-premises only"
+      },
+      {
+        "text_en": "cloud or on-premises",
+        "text_ja": "cloud or on-premises"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Export data to your own data warehouse.",
+        "label_ja": "Export data to your own data warehouse."
+      },
+      {
+        "index": 2,
+        "label_en": "Configure SharePoint integration.",
+        "label_ja": "Configure SharePoint integration."
+      },
+      {
+        "index": 3,
+        "label_en": "Implement Lifecycle services features.",
+        "label_ja": "Implement Lifecycle services features."
+      },
+      {
+        "index": 4,
+        "label_en": "Safe or load Task Recorder recordings from a BPM library.",
+        "label_ja": "Safe or load Task Recorder recordings from a BPM library."
+      }
     ]
   },
   {
@@ -25202,6 +27644,55 @@
     ],
     "answer_images": [
       "images/t6_q18_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Set up the processing recurrence.",
+        "text_ja": "Set up the processing recurrence."
+      },
+      {
+        "text_en": "Link a new application ID to the data recurring data job.",
+        "text_ja": "Link a new application ID to the data recurring data job."
+      },
+      {
+        "text_en": "Specify whether you are using a file or data package.",
+        "text_ja": "Specify whether you are using a file or data package."
+      },
+      {
+        "text_en": "Set up a data project.",
+        "text_ja": "Set up a data project."
+      },
+      {
+        "text_en": "Create a recurring data job.",
+        "text_ja": "Create a recurring data job."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 5,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -25271,6 +27762,38 @@
     ],
     "answer_images": [
       "images/t6_q19_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "synchronous",
+        "text_ja": "synchronous"
+      },
+      {
+        "text_en": "asynchronous",
+        "text_ja": "asynchronous"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Request information about product availability from a web page to calculate the extended price.",
+        "label_ja": "Request information about product availability from a web page to calculate the extended price."
+      },
+      {
+        "index": 2,
+        "label_en": "Periodically update a reporting database.",
+        "label_ja": "Periodically update a reporting database."
+      },
+      {
+        "index": 3,
+        "label_en": "Edit data in Microsoft Excel by using the Excel Data Connector add-in.",
+        "label_ja": "Edit data in Microsoft Excel by using the Excel Data Connector add-in."
+      },
+      {
+        "index": 4,
+        "label_en": "Import a credit card data file once each day.",
+        "label_ja": "Import a credit card data file once each day."
+      }
     ]
   },
   {
@@ -25428,6 +27951,37 @@
     ],
     "answer_images": [
       "images/t6_q21_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Dual-write",
+        "text_ja": "Dual-write"
+      },
+      {
+        "text_en": "Virtual entity",
+        "text_ja": "Virtual entity"
+      },
+      {
+        "text_en": "Composite entity",
+        "text_ja": "Composite entity"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "New customers",
+        "label_ja": "New customers"
+      },
+      {
+        "index": 2,
+        "label_en": "Approved products",
+        "label_ja": "Approved products"
+      },
+      {
+        "index": 3,
+        "label_en": "Web orders",
+        "label_ja": "Web orders"
+      }
     ]
   },
   {
@@ -25645,6 +28199,37 @@
     ],
     "answer_images": [
       "images/t6_q24_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Batch data API",
+        "text_ja": "Batch data API"
+      },
+      {
+        "text_en": "Custom service",
+        "text_ja": "Custom service"
+      },
+      {
+        "text_en": "OData",
+        "text_ja": "OData"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Move asset status information from an on-premises application to Dynamics 365 Finance in near real time by using a publicly exposed data entity.",
+        "label_ja": "Move asset status information from an on-premises application to Dynamics 365 Finance in near real time by using a publicly exposed data entity."
+      },
+      {
+        "index": 2,
+        "label_en": "Provide information from Dynamics 365 Finance to a website to display item prices in near real time by using the SOAP protocol.",
+        "label_ja": "Provide information from Dynamics 365 Finance to a website to display item prices in near real time by using the SOAP protocol."
+      },
+      {
+        "index": 3,
+        "label_en": "Import vendor invoices into Dynamics 365 Finance at the end of each business day.",
+        "label_ja": "Import vendor invoices into Dynamics 365 Finance at the end of each business day."
+      }
     ]
   },
   {
@@ -25822,6 +28407,42 @@
     ],
     "answer_images": [
       "images/t6_q26_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Navigate to the Sales order form.",
+        "text_ja": "Navigate to the Sales order form."
+      },
+      {
+        "text_en": "Personalize the page.",
+        "text_ja": "Personalize the page."
+      },
+      {
+        "text_en": "Refresh the browser. Configure and embed the app.",
+        "text_ja": "Refresh the browser. Configure and embed the app."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -25904,6 +28525,28 @@
     "answer_images": [
       "images/t6_q27_2.png",
       "images/t6_q27_3.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Batch process Description and requirements",
+        "text_ja": "Batch process Description and requirements"
+      },
+      {
+        "text_en": "2 This is a short process. The process is permitted to block the work of a user while the process runs.",
+        "text_ja": "2 This is a short process. The process is permitted to block the work of a user while the process runs."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -26081,6 +28724,41 @@
     "answer_images": [
       "images/t6_q29_2.png",
       "images/t6_q29_3.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Scenario Application Real-time data required",
+        "text_ja": "Scenario Application Real-time data required"
+      },
+      {
+        "text_en": "Yes Dynamics 365 Customer Service Sales representatives must be able to change the credit limit for customers by using the app. app",
+        "text_ja": "Yes Dynamics 365 Customer Service Sales representatives must be able to change the credit limit for customers by using the app. app"
+      },
+      {
+        "text_en": "e-commerce website Yes Customers use the website to request information about product availability.",
+        "text_ja": "e-commerce website Yes Customers use the website to request information about product availability."
+      },
+      {
+        "text_en": "No on-premises mainframe system The system generates sales orders. The sales orders must be imported daily into Dynamics 365 Finance.",
+        "text_ja": "No on-premises mainframe system The system generates sales orders. The sales orders must be imported daily into Dynamics 365 Finance."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -26332,6 +29010,36 @@
     ],
     "answer_images": [
       "images/t6_q32_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Set-based SQL operations",
+        "text_ja": "Set-based SQL operations"
+      },
+      {
+        "text_en": "Data management capabilities",
+        "text_ja": "Data management capabilities"
+      },
+      {
+        "text_en": "Is Read Only",
+        "text_ja": "Is Read Only"
+      },
+      {
+        "text_en": "Public API",
+        "text_ja": "Public API"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Customer groups entity",
+        "label_ja": "Customer groups entity"
+      },
+      {
+        "index": 2,
+        "label_en": "Customer data entity",
+        "label_ja": "Customer data entity"
+      }
     ]
   },
   {
@@ -26406,6 +29114,54 @@
     ],
     "answer_images": [
       "images/t6_q33_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Select Configure entity export to database from the Data management workspace.",
+        "text_ja": "Select Configure entity export to database from the Data management workspace."
+      },
+      {
+        "text_en": "Select the database to export data to and then select Publish.",
+        "text_ja": "Select the database to export data to and then select Publish."
+      },
+      {
+        "text_en": "Select the Enable entire entity option.",
+        "text_ja": "Select the Enable entire entity option."
+      },
+      {
+        "text_en": "Select the data entity list page from the Data management workspace and then select Change tracking.",
+        "text_ja": "Select the data entity list page from the Data management workspace and then select Change tracking."
+      },
+      {
+        "text_en": "Select the Enable primary table option.",
+        "text_ja": "Select the Enable primary table option."
+      },
+      {
+        "text_en": "Select the published entity and then select Change tracking.",
+        "text_ja": "Select the published entity and then select Change tracking."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -26619,6 +29375,32 @@
     ],
     "answer_images": [
       "images/t6_q36_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Primary index",
+        "text_ja": "プライマリインデックス"
+      },
+      {
+        "text_en": "Clustered index",
+        "text_ja": "クラスター化インデックス"
+      },
+      {
+        "text_en": "Replacement key",
+        "text_ja": "Replacement key"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "ItemSiteLocationldx",
+        "label_ja": "ItemSiteLocationldx"
+      },
+      {
+        "index": 2,
+        "label_en": "InventSiteldx",
+        "label_ja": "InventSiteldx"
+      }
     ]
   },
   {
@@ -26686,6 +29468,41 @@
     ],
     "answer_images": [
       "images/t6_q37_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Custom service",
+        "text_ja": "Custom service"
+      },
+      {
+        "text_en": "Azure Data Lake integration",
+        "text_ja": "Azure Data Lake integration"
+      },
+      {
+        "text_en": "Dual-write",
+        "text_ja": "Dual-write"
+      },
+      {
+        "text_en": "OData",
+        "text_ja": "OData"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "hare information about the on-hand quantity of products in near real tim ith an external web-based e-commerce application that supports th",
+        "label_ja": "hare information about the on-hand quantity of products in near real tim ith an external web-based e-commerce application that supports th"
+      }
     ]
   },
   {
@@ -26881,6 +29698,49 @@
     ],
     "answer_images": [
       "images/t6_q39_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "In the Data entities list, select Modify target mapping for the custom data entity.",
+        "text_ja": "In the Data entities list, select Modify target mapping for the custom data entity."
+      },
+      {
+        "text_en": "Refresh the entity list from the Data management workspace.",
+        "text_ja": "Refresh the entity list from the Data management workspace."
+      },
+      {
+        "text_en": "In the Data entities list, select Target fields for the custom data entity.",
+        "text_ja": "In the Data entities list, select Target fields for the custom data entity."
+      },
+      {
+        "text_en": "Publish the entity.",
+        "text_ja": "Publish the entity."
+      },
+      {
+        "text_en": "Generate the correct target field mapping.",
+        "text_ja": "Generate the correct target field mapping."
+      },
+      {
+        "text_en": "Validate data management from the Data management workspace.",
+        "text_ja": "Validate data management from the Data management workspace."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -26934,6 +29794,37 @@
     ],
     "answer_images": [
       "images/t6_q40_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a new data entity.",
+        "text_ja": "Create a new data entity."
+      },
+      {
+        "text_en": "Enable Public API for each data source that is part of the new data entity.",
+        "text_ja": "Enable Public API for each data source that is part of the new data entity."
+      },
+      {
+        "text_en": "Create an aggregate data entity.",
+        "text_ja": "Create an aggregate data entity."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -27171,6 +30062,55 @@
     ],
     "answer_images": [
       "images/t6_q43_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Refresh the browser.",
+        "text_ja": "Refresh the browser."
+      },
+      {
+        "text_en": "Navigate to the Sales order form.",
+        "text_ja": "Navigate to the Sales order form."
+      },
+      {
+        "text_en": "Configure and embed the app.",
+        "text_ja": "Configure and embed the app."
+      },
+      {
+        "text_en": "Personalize the page.",
+        "text_ja": "Personalize the page."
+      },
+      {
+        "text_en": "Modify the OnStart function of the app.",
+        "text_ja": "Modify the OnStart function of the app."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 5,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -27657,6 +30597,41 @@
     ],
     "answer_images": [
       "images/t6_q49_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Open Data Protocol (OData)",
+        "text_ja": "Open Data Protocol (OData)"
+      },
+      {
+        "text_en": "Dual-write",
+        "text_ja": "Dual-write"
+      },
+      {
+        "text_en": "Custom service",
+        "text_ja": "Custom service"
+      },
+      {
+        "text_en": "Azure Data Lake integration",
+        "text_ja": "Azure Data Lake integration"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Move customer data from an on-premises app to Finance in near-real time by using an API.",
+        "label_ja": "Move customer data from an on-premises app to Finance in near-real time by using an API."
+      },
+      {
+        "index": 2,
+        "label_en": "Sync Sales customer data with Supply Chain Management.",
+        "label_ja": "Sync Sales customer data with Supply Chain Management."
+      },
+      {
+        "index": 3,
+        "label_en": "Update customer data from Dynamics 365 finance and operations apps by using SOAP with an e-commerce app.",
+        "label_ja": "Update customer data from Dynamics 365 finance and operations apps by using SOAP with an e-commerce app."
+      }
     ]
   },
   {
@@ -27702,6 +30677,45 @@
     ],
     "answer_images": [
       "images/t6_q50_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint.",
+        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint."
+      },
+      {
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint",
+        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint"
+      },
+      {
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities. GetAzureWriteUrl endpoint",
+        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities. GetAzureWriteUrl endpoint"
+      },
+      {
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionErrors endpoint",
+        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionErrors endpoint"
+      },
+      {
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionSummary Status endpoint",
+        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics. GetExecutionSummary Status endpoint"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -27747,6 +30761,33 @@
     ],
     "answer_images": [
       "images/t6_q51_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Yes",
+        "text_ja": "Yes"
+      },
+      {
+        "text_en": "No",
+        "text_ja": "No"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Data Management Enabled",
+        "label_ja": "Data Management Enabled"
+      },
+      {
+        "index": 2,
+        "label_en": "Is Public",
+        "label_ja": "Is Public"
+      },
+      {
+        "index": 3,
+        "label_en": "Is Read Only",
+        "label_ja": "Is Read Only"
+      }
     ]
   },
   {
@@ -27916,6 +30957,63 @@
     ],
     "answer_images": [
       "images/t6_q54_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Build the solution and perform a database sync.",
+        "text_ja": "Build the solution and perform a database sync."
+      },
+      {
+        "text_en": "Add all fields from the SalesTable data source to the data entity.",
+        "text_ja": "Add all fields from the SalesTable data source to the data entity."
+      },
+      {
+        "text_en": "Add a new item to the Visual Studio project of category Data Model, type of DataEntity.",
+        "text_ja": "Add a new item to the Visual Studio project of category Data Model, type of DataEntity."
+      },
+      {
+        "text_en": "Disable the public API and disable data management capabilities.",
+        "text_ja": "Disable the public API and disable data management capabilities."
+      },
+      {
+        "text_en": "Disable the public API and enable data management capabilities.",
+        "text_ja": "Disable the public API and enable data management capabilities."
+      },
+      {
+        "text_en": "Use the data entity wizard to specify the primary data source as SalesTable, and the Entity category as Transaction.",
+        "text_ja": "Use the data entity wizard to specify the primary data source as SalesTable, and the Entity category as Transaction."
+      },
+      {
+        "text_en": "Enable the public API and disable data management capabilities.",
+        "text_ja": "Enable the public API and disable data management capabilities."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 5,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -27969,6 +31067,54 @@
     ],
     "answer_images": [
       "images/t6_q55_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Select Get data from Power BI.",
+        "text_ja": "Select Get data from Power BI."
+      },
+      {
+        "text_en": "Enter the name of the Customers data entity.",
+        "text_ja": "Enter the name of the Customers data entity."
+      },
+      {
+        "text_en": "Create a Power BI report by using the customer data.",
+        "text_ja": "Create a Power BI report by using the customer data."
+      },
+      {
+        "text_en": "Enter credentials to connect a database.",
+        "text_ja": "Enter credentials to connect a database."
+      },
+      {
+        "text_en": "Enter the URL of the Customers OData endpoint.",
+        "text_ja": "Enter the URL of the Customers OData endpoint."
+      },
+      {
+        "text_en": "Select OData feed.",
+        "text_ja": "Select OData feed."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "1",
+        "label_ja": "1"
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "4",
+        "label_ja": "4"
+      }
     ]
   },
   {
@@ -28076,6 +31222,28 @@
     ],
     "answer_images": [
       "images/t6_q57_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Aggregate data entity",
+        "text_ja": "Aggregate data entity"
+      },
+      {
+        "text_en": "Composite data entity",
+        "text_ja": "Composite data entity"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Asynchronously import XML sales order header information and line data.",
+        "label_ja": "Asynchronously import XML sales order header information and line data."
+      },
+      {
+        "index": 2,
+        "label_en": "Use OData endpoint to enable two measures and two attributes from CustTransView.",
+        "label_ja": "Use OData endpoint to enable two measures and two attributes from CustTransView."
+      }
     ]
   },
   {
@@ -28188,6 +31356,38 @@
     ],
     "answer_images": [
       "images/t6_q59_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Excel add-in",
+        "text_ja": "Excel add-in"
+      },
+      {
+        "text_en": "Custom service",
+        "text_ja": "Custom service"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Get a list of customers filtered on the customer group field.",
+        "label_ja": "Get a list of customers filtered on the customer group field."
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "Post a sales order invoice.",
+        "label_ja": "Post a sales order invoice."
+      },
+      {
+        "index": 4,
+        "label_en": "Get the balance of a vendor.",
+        "label_ja": "Get the balance of a vendor."
+      }
     ]
   },
   {
@@ -28513,6 +31713,45 @@
     ],
     "answer_images": [
       "images/t6_q65_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Call an HTTP POST method to the /data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint.",
+        "text_ja": "Call an HTTP POST method to the /data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint."
+      },
+      {
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint.",
+        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint."
+      },
+      {
+        "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint.",
+        "text_ja": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint."
+      },
+      {
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionErrors endpoint.",
+        "text_ja": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionErrors endpoint."
+      },
+      {
+        "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint.",
+        "text_ja": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -28682,6 +31921,37 @@
     ],
     "answer_images": [
       "images/t6_q68_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Integration patterns",
+        "text_ja": "Integration patterns"
+      },
+      {
+        "text_en": "Asynchronous Integration Integration pattern",
+        "text_ja": "Asynchronous Integration Integration pattern"
+      },
+      {
+        "text_en": "Master data update Synchronous",
+        "text_ja": "Master data update Synchronous"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -29046,6 +32316,45 @@
     ],
     "answer_images": [
       "images/t7_q3_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a security policy that links to the query and primary table.",
+        "text_ja": "Create a security policy that links to the query and primary table."
+      },
+      {
+        "text_en": "Create a query to define filters.",
+        "text_ja": "Create a query to define filters."
+      },
+      {
+        "text_en": "Define the list of constrained tables.",
+        "text_ja": "Define the list of constrained tables."
+      },
+      {
+        "text_en": "Assign the newly created role to the user.",
+        "text_ja": "Assign the newly created role to the user."
+      },
+      {
+        "text_en": "Create new user role and add required privileges.",
+        "text_ja": "Create new user role and add required privileges."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -29246,6 +32555,38 @@
     ],
     "answer_images": [
       "images/t7_q5_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "NotInTTS",
+        "text_ja": "NotInTTS"
+      },
+      {
+        "text_en": "Found",
+        "text_ja": "Found"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Table type",
+        "label_ja": "テーブル タイプ"
+      },
+      {
+        "index": 2,
+        "label_en": "Transaction",
+        "label_ja": "Transaction"
+      },
+      {
+        "index": 3,
+        "label_en": "Master data",
+        "label_ja": "Master data"
+      },
+      {
+        "index": 4,
+        "label_en": "Region specific master data",
+        "label_ja": "Region specific master data"
+      }
     ]
   },
   {
@@ -29771,6 +33112,37 @@
     "answer_images": [
       "images/t7_q10_2.png",
       "images/t7_q10_3.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Role",
+        "text_ja": "Role"
+      },
+      {
+        "text_en": "Privilege",
+        "text_ja": "Privilege"
+      },
+      {
+        "text_en": "Duty",
+        "text_ja": "Duty"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Hierarchy Level 1 (Top)",
+        "label_ja": "Hierarchy Level 1 (Top)"
+      },
+      {
+        "index": 2,
+        "label_en": "Hierarchy Level 2 (Middle)",
+        "label_ja": "Hierarchy Level 2 (Middle)"
+      },
+      {
+        "index": 3,
+        "label_en": "Hierarchy Level 3 (Above Permission)",
+        "label_ja": "Hierarchy Level 3 (Above Permission)"
+      }
     ]
   },
   {
@@ -29831,6 +33203,45 @@
     ],
     "answer_images": [
       "images/t7_q11_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add the duty extension to a role",
+        "text_ja": "Add the duty extension to a role"
+      },
+      {
+        "text_en": "Create a new privilege and duty extension",
+        "text_ja": "Create a new privilege and duty extension"
+      },
+      {
+        "text_en": "Add the new privilege to a duty extension and output the menu item to the privilege",
+        "text_ja": "Add the new privilege to a duty extension and output the menu item to the privilege"
+      },
+      {
+        "text_en": "Add a display menu item to the privilege",
+        "text_ja": "Add a display menu item to the privilege"
+      },
+      {
+        "text_en": "Create a new security policy and duty extension",
+        "text_ja": "Create a new security policy and duty extension"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -30207,6 +33618,36 @@
     ],
     "answer_images": [
       "images/t7_q15_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "SysTestMethodAttribute",
+        "text_ja": "SysTestMethodAttribute"
+      },
+      {
+        "text_en": "SysTestInactivateTestAttribute",
+        "text_ja": "SysTestInactivateTestAttribute"
+      },
+      {
+        "text_en": "SysTestCheckinTestAttribute",
+        "text_ja": "SysTestCheckinTestAttribute"
+      },
+      {
+        "text_en": "SysTestTargetAttribute",
+        "text_ja": "SysTestTargetAttribute"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Unit testing code",
+        "label_ja": "Unit testing code"
+      },
+      {
+        "index": 2,
+        "label_en": "Indicates the class or method is deactivated",
+        "label_ja": "Indicates the class or method is deactivated"
+      }
     ]
   },
   {
@@ -30260,6 +33701,46 @@
     ],
     "answer_images": [
       "images/t7_q16_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create a policy query for the primary table.",
+        "text_ja": "Create a policy query for the primary table."
+      },
+      {
+        "text_en": "Add a constraint table to the security policy.",
+        "text_ja": "Add a constraint table to the security policy."
+      },
+      {
+        "text_en": "Build and sync the XDS policy.",
+        "text_ja": "Build and sync the XDS policy."
+      },
+      {
+        "text_en": "Create a security policy.",
+        "text_ja": "Create a security policy."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -30787,6 +34268,50 @@
     ],
     "answer_images": [
       "images/t7_q22_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Select the Vendor groups entity and the CSV format and add the entity to the export project.",
+        "text_ja": "Select the Vendor groups entity and the CSV format and add the entity to the export project."
+      },
+      {
+        "text_en": "Export the entity.",
+        "text_ja": "Export the entity."
+      },
+      {
+        "text_en": "Select the Vendor groups entity and the Excel format and add the entity to the export project.",
+        "text_ja": "Select the Vendor groups entity and the Excel format and add the entity to the export project."
+      },
+      {
+        "text_en": "Enter a group name and description for the new project.",
+        "text_ja": "Enter a group name and description for the new project."
+      },
+      {
+        "text_en": "In the Data management workspace, create an Export definition group.",
+        "text_ja": "In the Data management workspace, create an Export definition group."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -31607,6 +35132,36 @@
     ],
     "answer_images": [
       "images/t7_q33_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "SysTestMethodAttribute",
+        "text_ja": "SysTestMethodAttribute"
+      },
+      {
+        "text_en": "SysTestInactivateTestAttribute",
+        "text_ja": "SysTestInactivateTestAttribute"
+      },
+      {
+        "text_en": "SysTestCheckInTestAttribute",
+        "text_ja": "SysTestCheckInTestAttribute"
+      },
+      {
+        "text_en": "SysTestTargetAttribute",
+        "text_ja": "SysTestTargetAttribute"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Unit testing code",
+        "label_ja": "Unit testing code"
+      },
+      {
+        "index": 2,
+        "label_en": "Indicates the class or method is deactivated",
+        "label_ja": "Indicates the class or method is deactivated"
+      }
     ]
   },
   {
@@ -31849,6 +35404,49 @@
     ],
     "answer_images": [
       "images/t7_q37_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add the privilege to the Accounts Payable clerk role.",
+        "text_ja": "Add the privilege to the Accounts Payable clerk role."
+      },
+      {
+        "text_en": "Create an extension of the Accounts Payable clerk role and add the duty.",
+        "text_ja": "Create an extension of the Accounts Payable clerk role and add the duty."
+      },
+      {
+        "text_en": "Add the menu item to the privilege data entity permissions node and grant Read access.",
+        "text_ja": "Add the menu item to the privilege data entity permissions node and grant Read access."
+      },
+      {
+        "text_en": "Create a privilege and add the menu item to the privilege entry points node with Correct access.",
+        "text_ja": "Create a privilege and add the menu item to the privilege entry points node with Correct access."
+      },
+      {
+        "text_en": "Create a privilege and add the menu item to the privilege entry points node with Read access.",
+        "text_ja": "Create a privilege and add the menu item to the privilege entry points node with Read access."
+      },
+      {
+        "text_en": "Create a duty and add the privilege.",
+        "text_ja": "Create a duty and add the privilege."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "3.",
+        "label_ja": "3."
+      }
     ]
   },
   {
@@ -31894,6 +35492,42 @@
     ],
     "answer_images": [
       "images/t7_q38_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Use Remote Desktop to connect to a cloud- 1 hosted environment.",
+        "text_ja": "Use Remote Desktop to connect to a cloud- 1 hosted environment."
+      },
+      {
+        "text_en": "2 Deer tinderine edia cale Monitor and ad a",
+        "text_ja": "2 Deer tinderine edia cale Monitor and ad a"
+      },
+      {
+        "text_en": "erform the activity in the application and stop 4 e trace when it finishes.",
+        "text_ja": "erform the activity in the application and stop 4 e trace when it finishes."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -32006,6 +35640,33 @@
     ],
     "answer_images": [
       "images/t7_q40_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Data management framework's package",
+        "text_ja": "Data management framework's package"
+      },
+      {
+        "text_en": "Recurring integrations",
+        "text_ja": "Recurring integrations"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Scheduling occurs outside the application.",
+        "label_ja": "Scheduling occurs outside the application."
+      },
+      {
+        "index": 2,
+        "label_en": "Support SOAP and REST protocols.",
+        "label_ja": "Support SOAP and REST protocols."
+      },
+      {
+        "index": 3,
+        "label_en": "Support transformation from XML.",
+        "label_ja": "Support transformation from XML."
+      }
     ]
   },
   {
@@ -32649,6 +36310,54 @@
     ],
     "answer_images": [
       "images/t8_q4_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "existing model",
+        "text_ja": "existing model"
+      },
+      {
+        "text_en": "new model",
+        "text_ja": "new model"
+      },
+      {
+        "text_en": "deployable package",
+        "text_ja": "deployable package"
+      },
+      {
+        "text_en": "package",
+        "text_ja": "package"
+      },
+      {
+        "text_en": "model file",
+        "text_ja": "model file"
+      },
+      {
+        "text_en": "project",
+        "text_ja": "project"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Create a new deployable unit.",
+        "label_ja": "Create a new deployable unit."
+      },
+      {
+        "index": 2,
+        "label_en": "Create, manage, and group elements.",
+        "label_ja": "Create, manage, and group elements."
+      },
+      {
+        "index": 3,
+        "label_en": "Group elements from a model together.",
+        "label_ja": "Group elements from a model together."
+      },
+      {
+        "index": 4,
+        "label_en": "Distribute the solution to customers.",
+        "label_ja": "Distribute the solution to customers."
+      }
     ]
   },
   {
@@ -32873,6 +36582,38 @@
     ],
     "answer_images": [
       "images/t9_q2_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "synchronous",
+        "text_ja": "synchronous"
+      },
+      {
+        "text_en": "asynchronous",
+        "text_ja": "asynchronous"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Export the vendor list for Power BI reporting.",
+        "label_ja": "Export the vendor list for Power BI reporting."
+      },
+      {
+        "index": 2,
+        "label_en": "Implement web portal products integration.",
+        "label_ja": "Implement web portal products integration."
+      },
+      {
+        "index": 3,
+        "label_en": "Update worker compensation details.",
+        "label_ja": "Update worker compensation details."
+      },
+      {
+        "index": 4,
+        "label_en": "Import payroll journals.",
+        "label_ja": "Import payroll journals."
+      }
     ]
   },
   {
@@ -33886,6 +37627,50 @@
     ],
     "answer_images": [
       "images/t14_q1_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Add the package to source control and",
+        "text_ja": "Add the package to source control and"
+      },
+      {
+        "text_en": "Import the model into a Development",
+        "text_ja": "Import the model into a Development"
+      },
+      {
+        "text_en": "Import the model into the Build environment.",
+        "text_ja": "Import the model into the Build environment."
+      },
+      {
+        "text_en": "Import the model into a QA environment.",
+        "text_ja": "Import the model into a QA environment."
+      },
+      {
+        "text_en": "Import the deployment package in another",
+        "text_ja": "Import the deployment package in another"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -34538,6 +38323,46 @@
     ],
     "answer_images": [
       "images/t17_q1_2.jpeg"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "Create an extension of the form in the project.",
+        "text_ja": "Create an extension of the form in the project."
+      },
+      {
+        "text_en": "Drag the Product Name and Batch ID fields from the data source to the grid on the form extension.",
+        "text_ja": "Drag the Product Name and Batch ID fields from the data source to the grid on the form extension."
+      },
+      {
+        "text_en": "Right-click the form in the Application Object Tree (AOT).",
+        "text_ja": "Right-click the form in the Application Object Tree (AOT)."
+      },
+      {
+        "text_en": "Find the WHSTmpStatusChangeDetails form in the Application Object Tree (AOT).",
+        "text_ja": "Find the WHSTmpStatusChangeDetails form in the Application Object Tree (AOT)."
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 4,
+        "label_en": "",
+        "label_ja": ""
+      }
     ]
   },
   {
@@ -34853,6 +38678,41 @@
     ],
     "answer_images": [
       "images/t20_q1_2.png"
+    ],
+    "drag_actions": [
+      {
+        "text_en": "SRSReportParameterAttribute",
+        "text_ja": "SRSReportParameterAttribute"
+      },
+      {
+        "text_en": "SysOperationDisplayOrderAttribute",
+        "text_ja": "SysOperationDisplayOrderAttribute"
+      },
+      {
+        "text_en": "DataMemberAttribute",
+        "text_ja": "DataMemberAttribute"
+      },
+      {
+        "text_en": "DataContractAttribute",
+        "text_ja": "DataContractAttribute"
+      }
+    ],
+    "drag_slots": [
+      {
+        "index": 1,
+        "label_en": "Identify the class that provides parameters for the report.",
+        "label_ja": "Identify the class that provides parameters for the report."
+      },
+      {
+        "index": 2,
+        "label_en": "Enable contract parameters in the report dialog.",
+        "label_ja": "Enable contract parameters in the report dialog."
+      },
+      {
+        "index": 3,
+        "label_en": "Indicate the contract name in the data provider class.",
+        "label_ja": "Indicate the contract name in the data provider class."
+      }
     ]
   }
 ]
