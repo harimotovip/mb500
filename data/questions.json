@@ -842,12 +842,20 @@
     ],
     "drag_actions": [
       {
+        "text_en": "Map the Microsoft Azure DevOps project to your local developer machine.",
+        "text_ja": "Map the Microsoft Azure DevOps project to your local developer machine."
+      },
+      {
         "text_en": "Create a test branch.",
         "text_ja": "Create a test branch."
       },
       {
-        "text_en": "Connect to the Microsoft Azure DevOps",
-        "text_ja": "Connect to the Microsoft Azure DevOps"
+        "text_en": "Create a dev branch.",
+        "text_ja": "Create a dev branch."
+      },
+      {
+        "text_en": "Connect to the Microsoft Azure DevOps project.",
+        "text_ja": "Connect to the Microsoft Azure DevOps project."
       },
       {
         "text_en": "Create a main branch.",
@@ -1205,12 +1213,28 @@
     ],
     "drag_actions": [
       {
-        "text_en": "the grid.",
-        "text_ja": "the grid."
+        "text_en": "Navigate to the Workspace form and select Find form to add.",
+        "text_ja": "Navigate to the Workspace form and select Find form to add."
       },
       {
-        "text_en": "Select the General menu item then select",
-        "text_ja": "Select the General menu item then select"
+        "text_en": "Select Workspace and Presentation options.",
+        "text_ja": "Select Workspace and Presentation options."
+      },
+      {
+        "text_en": "Select the Options action pane tab and then select Add to workspace.",
+        "text_ja": "Select the Options action pane tab and then select Add to workspace."
+      },
+      {
+        "text_en": "Open the customer form and apply filters to the grid.",
+        "text_ja": "Open the customer form and apply filters to the grid."
+      },
+      {
+        "text_en": "Select Configure.",
+        "text_ja": "Select Configure."
+      },
+      {
+        "text_en": "Select the General menu item then select Add to workspace.",
+        "text_ja": "Select the General menu item then select Add to workspace."
       }
     ],
     "drag_slots": [
@@ -1890,28 +1914,28 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Activity monitoring",
-        "text_ja": "Activity monitoring"
+        "text_en": "Requirement Activity monitoring",
+        "text_ja": "Requirement Activity monitoring"
       },
       {
-        "text_en": "SQL insights",
-        "text_ja": "SQL の洞察"
+        "text_en": "SQL insights Determine what a user was doing during a specific i",
+        "text_ja": "SQL insights Determine what a user was doing during a specific i"
       },
       {
-        "text_en": "Health metrics",
-        "text_ja": "健康指標"
+        "text_en": "time period Health metrics Identify the number of distinct user sessions View a list of transaction locks",
+        "text_ja": "time period Health metrics Identify the number of distinct user sessions View a list of transaction locks"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "Determine what a user was doing during a specific i",
-        "label_ja": "Determine what a user was doing during a specific i"
+        "label_en": "",
+        "label_ja": ""
       },
       {
         "index": 2,
-        "label_en": "Identify the number of distinct user sessions",
-        "label_ja": "Identify the number of distinct user sessions"
+        "label_en": "",
+        "label_ja": ""
       }
     ]
   },
@@ -2609,6 +2633,10 @@
     ],
     "drag_actions": [
       {
+        "text_en": "Model",
+        "text_ja": "Model"
+      },
+      {
         "text_en": "Package",
         "text_ja": "Package"
       },
@@ -2620,8 +2648,8 @@
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "Requirement",
-        "label_ja": "Requirement"
+        "label_en": "Group elements for deployment as a unit.",
+        "label_ja": "Group elements for deployment as a unit."
       },
       {
         "index": 2,
@@ -3614,11 +3642,6 @@
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
-      },
-      {
-        "index": 4,
         "label_en": "",
         "label_ja": ""
       }
@@ -5556,29 +5579,33 @@
     ],
     "drag_actions": [
       {
-        "text_en": "FormRun",
-        "text_ja": "FormRun"
+        "text_en": "FormRun Use case",
+        "text_ja": "FormRun Use case"
       },
       {
-        "text_en": "Global",
-        "text_ja": "グローバル"
+        "text_en": "Global The process is run outside the client.",
+        "text_ja": "Global The process is run outside the client."
+      },
+      {
+        "text_en": "Display a message when the process is completed without a page refresh. The page must be refreshed for the message to be displayed.",
+        "text_ja": "Display a message when the process is completed without a page refresh. The page must be refreshed for the message to be displayed."
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "The process is run outside the client.",
-        "label_ja": "The process is run outside the client."
+        "label_en": "",
+        "label_ja": ""
       },
       {
         "index": 2,
-        "label_en": "Display a message when the process is completed without a page refresh.",
-        "label_ja": "Display a message when the process is completed without a page refresh."
+        "label_en": "",
+        "label_ja": ""
       },
       {
         "index": 3,
-        "label_en": "The page must be refreshed for the message to be displayed.",
-        "label_ja": "The page must be refreshed for the message to be displayed."
+        "label_en": "",
+        "label_ja": ""
       }
     ]
   },
@@ -6339,6 +6366,10 @@
     ],
     "drag_actions": [
       {
+        "text_en": "Select the repository that requires the new pipeline.",
+        "text_ja": "Select the repository that requires the new pipeline."
+      },
+      {
         "text_en": "Add a step for the Develop branch.",
         "text_ja": "Add a step for the Develop branch."
       },
@@ -6351,8 +6382,8 @@
         "text_ja": "Add a trigger for the Develop branch."
       },
       {
-        "text_en": "Create the pipeline",
-        "text_ja": "Create the pipeline"
+        "text_en": "Create the pipeline based on the requirements.",
+        "text_ja": "Create the pipeline based on the requirements."
       }
     ],
     "drag_slots": [
@@ -6424,32 +6455,28 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Steps to package code and upgrade the production environment",
-        "text_ja": "Steps to package code and upgrade the production environment"
+        "text_en": "Schedule the production update with the release candidate version.",
+        "text_ja": "Schedule the production update with the release candidate version."
       },
       {
-        "text_en": "with the release candidate version.",
-        "text_ja": "with the release candidate version."
+        "text_en": "Generate a deployable package in Azure DevOps by using a build pipeline.",
+        "text_ja": "Generate a deployable package in Azure DevOps by using a build pipeline."
       },
       {
-        "text_en": "in Azure DevOps by using a build",
-        "text_ja": "in Azure DevOps by using a build"
+        "text_en": "Apply the deployable package to a sandbox environment.",
+        "text_ja": "Apply the deployable package to a sandbox environment."
       },
       {
-        "text_en": "to a sandbox environment.",
-        "text_ja": "to a sandbox environment."
+        "text_en": "Build the solution in Visual Studio and create a deployable package with the generated DLLs for your model.",
+        "text_ja": "Build the solution in Visual Studio and create a deployable package with the generated DLLs for your model."
       },
       {
-        "text_en": "Build the solution in Visual Studio",
-        "text_ja": "Build the solution in Visual Studio"
+        "text_en": "Mark the deployable package as a release candidate on the sandbox environment.",
+        "text_ja": "Mark the deployable package as a release candidate on the sandbox environment."
       },
       {
-        "text_en": "as a release candidate on the sandbox environment.",
-        "text_ja": "as a release candidate on the sandbox environment."
-      },
-      {
-        "text_en": "in to your version control system.",
-        "text_ja": "in to your version control system."
+        "text_en": "Develop the code and check it in to your version control system.",
+        "text_ja": "Develop the code and check it in to your version control system."
       }
     ],
     "drag_slots": [
@@ -6527,24 +6554,20 @@
     ],
     "drag_actions": [
       {
-        "text_en": "branch into the Release branch",
-        "text_ja": "branch into the Release branch"
+        "text_en": "Branch name",
+        "text_ja": "Branch name"
       },
       {
-        "text_en": "Resolve conflicts and check in the code in the Release branch.",
-        "text_ja": "Resolve conflicts and check in the code in the Release branch."
+        "text_en": "Development",
+        "text_ja": "Development"
       },
       {
-        "text_en": "Resolve conflicts and check",
-        "text_ja": "Resolve conflicts and check"
+        "text_en": "Release",
+        "text_ja": "Release"
       },
       {
-        "text_en": "Perform Get Latest on the Release branch.",
-        "text_ja": "Perform Get Latest on the Release branch."
-      },
-      {
-        "text_en": "branch into the Release branch and",
-        "text_ja": "branch into the Release branch and"
+        "text_en": "Main",
+        "text_ja": "Main"
       }
     ],
     "drag_slots": [
@@ -8229,6 +8252,22 @@
       {
         "text_en": "Select the IsExtensible property for the CustTable form.",
         "text_ja": "Select the IsExtensible property for the CustTable form."
+      },
+      {
+        "text_en": "In Solution Explorer, drag the CustTable form into the project.",
+        "text_ja": "In Solution Explorer, drag the CustTable form into the project."
+      },
+      {
+        "text_en": "Rename the new CustTable extension.",
+        "text_ja": "Rename the new CustTable extension."
+      },
+      {
+        "text_en": "In the Application Object Tree (AOT), right-click the CustTable form and select Add to project.",
+        "text_ja": "In the Application Object Tree (AOT), right-click the CustTable form and select Add to project."
+      },
+      {
+        "text_en": "In the Application Object Tree (AOT), right-click the CustTable form.",
+        "text_ja": "In the Application Object Tree (AOT), right-click the CustTable form."
       },
       {
         "text_en": "Select Create extension.",
@@ -12335,24 +12374,37 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Table Requirement",
-        "text_ja": "Table Requirement"
+        "text_en": "Table",
+        "text_ja": "Table"
       },
       {
-        "text_en": "TableB Prevent deletion of data from TableB if related data exists in another table.",
-        "text_ja": "TableB Prevent deletion of data from TableB if related data exists in another table."
+        "text_en": "TableA",
+        "text_ja": "TableA"
+      },
+      {
+        "text_en": "TableB",
+        "text_ja": "TableB"
+      },
+      {
+        "text_en": "TableC",
+        "text_ja": "TableC"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "TableA",
+        "label_ja": "TableA"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "TableB",
+        "label_ja": "TableB"
+      },
+      {
+        "index": 3,
+        "label_en": "TableC",
+        "label_ja": "TableC"
       }
     ]
   },
@@ -14475,8 +14527,16 @@
     ],
     "drag_actions": [
       {
+        "text_en": "Method types",
+        "text_ja": "Method types"
+      },
+      {
         "text_en": "[ Private instance",
         "text_ja": "[ Private instance"
+      },
+      {
+        "text_en": "Public static",
+        "text_ja": "Public static"
       },
       {
         "text_en": "| Private static",
@@ -14747,16 +14807,6 @@
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
-      },
-      {
-        "index": 3,
-        "label_en": "",
-        "label_ja": ""
-      },
-      {
-        "index": 4,
         "label_en": "",
         "label_ja": ""
       }
@@ -15285,12 +15335,28 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Add the CustGroup table to the project. 1",
-        "text_ja": "Add the CustGroup table to the project. 1"
+        "text_en": "Add the CustGroup table to the project.",
+        "text_ja": "Add the CustGroup table to the project."
       },
       {
-        "text_en": "field.",
-        "text_ja": "field."
+        "text_en": "Create a new string field and name it PaymMode.",
+        "text_ja": "Create a new string field and name it PaymMode."
+      },
+      {
+        "text_en": "Create a new project in Visual Studio.",
+        "text_ja": "Create a new project in Visual Studio."
+      },
+      {
+        "text_en": "Drag the PaymMode EDT to the table extension.",
+        "text_ja": "Drag the PaymMode EDT to the table extension."
+      },
+      {
+        "text_en": "Create an extension of the CustGroup table and add it to the project.",
+        "text_ja": "Create an extension of the CustGroup table and add it to the project."
+      },
+      {
+        "text_en": "Create a display method to display the PaymMode field.",
+        "text_ja": "Create a display method to display the PaymMode field."
       }
     ],
     "drag_slots": [
@@ -15357,12 +15423,20 @@
     ],
     "drag_actions": [
       {
-        "text_en": "2 Create the model as a new package.",
-        "text_ja": "2 Create the model as a new package."
+        "text_en": "Select the model references.",
+        "text_ja": "Select the model references."
       },
       {
-        "text_en": "3 Select the model references.",
-        "text_ja": "3 Select the model references."
+        "text_en": "In the model creation wizard, enter a name and publisher for the model.",
+        "text_ja": "In the model creation wizard, enter a name and publisher for the model."
+      },
+      {
+        "text_en": "Create the model as a new package.",
+        "text_ja": "Create the model as a new package."
+      },
+      {
+        "text_en": "Create a new class that extends the SysExtModelElement class.",
+        "text_ja": "Create a new class that extends the SysExtModelElement class."
       }
     ],
     "drag_slots": [
@@ -17685,28 +17759,28 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Scenario Compare and merge code",
-        "text_ja": "Scenario Compare and merge code"
+        "text_en": "Compare and merge code",
+        "text_ja": "Compare and merge code"
       },
       {
-        "text_en": "Compare the custom code with the code in the ISV solution. Compare code with baseline Compare the code with the code in the ISV solution to identify and",
-        "text_ja": "Compare the custom code with the code in the ISV solution. Compare code with baseline Compare the code with the code in the ISV solution to identify and"
+        "text_en": "Compare code with baseline",
+        "text_ja": "Compare code with baseline"
       },
       {
-        "text_en": "resolve conflicts. Compare metadata with baseline",
-        "text_ja": "resolve conflicts. Compare metadata with baseline"
+        "text_en": "Compare metadata with baseline",
+        "text_ja": "Compare metadata with baseline"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Compare the custom code with the code in the ISV solution.",
+        "label_ja": "Compare the custom code with the code in the ISV solution."
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Compare the code with the code in the ISV solution to identify and resolve conflicts.",
+        "label_ja": "Compare the code with the code in the ISV solution to identify and resolve conflicts."
       }
     ]
   },
@@ -18632,6 +18706,10 @@
       {
         "text_en": "Loop through the QueryRun object by using the Next method.",
         "text_ja": "Loop through the QueryRun object by using the Next method."
+      },
+      {
+        "text_en": "Declare and initialize the QueryRun object by using the query object.",
+        "text_ja": "Declare and initialize the QueryRun object by using the query object."
       }
     ],
     "drag_slots": [
@@ -19016,11 +19094,6 @@
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
-      },
-      {
-        "index": 4,
         "label_en": "",
         "label_ja": ""
       }
@@ -19726,12 +19799,36 @@
     ],
     "drag_actions": [
       {
+        "text_en": "{ info(custTable-AccountNum); }",
+        "text_ja": "{ info(custTable-AccountNum); }"
+      },
+      {
+        "text_en": "order by AccountNum asc",
+        "text_ja": "order by AccountNum asc"
+      },
+      {
         "text_en": "while select firstonly100 custTable",
         "text_ja": "while select firstonly100 custTable"
       },
       {
+        "text_en": "where custTable AccountNum > '1000'",
+        "text_ja": "where custTable AccountNum > '1000'"
+      },
+      {
+        "text_en": "select firstonly100 custTable",
+        "text_ja": "select firstonly100 custTable"
+      },
+      {
+        "text_en": "while select top 100 custtable",
+        "text_ja": "while select top 100 custtable"
+      },
+      {
         "text_en": "where custTable.AccountNum > 1000",
         "text_ja": "where custTable.AccountNum > 1000"
+      },
+      {
+        "text_en": "order by AccountNum desc",
+        "text_ja": "order by AccountNum desc"
       }
     ],
     "drag_slots": [
@@ -19747,11 +19844,6 @@
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
-      },
-      {
-        "index": 4,
         "label_en": "",
         "label_ja": ""
       }
@@ -19890,6 +19982,10 @@
       {
         "text_en": "Custom service creation steps",
         "text_ja": "Custom service creation steps"
+      },
+      {
+        "text_en": "Create and assign the service group.",
+        "text_ja": "Create and assign the service group."
       },
       {
         "text_en": "Create and assign the service object.",
@@ -21120,6 +21216,10 @@
       {
         "text_en": "Testing framework or functionalities",
         "text_ja": "Testing framework or functionalities"
+      },
+      {
+        "text_en": "Task recorder",
+        "text_ja": "Task recorder"
       },
       {
         "text_en": "SysTest framework",
@@ -24284,20 +24384,24 @@
         "text_ja": "エンティティ ストア"
       },
       {
-        "text_en": "Bring your own database",
-        "text_ja": "Bring your own database"
+        "text_en": "Import data from various systems into one reporting Bring your own database database and extend tables.",
+        "text_ja": "Import data from various systems into one reporting Bring your own database database and extend tables."
+      },
+      {
+        "text_en": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle.",
+        "text_ja": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle."
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "Import data from various systems into one reporting database and extend tables.",
-        "label_ja": "Import data from various systems into one reporting database and extend tables."
+        "label_en": "",
+        "label_ja": ""
       },
       {
         "index": 2,
-        "label_en": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle.",
-        "label_ja": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle."
+        "label_en": "",
+        "label_ja": ""
       }
     ]
   },
@@ -25551,8 +25655,8 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Power BI",
-        "text_ja": "Power BI"
+        "text_en": "Excel Power BI",
+        "text_ja": "Excel Power BI"
       },
       {
         "text_en": "SSRS",
@@ -25750,6 +25854,10 @@
       {
         "text_en": "Create a security policy and set primary table, query, and context type parameters.",
         "text_ja": "Create a security policy and set primary table, query, and context type parameters."
+      },
+      {
+        "text_en": "Create a query.",
+        "text_ja": "Create a query."
       },
       {
         "text_en": "Build the solution and refresh the browser.",
@@ -28202,33 +28310,41 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Batch data API",
-        "text_ja": "Batch data API"
+        "text_en": "Batch data API Scenario",
+        "text_ja": "Batch data API Scenario"
       },
       {
-        "text_en": "Custom service",
-        "text_ja": "Custom service"
+        "text_en": "Custom service Move asset status information from an on-premises application to Dynamics",
+        "text_ja": "Custom service Move asset status information from an on-premises application to Dynamics"
       },
       {
-        "text_en": "OData",
-        "text_ja": "OData"
+        "text_en": "365 Finance in near real time by using a publicly exposed data entity.",
+        "text_ja": "365 Finance in near real time by using a publicly exposed data entity."
+      },
+      {
+        "text_en": "OData Provide information from Dynamics 365 Finance to a website to display item",
+        "text_ja": "OData Provide information from Dynamics 365 Finance to a website to display item"
+      },
+      {
+        "text_en": "prices in near real time by using the SOAP protocol. Import vendor invoices into Dynamics 365 Finance at the end of each business day.",
+        "text_ja": "prices in near real time by using the SOAP protocol. Import vendor invoices into Dynamics 365 Finance at the end of each business day."
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "Move asset status information from an on-premises application to Dynamics 365 Finance in near real time by using a publicly exposed data entity.",
-        "label_ja": "Move asset status information from an on-premises application to Dynamics 365 Finance in near real time by using a publicly exposed data entity."
+        "label_en": "",
+        "label_ja": ""
       },
       {
         "index": 2,
-        "label_en": "Provide information from Dynamics 365 Finance to a website to display item prices in near real time by using the SOAP protocol.",
-        "label_ja": "Provide information from Dynamics 365 Finance to a website to display item prices in near real time by using the SOAP protocol."
+        "label_en": "",
+        "label_ja": ""
       },
       {
         "index": 3,
-        "label_en": "Import vendor invoices into Dynamics 365 Finance at the end of each business day.",
-        "label_ja": "Import vendor invoices into Dynamics 365 Finance at the end of each business day."
+        "label_en": "",
+        "label_ja": ""
       }
     ]
   },
@@ -28418,8 +28534,12 @@
         "text_ja": "Personalize the page."
       },
       {
-        "text_en": "Refresh the browser. Configure and embed the app.",
-        "text_ja": "Refresh the browser. Configure and embed the app."
+        "text_en": "Refresh the browser.",
+        "text_ja": "Refresh the browser."
+      },
+      {
+        "text_en": "Configure and embed the app.",
+        "text_ja": "Configure and embed the app."
       }
     ],
     "drag_slots": [
@@ -28430,16 +28550,6 @@
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
-      },
-      {
-        "index": 3,
-        "label_en": "",
-        "label_ja": ""
-      },
-      {
-        "index": 4,
         "label_en": "",
         "label_ja": ""
       }
@@ -28532,8 +28642,16 @@
         "text_ja": "Batch process Description and requirements"
       },
       {
+        "text_en": "This process is lengthy. Users must be able to continue working while the process runs. The process must complete successfully.",
+        "text_ja": "This process is lengthy. Users must be able to continue working while the process runs. The process must complete successfully."
+      },
+      {
         "text_en": "2 This is a short process. The process is permitted to block the work of a user while the process runs.",
         "text_ja": "2 This is a short process. The process is permitted to block the work of a user while the process runs."
+      },
+      {
+        "text_en": "3 | This is a process that must run every night of each workday.",
+        "text_ja": "3 | This is a process that must run every night of each workday."
       }
     ],
     "drag_slots": [
@@ -28727,20 +28845,20 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Scenario Application Real-time data required",
-        "text_ja": "Scenario Application Real-time data required"
+        "text_en": "Application",
+        "text_ja": "Application"
       },
       {
-        "text_en": "Yes Dynamics 365 Customer Service Sales representatives must be able to change the credit limit for customers by using the app. app",
-        "text_ja": "Yes Dynamics 365 Customer Service Sales representatives must be able to change the credit limit for customers by using the app. app"
+        "text_en": "Dynamics 365 Customer Service app",
+        "text_ja": "Dynamics 365 Customer Service app"
       },
       {
-        "text_en": "e-commerce website Yes Customers use the website to request information about product availability.",
-        "text_ja": "e-commerce website Yes Customers use the website to request information about product availability."
+        "text_en": "e-commerce website",
+        "text_ja": "e-commerce website"
       },
       {
-        "text_en": "No on-premises mainframe system The system generates sales orders. The sales orders must be imported daily into Dynamics 365 Finance.",
-        "text_ja": "No on-premises mainframe system The system generates sales orders. The sales orders must be imported daily into Dynamics 365 Finance."
+        "text_en": "on-premises mainframe system",
+        "text_ja": "on-premises mainframe system"
       }
     ],
     "drag_slots": [
@@ -29495,8 +29613,8 @@
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Chan anagemental created or pated in ornames 385 as",
+        "label_ja": "Chan anagemental created or pated in ornames 385 as"
       },
       {
         "index": 3,
@@ -29797,8 +29915,16 @@
     ],
     "drag_actions": [
       {
+        "text_en": "Enable the data entity for Public API and data management use.",
+        "text_ja": "Enable the data entity for Public API and data management use."
+      },
+      {
         "text_en": "Create a new data entity.",
         "text_ja": "Create a new data entity."
+      },
+      {
+        "text_en": "Add the WHSTmpStatusChange table as the data source of the new entity.",
+        "text_ja": "Add the WHSTmpStatusChange table as the data source of the new entity."
       },
       {
         "text_en": "Enable Public API for each data source that is part of the new data entity.",
@@ -31359,6 +31485,14 @@
     ],
     "drag_actions": [
       {
+        "text_en": "Integration endpoints",
+        "text_ja": "Integration endpoints"
+      },
+      {
+        "text_en": "OData",
+        "text_ja": "OData"
+      },
+      {
         "text_en": "Excel add-in",
         "text_ja": "Excel add-in"
       },
@@ -31928,29 +32062,29 @@
         "text_ja": "Integration patterns"
       },
       {
-        "text_en": "Asynchronous Integration Integration pattern",
-        "text_ja": "Asynchronous Integration Integration pattern"
+        "text_en": "Asynchronous",
+        "text_ja": "Asynchronous"
       },
       {
-        "text_en": "Master data update Synchronous",
-        "text_ja": "Master data update Synchronous"
+        "text_en": "Synchronous",
+        "text_ja": "Synchronous"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Master data update",
+        "label_ja": "Master data update"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "File import",
+        "label_ja": "File import"
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Sales order",
+        "label_ja": "Sales order"
       }
     ]
   },
@@ -32558,12 +32692,20 @@
     ],
     "drag_actions": [
       {
+        "text_en": "EntireTable",
+        "text_ja": "EntireTable"
+      },
+      {
         "text_en": "NotInTTS",
         "text_ja": "NotInTTS"
       },
       {
         "text_en": "Found",
         "text_ja": "Found"
+      },
+      {
+        "text_en": "FoundAndEmpty",
+        "text_ja": "FoundAndEmpty"
       }
     ],
     "drag_slots": [
@@ -35495,16 +35637,32 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Use Remote Desktop to connect to a cloud- 1 hosted environment.",
-        "text_ja": "Use Remote Desktop to connect to a cloud- 1 hosted environment."
+        "text_en": "Start or stop the data collector set in Windows Performance Monitor to capture the trace.",
+        "text_ja": "Start or stop the data collector set in Windows Performance Monitor to capture the trace."
       },
       {
-        "text_en": "2 Deer tinderine edia cale Monitor and ad a",
-        "text_ja": "2 Deer tinderine edia cale Monitor and ad a"
+        "text_en": "Select Help and choose the Trace option.",
+        "text_ja": "Select Help and choose the Trace option."
       },
       {
-        "text_en": "erform the activity in the application and stop 4 e trace when it finishes.",
-        "text_ja": "erform the activity in the application and stop 4 e trace when it finishes."
+        "text_en": "Add the providers to the event trace provider list.",
+        "text_ja": "Add the providers to the event trace provider list."
+      },
+      {
+        "text_en": "Use Remote Desktop to connect to a cloud- hosted environment.",
+        "text_ja": "Use Remote Desktop to connect to a cloud- hosted environment."
+      },
+      {
+        "text_en": "Open Windows Performance Monitor and add a new user-defined data collector set.",
+        "text_ja": "Open Windows Performance Monitor and add a new user-defined data collector set."
+      },
+      {
+        "text_en": "Provide a trace name and start the trace.",
+        "text_ja": "Provide a trace name and start the trace."
+      },
+      {
+        "text_en": "Perform the activity in the application and stop the trace when it finishes.",
+        "text_ja": "Perform the activity in the application and stop the trace when it finishes."
       }
     ],
     "drag_slots": [
@@ -37630,12 +37788,20 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Add the package to source control and",
-        "text_ja": "Add the package to source control and"
+        "text_en": "Add the package to source control and check in changes.",
+        "text_ja": "Add the package to source control and check in changes."
       },
       {
-        "text_en": "Import the model into a Development",
-        "text_ja": "Import the model into a Development"
+        "text_en": "Build and create a deployment package.",
+        "text_ja": "Build and create a deployment package."
+      },
+      {
+        "text_en": "Import the model into a Development environment.",
+        "text_ja": "Import the model into a Development environment."
+      },
+      {
+        "text_en": "Synchronize the models in the Developer environment by using Get latest feature.",
+        "text_ja": "Synchronize the models in the Developer environment by using Get latest feature."
       },
       {
         "text_en": "Import the model into the Build environment.",
@@ -37646,8 +37812,8 @@
         "text_ja": "Import the model into a QA environment."
       },
       {
-        "text_en": "Import the deployment package in another",
-        "text_ja": "Import the deployment package in another"
+        "text_en": "Import the deployment package in another development environment.",
+        "text_ja": "Import the deployment package in another development environment."
       }
     ],
     "drag_slots": [
