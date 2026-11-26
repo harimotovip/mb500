@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.0.5').then(r => r.json()),
-        fetch('./data/topics.json?v=7.0.5').then(r => r.json())
+        fetch('./data/questions.json?v=7.1.0').then(r => r.json()),
+        fetch('./data/topics.json?v=7.1.0').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -543,18 +543,33 @@ class MB500App {
 
     // Header badge
     let headerStatusHtml = '';
-    if (isDumpWrong) {
+    const agType = verdict.agreement_type;
+    if (agType === 'ai_override_dump' || isDumpWrong) {
       headerStatusHtml = `
         <div class="hero-header">
-          <span class="hero-badge-tag" style="background-color:#fee2e2;color:#b91c1c;">【官方正解 · AI权威纠偏】</span>
-          <span class="hero-alert-badge">⚠️ 题库官方答案疑似有误（原标为 ${this.escapeHtml(q.dump_answer || '错误选项')}），经微软官方文档与社区100%确认正解如下</span>
+          <span class="hero-badge-tag" style="background-color:#fee2e2;color:#b91c1c;">【⚠️ AI 双模型独立纠偏】</span>
+          <span class="hero-alert-badge">Claude 与 Gemini 盲测一致认为原题库【${this.escapeHtml(q.dump_answer || '原答案')}】有误，双模型独立正解如下</span>
+        </div>
+      `;
+    } else if (agType === 'ai_split') {
+      headerStatusHtml = `
+        <div class="hero-header">
+          <span class="hero-badge-tag" style="background-color:#fef3c7;color:#b45309;">【⚡ 双模型存在分歧】</span>
+          <span class="hero-alert-badge" style="color:#b45309;">Claude 与 Gemini 独立推理结论不同，请对比下方两方独立解析</span>
+        </div>
+      `;
+    } else if (agType === 'image_only') {
+      headerStatusHtml = `
+        <div class="hero-header">
+          <span class="hero-badge-tag">【🖼️ 图解题 · 原卷参考】</span>
+          <span class="hero-agree-badge">选项位于原图截图内，以原图与社区高赞为准</span>
         </div>
       `;
     } else {
       headerStatusHtml = `
         <div class="hero-header">
-          <span class="hero-badge-tag">【官方正解】</span>
-          <span class="hero-agree-badge">✓ 官方题库 · 社区 · AI 100%一致认可</span>
+          <span class="hero-badge-tag">【✓ 双模型盲测一致】</span>
+          <span class="hero-agree-badge">✓ Claude 与 Gemini 独立盲测一致认可（与题库吻合）</span>
         </div>
       `;
     }
