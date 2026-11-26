@@ -32,8 +32,8 @@ class MB500App {
 
     try {
       const [qRes, tRes] = await Promise.all([
-        fetch('./data/questions.json?v=7.0.4').then(r => r.json()),
-        fetch('./data/topics.json?v=7.0.4').then(r => r.json())
+        fetch('./data/questions.json?v=7.0.5').then(r => r.json()),
+        fetch('./data/topics.json?v=7.0.5').then(r => r.json())
       ]);
 
       this.questions = qRes;
@@ -175,7 +175,7 @@ class MB500App {
 
     if (this.searchQuery.trim()) {
       const q = this.searchQuery.toLowerCase();
-      list = list.filter(item => 
+      list = list.filter(item =>
         item.title.toLowerCase().includes(q) ||
         item.question_en.toLowerCase().includes(q) ||
         item.question_ja.includes(q) ||
@@ -356,27 +356,27 @@ class MB500App {
     return `
       <div class="options-list ${isMulti ? 'multi' : 'single'}">
         ${q.options.map(opt => {
-          let text = '';
-          if (this.language === 'en') {
-            text = this.escapeHtml(opt.text_en);
-          } else if (this.language === 'ja') {
-            text = this.escapeHtml(opt.text_ja || opt.text_en);
-          } else {
-            text = `
+      let text = '';
+      if (this.language === 'en') {
+        text = this.escapeHtml(opt.text_en);
+      } else if (this.language === 'ja') {
+        text = this.escapeHtml(opt.text_ja || opt.text_en);
+      } else {
+        text = `
               <div class="bilingual-opt">
                 <div>${this.escapeHtml(opt.text_ja || opt.text_en)}</div>
                 <div class="en-sub">${this.escapeHtml(opt.text_en)}</div>
               </div>
             `;
-          }
+      }
 
-          return `
+      return `
             <div class="option-card" data-key="${opt.key}" onclick="window.mbApp.handleOptionClick('${opt.key}', ${isMulti})">
               <div class="option-indicator">${opt.key}</div>
               <div class="option-content">${text}</div>
             </div>
           `;
-        }).join('')}
+    }).join('')}
       </div>
     `;
   }
@@ -416,10 +416,10 @@ class MB500App {
           <div class="pool-header">${hasLabels ? '🎯 目标匹配槽位 (Answer Area)' : '🎯 目标顺序槽位 (Target Order)'}</div>
           <div class="slots-grid">
             ${slots.map((slot, idx) => {
-              const placeholderText = hasLabels
-                ? `匹配第 ${idx + 1} 项 (点击或拖拽放入)`
-                : `Step ${idx + 1} (点击或拖拽放入)`;
-              return `
+      const placeholderText = hasLabels
+        ? `匹配第 ${idx + 1} 项 (点击或拖拽放入)`
+        : `Step ${idx + 1} (点击或拖拽放入)`;
+      return `
                 <div class="drag-slot-row">
                   ${hasLabels ? `<div class="slot-req-label"><strong>#${idx + 1}:</strong> ${formatLang(slot.label_ja, slot.label_en)}</div>` : ''}
                   <div class="drop-slot" data-slot-index="${idx}" data-placeholder="${this.escapeHtml(placeholderText)}">
@@ -427,7 +427,7 @@ class MB500App {
                   </div>
                 </div>
               `;
-            }).join('')}
+    }).join('')}
           </div>
         </div>
         <div class="drag-sources-pool">
@@ -464,10 +464,10 @@ class MB500App {
             </thead>
             <tbody>
               ${q.hotspot_boxes.map(box => {
-                const currentVal = this.userHotspotAnswers[box.box_id] || '';
-                const reqTitleJa = box.title_ja || box.title_en;
-                const reqTitleEn = box.title_en;
-                return `
+      const currentVal = this.userHotspotAnswers[box.box_id] || '';
+      const reqTitleJa = box.title_ja || box.title_en;
+      const reqTitleEn = box.title_en;
+      return `
                   <tr class="hotspot-row" data-box-id="${box.box_id}">
                     <td class="req-cell">
                       <span class="box-badge">Box ${box.box_id}</span>
@@ -492,7 +492,7 @@ class MB500App {
                     </td>
                   </tr>
                 `;
-              }).join('')}
+    }).join('')}
             </tbody>
           </table>
         </div>
@@ -583,14 +583,14 @@ class MB500App {
         <div style="display:flex;flex-direction:column;gap:0.6rem;">
           <div style="font-size:0.95rem;font-weight:700;color:#065f46;">多选题正解组合: ${this.escapeHtml(targetKeys)}</div>
           ${matchedOpts.map(opt => {
-            const optText = (this.language === 'en') ? opt.text_en : (opt.text_ja || opt.text_en);
-            return `
+        const optText = (this.language === 'en') ? opt.text_en : (opt.text_ja || opt.text_en);
+        return `
               <div class="hotspot-hero-item">
                 <span class="mcq-hero-letter" style="width:32px;height:32px;min-width:32px;font-size:1.1rem;">${opt.key}</span>
                 <span class="hero-box-val" style="font-size:1rem;">${this.escapeHtml(optText)}</span>
               </div>
             `;
-          }).join('')}
+      }).join('')}
         </div>
       `;
     } else if (q.type === 'hotspot') {
@@ -711,10 +711,10 @@ class MB500App {
             <span>🔍 逐空深度核验与排除法对答案:</span>
           </div>
           ${verdict.box_breakdowns.map(b => {
-            const req = (this.language === 'en') ? b.requirement_en : (b.requirement_ja || b.requirement_en);
-            const why = (this.language === 'en') ? b.why_en : (b.why_ja || b.why_en);
-            const whyNot = (this.language === 'en') ? (b.why_not_en || b.why_not_ja) : (b.why_not_ja || b.why_not_en);
-            return `
+        const req = (this.language === 'en') ? b.requirement_en : (b.requirement_ja || b.requirement_en);
+        const why = (this.language === 'en') ? b.why_en : (b.why_ja || b.why_en);
+        const whyNot = (this.language === 'en') ? (b.why_not_en || b.why_not_ja) : (b.why_not_ja || b.why_not_en);
+        return `
               <div class="box-breakdown-card">
                 <div class="bb-header">
                   <div class="bb-tag-answer">
@@ -737,7 +737,7 @@ class MB500App {
                 ` : ''}
               </div>
             `;
-          }).join('')}
+      }).join('')}
         </div>
       `;
     }
@@ -882,7 +882,7 @@ class MB500App {
         const feedbackEl = document.getElementById(`feedback-box-${box.box_id}`);
         const userVal = (this.userHotspotAnswers[box.box_id] || '').trim();
         const isCorrect = (userVal.toLowerCase() === box.answer.trim().toLowerCase());
-        
+
         if (selectEl) {
           selectEl.classList.remove('select-correct', 'select-wrong');
           selectEl.classList.add(isCorrect ? 'select-correct' : 'select-wrong');
@@ -1044,8 +1044,15 @@ class MB500App {
           <div class="mode-card" onclick="window.mbApp.startExamWithConfig('all')">
             <div class="mode-icon">💯</div>
             <h3>400 题全题库马拉松</h3>
-            <p>从第 1 题到 400 题全部通刷一遍，检验终极掌握率</p>
-            <span class="btn btn-outline-primary">通刷全题库</span>
+            <p>从第 1 题到 400 题按顺序全部通刷一遍，检验终极掌握率</p>
+            <span class="btn btn-outline-primary">顺序通刷 (400题)</span>
+          </div>
+
+          <div class="mode-card" onclick="window.mbApp.startExamWithConfig('all_random')">
+            <div class="mode-icon">🔀</div>
+            <h3>400 题乱序全库挑战</h3>
+            <p>打乱全部 400 题顺序随机出题，彻底防“背位置”假掌握</p>
+            <span class="btn btn-outline-primary">乱序全刷 (400题)</span>
           </div>
 
           <div class="mode-card" onclick="window.mbApp.startExamWithConfig('mistakes')">
@@ -1084,7 +1091,7 @@ class MB500App {
           <tbody>
             ${window.appStorage.exams.slice(0, 5).map(e => `
               <tr>
-                <td>${new Date(e.timestamp).toLocaleDateString()} ${new Date(e.timestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</td>
+                <td>${new Date(e.timestamp).toLocaleDateString()} ${new Date(e.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</td>
                 <td><span class="badge badge-blue">${e.mode}</span></td>
                 <td>
                   <strong class="${e.passed ? 'text-success' : 'text-danger'}">
@@ -1159,16 +1166,16 @@ class MB500App {
         <div class="palette-drawer" id="palette-drawer" style="display:none;">
           <div class="palette-grid">
             ${exam.questions.map((_, i) => {
-              const isAnswered = !!exam.userAnswers[i];
-              const isFlag = exam.flagged.has(i);
-              const isCurrent = (i === exam.currentIndex);
-              return `
+      const isAnswered = !!exam.userAnswers[i];
+      const isFlag = exam.flagged.has(i);
+      const isCurrent = (i === exam.currentIndex);
+      return `
                 <div class="palette-item ${isAnswered ? 'answered' : ''} ${isFlag ? 'flagged' : ''} ${isCurrent ? 'current' : ''}"
                      onclick="window.mbApp.examJump(${i})">
                   ${i + 1}
                 </div>
               `;
-            }).join('')}
+    }).join('')}
           </div>
         </div>
       </div>
@@ -1259,8 +1266,8 @@ class MB500App {
           <h3>📊 各章节掌握率分析 (Topic Breakdown)</h3>
           <div class="topic-bars-list">
             ${result.topicBreakdown.map(tb => {
-              const pct = tb.total > 0 ? Math.round((tb.correct / tb.total) * 100) : 0;
-              return `
+      const pct = tb.total > 0 ? Math.round((tb.correct / tb.total) * 100) : 0;
+      return `
                 <div class="topic-break-row">
                   <span class="t-name">Topic ${tb.topic}: ${tb.name}</span>
                   <div class="t-bar-wrap">
@@ -1269,7 +1276,7 @@ class MB500App {
                   <span class="t-pct">${pct}% (${tb.correct}/${tb.total})</span>
                 </div>
               `;
-            }).join('')}
+    }).join('')}
           </div>
         </div>
       </div>
@@ -1288,7 +1295,7 @@ class MB500App {
         <div class="stats-kpi-grid">
           <div class="kpi-card">
             <div class="kpi-val">${stats.totalAnswered} / ${stats.totalQuestions}</div>
-            <div class="kpi-label">已刷题数 (完成度 ${Math.round(stats.totalAnswered/stats.totalQuestions*100)}%)</div>
+            <div class="kpi-label">已刷题数 (完成度 ${Math.round(stats.totalAnswered / stats.totalQuestions * 100)}%)</div>
           </div>
           <div class="kpi-card">
             <div class="kpi-val text-success">${stats.accuracy}%</div>
@@ -1308,8 +1315,8 @@ class MB500App {
           <h3>📚 20 个章节深度掌握率</h3>
           <div class="topic-stats-grid">
             ${stats.topicStats.map(ts => {
-              const pct = ts.answered > 0 ? Math.round((ts.correct / ts.answered) * 100) : 0;
-              return `
+      const pct = ts.answered > 0 ? Math.round((ts.correct / ts.answered) * 100) : 0;
+      return `
                 <div class="topic-stat-box">
                   <div class="ts-header">
                     <strong>Topic ${ts.topic}</strong>
@@ -1322,7 +1329,7 @@ class MB500App {
                   <div class="ts-footer">正确率: <strong>${pct}%</strong></div>
                 </div>
               `;
-            }).join('')}
+    }).join('')}
           </div>
         </div>
 
@@ -1345,7 +1352,7 @@ class MB500App {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `mb500_backup_${new Date().toISOString().slice(0,10)}.json`;
+    a.download = `mb500_backup_${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
   }
 

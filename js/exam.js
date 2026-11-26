@@ -22,10 +22,10 @@ class ExamEngine {
   startExam(allQuestions, config = {}) {
     this.isActive = true;
     this.examConfig = {
-      mode: config.mode || 'standard', // 'standard' (50), 'quick' (20), 'topic', 'all' (400), 'mistakes'
+      mode: config.mode || 'standard', // 'standard' (50), 'quick' (20), 'topic', 'all' (400), 'all_random' (400 shuffled), 'mistakes'
       topicId: config.topicId || null,
       timed: config.timed !== false,
-      duration: config.duration || (config.mode === 'all' ? 14400 : 7200)
+      duration: config.duration || ((config.mode === 'all' || config.mode === 'all_random') ? 14400 : 7200)
     };
 
     // Filter or sample questions
@@ -43,7 +43,9 @@ class ExamEngine {
     } else if (this.examConfig.mode === 'standard') {
       this.questions = this.shuffle(pool).slice(0, 50);
     } else if (this.examConfig.mode === 'all') {
-      this.questions = pool; // all 400 questions!
+      this.questions = pool; // all 400 questions in order
+    } else if (this.examConfig.mode === 'all_random') {
+      this.questions = this.shuffle(pool); // all 400 questions shuffled!
     } else {
       this.questions = pool;
     }

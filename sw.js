@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v11 (Fix Mobile Nav Tabs & Mode Switching)
-const CACHE_NAME = 'mb500-cache-v11';
+// Service Worker for MB-500 Offline Quiz Tool - v12 (Add Shuffled 400-Question Exam Mode)
+const CACHE_NAME = 'mb500-cache-v12';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
