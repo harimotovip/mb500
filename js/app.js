@@ -425,6 +425,7 @@ class MB500App {
                   <div class="drop-slot" data-slot-index="${idx}" data-placeholder="${this.escapeHtml(placeholderText)}">
                     <span class="slot-placeholder">${this.escapeHtml(placeholderText)}</span>
                   </div>
+                  <div class="drag-slot-feedback" id="drag-feedback-${idx}"></div>
                 </div>
               `;
     }).join('')}
@@ -434,7 +435,7 @@ class MB500App {
           <div class="pool-header">📋 可选操作列表 (Actions Pool · 共 ${actions.length} 项)</div>
           <div class="sources-list">
             ${actions.map((act, idx) => `
-              <div class="drag-item" draggable="true" data-id="item_${idx}">
+              <div class="drag-item" draggable="true" data-id="item_${idx}" data-en="${this.escapeHtml(act.text_en)}">
                 ${formatLang(act.text_ja, act.text_en)}
               </div>
             `).join('')}
@@ -520,14 +521,59 @@ class MB500App {
     }
   }
 
+  normalizeDragText(s) {
+    return (s || '')
+      .toLowerCase()
+      .replace(/^[\[|\]]+\s*/, '')
+      .replace(/\s*([.\\-])\s*/g, '$1')
+      .replace(/\.$/, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  matchDragAction(q, rawPart) {
+    const actions = q.drag_actions || [];
+    const cleaned = (rawPart || '').replace(/^\s*\d+\s*:\s*/, '').trim();
+    const candidates = [cleaned];
+    const colonIdx = cleaned.indexOf(':');
+    if (colonIdx > 0) {
+      candidates.push(cleaned.slice(colonIdx + 1).trim());
+    }
+    for (const c of candidates) {
+      const nc = this.normalizeDragText(c);
+      if (!nc) continue;
+      const exact = actions.find(a => this.normalizeDragText(a.text_en) === nc);
+      if (exact) return exact;
+    }
+    return null;
+  }
+
+  extractStepsEn(q) {
+    const aiAns = (q.ai_verdict && (q.ai_verdict.claude_answer || q.ai_verdict.gemini_answer)) || '';
+    if (aiAns && aiAns.includes('|')) {
+      const parts = aiAns.split('|').map(p => p.replace(/^\s*\d+\s*:\s*/, '').trim()).filter(Boolean);
+      if (parts.length >= 2) {
+        return parts.map(p => {
+          const matched = this.matchDragAction(q, p);
+          return matched ? matched.text_en : p;
+        });
+      }
+    }
+    const exp = q.explanation_en || q.explanation_ja || q.explanation || '';
+    const matches = exp.match(/Step\s*\d+\s*:\s*([^\n]+)/gi);
+    if (matches && matches.length > 0) {
+      return matches.map(m => m.replace(/Step\s*\d+\s*:\s*/i, '').trim());
+    }
+    return [];
+  }
+
   extractSteps(q) {
     const aiAns = (q.ai_verdict && (q.ai_verdict.claude_answer || q.ai_verdict.gemini_answer)) || '';
     if (aiAns && aiAns.includes('|')) {
       const parts = aiAns.split('|').map(p => p.replace(/^\s*\d+\s*:\s*/, '').trim()).filter(Boolean);
       if (parts.length >= 2) {
         return parts.map(p => {
-          const norm = s => s.toLowerCase().replace(/\.$/, '').trim();
-          const matched = (q.drag_actions || []).find(a => norm(a.text_en) === norm(p));
+          const matched = this.matchDragAction(q, p);
           if (matched) {
             if (this.language === 'en') return matched.text_en;
             if (this.language === 'ja') return matched.text_ja || matched.text_en;
@@ -923,6 +969,31 @@ class MB500App {
               <span class="feedback-badge wrong">✗ 未答对</span>
               <span class="feedback-correct-val">正解: <strong>${this.escapeHtml(box.answer)}</strong></span>
             `;
+          }
+        }
+      });
+    }
+
+    // Highlight and evaluate drag_drop slots per-slot
+    if (q.type === 'drag_drop' && grade.slotResults) {
+      grade.slotResults.forEach(sr => {
+        const slotEl = document.querySelector(`.drop-slot[data-slot-index="${sr.slotIndex}"]`);
+        const fbEl = document.getElementById(`drag-feedback-${sr.slotIndex}`);
+        if (slotEl) {
+          slotEl.classList.remove('slot-correct', 'slot-wrong');
+          slotEl.classList.add(sr.isCorrect ? 'slot-correct' : 'slot-wrong');
+        }
+        if (fbEl) {
+          if (sr.isCorrect) {
+            fbEl.innerHTML = `<span class="feedback-badge correct">✓ 正确</span>`;
+          } else if (sr.expectedText) {
+            const matched = this.matchDragAction(q, sr.expectedText);
+            const dispAns = matched
+              ? (this.language === 'en' ? matched.text_en : (matched.text_ja || matched.text_en))
+              : sr.expectedText;
+            fbEl.innerHTML = `<span class="feedback-badge wrong">✗ 正解: ${this.escapeHtml(dispAns)}</span>`;
+          } else {
+            fbEl.innerHTML = `<span class="feedback-badge wrong">✗ 未填写</span>`;
           }
         }
       });

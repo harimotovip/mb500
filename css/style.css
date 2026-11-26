@@ -578,6 +578,23 @@ body {
   background-color: #f8faff;
 }
 
+.drop-slot.slot-correct {
+  border-style: solid;
+  border-color: #10b981 !important;
+  background-color: #ecfdf5 !important;
+}
+
+.drop-slot.slot-wrong {
+  border-style: solid;
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.drag-slot-feedback {
+  font-size: 0.85rem;
+  min-height: 0;
+}
+
 .slot-placeholder {
   color: var(--text-muted);
   font-size: 0.85rem;

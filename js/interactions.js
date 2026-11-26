@@ -119,7 +119,8 @@ class InteractionEngine {
 
     this.dragPlacements[slotIndex] = {
       id: itemId,
-      text: sourceEl.innerText.trim()
+      text: sourceEl.innerText.trim(),
+      enText: sourceEl.dataset.en || sourceEl.innerText.trim()
     };
 
     const targetSlot = container.querySelector(`.drop-slot[data-slot-index="${slotIndex}"]`);
@@ -201,16 +202,48 @@ class InteractionEngine {
         isCorrect = true;
       }
     } else if (q.type === 'drag_drop') {
+      const expected = (window.mbApp && window.mbApp.extractStepsEn) ? window.mbApp.extractStepsEn(q) : [];
+      const norm = s => (window.mbApp && window.mbApp.normalizeDragText)
+        ? window.mbApp.normalizeDragText(s)
+        : (s || '').toLowerCase().replace(/\.$/, '').trim();
+      const slotCount = (q.drag_slots && q.drag_slots.length) || expected.length || 4;
+      const slotResults = [];
+      let correctSlots = 0;
+
+      for (let i = 0; i < slotCount; i++) {
+        const placed = this.dragPlacements[i];
+        const userEn = placed ? (placed.enText || placed.text) : '';
+        const exp = expected[i] || '';
+        const ok = !!exp && norm(userEn) === norm(exp);
+        if (ok) correctSlots++;
+        slotResults.push({
+          slotIndex: i,
+          isCorrect: ok,
+          userText: userEn,
+          expectedText: exp
+        });
+      }
+
       if (Object.keys(this.dragPlacements).length > 0) {
         userAnsStr = Object.keys(this.dragPlacements)
           .sort()
           .map(k => `${parseInt(k)+1}: ${this.dragPlacements[k].text}`)
           .join(', ');
-        isCorrect = true;
+        isCorrect = (expected.length > 0 && correctSlots === expected.length);
       } else {
-        userAnsStr = 'Viewed Solution';
-        isCorrect = true;
+        userAnsStr = '未作答';
+        isCorrect = false;
       }
+
+      return {
+        isCorrect,
+        userAnswer: userAnsStr,
+        correctAnswer: targetAns,
+        dumpAnswer: q.dump_answer,
+        aiAnswer: q.ai_verdict.correct_answer,
+        isDumpFlawed: q.ai_verdict.is_dump_wrong,
+        slotResults
+      };
     }
 
     return {

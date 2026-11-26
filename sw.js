@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v16 (Fix 6 Hotspot answer strings & DragDrop period matching)
-const CACHE_NAME = 'mb500-cache-v16';
+// Service Worker for MB-500 Offline Quiz Tool - v18 (Fix Q16 + Visual Per-Slot Drag & Drop Grading)
+const CACHE_NAME = 'mb500-cache-v18';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
