@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v19 (Fix Q16 3-slot labels)
-const CACHE_NAME = 'mb500-cache-v19';
+// Service Worker for MB-500 Offline Quiz Tool - v20 (Clean Case Study JA Translations)
+const CACHE_NAME = 'mb500-cache-v20';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
