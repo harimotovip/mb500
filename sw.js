@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v18 (Fix Q16 + Visual Per-Slot Drag & Drop Grading)
-const CACHE_NAME = 'mb500-cache-v18';
+// Service Worker for MB-500 Offline Quiz Tool - v19 (Fix Q16 3-slot labels)
+const CACHE_NAME = 'mb500-cache-v19';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
