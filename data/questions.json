@@ -3474,7 +3474,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：为新建的 Inventory Status 窗体选择应套用的窗体模式（form pattern）。\n📌 案例关键条件：\n• 窗体设计只能包含 Action Pane、Navigation List、List Style Grid、Details Header、Details Tab 这几个元素。\n• 窗体还必须包含 Load ID 字段。\n• 窗体用 Inventory Status 表作为新数据源，在网格中显示品目号、位置、车牌、产品名称等列。\n• 所有改动须遵循 Dynamics 365 Finance 窗体的现有功能。请把上述元素组合与各模式的标准结构对应起来。",
+      "ja": "🎯 設問の要点：新規作成した Inventory Status フォームに適用すべきフォームパターンを選ぶ。\n📌 ケース内の関連条件：\n• フォームのデザインに含められるのは Action Pane、Navigation List、List Style Grid、Details Header、Details Tab のみ。\n• Load ID フィールドも含める必要がある。\n• 新しいテーブルをデータソースとし、グリッドに品目番号・ロケーション・ライセンスプレート・製品名などの列を表示する。\n• すべての変更は Dynamics 365 Finance のフォームの既存機能に従う必要がある。この要素の組み合わせを各パターンの標準構成と照らし合わせる。",
+      "en": "🎯 Core Question: Which form pattern should be applied to the newly created Inventory Status form?\n📌 Key Case Constraints:\n• The form design may contain ONLY an Action Pane, Navigation List, List Style Grid, Details Header, and Details Tab.\n• The Load ID field must also be included.\n• The form uses a new table as its data source, and the grid shows item number, location, license plate, product name and similar columns.\n• All changes must follow the existing functionality of Dynamics 365 Finance forms. Match this combination of elements to each pattern's standard structure."
+    }
   },
   {
     "id": 31,
@@ -3804,7 +3809,12 @@
         ],
         "answer": "PurchTableListPage"
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：为采购订单的新审批工作流，选择应使用的工作流元素/类型（热点题，选择合适的选项）。\n📌 案例关键条件：\n• 购买经理要求为金额超过 $10,000 的采购订单创建新的审批工作流。\n• 该工作流必须从“采购和寻源 (Procurement and sourcing)”模块中配置。\n• 需要判断应使用哪种工作流类型（如审批、任务等）以及对应的工作流类别/模块。",
+      "ja": "🎯 設問の要点：発注書の新しい承認ワークフローを作るために、どのワークフロー要素／種類を使うかを選ぶ（ホットスポット）。\n📌 ケース内の関連条件：\n• 購買部長は $10,000 を超える発注書を承認する新しい承認ワークフローを求めている。\n• ワークフローは「調達および引当 (Procurement and sourcing)」モジュールから構成する必要がある。\n• 承認用ワークフローの種類とカテゴリ（モジュール）の組み合わせを判断する。",
+      "en": "🎯 Core Question: Which workflow element/type should be used to build the new purchase order approval workflow (hotspot)?\n📌 Key Case Constraints:\n• The purchasing manager wants a new approval workflow for purchase orders over $10,000.\n• The workflow must be configured from the Procurement and sourcing module.\n• You must decide the correct workflow type (approval vs. task, etc.) and the matching workflow category/module."
+    }
   },
   {
     "id": 34,
@@ -3878,7 +3888,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：哪两种表单模式适合以表格形式显示生成的支票数据（每个选项都是完整方案）。\n📌 案例关键条件：\n• “Populate check data”会向自定义表 CustCheckData 填充 1000 行，包含 CheckNumber 和 BankNumber 两个字段。\n• 用户必须能以表格形式访问数据，且不带额外的详细信息窗格或预览窗格。\n• 表结构很简单（仅两个字段），所以要选择只含网格、无详情区的模式。",
+      "ja": "🎯 設問の要点：生成されたチェックデータを表示するのに使えるフォームパターンを2つ選ぶ（各正解が単独で完全な解）。\n📌 ケース内の関連条件：\n• Populate check data は CustCheckData テーブルに 1000 行を設定し、フィールドは CheckNumber と BankNumber の2つだけ。\n• ユーザーは表形式でアクセスでき、追加の詳細ペインやプレビューペインがないこと。\n• 単純なテーブルなので、グリッドのみで詳細領域を持たないパターンかどうかを見極める。",
+      "en": "🎯 Core Question: Which two form patterns can display the generated check data (each is a complete solution)?\n📌 Key Case Constraints:\n• Populate check data fills the custom table CustCheckData with 1000 rows and only two fields: CheckNumber and BankNumber.\n• Users must access the data in tabular form WITHOUT an additional details pane or preview pane.\n• Because the table is very simple, pick patterns that are grid-only with no details/preview section."
+    }
   },
   {
     "id": 35,
@@ -6205,7 +6220,12 @@
         "label_en": "",
         "label_ja": ""
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：把经QA测试的代码变更合并到发布(Release)分支，且只合并特定变更集，需按顺序排列3个操作。\n📌 案例关键条件：\n• 开发者用 development 分支签入代码，用 release 分支维护生产发布代码。\n• 新代码必须先在开发环境单元测试，再经QA验证，之后才合并到 Release 分支。\n• 只合并特定的变更集（不是整个分支），要考虑 Azure DevOps/Visual Studio 中的分支合并流程（选择源、目标、变更集、签入）。",
+      "ja": "🎯 設問の要点：QA済みのコード変更を、特定のチェンジセットだけ Release ブランチへマージするための3つの操作を正しい順に並べる。\n📌 ケース内の関連条件：\n• 開発者は development ブランチにチェックインし、release ブランチを本番リリース用に保守している。\n• 新規コードは開発環境で単体テスト → QA 検証 → Release ブランチへマージの順。\n• ブランチ全体ではなく特定のチェンジセットのみをマージするため、ソース/ターゲット指定、チェンジセット選択、チェックインの流れを考える。",
+      "en": "🎯 Core Question: Put three actions in order to merge only a specific, QA-tested changeset into the release (production) branch.\n📌 Key Case Constraints:\n• Developers check in to the development branch; the release branch maintains code for production releases.\n• New code is unit tested in dev, validated by QA, then merged to the Release branch.\n• Only a specific changeset must be merged (not the whole branch), so think of the source/target selection, changeset selection, and check-in flow in Azure DevOps/Visual Studio."
+    }
   },
   {
     "id": 57,
@@ -14347,7 +14367,12 @@
         "label_en": "3",
         "label_ja": "3"
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：创建表扩展（table extension）后，按正确顺序完成构建并同步已扩展表所需的三个步骤。\n📌 案例关键条件：\n• 要改的是标准表（如 WHSTmpStatusChange、销售订单头），必须用扩展而不是直接改标准对象。\n• 项目已配置为使用自定义模型 GPExtensions。\n• 添加 Load ID 字段之前必须先同步数据库。\n• 需求要求在新增功能之前先使用现有资产。",
+      "ja": "🎯 設問の要点：テーブル拡張を作成し、拡張したテーブルをビルドして同期するための 3 つの操作を正しい順序で並べる。\n📌 ケース内の関連条件：\n• 変更対象は標準テーブル（WHSTmpStatusChange や販売注文ヘッダーなど）であり、直接変更せず拡張で対応する。\n• プロジェクトはカスタムモデル GPExtensions を使用するよう設定済み。\n• Load ID フィールドを追加する前にデータベースを同期する必要がある。\n• 新機能を作成する前に既存アセットを使用する要件がある。",
+      "en": "🎯 Core Question: Put in order the three actions to create a table extension, then build and synchronize the extended table.\n📌 Key Case Constraints:\n• The tables being changed are standard ones (e.g., WHSTmpStatusChange, the sales order header), so they must be extended rather than modified directly.\n• The project is already configured to use the custom model GPExtensions.\n• The database must be synchronized before the Load ID field is added.\n• Requirements say to use existing assets before creating new functionality."
+    }
   },
   {
     "id": 137,
@@ -14421,7 +14446,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：要扩展 WHSTmpStatusChange 表的 insert 方法以写入数据，应先在 Visual Studio 中做什么。\n📌 案例关键条件：\n• 表扩展中的字段必须在插入时被填充，并显示在 Inventory Status 窗体上。\n• 计划的改动包括表扩展、类扩展（class extension）和窗体扩展。\n• WHSTmpStatusChange 是标准表，不能直接改它的代码。\n• 项目使用自定义模型 GPExtensions。",
+      "ja": "🎯 設問の要点：WHSTmpStatusChange テーブルの insert メソッドを拡張してデータを追加するために、Visual Studio で何を行うか。\n📌 ケース内の関連条件：\n• テーブル拡張のフィールドは、挿入時にデータが設定され Inventory Status フォームに表示される必要がある。\n• 計画されている変更には、テーブル拡張、クラス拡張 (class extension)、フォーム拡張が含まれる。\n• WHSTmpStatusChange は標準テーブルであり、コードを直接変更しない。\n• プロジェクトはカスタムモデル GPExtensions を使用する。",
+      "en": "🎯 Core Question: What should you do in Visual Studio to extend the insert method of WHSTmpStatusChange so data gets added?\n📌 Key Case Constraints:\n• Fields in the table extension must be populated on insert and displayed on the Inventory Status form.\n• Planned changes include a table extension, a class extension, and a form extension.\n• WHSTmpStatusChange is a standard table, so its code must not be modified directly.\n• The project uses the custom model GPExtensions."
+    }
   },
   {
     "id": 138,
@@ -14523,7 +14553,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：在新建表中添加产品名称和批次 ID 字段，哪两种做法各自是完整可行的方案。\n📌 案例关键条件：\n• 新字段必须关联到 Inventory Status 现有数据源中原字段的扩展数据类型（EDT）。\n• 产品名称用 EcoResProductName，批次使用 Batch ID。\n• 需求要求数据格式与现有 D365 Finance 字段一致，并优先使用现有资产。\n• 新表将作为 Inventory Status 窗体的新数据源，需同时含 Product Name 和 Batch ID。",
+      "ja": "🎯 設問の要点：新しいテーブルに製品名とバッチ ID のフィールドを追加する方法のうち、それぞれ単独で完全な解決策になるものを 2 つ選ぶ。\n📌 ケース内の関連条件：\n• 新しいフィールドは、Inventory Status フォームの既存データソースにある元フィールドの拡張データ型 (EDT) に関連付ける必要がある。\n• 製品名は EcoResProductName、バッチは Batch ID に対応する。\n• データは既存の D365 Finance フィールドと同じ形式で、既存アセットを優先して使う要件がある。\n• 新しいテーブルは Inventory Status フォームの新しいデータソースで、Product Name と Batch ID の両方が必要。",
+      "en": "🎯 Core Question: Which two approaches each fully add Product Name and Batch ID fields to the new table?\n📌 Key Case Constraints:\n• The new fields must be tied to the extended data types (EDTs) of the original fields in the Inventory Status form's existing data source.\n• Product Name corresponds to EcoResProductName, and Batch ID to the batch ID EDT.\n• Data must have the same format as existing D365 Finance fields, and existing assets must be used before creating new ones.\n• The new table is the new data source for the form and needs both Product Name and Batch ID."
+    }
   },
   {
     "id": 139,
@@ -15243,7 +15278,12 @@
     "reference_urls": [],
     "comments": [],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：为 processAttachment 方法选择哪个属性，才能阻止扩展者订阅其 pre/post 事件。\n📌 案例关键条件：\n• 必须创建名为 processAttachment 的方法，使扩展者无法订阅 pre-event 和 post-event。\n• 该方法位于 MigrateAttachment 基类中，该基类要求子类实现某些方法（可扩展设计）。\n• 需区分 Hookable、Wrappable、Replaceable 各自的作用。",
+      "ja": "🎯 設問の要点：拡張者が pre/post イベントをサブスクライブできないようにするため、processAttachment メソッドに付ける属性を選ぶ。\n📌 ケース内の関連条件：\n• processAttachment は拡張者が pre-event・post-event をサブスクライブできないメソッドにする必要がある。\n• このメソッドは MigrateAttachment 基底クラスに属し、全体としては拡張可能な設計。\n• Hookable / Wrappable / Replaceable 各属性の役割の違いがポイント。",
+      "en": "🎯 Core Question: Which attribute on processAttachment prevents extenders from subscribing to its pre- and post-events?\n📌 Key Case Constraints:\n• processAttachment must be created so extenders cannot subscribe to pre-event and post-event handlers.\n• The method belongs to the MigrateAttachment base class, part of an extensible migration design.\n• Distinguish what Hookable, Wrappable, and Replaceable each control."
+    }
   },
   {
     "id": 148,
@@ -15383,7 +15423,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：要扩展 WHSTmpStatusChange 表的 insert 方法以写入数据，应先在 Visual Studio 中做什么。\n📌 案例关键条件：\n• 表扩展中的字段必须在插入时被填充，并显示在 Inventory Status 窗体上。\n• 计划的改动包括表扩展、类扩展（class extension）和窗体扩展。\n• WHSTmpStatusChange 是标准表，不能直接改它的代码。\n• 项目使用自定义模型 GPExtensions。",
+      "ja": "🎯 設問の要点：WHSTmpStatusChange テーブルの insert メソッドを拡張してデータを追加するために、Visual Studio で何を行うか。\n📌 ケース内の関連条件：\n• テーブル拡張のフィールドは、挿入時にデータが設定され Inventory Status フォームに表示される必要がある。\n• 計画されている変更には、テーブル拡張、クラス拡張 (class extension)、フォーム拡張が含まれる。\n• WHSTmpStatusChange は標準テーブルであり、コードを直接変更しない。\n• プロジェクトはカスタムモデル GPExtensions を使用する。",
+      "en": "🎯 Core Question: What should you do in Visual Studio to extend the insert method of WHSTmpStatusChange so data gets added?\n📌 Key Case Constraints:\n• Fields in the table extension must be populated on insert and displayed on the Inventory Status form.\n• Planned changes include a table extension, a class extension, and a form extension.\n• WHSTmpStatusChange is a standard table, so its code must not be modified directly.\n• The project uses the custom model GPExtensions."
+    }
   },
   {
     "id": 150,
@@ -21834,7 +21879,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：为解决 UserB 运行 Populate check data 时系统无响应的问题，应使用哪个框架。\n📌 案例关键条件：\n• UserB 对某客户运行 Populate check data 时系统停止响应。\n• 该流程从 All customers 列表页运行，要向 CustCheckData 表写入 1000 行。\n• 流程处理完数据后必须返回当前会话（即不阻塞用户，需要考虑异步/批处理或其他执行方式）。",
+      "ja": "🎯 設問の要点：UserB の Populate check data 実行時にシステムが応答しなくなる問題を解決するために使うフレームワークを選ぶ。\n📌 ケース内の関連条件：\n• UserB が顧客に対して Populate check data を実行するとシステムが応答しなくなる。\n• プロセスは All customers 一覧ページから実行され、CustCheckData に 1000 行を設定する。\n• データ処理後に現在のセッションへ戻る必要がある（ユーザーをブロックしない実行方式を考える）。",
+      "en": "🎯 Core Question: Which framework should be used to fix UserB's unresponsive system when running Populate check data?\n📌 Key Case Constraints:\n• UserB reports the system stops responding when running Populate check data for a customer.\n• The process runs from the All customers list page and inserts 1000 rows into CustCheckData.\n• After processing the data, the process must return to the current session (think about non-blocking/modern execution framework)."
+    }
   },
   {
     "id": 217,
@@ -21988,7 +22038,12 @@
         ],
         "answer": "Abstract"
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：设计 MigrateAttachment 基类时应采用哪种方案/类声明方式（热点题）。\n📌 案例关键条件：\n• 基类 MigrateAttachment 必须包含所有子类都必须实现的方法（暗示抽象类/抽象方法）。\n• 销售经理要求可扩展的方案，以确保新主表的文档处理附件能迁移到新系统。\n• 附件来自 Dynamics AX 2009 的文档处理（document handling），迁移到 Finance and Supply Chain Management。",
+      "ja": "🎯 設問の要点：MigrateAttachment 基底クラスをどのように設計（クラス宣言／メソッド宣言など）するかを選ぶ（ホットスポット）。\n📌 ケース内の関連条件：\n• すべての子クラスが実装しなければならないメソッドを持つ基底クラスが必要（抽象クラス／抽象メソッドを示唆）。\n• 営業部長は、新しいマスターテーブルのドキュメント管理添付ファイルを確実に移行する拡張可能なソリューションを求めている。\n• 添付ファイルは Dynamics AX 2009 から Finance and Supply Chain Management へ移行する。",
+      "en": "🎯 Core Question: How should the MigrateAttachment base class be designed (class/method declaration choices, hotspot)?\n📌 Key Case Constraints:\n• The base class must have a method that all child classes are required to implement (suggests abstract class/abstract method).\n• The sales manager wants an extensible solution so document handling attachments of the new master table migrate reliably.\n• Attachments are migrated from Dynamics AX 2009 document handling to Finance and Supply Chain Management."
+    }
   },
   {
     "id": 219,
@@ -25685,7 +25740,12 @@
     "reference_urls": [],
     "comments": [],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：如何解决 UserA 在打印管理中看不到新销售发票报表布局的问题。\n📌 案例关键条件：\n• UserA 在 UAT 环境测试新的销售发票报表布局。\n• 在应收账款模块的打印管理设置中看不到新布局。\n• 需求是在销售发票业务文档上打印报价编号；涉及打印管理如何识别报表/文档类型（需考虑是否需要新的输出菜单项/控制器）。",
+      "ja": "🎯 設問の要点：UserA が印刷管理設定で新しい販売請求書レイアウトを確認できない問題をどう解決するか。\n📌 ケース内の関連条件：\n• UserA は UAT 環境で新しい販売請求書のレポートレイアウトをテストした。\n• 売掛金勘定モジュールの印刷管理設定に新しいレイアウトが表示されない。\n• 要件は販売請求書のビジネスドキュメントに見積番号を印刷すること。印刷管理がレポート／ドキュメント種別をどう認識するかがポイント。",
+      "en": "🎯 Core Question: What should be done so UserA can see the new sales invoice layout in Print management?\n📌 Key Case Constraints:\n• UserA tested the new sales invoice report layout in the UAT environment.\n• The new layout does not appear in Accounts receivable Print management setup.\n• The goal is to print the quotation number on the sales invoice business document; consider how Print management discovers report/document types."
+    }
   },
   {
     "id": 257,
@@ -25771,7 +25831,12 @@
         "label_en": "Sites",
         "label_ja": "Sites"
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：为销售经理工作区中的各个 KPI 选择合适的对象类型（拖放题）。\n📌 案例关键条件：\n• 销售经理需要按站点 (site) 和物料类型 (item type) 查看报价总额。\n• 工作区必须使用关键绩效指标 (KPI) 显示报价总额。\n• 需判断每个 KPI 应基于何种对象（如聚合度量/聚合维度、聚合数据实体、度量等）。",
+      "ja": "🎯 設問の要点：営業マネージャー用ワークスペースの各 KPI に対し、適切なオブジェクトタイプを割り当てる（ドラッグ＆ドロップ）。\n📌 ケース内の関連条件：\n• 営業部長はサイトおよび品目タイプ別の見積合計にアクセスできる必要がある。\n• ワークスペースでは KPI を使用して見積合計を表示する必要がある。\n• 各 KPI が集計メジャー／集計ディメンション／集計データエンティティなど、どのオブジェクトに基づくかを考える。",
+      "en": "🎯 Core Question: Which object type should be mapped to each KPI in the sales manager's workspace (drag-and-drop)?\n📌 Key Case Constraints:\n• The sales manager needs quotation totals by site and by item type.\n• The workspace must show quotation totals using key performance indicators (KPIs).\n• Decide which object (e.g., aggregate measurement, aggregate dimension, aggregate data entity, measure) backs each KPI."
+    }
   },
   {
     "id": 258,
@@ -30372,7 +30437,12 @@
         ],
         "answer": "Non-real time"
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：为货运处理源系统的集成选择合适的集成策略（在热点区域中选择）。\n📌 案例关键条件：\n• 货运处理集成必须使用 SFTP 站点存放源系统的 XML 文件，并由定期 Batch job 取数、导入暂存表、再映射到目标表。\n• 额外的集成必须使用 OData 并实时传输；库存在每次销售时都要更新。\n• 源数据每天传输一次，超过 10,000 条记录，并已建立聚合实体（aggregate entity）以减少传输量。\n• 货运数据仅用于报表和汇总，没有重复发票或过账。",
+      "ja": "🎯 設問の要点：貨物処理ソースシステムとの統合に、どの統合戦略を実装すべきかを選ぶ（ホットスポット）。\n📌 ケース内の関連条件：\n• 貨物処理の統合は、ソースシステムの XML ファイルを保存する SFTP サイトを使用し、定期 Batch job が取得・ステージングテーブルへのインポート・ターゲットテーブルへのマッピングを行う。\n• 追加の統合は OData を使用してリアルタイムで転送する必要があり、販売のたびに在庫を更新する。\n• ソースデータは 1 日 1 回、10,000 件超が転送され、データ量を抑えるために集計エンティティ (aggregate entity) が作成済み。\n• このデータはレポートと集計のみが目的で、重複請求書や転記はない。",
+      "en": "🎯 Core Question: Which integration strategy should be implemented for the freight processing source system (hotspot selection)?\n📌 Key Case Constraints:\n• The freight integration must use an SFTP site to store XML files from the source system, with a recurring batch job that retrieves the data, imports it into staging tables, and maps it to target tables.\n• Additional integrations must use OData and transfer in real time, and inventory must update on every sale.\n• Source data transfers once a day with more than 10,000 records, and an aggregate entity was created to minimize data volume.\n• The data is for reporting and aggregation only, with no duplicate invoices or postings."
+    }
   },
   {
     "id": 302,
@@ -30484,7 +30554,12 @@
         "label_en": "",
         "label_ja": ""
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：在 Data management 工作区中为自定义数据实体映射目标数据字段，按正确顺序选出三个步骤。\n📌 案例关键条件：\n• 开发团队已建好 SFTP 连接、暂存表和 Batch job，但在 Data management 工作区映射目标字段时遇到错误。\n• 需要把源数据映射到目标表及 Data management 工作区。\n• 导入的 Load ID 必须加到处理过的所有销售订单头上。\n• 集成数据格式必须与现有 D365 Finance 字段一致。",
+      "ja": "🎯 設問の要点：カスタムデータエンティティのターゲットデータフィールドを Data management ワークスペースでマッピングする 3 つの操作を正しい順序で選ぶ。\n📌 ケース内の関連条件：\n• 開発チームは SFTP 接続、ステージングテーブル、Batch job を作成済みだが、Data management ワークスペースでターゲットフィールドをマッピングする際にエラーが発生している。\n• ソースデータをターゲットテーブルおよび Data management ワークスペースにマッピングする必要がある。\n• インポートした Load ID を、処理されたすべての注文の販売注文ヘッダーに追加する必要がある。\n• 統合データは既存の D365 Finance フィールドと同じ形式である必要がある。",
+      "en": "🎯 Core Question: Select and order the three actions to map target data fields for a custom data entity in the Data management workspace.\n📌 Key Case Constraints:\n• The team has built the SFTP connection, staging table, and batch job, but is getting errors when mapping target fields in the Data management workspace.\n• Source data must be mapped to the target tables and the Data management workspace.\n• The imported Load ID must be added to the sales order header of all processed orders.\n• Integrated data must have the same format as existing D365 Finance fields."
+    }
   },
   {
     "id": 303,
@@ -30578,7 +30653,12 @@
         "label_en": "",
         "label_ja": ""
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：让源系统数据映射到新的暂存表，并同时支持同步和异步集成，按正确顺序选出三个步骤。\n📌 案例关键条件：\n• 暂存表用于保存源系统信息，数据加入 D365 Finance 后仍保留。\n• 集成既有每天一次的批量导入（超过 10,000 条，使用聚合实体），也有 OData 实时传输的需求。\n• 所有集成都必须先使用现有资产，数据格式与现有 Finance 字段一致。\n• 将来可能因公司成长而增加其他集成策略的要求。",
+      "ja": "🎯 設問の要点：ソースシステムのデータを新しいステージングテーブルにマッピングし、同期・非同期の両方の統合で使えるようにする 3 つの操作を正しい順序で選ぶ。\n📌 ケース内の関連条件：\n• ステージングテーブルはソース情報を保持するために使用され、データが D365 Finance に追加された後も保持される。\n• 統合には 1 日 1 回のバッチ取り込み（10,000 件超、集計エンティティ使用）と、OData によるリアルタイム転送の要件がある。\n• すべての統合で既存アセットを先に使用し、データは既存の Finance フィールドと同じ形式にする。\n• 会社の成長に伴い、他の統合戦略を含む追加要件が出る可能性がある。",
+      "en": "🎯 Core Question: Order the three actions that map source system data to a new staging table so it supports both synchronous and asynchronous integration.\n📌 Key Case Constraints:\n• The staging table holds source information and retains it after the data is added to D365 Finance.\n• Integration includes a once-a-day batch import (over 10,000 records, using an aggregate entity) plus OData real-time transfer needs.\n• Existing assets must be used first, and data must match the format of existing Finance fields.\n• More integration requirements, including other strategies, may arise as the company grows."
+    }
   },
   {
     "id": 304,
@@ -30652,7 +30732,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：测试并映射货运处理集成时，导入 XML 文件的货运数据用的是 Data management 中的哪一个概念。\n📌 案例关键条件：\n• 货运集成使用 SFTP 站点保存源系统发来的 XML 文件。\n• 定期 Batch job 从 SFTP 取数据、导入暂存表，再映射到 D365 Finance 目标表。\n• 开发团队需要把源数据映射到目标表和 Data management 工作区，目前映射目标字段时出现错误。",
+      "ja": "🎯 設問の要点：貨物処理の統合をテスト・マッピングする際、XML ファイルで貨物処理データをインポートするために使われる Data management の概念はどれか。\n📌 ケース内の関連条件：\n• 貨物処理の統合は、ソースシステムの XML ファイルを保存するために SFTP サイトを使用する。\n• 定期 Batch job が SFTP からデータを取得し、ステージングテーブルへインポートして、D365 Finance のターゲットテーブルにマッピングする。\n• 開発チームはソースデータをターゲットテーブルと Data management ワークスペースにマッピングする必要があり、ターゲットフィールドのマッピングでエラーが出ている。",
+      "en": "🎯 Core Question: Which Data management concept is used for the XML files that import freight processing data when testing and mapping the integration?\n📌 Key Case Constraints:\n• The freight integration uses an SFTP site to store XML files from the source system.\n• A recurring batch job retrieves data from SFTP, imports it into staging tables, and maps it to the D365 Finance target tables.\n• The team must map source data to target tables and the Data management workspace, and is hitting errors when mapping target fields."
+    }
   },
   {
     "id": 305,
@@ -31563,7 +31648,12 @@
         "label_en": "Is Read Only",
         "label_ja": "読み取り専用"
       }
-    ]
+    ],
+    "case_summary": {
+      "zh": "🎯 要问什么：为采购订单查询记录的新数据实体，将正确的值设置到各数据实体属性上（拖放题）。\n📌 案例关键条件：\n• 购买经理希望用新数据实体发送 Finance and Supply Chain Management 中生成的采购订单查询信息。\n• 采购订单查询需通过数据包 (data packages) 从系统导出。\n• 用户必须能通过 OData 查询，但不能更新或创建系统数据（需考虑 Public/OData 相关属性及只读设置）。",
+      "ja": "🎯 設問の要点：発注照会レコード用の新しいデータエンティティの各プロパティに適切な値を設定する（ドラッグ＆ドロップ）。\n📌 ケース内の関連条件：\n• 購買部長は、発注照会の情報を送信するための新しいデータエンティティを求めている。\n• 発注照会はデータパッケージ (data packages) を使ってエクスポートする必要がある。\n• ユーザーは OData でクエリできるが、データの更新・作成はできてはいけない（Public／OData関連プロパティと読み取り専用設定を考慮）。",
+      "en": "🎯 Core Question: Which values should be set on the data entity properties for the new purchase order inquiry entity (drag-and-drop)?\n📌 Key Case Constraints:\n• The purchasing manager wants a new data entity to send out purchase order inquiry information.\n• Inquiries must be exported from the system using data packages.\n• Users must be able to query via OData but must NOT be able to update or create data (consider public/OData and read-only/data-management properties)."
+    }
   },
   {
     "id": 315,
@@ -31627,7 +31717,12 @@
     "reference_urls": [],
     "comments": [],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：为让客户访问业务事件，可使用哪两种端点类型（每个都是完整方案）。\n📌 案例关键条件：\n• UserA 过账销售装箱单后，需通过 business events 实时通知客户货物发货情况。\n• 当前问题是客户无法访问 UserA 过账装箱单所产生的 business events。\n• 需要选择支持外部客户/订阅者接收业务事件的端点类型，并区分哪些端点属于 Finance and Supply Chain Management 支持的业务事件端点。",
+      "ja": "🎯 設問の要点：顧客がビジネスイベントにアクセスできるようにするために使えるエンドポイントの種類を2つ選ぶ（各正解が単独で完全な解）。\n📌 ケース内の関連条件：\n• UserA が販売注文の梱包明細書を転記した後、business events を使って顧客にリアルタイムで配送を通知する必要がある。\n• 現状、顧客は UserA が転記した梱包明細書の business events にアクセスできない。\n• Finance and Supply Chain Management の business events がサポートするエンドポイントのうち、外部の顧客が受信できるものを選ぶ。",
+      "en": "🎯 Core Question: Which two endpoint types can be used to let customers access the business event (each is a complete solution)?\n📌 Key Case Constraints:\n• After UserA posts a sales order packing slip, customers must be notified of delivery in real time via business events.\n• Current issue: customers cannot access the business events for packing slips posted by UserA.\n• Pick endpoint types supported by F&SCM business events that external consumers can receive."
+    }
   },
   {
     "id": 316,
@@ -35305,7 +35400,12 @@
       }
     ],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：为调查供应商排除列表的问题，应通过哪条界面操作路径，找出创建该排除记录的用户。\n📌 案例关键条件：\n• 问题：销售经理怀疑供应商排除列表存在数据问题，User1 需要找出创建被引用排除记录的用户。\n• 安全要求：需要实现记录级审计功能，以识别是谁创建了记录。\n• 对象：VendExclusions 表是自定义表，需要在页面选项 (Page options) 中查看记录信息（如创建者）。\n• 选项差异：需区分是通过“Record Info/记录信息”查看，还是通过“个性化表单”添加字段来查看。",
+      "ja": "🎯 設問の要点：仕入先除外リストの問題調査のため、除外レコードを作成したユーザーを特定するにはどの画面操作を行うか。\n📌 ケース内の関連条件：\n• 課題：営業マネージャーが仕入先除外リストのデータ問題を疑っており、User1 は参照されている除外レコードを作成したユーザーを特定する必要がある。\n• セキュリティ要件：レコードを作成したユーザーを特定するため、レコードレベルの監査機能が必要。\n• 対象：カスタムテーブル VendExclusions のレコード情報（作成者など）を、ページオプションから確認する想定。\n• 選択肢の違い：「Record Info（レコード情報）」で確認するのか、「フォームのパーソナライズ」でフィールドを追加するのかを区別する。",
+      "en": "🎯 Core Question: Which UI navigation path should be used to investigate the vendor exclusion list issue by identifying who created the exclusion record?\n📌 Key Case Constraints:\n• Issue: The sales manager suspects data problems in the vendor exclusion list; User1 must identify the user who created the referenced exclusion record.\n• Security requirement: Record-level auditing is needed to identify who created records.\n• Scope: VendExclusions is a custom table; creator details are viewed via record info from the page options.\n• Option contrast: Distinguish between viewing Record Info versus personalizing the form to add a field."
+    }
   },
   {
     "id": 356,
@@ -35371,7 +35471,12 @@
     "reference_urls": [],
     "comments": [],
     "question_images": [],
-    "answer_images": []
+    "answer_images": [],
+    "case_summary": {
+      "zh": "🎯 要问什么：为调查供应商排除列表的问题，应选择哪种操作来确定是谁创建了排除记录（注意选项中包含数据库日志）。\n📌 案例关键条件：\n• 问题：销售经理怀疑供应商排除列表存在数据问题，User1 需要找出创建被引用排除记录的用户。\n• 安全要求：需要记录级审计功能来识别记录创建者。\n• 对象：VendExclusions 表中的现有记录，目标是查看创建者信息，而不是配置新的变更跟踪。\n• 选项差异：需区分“页面选项→Record Info”、个性化表单和 General 选项卡下的 Database log。",
+      "ja": "🎯 設問の要点：仕入先除外リストの問題調査で、除外レコードの作成者を特定するにはどの操作が適切か（選択肢にデータベースログも含まれる）。\n📌 ケース内の関連条件：\n• 課題：営業マネージャーが仕入先除外リストのデータ問題を疑っており、User1 は参照されている除外レコードを作成したユーザーを特定する必要がある。\n• セキュリティ要件：レコードの作成者を特定するレコードレベルの監査機能が必要。\n• 対象：VendExclusions テーブルの既存レコードの作成者情報の確認であり、新たな変更追跡の設定ではない。\n• 選択肢の違い：「ページオプション→Record Info」、フォームのパーソナライズ、General タブのデータベースログを区別する。",
+      "en": "🎯 Core Question: Which action identifies who created the exclusion record when investigating the vendor exclusion list issue (note that a database log option is included)?\n📌 Key Case Constraints:\n• Issue: The sales manager suspects data problems in the vendor exclusion list; User1 must identify the user who created the referenced exclusion record.\n• Security requirement: Record-level auditing is needed to identify who created records.\n• Scope: The goal is to see creator info on existing VendExclusions records, not to configure new change tracking.\n• Option contrast: Distinguish Page options → Record Info, personalizing the form, and the Database log under General."
+    }
   },
   {
     "id": 357,

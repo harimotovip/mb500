@@ -221,7 +221,14 @@ class MB500App {
     // Determine question text & options based on language
     let questionText = '';
     let noteText = '';
-    if (this.language === 'en') {
+    if (q.case_summary) {
+      questionText = this.renderCaseStudyQuestionHtml(q);
+      noteText = (this.language === 'en' && q.note_en)
+        ? `<div class="question-note">${this.escapeHtml(q.note_en)}</div>`
+        : (this.language === 'ja' && q.note_ja)
+          ? `<div class="question-note">${this.escapeHtml(q.note_ja)}</div>`
+          : (q.note_ja ? `<div class="question-note bilingual-note"><p>${this.escapeHtml(q.note_ja)}</p><p class="en-sub">${this.escapeHtml(q.note_en)}</p></div>` : '');
+    } else if (this.language === 'en') {
       questionText = this.escapeHtml(q.question_en);
       noteText = q.note_en ? `<div class="question-note">${this.escapeHtml(q.note_en)}</div>` : '';
     } else if (this.language === 'ja') {
@@ -349,6 +356,85 @@ class MB500App {
     }
 
     this.updateProgressControls();
+  }
+
+  renderCaseStudyQuestionHtml(q) {
+    const cs = q.case_summary || {};
+    let summaryHtml = '';
+    if (this.language === 'en') {
+      summaryHtml = `<div class="cs-summary-text">${this.escapeHtml(cs.en || '')}</div>`;
+    } else if (this.language === 'ja') {
+      summaryHtml = `<div class="cs-summary-text">${this.escapeHtml(cs.ja || cs.zh || '')}</div>`;
+    } else {
+      summaryHtml = `
+        <div class="cs-summary-text">${this.escapeHtml(cs.zh || '')}</div>
+        ${cs.ja ? `<div class="cs-summary-sub">${this.escapeHtml(cs.ja)}</div>` : ''}
+      `;
+    }
+
+    // Split question_ja at 【設問】
+    const jaFull = q.question_ja || '';
+    const jaIdx = jaFull.indexOf('【設問】');
+    const jaBody = jaIdx >= 0 ? jaFull.slice(0, jaIdx).trim() : jaFull;
+    const jaPrompt = jaIdx >= 0 ? jaFull.slice(jaIdx).trim() : '';
+
+    // Split question_en at last 'You need to' or after Issues bullets
+    const enFull = q.question_en || '';
+    const issuesIdx = enFull.indexOf('Issues -');
+    let enSplit = -1;
+    if (issuesIdx >= 0) {
+      const lines = enFull.slice(issuesIdx).split('\n');
+      let seenBullet = false;
+      let offset = issuesIdx;
+      for (const line of lines) {
+        const ls = line.trim();
+        if (ls.startsWith('•')) seenBullet = true;
+        else if (seenBullet && ls && !ls.startsWith('•')) {
+          enSplit = offset;
+          break;
+        }
+        offset += line.length + 1;
+      }
+    }
+    if (enSplit < 0) enSplit = enFull.lastIndexOf('You need to');
+    const enBody = enSplit > 0 ? enFull.slice(0, enSplit).trim() : enFull;
+    const enPrompt = enSplit > 0 ? enFull.slice(enSplit).trim() : '';
+
+    let promptHtml = '';
+    if (this.language === 'en') {
+      promptHtml = this.escapeHtml(enPrompt || enFull);
+    } else if (this.language === 'ja') {
+      promptHtml = this.escapeHtml(jaPrompt || jaFull);
+    } else {
+      promptHtml = `
+        <div class="bilingual-ja">${this.escapeHtml(jaPrompt || jaFull)}</div>
+        ${enPrompt ? `<div class="bilingual-en">${this.escapeHtml(enPrompt)}</div>` : ''}
+      `;
+    }
+
+    let bodyHtml = '';
+    if (this.language === 'en') {
+      bodyHtml = this.escapeHtml(enBody);
+    } else if (this.language === 'ja') {
+      bodyHtml = this.escapeHtml(jaBody);
+    } else {
+      bodyHtml = `
+        <div class="bilingual-ja">${this.escapeHtml(jaBody)}</div>
+        <div class="bilingual-en">${this.escapeHtml(enBody)}</div>
+      `;
+    }
+
+    return `
+      <div class="cs-summary-box">
+        <div class="cs-summary-header">💡 Case Study 本题速读摘要（已为你提炼关键条件，点击最下方可展开完整原文）</div>
+        ${summaryHtml}
+      </div>
+      <div class="cs-prompt-box">${promptHtml}</div>
+      <details class="cs-collapse">
+        <summary>📖 展开完整 Case Study 背景原文（点击查看 / 收起）</summary>
+        <div class="cs-full-body">${bodyHtml}</div>
+      </details>
+    `;
   }
 
   renderOptionsHtml(q) {

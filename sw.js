@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v20 (Clean Case Study JA Translations)
-const CACHE_NAME = 'mb500-cache-v20';
+// Service Worker for MB-500 Offline Quiz Tool - v21 (Case Study Smart Summary + Collapsible Background)
+const CACHE_NAME = 'mb500-cache-v21';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
