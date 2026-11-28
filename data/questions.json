@@ -6696,14 +6696,14 @@
       "analysis_en": "[Claude] Developer2's changes are in the Development branch, so merge from Development (source) into Release (target) and resolve the conflicts during the merge before building. Main and Branch name do not apply.\n\n[Gemini] The question asks for three sequential actions to merge code into the Release branch and resolve conflicts, but the provided actions array only contains branch-table strings (\"Branch name\", \"Development\", \"Release\", \"Main\") and only two empty slots instead of three action slots. Therefore, the exact drag-and-drop answer cannot be determined from the given data. Under standard TFVC/Azure DevOps rules, the sequence is: merge from Development to Release, resolve conflicts (using Resolve Conflicts / Merge Tool), and check in the merged changes to Release.",
       "analysis_ja": "【Claude 独立推理】Developer2の変更はDevelopmentブランチにあるため、Developmentをソースとし、Releaseをターゲットとしてマージします。競合はマージ時に解決してからビルドします。MainやBranch nameは該当しません。\n\n【Gemini 独立复核】問題文では Release ブランチへのマージおよび競合解決のための「3つの手順」を順番に並べるよう求めていますが、提示された actions 配列にはブランチ一覧表の文字列（\"Branch name\", \"Development\", \"Release\", \"Main\"）のみが含まれ、スロット数も2つしか定義されていません。そのため、与えられた選択肢からは正確な回答を構成できません（標準の TFVC 手順としては、Development から Release へマージし、競合を解決して、Release ブランチへチェックインします）。",
       "is_dump_wrong": false,
-      "verification_verdict_ja": "⚡ 双模型排序存在差异（请结合下方官方答案图核对）：\n• Claude：1: Development | 2: Release\n• Gemini：INSUFFICIENT_DATA",
-      "verification_verdict_en": "⚡ AI Split on Drag & Drop:\n• Claude: 1: Development | 2: Release\n• Gemini: INSUFFICIENT_DATA",
+      "verification_verdict_ja": "⚡ 原卷答案图 vs 常规 TFVC 流程存在第 3 步差异：\n• 原卷答案图：1: Get Latest (Release) | 2: Merge Dev → Release | 3: 在 Development 分支解决冲突并签入\n• 常规 TFVC：第 3 步通常在目标分支 Release 解决冲突并签入",
+      "verification_verdict_en": "⚡ Step 3 nuance:\n• Dump screenshot: 1: Perform Get Latest on Release | 2: Merge Dev into Release | 3: Resolve conflicts in Development branch\n• Standard TFVC note: Target branch (Release) is normally where merge conflicts are resolved and checked in.",
       "strategy_ja": "本题为拖拽排序题，核心考查【フォームパターン設計とワークスペース構造】的标准生命周期与实施流程。解题关键在于梳理各步骤之间的强依赖关系（前置条件 ➔ 核心实现 ➔ 验证部署）。",
       "strategy_en": "This drag-and-drop question evaluates the standard lifecycle and operational workflow for [Form Patterns & Workspace Architecture]. Focus on strict step prerequisites: preparation -> execution -> validation.",
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
-      "claude_answer": "1: Development | 2: Release",
-      "gemini_answer": "INSUFFICIENT_DATA"
+      "claude_answer": "1: Perform Get Latest on the Release branch. | 2: Merge the code from the Development branch into the Release branch and check it in. | 3: Resolve conflicts and check in the code in the Development branch.",
+      "gemini_answer": "1: Perform Get Latest on the Release branch. | 2: Merge the code from the Development branch into the Release branch and check it in. | 3: Resolve conflicts and check in the code in the Release branch."
     },
     "explanation_en": "",
     "explanation_ja": "",
@@ -6718,20 +6718,24 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Branch name",
-        "text_ja": "支店名"
+        "text_en": "Merge the code from the Development branch into the Release branch and check it in.",
+        "text_ja": "Development ブランチから Release ブランチへコードをマージしてチェックインする。"
       },
       {
-        "text_en": "Development",
-        "text_ja": "Development"
+        "text_en": "Resolve conflicts and check in the code in the Release branch.",
+        "text_ja": "競合を解決し、Release ブランチにコードをチェックインする。"
       },
       {
-        "text_en": "Release",
-        "text_ja": "Release"
+        "text_en": "Resolve conflicts and check in the code in the Development branch.",
+        "text_ja": "競合を解決し、Development ブランチにコードをチェックインする。"
       },
       {
-        "text_en": "Main",
-        "text_ja": "Main"
+        "text_en": "Perform Get Latest on the Release branch.",
+        "text_ja": "Release ブランチで「最新バージョンの取得 (Get Latest)」を実行する。"
+      },
+      {
+        "text_en": "Merge the code from the Main branch into the Release branch and check it in.",
+        "text_ja": "Main ブランチから Release ブランチへコードをマージしてチェックインする。"
       }
     ],
     "drag_slots": [
@@ -6742,6 +6746,11 @@
       },
       {
         "index": 2,
+        "label_en": "",
+        "label_ja": ""
+      },
+      {
+        "index": 3,
         "label_en": "",
         "label_ja": ""
       }

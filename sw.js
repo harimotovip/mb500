@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v23 (Fix Q53 3rd slot)
-const CACHE_NAME = 'mb500-cache-v23';
+// Service Worker for MB-500 Offline Quiz Tool - v24 (Fix Q62 drag_actions & 3 slots)
+const CACHE_NAME = 'mb500-cache-v24';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
