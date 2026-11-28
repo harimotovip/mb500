@@ -1,5 +1,5 @@
-// Service Worker for MB-500 Offline Quiz Tool - v24 (Fix Q62 drag_actions & 3 slots)
-const CACHE_NAME = 'mb500-cache-v24';
+// Service Worker for MB-500 Offline Quiz Tool - v25 (Fix all 11 remaining broken drag_drop questions)
+const CACHE_NAME = 'mb500-cache-v25';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

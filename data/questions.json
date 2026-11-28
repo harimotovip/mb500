@@ -5660,7 +5660,7 @@
       "strategy_en": "This drag-and-drop question evaluates the standard lifecycle and operational workflow for [Microsoft Dynamics 365 F&O Architecture & Best Practices]. Focus on strict step prerequisites: preparation -> execution -> validation.",
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
-      "claude_answer": "1: Global (process runs outside the client) | 2: FormRun (message shown when complete without page refresh) | 3: Global (page must be refreshed to see the message)",
+      "claude_answer": "1: Global | 2: FormRun | 3: Global",
       "gemini_answer": "1: Global | 2: FormRun | 3: Global"
     },
     "explanation_en": "",
@@ -5711,33 +5711,29 @@
     ],
     "drag_actions": [
       {
-        "text_en": "FormRun Use case",
-        "text_ja": "FormRun 使用例"
+        "text_en": "FormRun",
+        "text_ja": "FormRun"
       },
       {
-        "text_en": "Global The process is run outside the client.",
-        "text_ja": "グローバル プロセスはクライアントの外部で実行されます。"
-      },
-      {
-        "text_en": "Display a message when the process is completed without a page refresh. The page must be refreshed for the message to be displayed.",
-        "text_ja": "ページを更新せずに処理が完了した場合にメッセージを表示します。メッセージを表示するには、ページを更新する必要があります。"
+        "text_en": "Global",
+        "text_ja": "Global"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "The process is run outside the client.",
+        "label_ja": "プロセスはクライアントの外部で実行されます。"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Display a message when the process is completed without a page refresh.",
+        "label_ja": "ページの更新なしでプロセスが完了したときにメッセージを表示します。"
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "The page must be refreshed for the message to be displayed.",
+        "label_ja": "メッセージを表示するにはページを更新する必要があります。"
       }
     ]
   },
@@ -12636,7 +12632,7 @@
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
       "claude_answer": "1: Cascade | 2: Restricted | 3: Cascade+Restricted",
-      "gemini_answer": "UNANSWERABLE (missing exhibit and delete-action options)"
+      "gemini_answer": "1: Cascade | 2: Restricted | 3: Cascade+Restricted"
     },
     "explanation_en": "",
     "explanation_ja": "",
@@ -12659,20 +12655,16 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Table",
-        "text_ja": "Table"
+        "text_en": "Cascade",
+        "text_ja": "Cascade (カスケード)"
       },
       {
-        "text_en": "TableA",
-        "text_ja": "TableA"
+        "text_en": "Restricted",
+        "text_ja": "Restricted (制限付き)"
       },
       {
-        "text_en": "TableB",
-        "text_ja": "TableB"
-      },
-      {
-        "text_en": "TableC",
-        "text_ja": "TableC"
+        "text_en": "Cascade+Restricted",
+        "text_ja": "Cascade+Restricted"
       }
     ],
     "drag_slots": [
@@ -14875,20 +14867,16 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Method types",
-        "text_ja": "メソッドの種類"
-      },
-      {
-        "text_en": "[ Private instance",
-        "text_ja": "[ プライベートインスタンス"
+        "text_en": "Private instance",
+        "text_ja": "Private instance (プライベート インスタンス)"
       },
       {
         "text_en": "Public static",
-        "text_ja": "パブリック静的"
+        "text_ja": "Public static (パブリック静的)"
       },
       {
-        "text_en": "| Private static",
-        "text_ja": "|プライベート静的"
+        "text_en": "Private static",
+        "text_ja": "Private static (プライベート静的)"
       }
     ],
     "drag_slots": [
@@ -20481,10 +20469,6 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Custom service creation steps",
-        "text_ja": "カスタム サービスの作成手順"
-      },
-      {
         "text_en": "Create and assign the service group.",
         "text_ja": "サービスグル​​ープを作成して割り当てます。"
       },
@@ -24978,7 +24962,7 @@
       "strategy_en": "This drag-and-drop question evaluates the standard lifecycle and operational workflow for [Microsoft Dynamics 365 F&O Architecture & Best Practices]. Focus on strict step prerequisites: preparation -> execution -> validation.",
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
-      "claude_answer": "1 (Entity store): Develop and extend Power BI reports and publish automatically through the application deployment lifecycle. | 2 (Bring your own database, BYOD): Import data from various systems into one reporting database and extend tables.",
+      "claude_answer": "1: Bring your own database | 2: Entity store",
       "gemini_answer": "1: Bring your own database | 2: Entity store"
     },
     "explanation_en": "Box 1: Bring your own database -\nBox 2: Entity Store -\nEntity store is what we call an operational data store which is included with the app itself. It's a dedicated data store for analytics and reporting,\nin which a power user or an administrator can stage aggregate measurements using this unique feature.\nIt is a database which is optimized for the purpose of reporting.\nEnd users can use MS Power BI Direct Query models in combination with the Entity store, so as to enable near-real-time analytical reporting in\nhigh volume over simply large volumes of data.\nReference:\nhttps://dynatechconsultancy.com/dynamics-365-entity-store",
@@ -25004,27 +24988,23 @@
     "drag_actions": [
       {
         "text_en": "Entity store",
-        "text_ja": "エンティティ ストア"
+        "text_ja": "Entity store (エンティティ ストア)"
       },
       {
-        "text_en": "Import data from various systems into one reporting Bring your own database database and extend tables.",
-        "text_ja": "さまざまなシステムから 1 つのレポートにデータをインポートする 独自のデータベースを導入し、テーブルを拡張します。"
-      },
-      {
-        "text_en": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle.",
-        "text_ja": "Power BI レポートを開発および拡張し、アプリケーション展開ライフサイクルを通じて自動的に発行します。"
+        "text_en": "Bring your own database",
+        "text_ja": "Bring your own database (BYOD)"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Import data from various systems into one reporting database and extend tables.",
+        "label_ja": "さまざまなシステムから 1 つのレポート用データベースにデータをインポートし、テーブルを拡張する。"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Develop and extend Power BI reports and publish automatically through the application deployment lifecycle.",
+        "label_ja": "Power BI レポートを開発・拡張し、アプリケーションの展開ライフサイクルを通じて自動的に公開する。"
       }
     ]
   },
@@ -27257,7 +27237,7 @@
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
       "claude_answer": "1: OData endpoint | 2: batch data API | 3: custom service",
-      "gemini_answer": "1: OData endpoint | 2: OData endpoint | 3: batch data API | 4: custom service"
+      "gemini_answer": "1: OData endpoint | 2: batch data API | 3: custom service"
     },
     "explanation_en": "Box 1: custom service -\nCustom service peak data volume is 1,000 records per hour.\nBox 2: batch data API -\nThis scenario is best implemented by using batch data APIs, which has a peak data volume of 300,000 records per hour.\nBox 3: OData endpoint -\nPeak data volume for reading Odata status of orders is 5,000 records per hour.\nThis scenario is best implemented by using the OData service endpoints to read order status information.\nReference:\nhttps://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview",
     "explanation_ja": "Box 1: custom service -\nCustom service peak data volume is 1,000 records per hour.\nBox 2: batch data API -\nThis scenario is best implemented by using batch data APIs, which has a peak data volume of 300,000 records per hour.\nBox 3: OData endpoint -\nPeak data volume for reading Odata status of orders is 5,000 records per hour.\nThis scenario is best implemented by using the OData service endpoints to read order status information.\nReference:\nhttps://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview",
@@ -27349,23 +27329,18 @@
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "Users have a customer portal and must be able to query the status of orders for customers in near real time. Less than",
-        "label_ja": "ユーザーは顧客ポータルを持っており、顧客の注文ステータスをほぼリアルタイムでクエリできる必要があります。未満"
+        "label_en": "Users have a customer portal and must be able to query the status of orders for customers in near real time. Less than 500 status requests occur per hour.",
+        "label_ja": "ユーザーは顧客ポータルを持ち、顧客の注文ステータスをほぼリアルタイムで照会できる必要があります。ステータス要求は 1 時間あたり 500 件未満です。"
       },
       {
         "index": 2,
-        "label_en": "500 status requests occur per hour. Employees use a third-party app to record customer orders.",
-        "label_ja": "1 時間あたり 500 件のステータス リクエストが発生します。従業員はサードパーティのアプリを使用して顧客の注文を記録します。"
+        "label_en": "Employees use a third-party app to record customer orders. You must upload orders to the system once each hour. The company processes approximately 10,000 orders each hour.",
+        "label_ja": "従業員はサードパーティ製アプリで顧客の注文を記録します。1 時間ごとに注文をシステムへアップロードする必要があり、1 時間あたり約 10,000 件の注文を処理します。"
       },
       {
         "index": 3,
-        "label_en": "Employees use a third-party app to record customer orders. You must upload orders to the system once each hour. The",
-        "label_ja": "従業員はサードパーティのアプリを使用して顧客の注文を記録します。 1 時間ごとに注文をシステムにアップロードする必要があります。"
-      },
-      {
-        "index": 4,
-        "label_en": "Employees use a third-party software as a service app to manage delivery schedules. The software must be able to",
-        "label_ja": "従業員は、配達スケジュールを管理するためにサービス アプリとしてサードパーティ製ソフトウェアを使用しています。ソフトウェアは、新しいデータ エンティティの一部である各データ ソースのパブリック API を"
+        "label_en": "Employees use a third-party software as a service app to manage delivery schedules. The software must be able to calculate and obtain inventory availability for deliveries in real time. Approximately 5,000 requests occur each hour.",
+        "label_ja": "従業員はサードパーティ製 SaaS アプリで配送スケジュールを管理します。配送の在庫状況をリアルタイムで計算・取得できる必要があり、1 時間あたり約 5,000 件の要求が発生します。"
       }
     ]
   },
@@ -29036,41 +29011,33 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Batch data API Scenario",
-        "text_ja": "バッチ データ API シナリオ"
+        "text_en": "Batch data API",
+        "text_ja": "Batch data API"
       },
       {
-        "text_en": "Custom service Move asset status information from an on-premises application to Dynamics",
-        "text_ja": "カスタム サービス 資産ステータス情報をオンプレミス アプリケーションから Dynamics に移動"
+        "text_en": "Custom service",
+        "text_ja": "Custom service (カスタム サービス)"
       },
       {
-        "text_en": "365 Finance in near real time by using a publicly exposed data entity.",
-        "text_ja": "365 公開されたデータ エンティティを使用して、ほぼリアルタイムでファイナンスを実行します。"
-      },
-      {
-        "text_en": "OData Provide information from Dynamics 365 Finance to a website to display item",
-        "text_ja": "OData Dynamics 365 Finance からの情報を Web サイトに提供してアイテムを表示します"
-      },
-      {
-        "text_en": "prices in near real time by using the SOAP protocol. Import vendor invoices into Dynamics 365 Finance at the end of each business day.",
-        "text_ja": "価格をサポートする外部の Web ベースの電子商取引アプリケーションを使用して、製品の手持ち数量に関する情報をほぼリアルタイムで取得します。各営業日の終わりに、仕入先の請求書を Dynamics 365 Finance にインポートします。"
+        "text_en": "OData",
+        "text_ja": "OData"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Move asset status information from an on-premises application to Dynamics 365 Finance in near real time by using a publicly exposed data entity.",
+        "label_ja": "パブリックに公開されたデータ エンティティを使用して、オンプレミス アプリから Dynamics 365 Finance へ資産ステータス情報をほぼリアルタイムで移動する。"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Provide information from Dynamics 365 Finance to a website to display item prices in near real time by using the SOAP protocol.",
+        "label_ja": "SOAP プロトコルを使用して、Dynamics 365 Finance から Web サイトへ品目価格をほぼリアルタイムで提供する。"
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Import vendor invoices into Dynamics 365 Finance at the end of each business day.",
+        "label_ja": "毎営業日の終了時に仕入先請求書を Dynamics 365 Finance にインポートする。"
       }
     ]
   },
@@ -29328,8 +29295,8 @@
       "strategy_en": "This drag-and-drop question evaluates the standard lifecycle and operational workflow for [Microsoft Dynamics 365 F&O Architecture & Best Practices]. Focus on strict step prerequisites: preparation -> execution -> validation.",
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
-      "claude_answer": "1: Reliable asynchronous | 2: Synchronous | 3: Scheduled batch",
-      "gemini_answer": "1: ReliableAsynchronous | 2: Synchronous | 3: ScheduledBatch"
+      "claude_answer": "1: reliable asynchronous | 2: synchronous | 3: asynchronous",
+      "gemini_answer": "1: reliable asynchronous | 2: synchronous | 3: asynchronous"
     },
     "explanation_en": "",
     "explanation_ja": "",
@@ -29380,37 +29347,33 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Batch process Description and requirements",
-        "text_ja": "バッチ プロセスの説明と要件"
+        "text_en": "reliable asynchronous",
+        "text_ja": "reliable asynchronous (信頼性の高い非同期)"
       },
       {
-        "text_en": "This process is lengthy. Users must be able to continue working while the process runs. The process must complete successfully.",
-        "text_ja": "このプロセスには時間がかかります。ユーザーは、プロセスの実行中も作業を続行できる必要があります。プロセスは正常に完了する必要があります。"
+        "text_en": "synchronous",
+        "text_ja": "synchronous (同期)"
       },
       {
-        "text_en": "2 This is a short process. The process is permitted to block the work of a user while the process runs.",
-        "text_ja": "2 これは短いプロセスです。プロセスは、プロセスの実行中にユーザーの作業をブロックすることが許可されています。"
-      },
-      {
-        "text_en": "3 | This is a process that must run every night of each workday.",
-        "text_ja": "3 |これは、就業日の毎晩実行する必要があるプロセスです。"
+        "text_en": "asynchronous",
+        "text_ja": "asynchronous (非同期)"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Lengthy operation",
+        "label_ja": "長時間の処理 (Lengthy operation)"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Short operation",
+        "label_ja": "短時間の処理 (Short operation)"
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Runs on a recurring schedule",
+        "label_ja": "定期スケジュールで実行 (Runs on a recurring schedule)"
       }
     ]
   },
@@ -29583,8 +29546,8 @@
       "strategy_en": "This drag-and-drop question evaluates the standard lifecycle and operational workflow for [Microsoft Dynamics 365 F&O Architecture & Best Practices]. Focus on strict step prerequisites: preparation -> execution -> validation.",
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
-      "claude_answer": "Dynamics 365 Customer Service app: Dual-write | e-commerce website: OData | on-premises mainframe system: Recurring integrations",
-      "gemini_answer": "1: Dual-write | 2: OData | 3: Batch data API"
+      "claude_answer": "1: dual-write | 2: custom service | 3: batch data integration",
+      "gemini_answer": "1: dual-write | 2: custom service | 3: batch data integration"
     },
     "explanation_en": "",
     "explanation_ja": "",
@@ -29599,37 +29562,33 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Application",
-        "text_ja": "Application"
+        "text_en": "dual-write",
+        "text_ja": "dual-write (デュアルライト)"
       },
       {
-        "text_en": "Dynamics 365 Customer Service app",
-        "text_ja": "Dynamics 365 Customer Service アプリ"
+        "text_en": "custom service",
+        "text_ja": "custom service (カスタム サービス)"
       },
       {
-        "text_en": "e-commerce website",
-        "text_ja": "Eコマースウェブサイト"
-      },
-      {
-        "text_en": "on-premises mainframe system",
-        "text_ja": "オンプレミスのメインフレーム システム"
+        "text_en": "batch data integration",
+        "text_ja": "batch data integration (バッチ データ統合)"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Dynamics 365 Customer Service app",
+        "label_ja": "Dynamics 365 Customer Service アプリ"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "e-commerce website",
+        "label_ja": "eコマース Web サイト"
       },
       {
         "index": 3,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "on-premises mainframe system",
+        "label_ja": "オンプレミスのメインフレーム システム"
       }
     ]
   },
@@ -32314,8 +32273,8 @@
       "strategy_en": "This drag-and-drop question evaluates the standard lifecycle and operational workflow for [Microsoft Dynamics 365 F&O Architecture & Best Practices]. Focus on strict step prerequisites: preparation -> execution -> validation.",
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
-      "claude_answer": "1: OData | 2: (no requirement given) | 3: Custom service | 4: Custom service",
-      "gemini_answer": "1: OData | 2: N/A | 3: Custom service | 4: OData"
+      "claude_answer": "1: OData | 2: Custom service | 3: OData",
+      "gemini_answer": "1: OData | 2: Custom service | 3: OData"
     },
     "explanation_en": "",
     "explanation_ja": "",
@@ -32329,42 +32288,33 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Integration endpoints",
-        "text_ja": "統合エンドポイント"
-      },
-      {
         "text_en": "OData",
         "text_ja": "OData"
       },
       {
         "text_en": "Excel add-in",
-        "text_ja": "excel アドイン"
+        "text_ja": "Excel アドイン (Excel add-in)"
       },
       {
         "text_en": "Custom service",
-        "text_ja": "カスタムサービス"
+        "text_ja": "Custom service (カスタム サービス)"
       }
     ],
     "drag_slots": [
       {
         "index": 1,
         "label_en": "Get a list of customers filtered on the customer group field.",
-        "label_ja": "顧客グループフィールドでフィルタリングされた顧客のリストを取得します。"
+        "label_ja": "顧客グループ フィールドでフィルターされた顧客リストを取得する。"
       },
       {
         "index": 2,
-        "label_en": "",
-        "label_ja": ""
+        "label_en": "Post a sales order invoice.",
+        "label_ja": "販売注文の請求書を転記する。"
       },
       {
         "index": 3,
-        "label_en": "Post a sales order invoice.",
-        "label_ja": "販売注文の請求書​​を転記します。"
-      },
-      {
-        "index": 4,
         "label_en": "Get the balance of a vendor.",
-        "label_ja": "ベンダーの残高を取得します。"
+        "label_ja": "仕入先の残高を取得する。"
       }
     ]
   },
@@ -32691,8 +32641,8 @@
       "strategy_en": "This drag-and-drop question evaluates the standard lifecycle and operational workflow for [Microsoft Dynamics 365 F&O Architecture & Best Practices]. Focus on strict step prerequisites: preparation -> execution -> validation.",
       "trap_clarification_ja": "流程排序避坑提示：微软官方最佳实践中，编译 (Build/Compile) 与同步 (DB Sync) 必须在部署之前完成；涉及安全角色时，特权 (Privilege) 必须先打包进职责 (Duty) 再赋予角色 (Role)。",
       "trap_clarification_en": "Sequence Pitfall: Metadata builds and database synchronization must precede deployment; privileges must be assigned to duties before roles.",
-      "claude_answer": "1: Trigger a POST call to the GetAzureWriteUrl endpoint | 2: Call an HTTP POST method to the ImportFromPackage endpoint | 3: Trigger a POST call to the GetExecutionSummaryStatus endpoint",
-      "gemini_answer": "1: Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint. | 2: Call an HTTP POST method to the /data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint. | 3: Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint."
+      "claude_answer": "1: Trigger a POST call to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint. | 2: Call an HTTP POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint. | 3: Trigger a POST call to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint.",
+      "gemini_answer": "1: Trigger a POST call to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint. | 2: Call an HTTP POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint. | 3: Trigger a POST call to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint."
     },
     "explanation_en": "",
     "explanation_ja": "",
@@ -32706,24 +32656,24 @@
     ],
     "drag_actions": [
       {
-        "text_en": "Call an HTTP POST method to the /data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint.",
-        "text_ja": "/data/DataManagementDefinitionGroups/@ Microsoft.Dynamics.DataEntities.ImportFromPackage エンドポイントへの HTTP POST メソッドを呼び出します。"
+        "text_en": "Call an HTTP POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage endpoint.",
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage エンドポイントに HTTP POST メソッドを呼び出す。"
       },
       {
-        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint.",
-        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExportedPackageUrl エンドポイントへの POST メソッドを呼び出します。"
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl endpoint.",
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl エンドポイントに POST メソッドを呼び出す。"
       },
       {
-        "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint.",
-        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetAzureWriteUrl エンドポイントへの POST 呼び出しをトリガーします。"
+        "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl endpoint.",
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetAzureWriteUrl エンドポイントへの POST 呼び出しをトリガーする。"
       },
       {
-        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionErrors endpoint.",
-        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionErrors エンドポイントへの POST メソッドを呼び出します。"
+        "text_en": "Call a POST method to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors endpoint.",
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors エンドポイントに POST メソッドを呼び出す。"
       },
       {
-        "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint.",
-        "text_ja": "/data/DataManagementDefinitionGroups/ Microsoft.Dynamics.DataEntities.GetExecutionsummaryStatus エンドポイントへの POST 呼び出しをトリガーします。"
+        "text_en": "Trigger a POST call to the /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus endpoint.",
+        "text_ja": "/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus エンドポイントへの POST 呼び出しをトリガーする。"
       }
     ],
     "drag_slots": [
